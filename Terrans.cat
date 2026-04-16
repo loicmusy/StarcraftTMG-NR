@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="d5ca-ef26-b879-bdc1" name="Terrans" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Army" id="5fac-f026-d203-05cb" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="828b-7d99-85b2-0a8d" targetId="3874-6187-bb5c-3ad3"/>
+        <categoryLink name="Elite" hidden="false" id="088f-a2ec-7363-59df" targetId="72c0-1ca1-1869-32d2"/>
+        <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
+        <categoryLink name="Hero" hidden="false" id="a8d7-280d-049b-6abf" targetId="be84-e5cd-5ba0-b60b"/>
+        <categoryLink name="Support" hidden="false" id="f9ab-270f-6d6c-0029" targetId="c453-061d-5a99-2d4f"/>
+        <categoryLink name="Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="Not enough Core Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="472f-46af-8e02-bfbf" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" childId="any"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Elite Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="f5f9-3591-0f2d-0a53" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Support Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="31a6-c1f1-3d47-fa76" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Hero Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="7e61-585f-b715-85e0" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Faction" hidden="false" id="6e05-c1ac-eba6-083d">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8845-b44a-a70f-a063" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Raynor&apos;s Raiders" hidden="false" id="60b3-fffd-a15a-4cea">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7db-8e10-43bd-e5df"/>
+              </constraints>
+              <costs>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Terran Armed Force" hidden="false" id="7ff2-1bc0-6342-f6f0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24a9-3b9d-b783-42f7"/>
+              </constraints>
+              <costs>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a6e-c460-8c35-fe8f-min-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a6e-c460-8c35-fe8f-min-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="e4d8-c158-a9fd-08ba" id="db68-d21c-bf60-ddb4" primary="true" name="Faction"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85d3-2a6f-e4b6-6af5-min-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85d3-2a6f-e4b6-6af5-min-max"/>
+      </constraints>
+      <costs>
+        <cost name="Minerals" typeId="a66c-9b7d-e0ff-5914" value="0"/>
+        <cost name="Gas" typeId="e617-ddca-8728-f42f" value="0"/>
+        <cost name="Support" typeId="8a22-4e4a-7691-7495" value="0"/>
+        <cost name="Elite" typeId="7729-67ea-f187-8aca" value="0"/>
+        <cost name="Hero" typeId="687e-4a48-77a3-096f" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="6 Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="Gas" typeId="e617-ddca-8728-f42f" value="0"/>
+        <cost name="Support" typeId="8a22-4e4a-7691-7495" value="0"/>
+        <cost name="Core" typeId="d8b1-aeb3-2f7a-33e5" value="0"/>
+        <cost name="Elite" typeId="7729-67ea-f187-8aca" value="0"/>
+        <cost name="Hero" typeId="687e-4a48-77a3-096f" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="C-14 Rifle" id="55d9-a02f-104e-e240" hidden="false" type="profile" targetId="135f-4d13-ea93-602d"/>
+        <infoLink name="Marine" id="1b40-cc66-870e-4d98" hidden="false" type="profile" targetId="74d2-7be5-c0fe-34ad"/>
+        <infoLink name="Stimpack" id="38f2-8033-bd43-84b6" hidden="false" type="profile" targetId="cedc-b9f6-3d53-5ae3"/>
+        <infoLink name="Strike" id="dada-2134-835f-e479" hidden="false" type="profile" targetId="2575-908c-7384-dc80">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="46b9-1d9c-93c3-b3d8" shared="true" childName="Bayonet" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="DEBUFF" id="1a9f-af01-37f9-eb71" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+        <infoLink name="PIERCE [TAG] X" id="3ba4-f154-b744-2d02" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
+        <infoLink name="PRECISION (X)" id="900a-84d6-15d1-d79c" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Reinforce" hidden="false" id="6beb-c060-9e77-4256">
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="50"/>
+            <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+            <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+            <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+            <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="replace" value="9" field="name" scope="unit" arg="6"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f748-84bf-3aa2-975b"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2eff-571a-4be4-120b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="6220-0f67-3cbe-eb64" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Combat Shield" hidden="false" id="2da2-c22c-c732-951c">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Combat Shield" id="cc71-6d5a-4b82-3b04" hidden="false" type="profile" targetId="3501-7421-3370-82a0"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b72-4eb4-b9ba-10d2"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
+                      <comment>Reinforce Cost</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="ad85-61c1-764c-71f4" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="AGG-12" hidden="false" id="d7d4-26c9-b543-87a2">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="AGG-12" id="cd16-4499-d74e-fc5c" hidden="false" type="profile" targetId="1e58-2191-b3b6-13c8"/>
+                    <infoLink name="LONG RANGE (X&quot;)" id="21e1-07da-0885-f48c" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+                    <infoLink name="SPECIALIST" id="f63a-2323-e09e-f1a3" hidden="false" type="rule" targetId="1974-2d46-8d07-3b29"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5244-6f4d-1bbf-ee2b"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rocket Launcher" hidden="false" id="cca3-f767-d9a0-757f">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Rocket Launcher" id="892f-f2a3-6c22-a94c" hidden="false" type="profile" targetId="0e70-d40c-2645-3fdc"/>
+                    <infoLink name="LONG RANGE (X&quot;)" id="90c4-45cb-c73d-07a7" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+                    <infoLink name="SPECIALIST" id="ea54-c64c-638b-9961" hidden="false" type="rule" targetId="1974-2d46-8d07-3b29"/>
+                    <infoLink name="SIDEARM" id="0caf-d91f-2b90-9356" hidden="false" type="rule" targetId="870d-b754-2961-8cb6"/>
+                    <infoLink name="INDIRECT FIRE" id="d5b2-676f-a4ea-e629" hidden="false" type="rule" targetId="a19f-0594-dd63-2656"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="771d-5c8c-464d-35d4"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Slugthrower" hidden="false" id="d537-4c0e-9c32-230c">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Slugthrower" id="91ae-5a7c-24dd-b69a" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
+                    <infoLink name="IMPACT (X) Y" id="dddf-450a-d5ac-fd6f" hidden="false" type="rule" targetId="7805-5c0f-7d68-90c8"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f52-c075-8ef2-74b8"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="20" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Grenades - Frag" hidden="false" id="adbe-f90e-f308-e818">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grenade - Frag" id="36ca-f288-da12-50e2" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9c8-a5aa-87fd-f126"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combat Phase" id="0b6c-8bd4-612b-ed3a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="46b9-1d9c-93c3-b3d8">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Bayonet" id="ce3a-8286-1aa7-6242" hidden="false" type="profile" targetId="140c-a208-86f3-cf96"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddb0-1590-cb80-59a3"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="3874-6187-bb5c-3ad3" id="fa74-64e0-db68-d35d" primary="true" name="Core"/>
+        <categoryLink targetId="8312-ca6b-fa38-deef" id="8058-d308-c9aa-bd6c" primary="false" name="Light"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="6d9a-0327-4746-f9fe" primary="false" name="Ground"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="7c54-afdd-5a50-0ba8" primary="false" name="Biological"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="2 Marauders" hidden="false" id="1e27-1f32-b4a9-3c44">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Reinforce" hidden="false" id="3626-6c66-89a9-b83a">
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="130"/>
+            <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+            <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+            <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+            <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="replace" value="4" field="name" scope="unit" arg="2" position="1"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8dc-cb49-23f8-636a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="3874-6187-bb5c-3ad3" id="9340-499f-0e17-8a1b" primary="true" name="Core"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="1880-0eb4-48a9-743b" primary="false" name="Biological"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="8b24-c0f9-9201-b2b3" primary="false" name="Ground"/>
+        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="a29a-35fd-72a4-6c4c" primary="false" name="Armoured"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Marauder" id="617d-605d-e897-033d" hidden="false" type="profile" targetId="ed00-4582-6d69-2031">
+          <modifiers>
+            <modifier type="increment" value="1" field="e275-f946-72ee-4a48">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ad2f-1233-bc8c-8e74" shared="true" childName="Kinetic Foam" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stimpack" id="d352-121b-d374-0f9a" hidden="false" type="profile" targetId="9408-632c-05c6-441a">
+          <modifiers>
+            <modifier type="append" value="Long Range (16&quot;)" field="454d-a5c1-6c5e-8a4e" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a9a8-0fd4-133a-c703" shared="true" includeChildSelections="true" childName="Laser Targeting Systems"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stomp" id="3c9b-b4fc-94bc-93d6" hidden="false" type="profile" targetId="8e59-a194-627b-01c0"/>
+        <infoLink name="Quad K12" id="affc-9cc0-6a3b-3c9a" hidden="false" type="profile" targetId="a7bd-6685-29f4-7678">
+          <modifiers>
+            <modifier type="append" value="Long Range (16&quot;)" field="454d-a5c1-6c5e-8a4e" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a9a8-0fd4-133a-c703" shared="true" includeChildSelections="true" childName="Laser Targeting Systems"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="1eed-2f78-6ec3-ad92" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phase" id="f5bd-c58a-4557-41e9" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Veteran of Tarsonis" hidden="false" id="8de4-f9f0-6230-e574">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e11a-990c-20bd-31f8"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Veteran of Tarsonis" id="eadd-8c0d-75f8-c1e6" hidden="false" type="profile" targetId="85c7-9102-4021-09d3"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Kinetic Foam" hidden="false" id="ad2f-1233-bc8c-8e74">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bedf-628f-3aa7-6745"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Kinetic Foam" id="ddbf-2eb0-dd3d-3ef5" hidden="false" type="profile" targetId="f2e7-a675-2dad-f425"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="12fe-d6d1-fa4b-3abe" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Laser Targeting Systems" hidden="false" id="a9a8-0fd4-133a-c703">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5548-b78e-04bc-426c"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Laser Targeting Systems" id="8128-85f8-0e63-3ee3" hidden="false" type="profile" targetId="e871-f628-c28d-bb12"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Jim Raynor" hidden="false" id="bb87-11ec-f8a2-2390">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a9-c178-a6ce-97cf"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Jim Raynor" id="0439-6ef5-45a4-c0a7" hidden="false" type="profile" targetId="c5c5-503e-9801-70ed"/>
+        <infoLink name="Orders" id="8fa7-246a-e71c-ece8" hidden="false" type="profile" targetId="5081-268f-12c4-02ef"/>
+        <infoLink name="Freedom Fighters" id="1ab3-eb52-185e-40a4" hidden="false" type="profile" targetId="7eea-7a20-dc9c-a25b"/>
+        <infoLink name="Commander" id="662d-ec59-05e0-f1cb" hidden="false" type="profile" targetId="c429-c517-b5d9-8e78"/>
+        <infoLink name="Commando Rifle" id="0b2b-4676-a4f8-ebe2" hidden="false" type="profile" targetId="f9bd-9511-2dff-b392">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fdc1-c3d4-fb61-35a0" shared="true" childName="C-14 Rifle" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="&quot;Justice&quot; Revolver" id="de13-c70f-72f0-38ef" hidden="false" type="profile" targetId="001c-0ecc-b258-af11">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fdc1-c3d4-fb61-35a0" shared="true" childName="C-14 Rifle" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bayonet" id="3a92-f9be-d7be-16d8" hidden="false" type="profile" targetId="e914-b30d-9c26-42a8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="be84-e5cd-5ba0-b60b" id="b245-dd5e-b937-a5a4" primary="true" name="Hero"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="4a79-6a72-7b68-ef40" primary="false" name="Biological"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="268d-646d-8577-5824" primary="false" name="Ground"/>
+        <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="bd4d-8725-727f-180e" primary="false" name="Unique"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="C-14 Rifle" hidden="false" id="fdc1-c3d4-fb61-35a0">
+          <infoLinks>
+            <infoLink name="C-14 Rifle" id="226c-7301-0163-1a8d" hidden="false" type="profile" targetId="135f-4d13-ea93-602d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f89f-279e-0e69-e64d"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="190"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Devastating Charge" id="30b7-f3e4-32d7-2337" hidden="false" type="profile" targetId="4cb3-9784-b4fc-a0f3"/>
+        <infoLink name="Point Defense Drone" id="8504-3b3f-9232-64f7" hidden="false" type="profile" targetId="90c2-8549-3bc4-d51f"/>
+        <infoLink name="Autocannon" id="a8ae-f48f-fc19-82e4" hidden="false" type="profile" targetId="4d70-01f1-5610-451f">
+          <modifiers>
+            <modifier type="append" value="PRECISION (1)" field="454d-a5c1-6c5e-8a4e" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="429a-ee9e-c5fb-23b8" shared="true" includeChildSelections="true" childName="Ares-Class Targeting System"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Target Lock" id="78b4-de2a-8880-27a9" hidden="false" type="profile" targetId="86c0-9837-1522-7824"/>
+        <infoLink name="Hellfire Missiles" id="baf3-344a-277b-2305" hidden="false" type="profile" targetId="ba84-6d28-7d46-adfd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1101-160e-5a07-2533" shared="true" childName="Haywire Missiles"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e2f6-235e-8ce4-8ddd" shared="true" childName="Scatter Missiles"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Indomitable" id="bb1b-0ee6-f7d9-79b8" hidden="false" type="profile" targetId="869c-c137-fa37-cf79"/>
+        <infoLink name="Underbelly Machine Gun" id="456e-acd0-7227-9484" hidden="false" type="profile" targetId="6345-0221-9ac1-4c76">
+          <modifiers>
+            <modifier type="append" value="PRECISION (1)" field="454d-a5c1-6c5e-8a4e" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="429a-ee9e-c5fb-23b8" shared="true" includeChildSelections="true" childName="Ares-Class Targeting System"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stomp" id="2264-d288-5d1b-bbe1" hidden="false" type="profile" targetId="8e59-a194-627b-01c0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="72c0-1ca1-1869-32d2" id="992c-9b7b-e46e-3b75" primary="true" name="Elite"/>
+        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="abcf-03c6-78d8-dc8f" primary="false" name="Armoured"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="bc71-6381-caf2-37db" primary="false" name="Ground"/>
+        <categoryLink targetId="e9d0-aa9f-8c5e-a2c3" id="ce8b-78e0-deaf-ab81" primary="false" name=" Mechanical"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4639-c117-9c49-fe14" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phase" id="ab9c-ec6b-be6c-c470" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ares-Class Targeting System" hidden="false" id="429a-ee9e-c5fb-23b8">
+                  <costs>
+                    <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Ares-Class Targeting System" id="01dd-b96d-e3fe-a63f" hidden="false" type="profile" targetId="0001-c873-5336-2d44"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6e9-c36d-6eee-caa4"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="7e9e-202c-a5de-dec4" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Missiles" id="7a8d-0346-bf75-7a22" hidden="false" flatten="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Scatter Missiles" hidden="false" id="e2f6-235e-8ce4-8ddd">
+                      <costs>
+                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
+                        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Scatter Missiles" id="ffbe-5613-9efd-171a" hidden="false" type="profile" targetId="e3a6-04a4-abf9-97e6"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Haywire Missiles" hidden="false" id="1101-160e-5a07-2533">
+                      <costs>
+                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Haywire Missiles" id="e5e7-ed1f-b17b-d77a" hidden="false" type="profile" targetId="5e62-0d5f-f033-2a99"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc47-409e-b027-9661"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="3 Medics" hidden="false" id="f7d9-3214-ccc3-9f04">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="110"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c453-061d-5a99-2d4f" id="5f66-05f4-591a-bbee" primary="true" name="Support"/>
+        <categoryLink targetId="8312-ca6b-fa38-deef" id="69d6-45fe-b7dc-042f" primary="false" name="Light"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="1979-71b4-55aa-1427" primary="false" name="Ground"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="545c-1fa6-0004-f11c" primary="false" name="Biological"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Restoration" id="4f96-0752-b79c-1679" hidden="false" type="profile" targetId="3a1f-ef04-eb69-1ce3"/>
+        <infoLink name="Life Support" id="3432-44b3-1111-9167" hidden="false" type="profile" targetId="8824-cc52-003f-bcb7"/>
+        <infoLink name="Medpack" id="8cfd-6e58-9771-e0f6" hidden="false" type="profile" targetId="dd9d-69b4-9b62-dff0"/>
+        <infoLink name="Medic" id="6e56-e503-5aab-fdd6" hidden="false" type="profile" targetId="b5f9-612c-f91c-0ab9"/>
+        <infoLink name="Optical Flare" id="44b3-322e-cf68-360f" hidden="false" type="profile" targetId="f828-28f2-f2b3-c4a4"/>
+        <infoLink name="Strike" id="991c-fb8b-03e7-ef19" hidden="false" type="profile" targetId="2575-908c-7384-dc80"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="0b37-c6fe-56a0-2119" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Advanced Medic Facilities" hidden="false" id="b27c-79c2-a03e-9ee8">
+              <costs>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="60"/>
+                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Advanced Medical Facilities" id="ae6c-0d80-1f78-2088" hidden="false" type="profile" targetId="7c3f-b4da-f63e-54de"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ad-f0b4-6c42-4d51"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="A-13 Flash Grenade Launcher" hidden="false" id="3d0b-d6c6-d329-816e">
+              <costs>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="A-13 Flash Grenade Launcher" id="7d43-2877-f3b4-d579" hidden="false" type="profile" targetId="15c2-89c4-9cba-ce59"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26c5-71f7-749d-12df"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stabilizer Medpacks" hidden="false" id="c92f-9b93-0be6-712d">
+              <costs>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Stabilizer Medpacks" id="57c5-0408-d575-7998" hidden="false" type="profile" targetId="19a8-8ad8-1be5-a6bd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3680-ab82-ce26-2f1e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e245-f057-ea3c-f3e5"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="87df-f89f-67c4-21cf" id="91d7-8d48-ea1e-4188" primary="false" name="Raynor&apos;s Raiders"/>
+        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="6ccc-4d2b-8afd-b919" primary="false" name="Armoured"/>
+        <categoryLink targetId="e9d0-aa9f-8c5e-a2c3" id="0163-9f9e-79d7-e23e" primary="false" name=" Mechanical"/>
+        <categoryLink targetId="46e8-c643-c323-b4c1" id="a49c-d648-5971-ec49" primary="false" name="Flying"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Structure" id="cc3f-cdc4-ed03-a077" hidden="false" type="profile" targetId="d3a4-0dbc-a379-e0fa"/>
+        <infoLink name="Point Defense Laser" id="7737-c482-9f85-a848" hidden="false" type="profile" targetId="64d7-5e8b-1f19-55cb"/>
+        <infoLink name="Point Defense Drone" id="15a1-75c4-8e0c-362a" hidden="false" type="profile" targetId="90c2-8549-3bc4-d51f"/>
+        <infoLink name="Gliding" id="6665-8eda-4319-5383" hidden="false" type="profile" targetId="cbdc-39c2-6bc8-b9fc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="false" id="2f91-0a90-4a5c-444c">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="Gas" typeId="e617-ddca-8728-f42f" value="0"/>
+        <cost name="Support" typeId="8a22-4e4a-7691-7495" value="0"/>
+        <cost name="Core" typeId="d8b1-aeb3-2f7a-33e5" value="0"/>
+        <cost name="Elite" typeId="7729-67ea-f187-8aca" value="0"/>
+        <cost name="Hero" typeId="687e-4a48-77a3-096f" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="C-14 Rifle" id="ea01-0a3e-9955-c143" hidden="false" type="profile" targetId="135f-4d13-ea93-602d"/>
+        <infoLink name="Marine" id="b366-8b0b-2312-1f45" hidden="false" type="profile" targetId="74d2-7be5-c0fe-34ad"/>
+        <infoLink name="Rapid Reinforcements" id="e1c0-7137-058a-09aa" hidden="false" type="profile" targetId="19a8-73ca-085a-8f13"/>
+        <infoLink name="DEBUFF" id="bf17-ff55-9330-9c63" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+        <infoLink name="PIERCE [TAG] X" id="4a17-5ce9-e206-50a5" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
+        <infoLink name="PRECISION (X)" id="4431-68d4-a0b8-78a6" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+        <infoLink name="Raiders Roll!" id="07e3-eb0b-0e9a-ae7c" hidden="false" type="profile" targetId="03f3-93b7-3de5-83b8"/>
+        <infoLink name="Stimpack" id="d11a-cc3f-8ce2-ca92" hidden="false" type="profile" targetId="cedc-b9f6-3d53-5ae3"/>
+        <infoLink name="Slugthrower" id="e85f-5996-4965-00f1" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
+        <infoLink name="Grenade - Frag" id="279b-fc9c-a023-8674" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
+        <infoLink name="Bayonet" id="7500-ddde-0d9b-8c93" hidden="false" type="profile" targetId="140c-a208-86f3-cf96"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="3874-6187-bb5c-3ad3" id="7429-7782-479e-c7cf" primary="true" name="Core"/>
+        <categoryLink targetId="8312-ca6b-fa38-deef" id="a042-8a4e-19f2-ac4a" primary="false" name="Light"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="0bdb-5b60-1464-0a82" primary="false" name="Ground"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="d5da-d784-6cb3-a1d3" primary="false" name="Biological"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Academy" hidden="false" id="9074-b072-2c11-ab2c">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Advanced Training" id="72a6-f2ae-1852-68d7" hidden="false" type="profile" targetId="8866-2868-a335-d6ea"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40e5-a0d0-785c-99c8"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="c277-5f38-f2ff-9615" primary="true" name="Tactical"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armory" hidden="false" id="db3d-2866-94ce-6ed4">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Vehicle Plating" id="5c64-fbfd-a353-63c0" hidden="false" type="profile" targetId="d08f-dc87-dfe6-1c5e"/>
+        <infoLink name="Vehicle Weapons" id="c8d6-30c5-d05b-f5e9" hidden="false" type="profile" targetId="1d17-4b0d-bae8-ab0c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="4b93-5a55-79dd-54ea" primary="true" name="Tactical"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barracks" hidden="false" id="0997-b265-1b25-6baf">
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="8e5f-b63c-08d9-0fff" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Go! Go! Go!" id="f69a-a0ec-4565-d2cd" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barracks (Proxy)" hidden="false" id="6594-22eb-5c9f-bd12">
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="7c4a-5904-8304-344c" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="2"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Go! Go! Go!" id="1637-0b2b-044e-5c12" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
+        <infoLink name="Armed and Ready" id="28e3-4087-941a-26f4" hidden="false" type="profile" targetId="a14c-438a-d801-1494"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c5-1199-cc99-7fc9"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barracks (Tech Lab)" hidden="false" id="a885-d789-92a3-2d1e">
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="ec27-acf0-6806-35a1" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Go! Go! Go!" id="785a-3dcb-13bb-4b78" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
+        <infoLink name="Let&apos;s Have a Blast!" id="1369-0ae6-bede-eca5" hidden="false" type="profile" targetId="41c9-fa52-8acc-949c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acfa-6071-8ae7-7404"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dropship" hidden="false" id="ce50-8a79-0ad3-868d">
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="d4e6-6fa7-656b-9c8a" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ready For Dust-off" id="336a-53c4-d24b-13b1" hidden="false" type="profile" targetId="a9e2-61ea-5135-eea2"/>
+        <infoLink name="Strap in!" id="7c0b-3bb6-9993-a4a8" hidden="false" type="profile" targetId="75b1-1bae-d4ed-6f26"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c0-6a15-ba97-86bb"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Engineering Bay" hidden="false" id="b50a-91b5-197f-8dd5">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infantry Armor" id="2fe8-5842-5b06-40ef" hidden="false" type="profile" targetId="0619-07ae-508d-440d"/>
+        <infoLink name="Infantry Weapons" id="c24a-0391-5b1a-dee9" hidden="false" type="profile" targetId="3dea-901d-742e-a41d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Factory" hidden="false" id="d334-3009-6e8a-7f45">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Field Repair" id="e485-a908-8924-dc71" hidden="false" type="profile" targetId="5bb0-86b2-6f7a-3ced"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbital Command" hidden="false" id="2da0-87db-783a-f81d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e268-d600-18b8-9ee3"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="69d4-368d-397b-cb9a" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="ComSat Station" id="8f43-b0b5-4d8a-c2ee" hidden="false" type="profile" targetId="5845-e43b-3538-295b"/>
+        <infoLink name="Scanner Sweep" id="70a8-a4a9-b5bd-691c" hidden="false" type="profile" targetId="90bb-e4f5-29a0-b0f3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supply Depot" hidden="false" id="b641-28be-cb85-2b41">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="4013-3f1f-7a73-9034" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Additional Supply Depots" id="e2a4-afee-2a18-3fae" hidden="false" type="profile" targetId="fd83-0ea5-90c6-2f3d"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Marine" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="74d2-7be5-c0fe-34ad">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="C-14 Rifle" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="135f-4d13-ea93-602d">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Rocket Launcher" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="0e70-d40c-2645-3fdc">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LONG RANGE (18&quot;), SIDEARM, SPECIALIST</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Advanced Training" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8866-2868-a335-d6ea">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, when a Friendly Support Unit activates a Special Ability that costs CP, resolve that ability with its CP cost reduced by 1 (to a minimum of 0). Do not Exhaust this card.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="AGG-12" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="1e58-2191-b3b6-13c8">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (18&quot;), SPECIALIST</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Slugthrower" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7c6b-c406-4107-6bc4">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit makes a Ranged Attack with a C-14 Rifle and the target is Within 8&quot;, that weapon gains ANTI-EVADE (1).</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grenade - Frag" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="73e3-df9f-4cf5-d51b">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit makes a Ranged Attack with a C-14 Rifle and the target is Within 8&quot;, that weapon’s S Dice is replaced by D6.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Strike" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="2575-908c-7384-dc80">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">E</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">1</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+      <comment>Marine/Medic</comment>
+    </profile>
+    <profile name="Bayonet" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="140c-a208-86f3-cf96">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">E</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Combat Shield" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3501-7421-3370-82a0">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit is always eligible to make an Evade Roll against any Close Combat Attack targeting it and any Damage from an Enemy Special Ability.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jim Raynor" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="c5c5-503e-9801-70ed">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Commander" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="c429-c517-b5d9-8e78">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Freedom Fighters" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="7eea-7a20-dc9c-a25b">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The Supply Value of all Friendly Units Within 8&quot; of this Unit cannot be reduced below 1 for Contesting Mission Markers and completing objectives.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Orders" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5081-268f-12c4-02ef">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">REPEATABLE. Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects:
+- 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 
+- 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 
+- 2 CP: Remove the Activation Marker from that Unit.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (X CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stimpack" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="cedc-b9f6-3d53-5ae3">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit suffers NON-LETHAL DAMAGE (2). This Unit gains BUFF Speed (3). Additionally, its C-14 Rifle and all Close Combat Weapons gain PRECISION (3).</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Commando Rifle" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="f9bd-9511-2dff-b392">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BULKY, PIERCE Armoured (3)</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Marauder" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">5</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Quad K12" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="a7bd-6685-29f4-7678">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5">Concusive Shells (Reaction 1CP):  When an Enemy declares a Charge against a Friendly Unit Within 8&quot;, that Enemy gains DEBUFF Speed (2).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stomp" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="8e59-a194-627b-01c0">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">E</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+      <comment>Goliath</comment>
+    </profile>
+    <profile name="Veteran of Tarsonis" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="85c7-9102-4021-09d3">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit is Within 3&quot; of a Mission Marker, its Armour characteristic is increased by 1.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kinetic Foam" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="f2e7-a675-2dad-f425">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Increase this Unit&apos;s Hit Points characteristic by 1.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Laser Targeting Systems" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="e871-f628-c28d-bb12">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit’s Quad K12 weapon gains LONG RANGE (16&quot;).</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="&quot;Justice&quot; Revolver" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="001c-0ecc-b258-af11">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">6&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (2), SIDEARM, PINPOINT</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Bayonet" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="e914-b30d-9c26-42a8">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">E</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+      <comment>Jim Raynor</comment>
+    </profile>
+    <profile name="Stimpack" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="9408-632c-05c6-441a">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit suffers NON-LETHAL DAMAGE (2). This Unit gains BUFF Speed (3). Additionally, its Quad K12 and all Close Combat Weapons gain PRECISION (2).</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+      </characteristics>
+      <comment>Marauder</comment>
+    </profile>
+    <profile name="Point Defense Drone" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="90c2-8549-3bc4-d51f">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Target Lock" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="86c0-9837-1522-7824">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. Whenever a Friendly Goliath Unit targets that enemy with an Autocannon, that weapon gains Surge Type: Light, Armoured, and S Dice: D3+1.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Autocannon" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="4d70-01f1-5610-451f">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">9</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (18&quot;)</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Underbelly Machine Gun" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="6345-0221-9ac1-4c76">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PINPOINT, SIDEARM</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Hellfire Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="ba84-6d28-7d46-adfd">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">16&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Flying</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), SIDEARM</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Infantry Weapons" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="3dea-901d-742e-a41d">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Biological Unit’s first Ranged Weapon used gains CRITICAL HIT (1).</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Indomitable" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="869c-c137-fa37-cf79">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="4cb3-9784-b4fc-a0f3">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Strike" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="eaa8-3cf1-c099-d1b0">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">E</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+      <comment>Marauder</comment>
+    </profile>
+    <profile name="Ares-Class Targeting System" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0001-c873-5336-2d44">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit’s Autocannon and Underbelly Machine Gun weapons gain PRECISION (1).</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Haywire Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="5e62-0d5f-f033-2a99">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (3), SIDEARM</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Scatter Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Weapon" hidden="false" id="e3a6-04a4-abf9-97e6">
+      <characteristics>
+        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
+        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
+        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LOCKED IN (6), LONG RANGE (24&quot;), SIDEARM</characteristic>
+        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+      </characteristics>
+    </profile>
+    <profile name="Medic" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="b5f9-612c-f91c-0ab9">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Life Support" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8824-cc52-003f-bcb7">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when another Friendly Biological Unit suffers Damage Within 4&quot;. Reduce the Total Damage before allocation by 1 for each model in this Unit that is Within 4&quot; of the damaged Unit.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Restoration" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="3a1f-ef04-eb69-1ce3">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when a Friendly Unit Within 4&quot; receives a DEBUFF. Remove all DEBUFFS from it.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medpack" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="dd9d-69b4-9b62-dff0">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select another Friendly Biological Unit Within 4&quot;. Resolve the HEAL (X) effect for the targeted Unit, where X is the number of models in this Unit that are Within 4&quot; of the target Unit.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Optical Flare" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="f828-28f2-f2b3-c4a4">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. Until the End of the Round, apply DEBUFF Range (4) to that Unit’s Ranged Weapons. That Unit cannot benefit from LONG RANGE.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 CP)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Advanced Medical Facilities" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="7c3f-b4da-f63e-54de">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit’s Supply Value counts as 0 when calculating the Supply Pool.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="A-13 Flash Grenade Launcher" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="15c2-89c4-9cba-ce59">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf"> Increase the Optical Flare special ability&apos;s Range to 16&quot;. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stabilizer Medpacks" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="19a8-8ad8-1be5-a6bd">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves a Life Support or Medpack ability, treat it as having 1 additional model Within Range for calculating that ability&apos;s effects.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Goliath" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="efbb-82d6-961e-ef21">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"/>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">10</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Point Defense Laser" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="64d7-5e8b-1f19-55cb">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf"> When another Friendly Unit Within 4&quot; is targeted by a Ranged Attack without the INSTANT keyword, remove up to 2 dice from the Attack Pool. Then remove this Unit from the battlefield. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gliding" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="cbdc-39c2-6bc8-b9fc">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This model has DISPLACEMENT. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d3a4-0dbc-a379-e0fa">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Raiders Roll!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="03f3-93b7-3de5-83b8">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> When this Unit is nominated to deploy from Reserves, it may resolve its Stimpack ability with the CP cost reduced by 1 (to a minimum of 0). </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rapid Reinforcements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="19a8-73ca-085a-8f13">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> When this Unit is nominated to deploy from Reserves, it may resolve the PLACE (10) effect from another Friendly Unit. No model may be set Within 8&quot; of any Enemy model. This Unit&apos;s Activation ends. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vehicle Plating" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d08f-dc87-dfe6-1c5e">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vehicle Weapons" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="1d17-4b0d-bae8-ab0c">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Mechanical Unit’s first Ranged Weapon used gain CRITICAL HIT (1). </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Go! Go! Go!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1721-d5ac-ed20-9063">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit performs a 2&quot; Move action. This does not count towards its action limit. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armed and Ready" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="a14c-438a-d801-1494">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit Deploys from any table edge that is not a player&apos;s Entry Edge. No model may be placed Within 10&quot; of any Enemy model. This ability cannot be used if another Friendly Biological Unit has already been Deployed this Round.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Let&apos;s Have a Blast!" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="41c9-fa52-8acc-949c">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Biological Unit’s first Ranged Weapon used gain ANTI-EVADE (1). </characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Strap in!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="75b1-1bae-d4ed-6f26">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ready For Dust-off" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="a9e2-61ea-5135-eea2">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infantry Armor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0619-07ae-508d-440d">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Biological Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Field Repair" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5bb0-86b2-6f7a-3ced">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="ComSat Station" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5845-e43b-3538-295b">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one table edge that is not a player’s Entry Edge. Until the End of the Round, Enemy Units cannot Deploy from that edge. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scanner Sweep" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="90bb-e4f5-29a0-b0f3">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Additional Supply Depots" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="fd83-0ea5-90c6-2f3d">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit’s Supply Value is improved by 1 for Controlling and Contesting Mission Markers and completing objectives.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="Core" id="3874-6187-bb5c-3ad3" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Elite" id="72c0-1ca1-1869-32d2" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Faction" id="e4d8-c158-a9fd-08ba" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Hero" id="be84-e5cd-5ba0-b60b" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Support" id="c453-061d-5a99-2d4f" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Tactical" id="45a9-5def-355b-0560" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Raynor&apos;s Raiders" id="87df-f89f-67c4-21cf" hidden="false"/>
+  </categoryEntries>
+</catalogue>
