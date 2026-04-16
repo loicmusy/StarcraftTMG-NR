@@ -866,6 +866,9 @@
         <infoLink name="Infantry Armor" id="2fe8-5842-5b06-40ef" hidden="false" type="profile" targetId="0619-07ae-508d-440d"/>
         <infoLink name="Infantry Weapons" id="c24a-0391-5b1a-dee9" hidden="false" type="profile" targetId="3dea-901d-742e-a41d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="4249-a568-3d9d-3aac" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Factory" hidden="false" id="d334-3009-6e8a-7f45">
       <costs>
@@ -879,6 +882,9 @@
       <infoLinks>
         <infoLink name="Field Repair" id="e485-a908-8924-dc71" hidden="false" type="profile" targetId="5bb0-86b2-6f7a-3ced"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="92ad-96bb-b163-f748" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orbital Command" hidden="false" id="2da0-87db-783a-f81d">
       <constraints>
@@ -1318,7 +1324,7 @@
     </profile>
     <profile name="A-13 Flash Grenade Launcher" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="15c2-89c4-9cba-ce59">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf"> Increase the Optical Flare special ability&apos;s Range to 16&quot;. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Increase the Optical Flare special ability&apos;s Range to 16&quot;.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
@@ -1340,49 +1346,49 @@
     </profile>
     <profile name="Point Defense Laser" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="64d7-5e8b-1f19-55cb">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf"> When another Friendly Unit Within 4&quot; is targeted by a Ranged Attack without the INSTANT keyword, remove up to 2 dice from the Attack Pool. Then remove this Unit from the battlefield. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When another Friendly Unit Within 4&quot; is targeted by a Ranged Attack without the INSTANT keyword, remove up to 2 dice from the Attack Pool. Then remove this Unit from the battlefield.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
     <profile name="Gliding" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="cbdc-39c2-6bc8-b9fc">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This model has DISPLACEMENT. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This model has DISPLACEMENT.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
     <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d3a4-0dbc-a379-e0fa">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
     <profile name="Raiders Roll!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="03f3-93b7-3de5-83b8">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> When this Unit is nominated to deploy from Reserves, it may resolve its Stimpack ability with the CP cost reduced by 1 (to a minimum of 0). </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from Reserves, it may resolve its Stimpack ability with the CP cost reduced by 1 (to a minimum of 0).</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
       </characteristics>
     </profile>
     <profile name="Rapid Reinforcements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="19a8-73ca-085a-8f13">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> When this Unit is nominated to deploy from Reserves, it may resolve the PLACE (10) effect from another Friendly Unit. No model may be set Within 8&quot; of any Enemy model. This Unit&apos;s Activation ends. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from Reserves, it may resolve the PLACE (10) effect from another Friendly Unit. No model may be set Within 8&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
       </characteristics>
     </profile>
     <profile name="Vehicle Plating" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d08f-dc87-dfe6-1c5e">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
       </characteristics>
     </profile>
     <profile name="Vehicle Weapons" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="1d17-4b0d-bae8-ab0c">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Mechanical Unit’s first Ranged Weapon used gain CRITICAL HIT (1). </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Mechanical Unit’s first Ranged Weapon used gain CRITICAL HIT (1).</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
       </characteristics>
     </profile>
     <profile name="Go! Go! Go!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1721-d5ac-ed20-9063">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit performs a 2&quot; Move action. This does not count towards its action limit. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit performs a 2&quot; Move action. This does not count towards its action limit.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
@@ -1394,25 +1400,25 @@
     </profile>
     <profile name="Let&apos;s Have a Blast!" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="41c9-fa52-8acc-949c">
       <characteristics>
-        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Biological Unit’s first Ranged Weapon used gain ANTI-EVADE (1). </characteristic>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Biological Unit’s first Ranged Weapon used gain ANTI-EVADE (1).</characteristic>
         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
       </characteristics>
     </profile>
     <profile name="Strap in!" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="75b1-1bae-d4ed-6f26">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
     <profile name="Ready For Dust-off" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="a9e2-61ea-5135-eea2">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
     <profile name="Infantry Armor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0619-07ae-508d-440d">
       <characteristics>
-        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Biological Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll. </characteristic>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Biological Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
       </characteristics>
     </profile>
@@ -1424,13 +1430,13 @@
     </profile>
     <profile name="ComSat Station" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5845-e43b-3538-295b">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one table edge that is not a player’s Entry Edge. Until the End of the Round, Enemy Units cannot Deploy from that edge. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one table edge that is not a player’s Entry Edge. Until the End of the Round, Enemy Units cannot Deploy from that edge.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
     <profile name="Scanner Sweep" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="90bb-e4f5-29a0-b0f3">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
