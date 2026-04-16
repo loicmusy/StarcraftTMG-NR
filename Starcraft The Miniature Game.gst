@@ -50,7 +50,7 @@
 "/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="e8b6-5b29-e80c-a3b3" hidden="false" kind="weapon" sortIndex="2">
+    <profileType name="Assault Weapon" id="e8b6-5b29-e80c-a3b3" hidden="false" kind="weapon" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="Rng" id="ebd0-74ec-d612-eac2"/>
         <characteristicType name="Tgt" id="ca62-f052-a905-5e3f"/>
@@ -78,7 +78,6 @@
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType name="Rules" id="67f6-1351-2ec8-7fd5" kind="longText"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Rules (Movement Phase)" id="ec1d-63b8-de26-1894" hidden="false" kind="ability">
@@ -87,7 +86,7 @@
         <characteristicType name="Cost" id="e11e-d579-0142-8de4" kind="annotation"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Rules (Any Phase)" id="a305-fb8b-8be3-f0fe" hidden="false" kind="ability" sortIndex="3">
+    <profileType name="Rules (Any Phase)" id="a305-fb8b-8be3-f0fe" hidden="false" kind="ability" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Effect" id="616e-c7be-abff-a2bf" kind="longText"/>
         <characteristicType name="Cost" id="1696-5ea7-559b-bb8b" kind="annotation"/>
@@ -103,6 +102,36 @@
       <characteristicTypes>
         <characteristicType name="Effect" id="b94b-6a13-1240-6b8b" kind="longText"/>
         <characteristicType name="Cost" id="6f0c-b621-2f03-fe52" kind="annotation"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Combat Weapon" id="7b96-11fe-e87a-e61c" hidden="false" kind="weapon" sortIndex="3">
+      <characteristicTypes>
+        <characteristicType name="Rng" id="f6d9-ff21-6fe9-b821"/>
+        <characteristicType name="Tgt" id="0bf8-6c63-e593-8417"/>
+        <characteristicType name="RoA" id="af32-03e6-6c32-3580"/>
+        <characteristicType name="Hit" id="61d4-8e80-254a-ab52"/>
+        <characteristicType name="Surge" id="d7e0-90d3-308e-c357">
+          <formatRules>
+            <formatRule name="New Format Rule" id="c607-5340-1040-b2c7" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="S.Die" id="52f3-3434-e741-a217">
+          <formatRules>
+            <formatRule name="New Format Rule" id="5175-c978-a732-8149" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="Dmg" id="5665-56ad-b90d-ffc7"/>
+        <characteristicType name="Keyword" id="9b72-90e3-8130-46b1">
+          <formatRules>
+            <formatRule name="New Format Rule" id="4e94-ae81-0dc5-e91d" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -220,6 +249,9 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
       <description>When resolving an attack with this weapon against Enemy Units, the target Unit suffers a -X Modifier to its Evade Roll for this attack (Part 8.7.4, Step 4).</description>
       <alias>ANTI-EVADE</alias>
     </rule>
+    <rule name="ON CREEP" id="6a15-064c-2136-2005" hidden="false">
+      <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
+    </rule>
   </sharedRules>
   <categoryEntries>
     <categoryEntry name="Armoured" id="03d5-bf1b-74fa-ae6a" hidden="false"/>
@@ -229,5 +261,20 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     <categoryEntry name="Unique" id="5adb-d04b-d3a5-9c7b" hidden="false"/>
     <categoryEntry name=" Mechanical" id="e9d0-aa9f-8c5e-a2c3" hidden="false"/>
     <categoryEntry name="Flying" id="46e8-c643-c323-b4c1" hidden="false"/>
+    <categoryEntry name="Psionic" id="b915-b8d0-e25e-d12c" hidden="false"/>
   </categoryEntries>
+  <sharedProfiles>
+    <profile name="Squadron" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="fc8c-6bff-6d80-b316">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit’s Horizontal Coherency is 4&quot;.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Commander" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="c429-c517-b5d9-8e78">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
