@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="sys-ce49-e853-2fea-6af1" name="Starcraft The Miniature Game" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
-    <costType name="Minerals" id="5bcf-897a-a5c9-d0e8" defaultCostLimit="2000"/>
-    <costType name="Gas" id="1719-6214-392e-e53f" defaultCostLimit="200"/>
-    <costType name="Core" id="472f-46af-8e02-bfbf" defaultCostLimit="0" hidden="true">
+    <costType name=" Minerals" id="5bcf-897a-a5c9-d0e8" defaultCostLimit="2000"/>
+    <costType name="  Gas" id="1719-6214-392e-e53f" defaultCostLimit="200"/>
+    <costType name="   Core" id="472f-46af-8e02-bfbf" defaultCostLimit="0" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <comment>Required so it does not show on list creation</comment>
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Elite" id="f5f9-3591-0f2d-0a53" defaultCostLimit="0" hidden="true">
+    <costType name="    Elite" id="f5f9-3591-0f2d-0a53" defaultCostLimit="0" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <comment>Required so it does not show on list creation</comment>
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Support" id="31a6-c1f1-3d47-fa76" defaultCostLimit="0" hidden="true">
+    <costType name="     Support" id="31a6-c1f1-3d47-fa76" defaultCostLimit="0" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <comment>Required so it does not show on list creation</comment>
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Hero" id="7e61-585f-b715-85e0" defaultCostLimit="0" hidden="true">
+    <costType name="     Hero" id="7e61-585f-b715-85e0" defaultCostLimit="0" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <comment>Required so it does not show on list creation</comment>
@@ -173,8 +173,7 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
 - Value Characteristic: decrease the value by X (minimum 0).</description>
     </rule>
     <rule name="HIDDEN" id="4bf6-1de9-71aa-02a4" hidden="false">
-      <description>This Unit cannot be selected as the target of a Ranged Attack or any LoS-requiring Special Ability unless the acting model is Within 4&quot; of it. A HIDDEN Unit is immune to the IMPACT Keyword. A HIDDEN Unit may make an Evade Roll against every attack targeting it.
-</description>
+      <description>This Unit cannot be selected as the target of a Ranged Attack or any LoS-requiring Special Ability unless the acting model is Within 4&quot; of it. A HIDDEN Unit is immune to the IMPACT Keyword. A HIDDEN Unit may make an Evade Roll against every attack targeting it.</description>
     </rule>
     <rule name="LOCKED IN (X)" id="7cfe-f96a-bbcb-8220" hidden="false">
       <alias>LOCKED IN</alias>
@@ -201,7 +200,23 @@ If the Leading Model ends any Move, Deploy, Run, Charge, Disengage, Close Ranks 
       <description>When this Unit resolves an Armour Roll, change up to X failed results into successes. Treat them as meeting or exceeding the Armour characteristic - discard them without moving to the Damage Pool.</description>
       <alias>TOUGH</alias>
     </rule>
-    <rule name="ANTI-EVADE (X)" id="1a39-f874-fdf2-c983" hidden="false">
+    <rule name="SUMMON (Unit Name)" id="1a39-f874-fdf2-c983" hidden="false">
+      <description>SUMMON (Unit Name) Set the Leading Model of the named Unit in Base-to-Base contact with the Parent Unit. Set remaining models In Coherency. Models cannot be set Within the Engagement Range of any Enemy Unit.
+
+
+Set an Activation Marker next to the summoned Unit - it cannot be Activated during the Phase in which it was summoned. In subsequent Phases, this Unit must be Activated immediately after its Parent Unit’s activation ends, before the opponent’s next activation.
+
+
+The Summoned Unit cannot be set Within the opponent’s Zone of Influence.
+
+
+The player must have sufficient Available Supply. If the Unit’s Current Supply Value would cause Total Current Supply to exceed the Supply Pool, it cannot be Summoned.
+
+
+If the Parent is not present on the battlefield, this Unit can be Activated normally.</description>
+      <alias>SUMMON</alias>
+    </rule>
+    <rule name="ANTI-EVADE (X)" id="d273-74d1-fff7-7002" hidden="false">
       <description>When resolving an attack with this weapon against Enemy Units, the target Unit suffers a -X Modifier to its Evade Roll for this attack (Part 8.7.4, Step 4).</description>
       <alias>ANTI-EVADE</alias>
     </rule>
