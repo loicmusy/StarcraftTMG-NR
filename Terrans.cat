@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d5ca-ef26-b879-bdc1" name="Terrans" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5ca-ef26-b879-bdc1" name="Terran" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Army" id="5fac-f026-d203-05cb" hidden="false">
       <categoryLinks>
@@ -879,12 +879,6 @@
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 CP)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Restoration" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="3a1f-ef04-eb69-1ce3">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when a Friendly Unit Within 4&quot; receives a DEBUFF. Remove all DEBUFFS from it.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 CP)</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Optical Flare" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="f828-28f2-f2b3-c4a4">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. Until the End of the Round, apply DEBUFF Range (4) to that Unit’s Ranged Weapons. That Unit cannot benefit from LONG RANGE.</characteristic>
@@ -897,12 +891,18 @@
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Restoration" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="1ba3-1361-491c-642f">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when a Friendly Unit Within 4&quot; receives a DEBUFF. Remove all DEBUFFS from it.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 CP)</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Strike" id="2495-4c57-e27e-5cf9" hidden="false" type="profile" targetId="2575-908c-7384-dc80"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
+    <selectionEntry type="unit" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -943,13 +943,10 @@
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d3a4-0dbc-a379-e0fa">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Structure" id="97fe-492f-c084-fb76" hidden="false" type="profile" targetId="d3a4-0dbc-a379-e0fa"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="false" id="2f91-0a90-4a5c-444c">
       <costs>

@@ -255,6 +255,12 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
 - Target Number Characteristic: increase the value by X (harder to roll).
 - Value Characteristic: decrease the value by X (minimum 0).</description>
     </rule>
+    <rule name="IMPASSABLE TERRAIN" id="0c68-af78-c6ca-9cf8" hidden="false">
+      <description>A terrain piece is Impassable if it has no Access Point connecting it to an adjacent elevation level. Models cannot move through, onto, or across IMPASSABLE TERRAIN, and no model may end its movement overlapping it. Terrains of sizes 0 and 1 are never considered IMPASSABLE TERRAIN.</description>
+    </rule>
+    <rule name="INSTANT" id="a6a8-9065-8680-ddbd" hidden="false">
+      <description>Enemy Units cannot declare or resolve Reaction abilities in response to attacks made with this weapon.</description>
+    </rule>
   </sharedRules>
   <categoryEntries>
     <categoryEntry name="Armoured" id="03d5-bf1b-74fa-ae6a" hidden="false"/>
@@ -276,6 +282,12 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     <profile name="Commander" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="c429-c517-b5d9-8e78">
       <characteristics>
         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d3a4-0dbc-a379-e0fa">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
