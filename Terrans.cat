@@ -19,17 +19,17 @@
         </modifier>
         <modifier type="add" value="Not enough Elite Supply." field="error">
           <conditions>
-            <condition type="lessThan" value="0" field="f5f9-3591-0f2d-0a53" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="0" field="f5f9-3591-0f2d-0a53" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" childName="any"/>
           </conditions>
         </modifier>
         <modifier type="add" value="Not enough Support Supply." field="error">
           <conditions>
-            <condition type="lessThan" value="0" field="31a6-c1f1-3d47-fa76" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="0" field="31a6-c1f1-3d47-fa76" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" childName="any"/>
           </conditions>
         </modifier>
         <modifier type="add" value="Not enough Hero Supply." field="error">
           <conditions>
-            <condition type="lessThan" value="0" field="7e61-585f-b715-85e0" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="0" field="7e61-585f-b715-85e0" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" childName="any"/>
           </conditions>
         </modifier>
       </modifiers>
