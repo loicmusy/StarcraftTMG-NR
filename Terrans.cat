@@ -561,7 +561,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
+    <selectionEntry type="unit" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="190"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1409,8 +1409,8 @@
     </categoryEntry>
     <categoryEntry name="Faction" id="e4d8-c158-a9fd-08ba" hidden="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26e4-9611-66dd-116e"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0779-8153-9710-294c"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26e4-9611-66dd-116e-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e4-9611-66dd-116e-max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry name="Hero" id="be84-e5cd-5ba0-b60b" hidden="false">

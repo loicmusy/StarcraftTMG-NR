@@ -196,10 +196,8 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <description>Move X dice from the Armour Pool directly to the Damage Pool, bypassing Armour. CRITICAL HIT can never move more dice than are in the Armour Pool.</description>
       <alias>CRITICAL HIT</alias>
     </rule>
-    <rule name="DEBUFF" id="b8db-d01a-89fd-efd3" hidden="false">
-      <description>DEBUFF [Characteristic] (X) The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
-- Target Number Characteristic: increase the value by X (harder to roll).
-- Value Characteristic: decrease the value by X (minimum 0).</description>
+    <rule name="ON CREEP" id="b8db-d01a-89fd-efd3" hidden="false">
+      <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
     </rule>
     <rule name="HIDDEN" id="4bf6-1de9-71aa-02a4" hidden="false">
       <description>This Unit cannot be selected as the target of a Ranged Attack or any LoS-requiring Special Ability unless the acting model is Within 4&quot; of it. A HIDDEN Unit is immune to the IMPACT Keyword. A HIDDEN Unit may make an Evade Roll against every attack targeting it.</description>
@@ -251,6 +249,11 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="ON CREEP" id="6a15-064c-2136-2005" hidden="false">
       <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
+    </rule>
+    <rule name="DEBUFF" id="e9c5-7999-24b7-4858" hidden="false">
+      <description>DEBUFF [Characteristic] (X) The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
+- Target Number Characteristic: increase the value by X (harder to roll).
+- Value Characteristic: decrease the value by X (minimum 0).</description>
     </rule>
   </sharedRules>
   <categoryEntries>
