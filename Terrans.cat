@@ -3,12 +3,13 @@
   <forceEntries>
     <forceEntry name="Army" id="5fac-f026-d203-05cb" hidden="false">
       <categoryLinks>
+        <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
+        <categoryLink name=" Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
         <categoryLink name="Core" hidden="false" id="828b-7d99-85b2-0a8d" targetId="3874-6187-bb5c-3ad3"/>
         <categoryLink name="Elite" hidden="false" id="088f-a2ec-7363-59df" targetId="72c0-1ca1-1869-32d2"/>
-        <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
-        <categoryLink name="Hero" hidden="false" id="a8d7-280d-049b-6abf" targetId="be84-e5cd-5ba0-b60b"/>
         <categoryLink name="Support" hidden="false" id="f9ab-270f-6d6c-0029" targetId="c453-061d-5a99-2d4f"/>
-        <categoryLink name="Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
+        <categoryLink name="Hero" hidden="false" id="a8d7-280d-049b-6abf" targetId="be84-e5cd-5ba0-b60b"/>
+        <categoryLink name="Other" hidden="false" id="779c-da93-b319-c941" targetId="8a38-b874-adc2-a411"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="Not enough Core Supply." field="error">
@@ -35,88 +36,6 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Faction" hidden="false" id="6e05-c1ac-eba6-083d">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8845-b44a-a70f-a063" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Raynor&apos;s Raiders" hidden="false" id="60b3-fffd-a15a-4cea">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7db-8e10-43bd-e5df"/>
-              </constraints>
-              <costs>
-                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
-                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
-                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
-              </costs>
-              <profiles>
-                <profile name="Ready for Pickup?" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="c737-b9b8-59f4-4222">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. The active Unit resolves the PLACE (12) effect. Models placed by this effect cannot be set up Within the Engagement Range of any Enemy Unit. This resolves instead of performing a standard action.</characteristic>
-                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-                  </characteristics>
-                  <comment>Faction Card</comment>
-                </profile>
-                <profile name="Rapid Reinforcements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e8c7-da06-3ab4-c2c5">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Friendly Point Defence Drone Unit anywhere on the battlefield, more than 1&quot; away from any Enemy model. Remove this Unit at the End of the Round.</characteristic>
-                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-                  </characteristics>
-                  <comment>Faction Card</comment>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Terran Armed Force" hidden="false" id="7ff2-1bc0-6342-f6f0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24a9-3b9d-b783-42f7"/>
-              </constraints>
-              <costs>
-                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-                <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
-                <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
-                <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
-                <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tactical Retreat" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1455-1123-d8cd-72b7">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit ignores the Disengage penalty for the remainder of the Round.</characteristic>
-                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Terran Tenacity" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="2fc7-04e9-3476-bf26">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Immediately claim the First Player Marker. No other player may claim the First Player Marker for the remainder of this Phase.</characteristic>
-                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a6e-c460-8c35-fe8f-min-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a6e-c460-8c35-fe8f-min-max"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="e4d8-c158-a9fd-08ba" id="db68-d21c-bf60-ddb4" primary="true" name="Faction"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85d3-2a6f-e4b6-6af5-min-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85d3-2a6f-e4b6-6af5-min-max"/>
-      </constraints>
-      <costs>
-        <cost name="Minerals" typeId="a66c-9b7d-e0ff-5914" value="0"/>
-        <cost name="Gas" typeId="e617-ddca-8728-f42f" value="0"/>
-        <cost name="Support" typeId="8a22-4e4a-7691-7495" value="0"/>
-        <cost name="Elite" typeId="7729-67ea-f187-8aca" value="0"/>
-        <cost name="Hero" typeId="687e-4a48-77a3-096f" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="6 Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
@@ -999,6 +918,7 @@
         <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="6ccc-4d2b-8afd-b919" primary="false" name="Armoured"/>
         <categoryLink targetId="e9d0-aa9f-8c5e-a2c3" id="0163-9f9e-79d7-e23e" primary="false" name=" Mechanical"/>
         <categoryLink targetId="46e8-c643-c323-b4c1" id="a49c-d648-5971-ec49" primary="false" name="Flying"/>
+        <categoryLink targetId="8a38-b874-adc2-a411" id="8579-cf4b-de6d-c110" primary="true" name="Other"/>
       </categoryLinks>
       <profiles>
         <profile name="Point Defense Drone" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="90c2-8549-3bc4-d51f">
@@ -1033,7 +953,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="false" id="2f91-0a90-4a5c-444c">
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -1326,6 +1246,62 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terran Armed Force" hidden="false" id="7ff2-1bc0-6342-f6f0">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Tactical Retreat" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1455-1123-d8cd-72b7">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit ignores the Disengage penalty for the remainder of the Round.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Terran Tenacity" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="2fc7-04e9-3476-bf26">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Immediately claim the First Player Marker. No other player may claim the First Player Marker for the remainder of this Phase.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="e4d8-c158-a9fd-08ba" id="8ad2-e9c7-5a3e-eb40" primary="true" name="Faction"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Raynor&apos;s Raiders" hidden="false" id="60b3-fffd-a15a-4cea">
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Ready for Pickup?" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="c737-b9b8-59f4-4222">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. The active Unit resolves the PLACE (12) effect. Models placed by this effect cannot be set up Within the Engagement Range of any Enemy Unit. This resolves instead of performing a standard action.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+          <comment>Faction Card</comment>
+        </profile>
+        <profile name="Rapid Reinforcements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e8c7-da06-3ab4-c2c5">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Friendly Point Defence Drone Unit anywhere on the battlefield, more than 1&quot; away from any Enemy model. Remove this Unit at the End of the Round.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+          <comment>Faction Card</comment>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="e4d8-c158-a9fd-08ba" id="a350-9bdd-9e8a-71e0" primary="true" name="Faction"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Marine" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="74d2-7be5-c0fe-34ad">
@@ -1432,13 +1408,10 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Faction" id="e4d8-c158-a9fd-08ba" hidden="false">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26e4-9611-66dd-116e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0779-8153-9710-294c"/>
+      </constraints>
     </categoryEntry>
     <categoryEntry name="Hero" id="be84-e5cd-5ba0-b60b" hidden="false">
       <modifiers>
@@ -1483,5 +1456,19 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Raynor&apos;s Raiders" id="87df-f89f-67c4-21cf" hidden="false"/>
+    <categoryEntry name="Other" id="8a38-b874-adc2-a411" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" childName="Raynor&apos;s Raiders" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7ff2-1bc0-6342-f6f0" shared="true" childName="Terran Armed Force" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
 </catalogue>
