@@ -732,7 +732,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pylon" hidden="false" id="b174-1572-feda-5f15">
+    <selectionEntry type="unit" import="true" name="Pylon" hidden="false" id="b174-1572-feda-5f15">
       <categoryLinks>
         <categoryLink targetId="5788-d936-b639-6407" id="ab09-3621-a57f-ac54" primary="true" name="Other"/>
         <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="2913-ffec-a79f-4fa0" primary="false" name="Armoured"/>
