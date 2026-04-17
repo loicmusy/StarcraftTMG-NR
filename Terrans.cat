@@ -268,7 +268,7 @@
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="7c54-afdd-5a50-0ba8" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44">
+    <selectionEntry type="unit" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44" subType="unit-group">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
