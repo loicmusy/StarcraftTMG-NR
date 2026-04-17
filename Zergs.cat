@@ -120,7 +120,7 @@
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="3 Corpser (Roach)" hidden="false" id="444a-8557-cdae-3146">
+    <selectionEntry type="unit" import="true" name="3 Corpsers (Roach)" hidden="false" id="444a-8557-cdae-3146">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -161,16 +161,6 @@
           </characteristics>
           <comment>Corpser</comment>
         </profile>
-        <profile name="Corpser" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="fd5b-2fcf-9f56-65ef">
-          <characteristics>
-            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
-            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
-            <characteristic name="Arm" typeId="08b0-2471-8408-9222">3+</characteristic>
-            <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
-            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="3499-3fdd-6ac2-1049">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (3) 4+ effect.</characteristic>
@@ -181,12 +171,6 @@
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit becomes Activated, if it has the Burrowed Status, resolve the HEAL (2) effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Burrow" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="4a96-a1ac-0461-aa14">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If this Unit is Unengaged, it gains or loses the Burrowed Status.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (2 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Roachling Infestation" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="dc13-50d5-c3df-8f3d">
@@ -213,11 +197,14 @@
                   <profiles>
                     <profile name="Tunneling Claws" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="72bd-9c33-2508-28f0">
                       <characteristics>
-                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit has the Burrowed Status, it may perform the Move and Run actions without losing that Status. It may also move through other Units’ bases. </characteristic>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit has the Burrowed Status, it may perform the Move and Run actions without losing that Status. It may also move through other Units’ bases.</characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be3-0cb4-492e-f339" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -232,14 +219,12 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <profiles>
-                    <profile name="Burrow Ambush" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e3da-59a7-677e-6ed7">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends. </characteristic>
-                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Burrow Ambush" id="e1df-3395-029c-3e5f" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d9-4a6a-fb41-ad69" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="ea24-2a36-572a-914c">
                   <costs>
@@ -250,14 +235,12 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <profiles>
-                    <profile name="Glial Reconstitution" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="c5d5-beb9-00b6-d18c">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit gains BUFF SPEED (1), or BUFF SPEED (2) if the Unit is ON CREEP. </characteristic>
-                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8349-4bd4-b9a0-7e66" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Glial Reconstitution" id="2fb1-2dd5-c002-05e7" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -272,20 +255,26 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <profiles>
-                    <profile name="Hydriodic Bile" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7f8e-efeb-4683-3010">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit&apos;s Acid Saliva weapon gains Surge Type: Light, and S Dice: D3+1. </characteristic>
-                        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b9-75d8-e66d-332a" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Hydriodic Bile" id="d63d-2cc4-e501-7200" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Roach" id="5414-63a7-2b9a-6215" hidden="false" type="profile" targetId="fd5b-2fcf-9f56-65ef">
+          <modifiers>
+            <modifier type="set" value="Corpser" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Burrow" id="6322-34af-0b77-738a" hidden="false" type="profile" targetId="4a96-a1ac-0461-aa14"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zerg Swarm" hidden="false" id="e467-3028-f8e6-6980">
       <costs>
@@ -347,7 +336,7 @@
         <infoLink name="Zerg Creep" id="0f5d-fb05-58ea-8a3b" hidden="false" type="profile" targetId="ace7-328b-a155-9023"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Hydralisk" hidden="false" id="f3bd-2be6-81f6-5d38">
+    <selectionEntry type="unit" import="true" name="2 Hydralisks" hidden="false" id="f3bd-2be6-81f6-5d38">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="140"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -580,13 +569,13 @@
         </profile>
         <profile name="Crushing Grip" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="c9d9-0041-abae-7717">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 12&quot;. That Unit counts as Activated in this Phase (set an Activation Marker next to it). </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 12&quot;. That Unit counts as Activated in this Phase (set an Activation Marker next to it).</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Mutating Carapace" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="147b-7ae4-a0c4-8a76">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 18&quot;. This Unit is eligible to make an Evade Roll against all attacks made by the selected Enemy Unit, with a +2 Modifier applied to those Evade Rolls. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 18&quot;. This Unit is eligible to make an Evade Roll against all attacks made by the selected Enemy Unit, with a +2 Modifier applied to those Evade Rolls.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -604,13 +593,13 @@
         </profile>
         <profile name="Leaping Strike" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="fcd3-743a-1134-65b6">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">If Unengaged, resolve the PLACE (6) effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">If Unengaged, resolve the PLACE (6) effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="6ba6-0865-8af9-aae1">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -634,7 +623,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26b3-981e-bcb5-13c9"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Kerrigan Swarm Raptor (Zergling)" hidden="true" id="3247-0166-f0fa-fa45">
+    <selectionEntry type="unit" import="true" name="6 Kerrigan Swarm Raptors (Zergling)" hidden="true" id="3247-0166-f0fa-fa45">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13fc-089d-f4a1-791b"/>
       </constraints>
@@ -649,27 +638,15 @@
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Raptor Strain" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="948d-89c9-a604-a463">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit can move through IMPASSABLE TERRAIN of Size 4 or less and change elevation without using ACCESS POINTS.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Leap" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="1a71-3586-9ef7-9a96">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, add 2 to the Charge Distance. </characteristic>
-            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Adrenal Overload" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="fa36-4feb-4201-a6e0">
-          <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"> This Unit gains a +1 Modifier to all IMPACT Hit Rolls.</characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, add 2 to the Charge Distance.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="5a4b-47c3-1a24-d10b">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 5+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 5+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -710,6 +687,8 @@
       </modifiers>
       <infoLinks>
         <infoLink name="Squadron" id="fa3b-7fa3-8c9e-804e" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
+        <infoLink name="Raptor Strain" id="c5f1-b044-ef11-31b6" hidden="false" type="profile" targetId="948d-89c9-a604-a463"/>
+        <infoLink name="Adrenal Overload" id="f3eb-7d53-0fdb-b765" hidden="false" type="profile" targetId="fa36-4feb-4201-a6e0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Omega Worm" hidden="true" id="46b5-e9a4-d359-5024">
@@ -736,7 +715,7 @@
       <profiles>
         <profile name="Detection" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="edbf-4748-b82a-cdaf">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit, they lose HIDDEN Status. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit, they lose HIDDEN Status.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -786,19 +765,19 @@
         </profile>
         <profile name="Psionic Link" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="ecc4-c985-8980-f7fb">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, if there are at least 7 Friendly models Within 6&quot; of this Unit, it may resolve its Special Ability with the BM cost reduced by 1. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, if there are at least 7 Friendly models Within 6&quot; of this Unit, it may resolve its Special Ability with the BM cost reduced by 1.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Transfusion" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="9c40-efaf-49fc-358b">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when another Friendly Biological Unit (including a Structure) suffers Damage Within 4&quot;. Reduce the Total Damage before allocation by 2. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when another Friendly Biological Unit (including a Structure) suffers Damage Within 4&quot;. Reduce the Total Damage before allocation by 2.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Spawn Creep Tumor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="2528-74d8-fcaf-2ad1">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Set a Creep Tumor token in base-to-base contact with this Unit. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Set a Creep Tumor token in base-to-base contact with this Unit.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -834,7 +813,7 @@
         </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="4755-4acf-e681-e8eb">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -875,11 +854,14 @@
                   <profiles>
                     <profile name="Creep Speed" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="cfb3-89a3-64e9-c8cd">
                       <characteristics>
-                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit is ON CREEP, increase this Unit&apos;s Speed characteristic by 2. </characteristic>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit is ON CREEP, increase this Unit&apos;s Speed characteristic by 2.</characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d4-a420-699e-0bdf" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -897,11 +879,380 @@
                   <profiles>
                     <profile name="Domineering Presence" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="f982-ae36-040e-d9fe">
                       <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select another Friendly Unit Within 6&quot; (Line of Sight is not required). That Unit’s Supply characteristic is increased by 1 for Controlling and Contesting Mission Markers and completing objectives. </characteristic>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select another Friendly Unit Within 6&quot; (Line of Sight is not required). That Unit’s Supply characteristic is increased by 1 for Controlling and Contesting Mission Markers and completing objectives.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f5b-9057-de37-a83f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="12 Raptors (Zergling)" hidden="false" id="9351-5747-40af-3f68">
+      <categoryLinks>
+        <categoryLink targetId="8312-ca6b-fa38-deef" id="d190-202f-dfd2-0e11" primary="false" name="Light"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="185b-79e5-712f-04de" primary="false" name="Ground"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="f748-825a-7634-de00" primary="false" name="Biological"/>
+        <categoryLink targetId="485c-e8a3-ec4d-88a3" id="3c5d-1215-11f0-06c2" primary="true" name="Core"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Raptor (Zergling)" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="6e89-3989-baf9-191b">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">5/9</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">4+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="24d2-9fcd-7f31-148b">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (1) 5+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Reinforce" hidden="false" id="72fd-e873-2e8d-95f6">
+          <costs>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="60"/>
+            <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+            <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+            <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9872-2f6f-f3de-2513"/>
+          </constraints>
+          <modifiers>
+            <modifier type="replace" value="18" field="name" scope="unit" arg="12" position="1"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Squadron" id="fda3-3728-9726-e942" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
+        <infoLink name="Raptor Strain" id="58df-8073-a0ff-c4c1" hidden="false" type="profile" targetId="948d-89c9-a604-a463"/>
+        <infoLink name="Adrenal Overload" id="3720-eef9-e31d-5e10" hidden="false" type="profile" targetId="fa36-4feb-4201-a6e0"/>
+        <infoLink name="Metabolic Boost" id="07e5-edee-51d2-ce0d" hidden="false" type="profile" targetId="48be-d8b9-d2f4-1f6b"/>
+        <infoLink name="Claws" id="1038-dc10-b5c2-3d1e" hidden="false" type="profile" targetId="2597-691d-ea92-b3d9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="202b-cde4-e9ad-71b8" shared="true" childName="Shredding Claws" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="f38c-14d5-01c6-0e4c" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="aeeb-d7c2-7c53-7e6d" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="e050-08d4-bc60-7f75">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Burrow Ambush" id="901d-89d6-bc78-e2a8" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="72fd-e873-2e8d-95f6" shared="true" childName="Reinforce"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0417-74a5-b8cd-8f15" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combat Phase" id="30bc-4d09-9206-a7c5" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shredding Claws" hidden="false" id="202b-cde4-e9ad-71b8">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Shredding Claws" id="3b84-b3b9-3eff-29f8" hidden="false" type="profile" targetId="f9de-0c36-66be-f7a4"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0622-7f14-f429-33d6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="c26a-7b5c-202c-a3bc">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed0d-b999-ba09-4fe1" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Adrenal Glands" id="ca9a-6c8d-c384-36bf" hidden="false" type="profile" targetId="56c8-dfe9-d59a-dd79"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="3 Roaches" hidden="false" id="4be7-9bbf-963b-0054">
+      <profiles>
+        <profile name="Roaches" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="7f10-ba72-d9d1-9578">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">3+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Acid Saliva" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="27d7-11ea-efe7-3d4b">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+        <profile name="Regeneration" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="f1b1-8fb2-b382-dbd9">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit becomes Activated, if it has the Burrowed Status, resolve the HEAL (2) effect. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="cdbd-7b46-5add-cca1">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Burrow" id="febc-b139-9546-c836" hidden="false" type="profile" targetId="4a96-a1ac-0461-aa14"/>
+        <infoLink name="Claws" id="90d3-d63b-68eb-7ad5" hidden="false" type="profile" targetId="9991-19ca-327a-9240"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="0bd7-6b09-b36d-6e5e" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phase" id="26c5-1d4b-b6de-3ff4" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Tunneling Claws" hidden="false" id="55ee-594c-e06a-06f9">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Tunneling Claws" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8f96-9800-b600-f89b">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit has the Burrowed Status, it may perform the Move and Run actions without losing that Status. It may also move through other Units’ bases. </characteristic>
+                        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Movement Phase" id="3b44-840d-98fa-f5ee" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="67f4-fb4c-0670-e766">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Burrow Ambush" id="cdc8-0ecb-9a0a-d27a" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="5346-8e03-f4ba-cb41">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Glial Reconstitution" id="eabf-6d32-3cac-697b" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="1f99-51e8-bb63-51ab" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hydriodic Bile" hidden="false" id="4caf-b43c-1dc8-8fa7">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Hydriodic Bile" id="a147-bb34-981f-0a2a" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Roachling" hidden="false" id="dab9-dc56-5a49-a23c">
+      <categoryLinks>
+        <categoryLink targetId="576e-0d70-bca0-9668" id="d116-a564-26ce-d2aa" primary="true" name="Other"/>
+        <categoryLink targetId="8312-ca6b-fa38-deef" id="c0f9-4a10-f524-a3b7" primary="false" name="Light"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="6a6c-6b6d-a0e1-d832" primary="false" name="Ground"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="32c6-4d69-6c57-692b" primary="false" name="Biological"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Roachling" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="aeed-66ea-908f-35fd">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Underdeveloped Claws" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="a95d-fa8b-efe9-c91c">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot gain Burrowed Status. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Claws" id="f22b-5230-0475-1128" hidden="false" type="profile" targetId="9991-19ca-327a-9240"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="18 Swarmling" hidden="false" id="74a4-9ff6-ac5b-b654">
+      <categoryLinks>
+        <categoryLink targetId="485c-e8a3-ec4d-88a3" id="1f95-7640-d717-393e" primary="true" name="Core"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="270"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="18 Swarmling" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="7359-8c32-b77f-91aa">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/8</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zergling Reconstitution" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="ee95-b8ab-2269-91f0">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the RESPAWN (2) effect, or RESPAWN (3) if the Unit is ON CREEP. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="3b0d-1c01-99a1-6a4f">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (1) 5+ effect. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Claws" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="c6d7-f830-eae0-d91a">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Squadron" id="5753-fa57-2e6a-2708" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
+        <infoLink name="Metabolic Boost" id="7b70-37b4-6a78-8c7a" hidden="false" type="profile" targetId="48be-d8b9-d2f4-1f6b"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="7b6f-7d84-6e73-f79c" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="d341-5207-2525-6178" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="fa26-e5b2-2d92-9f56">
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Burrow Ambush" id="faaa-301c-2f75-f8da" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -919,9 +1270,100 @@
     </profile>
     <profile name="Burrow Ambush" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="6a03-719a-49fe-1fd4">
       <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends. </characteristic>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Raptor Strain" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="948d-89c9-a604-a463">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit can move through IMPASSABLE TERRAIN of Size 4 or less and change elevation without using ACCESS POINTS.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Adrenal Overload" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="fa36-4feb-4201-a6e0">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit gains a +1 Modifier to all IMPACT Hit Rolls.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Metabolic Boost" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="48be-d8b9-d2f4-1f6b">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, roll 2D6 instead of D6 and use the higher result to add to the Unit’s Speed characteristic.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Claws" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="2597-691d-ea92-b3d9">
+      <characteristics>
+        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+        <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Light</characteristic>
+        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
+        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+      </characteristics>
+      <comment>Raptors</comment>
+    </profile>
+    <profile name="Shredding Claws" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="f9de-0c36-66be-f7a4">
+      <characteristics>
+        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+        <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Light, Armoured</characteristic>
+        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
+        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+      </characteristics>
+      <comment>Raptors</comment>
+    </profile>
+    <profile name="Adrenal Glands" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="56c8-dfe9-d59a-dd79">
+      <characteristics>
+        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">This Unit’s Claws and Shredding Claws weapons gain PRECISION (2).</characteristic>
+        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Roach" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="fd5b-2fcf-9f56-65ef">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">3+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Burrow" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="4a96-a1ac-0461-aa14">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If this Unit is Unengaged, it gains or loses the Burrowed Status.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (2 BM)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Glial Reconstitution" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="c5d5-beb9-00b6-d18c">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit gains BUFF SPEED (1), or BUFF SPEED (2) if the Unit is ON CREEP.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hydriodic Bile" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7f8e-efeb-4683-3010">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit&apos;s Acid Saliva weapon gains Surge Type: Light, and S Dice: D3+1.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Claws" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="9991-19ca-327a-9240">
+      <characteristics>
+        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+        <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+        <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+      </characteristics>
+      <comment>Roach(ling)</comment>
     </profile>
   </sharedProfiles>
 </catalogue>

@@ -243,9 +243,12 @@ The player must have sufficient Available Supply. If the Unit’s Current Supply
 If the Parent is not present on the battlefield, this Unit can be Activated normally.</description>
       <alias>SUMMON</alias>
     </rule>
-    <rule name="ANTI-EVADE (X)" id="d273-74d1-fff7-7002" hidden="false">
-      <description>When resolving an attack with this weapon against Enemy Units, the target Unit suffers a -X Modifier to its Evade Roll for this attack (Part 8.7.4, Step 4).</description>
-      <alias>ANTI-EVADE</alias>
+    <rule name="RESPAWN (X)" id="d273-74d1-fff7-7002" hidden="false">
+      <description>Return up to X Destroyed models to this Unit.
+- The return cannot increase the Unit’s Current Supply Value. Do not return a model if doing so would push the Unit into a higher Supply bracket.
+- Set each returned model in Base-to-Base contact with an existing model in the Unit. Returned models cannot be set Within the Engagement Range of any Enemy Unit.
+- If a model cannot be set legally, it cannot be returned.</description>
+      <alias>RESPAWN</alias>
     </rule>
     <rule name="ON CREEP" id="6a15-064c-2136-2005" hidden="false">
       <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
@@ -260,6 +263,10 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="INSTANT" id="a6a8-9065-8680-ddbd" hidden="false">
       <description>Enemy Units cannot declare or resolve Reaction abilities in response to attacks made with this weapon.</description>
+    </rule>
+    <rule name="ANTI-EVADE (X)" id="cfd0-ab4b-fc25-34be" hidden="false">
+      <description>When resolving an attack with this weapon against Enemy Units, the target Unit suffers a -X Modifier to its Evade Roll for this attack (Part 8.7.4, Step 4).</description>
+      <alias>ANTI-EVADE</alias>
     </rule>
   </sharedRules>
   <categoryEntries>

@@ -268,7 +268,7 @@
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="7c54-afdd-5a50-0ba8" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Marauders" hidden="false" id="1e27-1f32-b4a9-3c44">
+    <selectionEntry type="unit" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -410,7 +410,6 @@
             <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
             <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-            <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
           </characteristics>
           <comment>Marauder</comment>
         </profile>
@@ -431,7 +430,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
         </profile>
         <profile name="Marauder" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
