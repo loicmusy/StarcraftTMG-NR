@@ -268,7 +268,7 @@
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="7c54-afdd-5a50-0ba8" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44">
+    <selectionEntry type="model" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -288,7 +288,7 @@
             <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="replace" value="4" field="name" scope="unit" arg="2" position="1"/>
+            <modifier type="replace" value="4" field="name" scope="model" arg="2" position="1"/>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8dc-cb49-23f8-636a"/>
@@ -442,7 +442,7 @@
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Concusive Shells" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c93e-c4b1-3b0d-5799">
+        <profile name="Concusive Shells" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c93e-c4b1-3b0d-5799" noindex="true">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy declares a Charge against a Friendly Unit Within 8&quot;, that Enemy gains DEBUFF Speed (2).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 CP)</characteristic>

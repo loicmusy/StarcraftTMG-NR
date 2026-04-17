@@ -899,7 +899,7 @@
         <categoryLink targetId="8312-ca6b-fa38-deef" id="d190-202f-dfd2-0e11" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="185b-79e5-712f-04de" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="f748-825a-7634-de00" primary="false" name="Biological"/>
-        <categoryLink targetId="485c-e8a3-ec4d-88a3" id="3c5d-1215-11f0-06c2" primary="true" name="Core"/>
+        <categoryLink targetId="1239-f2f6-df3a-784b" id="2755-6024-f891-e701" primary="true" name="Elite"/>
       </categoryLinks>
       <profiles>
         <profile name="Raptor (Zergling)" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="6e89-3989-baf9-191b">
@@ -1154,6 +1154,12 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="1039-d046-02b7-f5aa" primary="false" name="Armoured"/>
+        <categoryLink targetId="8b0f-c3cd-9487-5030" id="3ae4-398c-01a6-6e3c" primary="false" name="Biological"/>
+        <categoryLink targetId="b947-4784-f388-d6a2" id="5230-ecb3-0f3c-38ca" primary="false" name="Ground"/>
+        <categoryLink targetId="485c-e8a3-ec4d-88a3" id="1c17-3e5c-7cee-5b05" primary="true" name="Core"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Roachling" hidden="false" id="dab9-dc56-5a49-a23c">
       <categoryLinks>
