@@ -133,11 +133,337 @@
       <categoryLinks>
         <categoryLink targetId="5eca-d421-1fdc-a95f" id="10fe-38fe-c149-aa7e" primary="true" name="Faction"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Mass Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="4799-d1bc-6d70-9f2b">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Place a Faction Indicator anywhere on the battlefield. All Friendly Protoss Units Within 6&quot; of this Faction Indicator are removed from the battlefield and placed in Reserves.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+          <comment>Faction Card</comment>
+        </profile>
+        <profile name="Dae’Uhl" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="509f-666c-f99f-c763">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When a Friendly Unit receives Damage, reduce the Total Damage by 2 (to a minimum of 1).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Khalai" hidden="false" id="41ab-8fa0-e055-c722">
       <categoryLinks>
         <categoryLink targetId="5eca-d421-1fdc-a95f" id="84a1-453e-8a28-2833" primary="true" name="Faction"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Pylon Warp-In" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d158-0c1b-f5a7-a9c8">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If there is no Friendly Pylon on the battlefield, place a Friendly Pylon Unit anywhere on the GROUND LEVEL of the battlefield more than 10&quot; away from any Enemy model. This Round, the Pylon is not eligible to use its Special Abilities (excluding Structure).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+          <comment>Faction Card</comment>
+        </profile>
+        <profile name="Bound by the Khala" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5c86-647f-9a78-ab74">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">At the end of the active Unit’s Activation, select one other Friendly Unit eligible to Activate in the current Phase. Immediately Activate that Unit.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+          <comment>Faction Card</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge" hidden="false" id="9031-163e-ba0e-53b1">
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="25a0-99e3-cd47-24e2" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Ground Armor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d43b-2b13-5d92-99cd">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Ground Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gate Chronoboosted" hidden="false" id="9775-6b26-1f23-8cd0">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="2f38-b805-74be-3e28" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Zealous Charge" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="fa7a-e308-916c-6ead">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains BUFF Speed (2).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Quick Strikes" id="b305-a1b6-9b41-a5fd" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa9-c282-74ad-5234"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gateway" hidden="false" id="a14b-449a-ab4d-31bd">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nexus" hidden="false" id="fca5-685d-13ce-6132">
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="197c-ea64-5e9f-8b5c" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19de-077e-e4ab-8c0c"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Strategic Recall" id="d558-febf-9a01-3d10" hidden="false" type="profile" targetId="e3e8-f973-a8d1-16ef"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Ancient Pride" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="5a63-1440-5842-2af3">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Unit’s first Weapon used gains INSTANT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Observer" hidden="false" id="8ef0-1923-a76b-682a">
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="c39e-8488-5eed-611f" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2520-f1a0-0277-8a44"/>
+      </constraints>
+      <profiles>
+        <profile name="Surveillance" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="7507-f6ba-d3f4-42cc">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gravitic Boosters" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="68ee-85a2-820b-00b9">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Use after a Friendly Unit rolls a D6 for Charge Distance. Add 1 to the Charge Distance for this Unit.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Overcharged Nexus" hidden="false" id="c46e-a559-df9e-2af5">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="569a-5ec5-bdb9-1f3c" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Strategic Recall" id="f74f-8940-46db-9816" hidden="false" type="profile" targetId="e3e8-f973-a8d1-16ef"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Photon Overcharge" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="fb13-a53b-05fb-250f">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when an Enemy Unit enters the battlefield from Reserves via a location other than its own Entry Edge. That Unit immediately suffers HITS 3 (1).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1392-166e-9e69-4981"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Field" hidden="false" id="9a2a-ad36-4f4a-7bbf">
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="87af-9722-8535-de06" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdcd-371a-75a7-f729"/>
+      </constraints>
+      <profiles>
+        <profile name="Guardian Shell" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="be2f-abec-25e9-b651">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Ground Unit makes an Armour Roll. That Unit gains DODGE (2) for this roll.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twilight Council" hidden="false" id="8305-145f-bdde-9c67">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="0bfa-4c90-8dca-0116" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Veil of Shadow" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8630-ac9f-de87-1c80">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use after a Friendly Unit resolves a PLACE effect. That Unit immediately resolves the HEAL (2) effect.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapons of the Firstborn" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="6a48-613f-b3cb-9ad7">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains BUFF Range (4).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf4-aceb-e4fc-7e61"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Gate" hidden="false" id="86f1-c08a-acb6-ab9c">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="625c-47d0-a001-6950" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fbe-3a38-6194-1c07"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Quick Strikes" id="a51c-fc6b-9638-266e" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Warp In" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="2705-6d37-8461-557d">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Ground Unit Deploys from any table edge that is not a player’s Entry Edge. This deployment must end more than 10&quot; away from any Enemy model. The controlling player cannot use this ability if another Friendly Ground Unit has already Deployed this Round.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Prism" hidden="false" id="adaa-58e7-37fc-bec8">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Phase" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="60ce-bc67-59ed-0c90">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit resolves the PLACE (3) effect.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warp Conduit" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1e30-9c91-1615-0500">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield more than 10&quot; away from any Enemy model. At the End of the Round, the controlling player may Deploy one Ground Unit from Reserves in base-to-base contact with this Faction Indicator.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3b-9e13-7eb7-66c5"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
+  <sharedProfiles>
+    <profile name="New Profile" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="acac-c4b1-a208-79b9">
+      <characteristics>
+        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b"/>
+        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52"/>
+      </characteristics>
+    </profile>
+    <profile name="Quick Strikes" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="7995-a465-9333-17ea">
+      <characteristics>
+        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">The active Unit’s first Close Combat Weapon used gains PRECISION (2).</characteristic>
+        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="New Profile" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="4c1d-d26a-aead-022d">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"/>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4"/>
+      </characteristics>
+    </profile>
+    <profile name="Strategic Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e3e8-f973-a8d1-16ef">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is placed in Reserves instead of performing an action.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
