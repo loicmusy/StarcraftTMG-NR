@@ -601,6 +601,13 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BULKY, PIERCE Armoured (3)</characteristic>
             <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fdc1-c3d4-fb61-35a0" shared="true" childName="C-14 Rifle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Jim Raynor" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="c5c5-503e-9801-70ed">
           <characteristics>
@@ -768,6 +775,18 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), SIDEARM</characteristic>
             <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1101-160e-5a07-2533" shared="true" childName="Haywire Missiles"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e2f6-235e-8ce4-8ddd" shared="true" childName="Scatter Missiles"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Stomp" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="8e59-a194-627b-01c0">
           <characteristics>
