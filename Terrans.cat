@@ -432,7 +432,7 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Marauder" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
+        <profile name="2 Marauder" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
