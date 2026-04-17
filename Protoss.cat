@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="a993-a28e-5c72-5b0a" name="Protoss" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Core" id="3057-36a6-b4b3-cddb" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Elite" id="6089-3431-846d-7bb8" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Faction" id="5eca-d421-1fdc-a95f" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Hero" id="bd6f-bae8-7dee-67be" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Other" id="5788-d936-b639-6407" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Raynor&apos;s Raiders" id="4263-804f-d90a-866b" hidden="false"/>
+    <categoryEntry name="Support" id="b8a5-0602-9633-c738" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Tactical" id="acb5-b55f-9492-5149" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="New Force" id="953a-9292-780a-cf11" hidden="false">
+      <modifiers>
+        <modifier type="add" value="Not enough Core Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="472f-46af-8e02-bfbf" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Elite Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="f5f9-3591-0f2d-0a53" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Support Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="31a6-c1f1-3d47-fa76" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Not enough Hero Supply." field="error">
+          <conditions>
+            <condition type="lessThan" value="0" field="7e61-585f-b715-85e0" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Faction" hidden="false" id="4c69-41f5-5e7c-b6b2" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Tactical" hidden="false" id="6f60-bd85-a647-e9f7" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Core" hidden="false" id="faf6-c124-185f-c6f5" targetId="3057-36a6-b4b3-cddb"/>
+        <categoryLink name="Elite" hidden="false" id="52dd-38fe-bfb1-7740" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Support" hidden="false" id="5d55-cd58-736d-dc5c" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Hero" hidden="false" id="1ee7-53d7-29b9-4ba3" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Other" hidden="false" id="7455-de9b-51ee-a349" targetId="5788-d936-b639-6407"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Daelaam" hidden="false" id="7d43-eac6-9edf-84f4">
+      <categoryLinks>
+        <categoryLink targetId="5eca-d421-1fdc-a95f" id="10fe-38fe-c149-aa7e" primary="true" name="Faction"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Khalai" hidden="false" id="41ab-8fa0-e055-c722">
+      <categoryLinks>
+        <categoryLink targetId="5eca-d421-1fdc-a95f" id="84a1-453e-8a28-2833" primary="true" name="Faction"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

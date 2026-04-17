@@ -4,7 +4,7 @@
     <forceEntry name="Army" id="5fac-f026-d203-05cb" hidden="false">
       <categoryLinks>
         <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
-        <categoryLink name=" Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
+        <categoryLink name="Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
         <categoryLink name="Core" hidden="false" id="828b-7d99-85b2-0a8d" targetId="3874-6187-bb5c-3ad3"/>
         <categoryLink name="Elite" hidden="false" id="088f-a2ec-7363-59df" targetId="72c0-1ca1-1869-32d2"/>
         <categoryLink name="Support" hidden="false" id="f9ab-270f-6d6c-0029" targetId="c453-061d-5a99-2d4f"/>
