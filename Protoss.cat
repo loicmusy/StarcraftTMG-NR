@@ -439,6 +439,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3b-9e13-7eb7-66c5"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="5d4c-127b-7404-a9e7" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="4 Adept" hidden="false" id="e7ab-733c-ce24-a503">
       <costs>
@@ -695,6 +698,7 @@
         <categoryLink targetId="b947-4784-f388-d6a2" id="7220-5d06-2ecb-c906" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="f794-8794-7860-c849" primary="false" name="Biological"/>
         <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="ff09-1eea-a6cd-a070" primary="false" name="Unique"/>
+        <categoryLink targetId="6089-3431-846d-7bb8" id="a7e9-294e-db9d-3eb9" primary="true" name="Elite"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12c-c5c7-136d-2f57"/>
@@ -1043,10 +1047,10 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="3 Zealots" hidden="false" id="9414-3605-697b-819a">
       <categoryLinks>
-        <categoryLink targetId="6089-3431-846d-7bb8" id="fed0-ef09-4f49-bdd8" primary="true" name="Elite"/>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="87ba-4bb7-6e03-46f4" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="3f60-0985-eb44-caa9" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="a81c-31e5-1fa6-b6c1" primary="false" name="Biological"/>
+        <categoryLink targetId="3057-36a6-b4b3-cddb" id="af51-4ed2-d4ed-9c97" primary="true" name="Core"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
