@@ -36,7 +36,7 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="6 Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
+    <selectionEntry type="model" import="true" name="6 Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -776,7 +776,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="3 Medics" hidden="false" id="f7d9-3214-ccc3-9f04">
+    <selectionEntry type="unit" import="true" name="3 Medics" hidden="false" id="f7d9-3214-ccc3-9f04" subType="unit-group">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="110"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
