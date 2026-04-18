@@ -247,6 +247,9 @@
       <infoLinks>
         <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="b607-1f5f-939a-f6bd" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nexus" hidden="false" id="fca5-685d-13ce-6132">
       <categoryLinks>
@@ -439,6 +442,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3b-9e13-7eb7-66c5"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="5d4c-127b-7404-a9e7" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="4 Adept" hidden="false" id="e7ab-733c-ce24-a503">
       <costs>
@@ -585,7 +591,7 @@
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0677-6b84-e93a-b8b9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0677-6b84-e93a-b8b9"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
@@ -680,7 +686,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="false" id="84f3-7234-2df2-12d5">
+    <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="true" id="84f3-7234-2df2-12d5">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -695,6 +701,7 @@
         <categoryLink targetId="b947-4784-f388-d6a2" id="7220-5d06-2ecb-c906" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="f794-8794-7860-c849" primary="false" name="Biological"/>
         <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="ff09-1eea-a6cd-a070" primary="false" name="Unique"/>
+        <categoryLink targetId="6089-3431-846d-7bb8" id="a7e9-294e-db9d-3eb9" primary="true" name="Elite"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12c-c5c7-136d-2f57"/>
@@ -731,8 +738,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pylon" hidden="false" id="b174-1572-feda-5f15">
+    <selectionEntry type="unit" import="true" name="Pylon" hidden="true" id="b174-1572-feda-5f15">
       <categoryLinks>
         <categoryLink targetId="5788-d936-b639-6407" id="ab09-3621-a57f-ac54" primary="true" name="Other"/>
         <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="2913-ffec-a79f-4fa0" primary="false" name="Armoured"/>
@@ -772,6 +786,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e89-5cb9-830d-b681"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" includeChildSelections="true" includeChildForces="true" childName="Khalai"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="2 Sentry" hidden="false" id="c2e7-d982-ac07-63c6">
       <costs>
@@ -959,7 +980,7 @@
               <modifiers>
                 <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -987,7 +1008,7 @@
               <modifiers>
                 <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1043,10 +1064,10 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="3 Zealots" hidden="false" id="9414-3605-697b-819a">
       <categoryLinks>
-        <categoryLink targetId="6089-3431-846d-7bb8" id="fed0-ef09-4f49-bdd8" primary="true" name="Elite"/>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="87ba-4bb7-6e03-46f4" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="3f60-0985-eb44-caa9" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="a81c-31e5-1fa6-b6c1" primary="false" name="Biological"/>
+        <categoryLink targetId="3057-36a6-b4b3-cddb" id="af51-4ed2-d4ed-9c97" primary="true" name="Core"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
