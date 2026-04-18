@@ -588,7 +588,7 @@
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0677-6b84-e93a-b8b9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0677-6b84-e93a-b8b9"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
