@@ -247,6 +247,9 @@
       <infoLinks>
         <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="acb5-b55f-9492-5149" id="b607-1f5f-939a-f6bd" primary="true" name="Tactical"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nexus" hidden="false" id="fca5-685d-13ce-6132">
       <categoryLinks>
