@@ -686,7 +686,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="false" id="84f3-7234-2df2-12d5">
+    <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="true" id="84f3-7234-2df2-12d5">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -738,8 +738,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pylon" hidden="false" id="b174-1572-feda-5f15">
+    <selectionEntry type="unit" import="true" name="Pylon" hidden="true" id="b174-1572-feda-5f15">
       <categoryLinks>
         <categoryLink targetId="5788-d936-b639-6407" id="ab09-3621-a57f-ac54" primary="true" name="Other"/>
         <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="2913-ffec-a79f-4fa0" primary="false" name="Armoured"/>
@@ -779,6 +786,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e89-5cb9-830d-b681"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" includeChildSelections="true" includeChildForces="true" childName="Khalai"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="2 Sentry" hidden="false" id="c2e7-d982-ac07-63c6">
       <costs>
