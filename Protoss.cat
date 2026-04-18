@@ -980,7 +980,7 @@
               <modifiers>
                 <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1008,7 +1008,7 @@
               <modifiers>
                 <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
                   </conditions>
                 </modifier>
               </modifiers>
