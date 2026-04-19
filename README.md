@@ -5,6 +5,10 @@
 
 [![Rule Version](https://img.shields.io/badge/Rule%20Version-v1.4beta-orange)](https://sc.starcraft-tmg.com/)
 
+This project is not affiliated with or endorsed by Archon Studio. 
+
+Starcraft: The Miniature Game and all associated names and assets are the property of their respective owners.
+
 Community-maintained data files for [**Starcraft: The Miniature Game**](https://starcraft-tmg.com/)) in the [New Recruit](https://newrecruit.eu) roster builder format. This repository covers unit stats, faction rosters, abilities, and all associated game data needed to build and validate lists within the app.
 
 ---
