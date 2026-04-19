@@ -45,4 +45,4 @@ Releases are tagged following `[gameversion]v[currentrevision]`.
 
 All data is sourced from the official [**Archon Studio** website](https://sc.starcraft-tmg.com/)
 
-If you spot an inaccuracy, please open an issue and cite the relevant document so it can be verified before a fix is merged.
+If you spot an inaccuracy, please open an issue and cite the relevant document so it can be verified before a fix is merged. You can use the "Report Issue" button on New Recruit and it will automatically open an Issue on Github.
