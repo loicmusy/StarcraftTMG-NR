@@ -64,8 +64,8 @@
           </modifiers>
         </infoLink>
         <infoLink name="DEBUFF" id="1a9f-af01-37f9-eb71" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
-        <infoLink name="PIERCE [TAG] X" id="3ba4-f154-b744-2d02" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
         <infoLink name="PRECISION (X)" id="900a-84d6-15d1-d79c" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="5ce8-f9dc-ab2d-cb3d" hidden="false" type="rule" targetId="0ecb-de24-de57-9c58"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Reinforce" hidden="false" id="6beb-c060-9e77-4256">
@@ -150,7 +150,6 @@
                         <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
                         <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
                         <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (18&quot;), SPECIALIST</characteristic>
-                        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -184,7 +183,6 @@
                         <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
                         <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
                         <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LONG RANGE (18&quot;), SIDEARM, SPECIALIST</characteristic>
-                        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -200,7 +198,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Slugthrower" id="91ae-5a7c-24dd-b69a" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
-                    <infoLink name="IMPACT (X) Y" id="dddf-450a-d5ac-fd6f" hidden="false" type="rule" targetId="7805-5c0f-7d68-90c8"/>
+                    <infoLink name="ANTI-EVADE (X)" id="dddf-450a-d5ac-fd6f" hidden="false" type="rule" targetId="cfd0-ab4b-fc25-34be"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f52-c075-8ef2-74b8"/>
@@ -393,6 +391,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <infoLinks>
+                    <infoLink name="LONG RANGE (X&quot;)" id="6646-51cd-7dfc-ec11" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -449,6 +450,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="5707-32d3-8fa6-3091" hidden="false" type="rule" targetId="e9c5-7999-24b7-4858"/>
+        <infoLink name="PIERCE [TAG] X" id="8f6f-bad7-8e79-3c39" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="7b19-7d6b-ca53-155b" hidden="false" type="rule" targetId="0ecb-de24-de57-9c58"/>
+        <infoLink name="PRECISION (X)" id="04a3-ce12-1acf-519a" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="2579-5409-ffdc-e30d" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Jim Raynor" hidden="false" id="bb87-11ec-f8a2-2390">
       <costs>
@@ -489,7 +497,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (2), SIDEARM, PINPOINT</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
         </profile>
         <profile name="Bayonet" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="e914-b30d-9c26-42a8">
@@ -502,7 +509,6 @@
             <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
             <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-            <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
           </characteristics>
           <comment>Jim Raynor</comment>
         </profile>
@@ -516,7 +522,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BULKY, PIERCE Armoured (3)</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -558,6 +563,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="ANTI-EVADE (X)" id="7d88-cea5-d7fc-50dd" hidden="false" type="rule" targetId="cfd0-ab4b-fc25-34be"/>
+        <infoLink name="PIERCE [TAG] X" id="3528-47d3-986e-5dd7" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
+        <infoLink name="PINPOINT" id="8445-a7a1-6bd9-a572" hidden="false" type="rule" targetId="f9ad-69a2-80e6-c3a5"/>
+        <infoLink name="BULKY" id="25ec-b111-4273-a997" hidden="false" type="rule" targetId="f460-74cd-768c-a9e4"/>
+        <infoLink name="SIDEARM" id="a4c4-293d-35cb-0986" hidden="false" type="rule" targetId="870d-b754-2961-8cb6"/>
+        <infoLink name="REPETABLE" id="137a-8949-2c0f-6ec2" hidden="false" type="rule" targetId="f895-258a-9487-f59a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
       <costs>
@@ -599,6 +612,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <infoLinks>
+                    <infoLink name="PRECISION (X)" id="4e37-a17d-0cc9-623c" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -619,17 +635,21 @@
                         <profile name="Scatter Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="e3a6-04a4-abf9-97e6">
                           <characteristics>
                             <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
-                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
                             <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
                             <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
                             <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
                             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
                             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
                             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LOCKED IN (6), LONG RANGE (24&quot;), SIDEARM</characteristic>
-                            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
+                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
+                      <infoLinks>
+                        <infoLink name="LOCKED IN (X)" id="ee77-bb28-b827-4731" hidden="false" type="rule" targetId="7cfe-f96a-bbcb-8220"/>
+                        <infoLink name="LONG RANGE (X&quot;)" id="4acf-97d6-63e5-6d44" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+                        <infoLink name="INDIRECT FIRE" id="d36f-1bbd-2819-b2d4" hidden="false" type="rule" targetId="a19f-0594-dd63-2656"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Haywire Missiles" hidden="false" id="1101-160e-5a07-2533">
                       <costs>
@@ -651,10 +671,12 @@
                             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
                             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
                             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (3), SIDEARM</characteristic>
-                            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
                           </characteristics>
                         </profile>
                       </profiles>
+                      <infoLinks>
+                        <infoLink name="PIERCE [TAG] X" id="e44e-32ce-1616-1f68" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -677,7 +699,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (18&quot;)</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
         </profile>
         <profile name="Hellfire Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="ba84-6d28-7d46-adfd">
@@ -690,7 +711,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), SIDEARM</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -715,7 +735,6 @@
             <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
             <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-            <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
           </characteristics>
           <comment>Goliath</comment>
         </profile>
@@ -729,7 +748,6 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PINPOINT, SIDEARM</characteristic>
-            <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
           </characteristics>
         </profile>
         <profile name="Goliath" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="efbb-82d6-961e-ef21">
@@ -760,21 +778,13 @@
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Stomp" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="ed7d-92c6-35ba-453f">
-          <characteristics>
-            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
-            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
-            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">4</characteristic>
-            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
-            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
-            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
-            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
-            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-            <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
-          </characteristics>
-          <comment>Goliath</comment>
-        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="SIDEARM" id="1ea8-558b-1a9d-f255" hidden="false" type="rule" targetId="870d-b754-2961-8cb6"/>
+        <infoLink name="LONG RANGE (X&quot;)" id="510b-098a-c703-4e2f" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+        <infoLink name="ANTI-EVADE (X)" id="0973-a900-bc1c-895f" hidden="false" type="rule" targetId="cfd0-ab4b-fc25-34be"/>
+        <infoLink name="PINPOINT" id="46e5-c6ed-456d-854d" hidden="false" type="rule" targetId="f9ad-69a2-80e6-c3a5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="3 Medics" hidden="false" id="f7d9-3214-ccc3-9f04">
       <costs>
@@ -898,6 +908,9 @@
       </profiles>
       <infoLinks>
         <infoLink name="Strike" id="2495-4c57-e27e-5cf9" hidden="false" type="profile" targetId="2575-908c-7384-dc80"/>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="899f-4fba-2e3f-ec6d" hidden="false" type="rule" targetId="e9c5-7999-24b7-4858"/>
+        <infoLink name="LONG RANGE (X&quot;)" id="6a28-4bab-9a40-647e" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+        <infoLink name="HEAL (X)" id="2f13-6c31-854e-9b45" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
@@ -944,9 +957,10 @@
       </profiles>
       <infoLinks>
         <infoLink name="Structure" id="97fe-492f-c084-fb76" hidden="false" type="profile" targetId="d3a4-0dbc-a379-e0fa"/>
+        <infoLink name="DISPLACEMENT" id="bd28-f3ce-89f2-6fc9" hidden="false" type="rule" targetId="eb27-1500-88ca-d0f0"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="false" id="2f91-0a90-4a5c-444c">
+    <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="true" id="2f91-0a90-4a5c-444c">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -964,18 +978,20 @@
         <infoLink name="C-14 Rifle" id="ea01-0a3e-9955-c143" hidden="false" type="profile" targetId="135f-4d13-ea93-602d"/>
         <infoLink name="Marine" id="b366-8b0b-2312-1f45" hidden="false" type="profile" targetId="74d2-7be5-c0fe-34ad"/>
         <infoLink name="DEBUFF" id="bf17-ff55-9330-9c63" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
-        <infoLink name="PIERCE [TAG] X" id="4a17-5ce9-e206-50a5" hidden="false" type="rule" targetId="8a5b-c6c7-6abf-6879"/>
-        <infoLink name="PRECISION (X)" id="4431-68d4-a0b8-78a6" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
         <infoLink name="Stimpack" id="d11a-cc3f-8ce2-ca92" hidden="false" type="profile" targetId="cedc-b9f6-3d53-5ae3"/>
         <infoLink name="Slugthrower" id="e85f-5996-4965-00f1" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
         <infoLink name="Grenade - Frag" id="279b-fc9c-a023-8674" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
         <infoLink name="Bayonet" id="7500-ddde-0d9b-8c93" hidden="false" type="profile" targetId="140c-a208-86f3-cf96"/>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="6a29-d5f8-008d-99af" hidden="false" type="rule" targetId="0ecb-de24-de57-9c58"/>
+        <infoLink name="PRECISION (X)" id="c557-7d91-f7c0-38e1" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+        <infoLink name="PLACE (X)" id="8f4d-b909-490e-ed9d" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="3874-6187-bb5c-3ad3" id="7429-7782-479e-c7cf" primary="true" name="Core"/>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="a042-8a4e-19f2-ac4a" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="0bdb-5b60-1464-0a82" primary="false" name="Ground"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="d5da-d784-6cb3-a1d3" primary="false" name="Biological"/>
+        <categoryLink targetId="87df-f89f-67c4-21cf" id="42ab-e53a-24b8-45e3" primary="false" name="Raynor&apos;s Raiders"/>
       </categoryLinks>
       <profiles>
         <profile name="Rapid Reinforcements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="19a8-73ca-085a-8f13">
@@ -991,6 +1007,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="60b3-fffd-a15a-4cea" shared="true" includeChildSelections="true" includeChildForces="true" childName="Raynor&apos;s Raiders"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Academy" hidden="false" id="9074-b072-2c11-ab2c">
       <costs>
@@ -1042,6 +1065,10 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="CRITICAL HIT (X)" id="df54-4450-6a2e-f9d3" hidden="false" type="rule" targetId="3f61-d287-410a-0484"/>
+        <infoLink name="TOUGH (X)" id="e691-3fb7-37a2-2aee" hidden="false" type="rule" targetId="9928-edb1-53e5-438f"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Barracks" hidden="false" id="0997-b265-1b25-6baf">
       <categoryLinks>
@@ -1169,6 +1196,10 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="TOUGH (X)" id="afc3-c6a0-d965-ace6" hidden="false" type="rule" targetId="9928-edb1-53e5-438f"/>
+        <infoLink name="CRITICAL HIT (X)" id="bba4-b380-8344-25e5" hidden="false" type="rule" targetId="3f61-d287-410a-0484"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Factory" hidden="false" id="d334-3009-6e8a-7f45">
       <costs>
@@ -1190,6 +1221,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="HEAL (X)" id="d4bc-ed4c-8182-744f" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orbital Command" hidden="false" id="2da0-87db-783a-f81d">
       <constraints>
@@ -1220,6 +1254,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="HIDDEN" id="37bf-39d4-8b3e-5ca4" hidden="false" type="rule" targetId="4bf6-1de9-71aa-02a4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Supply Depot" hidden="false" id="b641-28be-cb85-2b41">
       <costs>
@@ -1240,6 +1277,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74b9-bff9-aaef-fe96" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Terran Armed Force" hidden="false" id="7ff2-1bc0-6342-f6f0">
       <costs>
@@ -1319,7 +1359,6 @@
         <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
         <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
         <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
-        <characteristic name="Rules" typeId="67f6-1351-2ec8-7fd5"/>
       </characteristics>
     </profile>
     <profile name="Slugthrower" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7c6b-c406-4107-6bc4">
@@ -1344,7 +1383,6 @@
         <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
         <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
         <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-        <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
       </characteristics>
     </profile>
     <profile name="Bayonet" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="140c-a208-86f3-cf96">
@@ -1357,7 +1395,6 @@
         <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
         <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
         <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
-        <characteristic name="Rules" typeId="b217-fa6b-aa48-4399"/>
       </characteristics>
     </profile>
     <profile name="Stimpack" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="cedc-b9f6-3d53-5ae3">

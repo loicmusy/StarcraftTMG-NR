@@ -9,6 +9,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="161a-d3bb-0f5b-ecb9-max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Creep" hidden="false" id="7250-0862-0adc-72fe" targetId="33f8-3892-abc6-952c"/>
         <categoryLink name="Tactical" hidden="false" id="7f70-f2b6-02ef-722e" targetId="6042-132c-4895-cde4"/>
         <categoryLink name="Core" hidden="false" id="587a-9104-151c-acbc" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Elite" hidden="false" id="3118-f961-70e0-6de2" targetId="1239-f2f6-df3a-784b"/>
@@ -105,6 +106,23 @@
     </categoryEntry>
     <categoryEntry name="Kerrigan&apos;s Swarm" id="f1c3-0af6-78ba-727a" hidden="false"/>
     <categoryEntry name="Other" id="576e-0d70-bca0-9668" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="062f-f5a3-8d83-3ceb" shared="true" childName="Kerrigan&apos;s Swarm" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e467-3028-f8e6-6980" shared="true" childName="Zerg Swarm" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Creep" id="33f8-3892-abc6-952c" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4b-f124-037b-7407"/>
+      </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -221,6 +239,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Burrow Ambush" id="e1df-3395-029c-3e5f" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                    <infoLink name="PLACE (X)" id="aef5-351a-b672-072d" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d9-4a6a-fb41-ad69" includeChildSelections="false"/>
@@ -240,6 +259,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink name="Glial Reconstitution" id="2fb1-2dd5-c002-05e7" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
+                    <infoLink name="BUFF [Characteristic] (X)" id="50d9-b854-c7f6-8195" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -274,6 +294,8 @@
           </modifiers>
         </infoLink>
         <infoLink name="Burrow" id="6322-34af-0b77-738a" hidden="false" type="profile" targetId="4a96-a1ac-0461-aa14"/>
+        <infoLink name="SUMMON (Unit Name)" id="1f3c-b9a3-4370-791d" hidden="false" type="rule" targetId="1a39-f874-fdf2-c983"/>
+        <infoLink name="HEAL (X)" id="e969-e08e-498a-5017" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zerg Swarm" hidden="false" id="e467-3028-f8e6-6980">
@@ -334,6 +356,9 @@
       </profiles>
       <infoLinks>
         <infoLink name="Zerg Creep" id="0f5d-fb05-58ea-8a3b" hidden="false" type="profile" targetId="ace7-328b-a155-9023"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="eb66-7ac4-ad2e-f3d4" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+        <infoLink name="PRECISION (X)" id="78ea-2c12-088e-ef84" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+        <infoLink name="ON CREEP" id="31a1-da05-03d7-fdbd" hidden="false" type="rule" targetId="b8db-d01a-89fd-efd3"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="2 Hydralisks" hidden="false" id="f3bd-2be6-81f6-5d38">
@@ -440,6 +465,9 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1289-d1fa-a433-d5be"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="TOUGH (X)" id="236b-b346-c8d6-4400" hidden="false" type="rule" targetId="9928-edb1-53e5-438f"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lurking" hidden="false" id="e252-310d-4f25-4f64">
                   <costs>
@@ -468,6 +496,9 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed53-d680-9a83-5052"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="ON CREEP" id="880d-044f-2c15-71ec" hidden="false" type="rule" targetId="b8db-d01a-89fd-efd3"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -491,6 +522,7 @@
                   </modifiers>
                   <infoLinks>
                     <infoLink name="Burrow Ambush" id="6f25-bb6c-1ea2-bf41" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                    <infoLink name="PLACE (X)" id="be9a-e614-f745-7c17" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a92-692b-673c-e2d7"/>
@@ -527,6 +559,9 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c45-cc71-a68f-9547"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="LONG RANGE (X&quot;)" id="396d-4cf1-f762-9ab7" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -618,6 +653,8 @@
       </profiles>
       <infoLinks>
         <infoLink name="Commander" id="83da-5bae-975b-4613" hidden="false" type="profile" targetId="c429-c517-b5d9-8e78"/>
+        <infoLink name="PLACE (X)" id="d493-f8ab-92e4-41c6" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
+        <infoLink name="CRITICAL HIT (X)" id="f3c5-8c6e-9b1e-198b" hidden="false" type="rule" targetId="3f61-d287-410a-0484"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26b3-981e-bcb5-13c9"/>
@@ -672,11 +709,12 @@
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="f1c3-0af6-78ba-727a" id="9cb4-6dfc-9f60-6e7f" primary="true" name="Kerrigan&apos;s Swarm"/>
+        <categoryLink targetId="f1c3-0af6-78ba-727a" id="9cb4-6dfc-9f60-6e7f" primary="false" name="Kerrigan&apos;s Swarm"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="c780-a719-5150-9d4d" primary="false" name="Biological"/>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="e993-a15a-a665-03c9" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="bf7f-c60a-e3bb-3c33" primary="false" name="Ground"/>
         <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="58a3-20cb-53d9-d61a" primary="false" name="Unique"/>
+        <categoryLink targetId="1239-f2f6-df3a-784b" id="a7b6-7078-1395-017f" primary="true" name="Elite"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -689,6 +727,7 @@
         <infoLink name="Squadron" id="fa3b-7fa3-8c9e-804e" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
         <infoLink name="Raptor Strain" id="c5f1-b044-ef11-31b6" hidden="false" type="profile" targetId="948d-89c9-a604-a463"/>
         <infoLink name="Adrenal Overload" id="f3eb-7d53-0fdb-b765" hidden="false" type="profile" targetId="fa36-4feb-4201-a6e0"/>
+        <infoLink name="INSTANT" id="9ad5-3cf1-3d0d-9468" hidden="false" type="rule" targetId="a6a8-9065-8680-ddbd"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Omega Worm" hidden="true" id="46b5-e9a4-d359-5024">
@@ -711,6 +750,8 @@
       </modifiers>
       <infoLinks>
         <infoLink name="Structure" id="7fb9-c9f4-9782-5ad1" hidden="false" type="profile" targetId="d3a4-0dbc-a379-e0fa"/>
+        <infoLink name="ON CREEP" id="dbc1-a90d-c74c-34ed" hidden="false" type="rule" targetId="b8db-d01a-89fd-efd3"/>
+        <infoLink name="HIDDEN" id="2fbe-2d85-9ec4-e067" hidden="false" type="rule" targetId="4bf6-1de9-71aa-02a4"/>
       </infoLinks>
       <profiles>
         <profile name="Detection" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="edbf-4748-b82a-cdaf">
@@ -893,6 +934,9 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="488c-dc8b-c701-ca24" hidden="false" type="rule" targetId="e9c5-7999-24b7-4858"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="12 Raptors (Zergling)" hidden="false" id="9351-5747-40af-3f68">
       <categoryLinks>
@@ -976,6 +1020,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Burrow Ambush" id="901d-89d6-bc78-e2a8" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                    <infoLink name="PLACE (X)" id="4894-4769-9589-b51e" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
@@ -1022,6 +1067,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Adrenal Glands" id="ca9a-6c8d-c384-36bf" hidden="false" type="profile" targetId="56c8-dfe9-d59a-dd79"/>
+                    <infoLink name="PRECISION (X)" id="93a9-7c08-490a-cff8" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -1056,13 +1102,13 @@
         </profile>
         <profile name="Regeneration" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="f1b1-8fb2-b382-dbd9">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit becomes Activated, if it has the Burrowed Status, resolve the HEAL (2) effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit becomes Activated, if it has the Burrowed Status, resolve the HEAL (2) effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="cdbd-7b46-5add-cca1">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1078,6 +1124,7 @@
       <infoLinks>
         <infoLink name="Burrow" id="febc-b139-9546-c836" hidden="false" type="profile" targetId="4a96-a1ac-0461-aa14"/>
         <infoLink name="Claws" id="90d3-d63b-68eb-7ad5" hidden="false" type="profile" targetId="9991-19ca-327a-9240"/>
+        <infoLink name="HEAL (X)" id="703b-6a22-b563-e850" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="0bd7-6b09-b36d-6e5e" hidden="false">
@@ -1096,11 +1143,14 @@
                   <profiles>
                     <profile name="Tunneling Claws" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8f96-9800-b600-f89b">
                       <characteristics>
-                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit has the Burrowed Status, it may perform the Move and Run actions without losing that Status. It may also move through other Units’ bases. </characteristic>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit has the Burrowed Status, it may perform the Move and Run actions without losing that Status. It may also move through other Units’ bases.</characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e272-dc05-3f92-5d88"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1117,7 +1167,11 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Burrow Ambush" id="cdc8-0ecb-9a0a-d27a" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+                    <infoLink name="PLACE (X)" id="a4a2-d983-fc98-9d39" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724a-3d29-7f48-f8bf" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="5346-8e03-f4ba-cb41">
                   <costs>
@@ -1130,7 +1184,11 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Glial Reconstitution" id="eabf-6d32-3cac-697b" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
+                    <infoLink name="BUFF [Characteristic] (X)" id="e0e0-6be2-f19c-ad07" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8869-80a0-4968-fb9e" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1148,6 +1206,9 @@
                   <infoLinks>
                     <infoLink name="Hydriodic Bile" id="a147-bb34-981f-0a2a" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4664-6d23-0c77-075a" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1181,7 +1242,7 @@
         </profile>
         <profile name="Underdeveloped Claws" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="a95d-fa8b-efe9-c91c">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot gain Burrowed Status. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot gain Burrowed Status.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1215,13 +1276,13 @@
         </profile>
         <profile name="Zergling Reconstitution" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="ee95-b8ab-2269-91f0">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the RESPAWN (2) effect, or RESPAWN (3) if the Unit is ON CREEP. </characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the RESPAWN (2) effect, or RESPAWN (3) if the Unit is ON CREEP.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="3b0d-1c01-99a1-6a4f">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (1) 5+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (1) 5+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1241,6 +1302,7 @@
       <infoLinks>
         <infoLink name="Squadron" id="5753-fa57-2e6a-2708" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
         <infoLink name="Metabolic Boost" id="7b70-37b4-6a78-8c7a" hidden="false" type="profile" targetId="48be-d8b9-d2f4-1f6b"/>
+        <infoLink name="RESPAWN (X)" id="8ce4-7ab3-7ee6-22cc" hidden="false" type="rule" targetId="d273-74d1-fff7-7002"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="7b6f-7d84-6e73-f79c" hidden="false">
@@ -1259,12 +1321,281 @@
                   <infoLinks>
                     <infoLink name="Burrow Ambush" id="faaa-301c-2f75-f8da" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78e9-0587-32a5-5ca9" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Accelerating Creep" hidden="false" id="e651-adc1-9df8-271a">
+      <categoryLinks>
+        <categoryLink targetId="33f8-3892-abc6-952c" id="0d6b-916a-6bcd-7404" primary="true" name="Creep"/>
+        <categoryLink targetId="6042-132c-4895-cde4" id="9818-cb04-dd89-0702" primary="false" name="Tactical"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Creep Removal" id="2be6-651f-0fdc-c716" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
+        <infoLink name="Living Glob TIssue" id="914d-46f7-dcd5-9bd3" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Speed on Creep" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d6ca-4a3a-8eed-8cab">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If the active Friendly Zerg Unit is ON CREEP, increase its Speed characteristic by 1.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Malignant Creep" hidden="false" id="ebc2-f1cf-aea1-c9c8">
+      <categoryLinks>
+        <categoryLink name="Tactical" hidden="false" id="abd2-f57f-8b85-e6ee" targetId="6042-132c-4895-cde4" primary="false"/>
+        <categoryLink targetId="33f8-3892-abc6-952c" id="2ce5-ca97-d069-a4b8" primary="true" name="Creep"/>
+      </categoryLinks>
+      <costs>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="10"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Creep Removal" id="27c8-6614-3e51-f267" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
+        <infoLink name="Living Glob TIssue" id="62ac-4073-93b7-9e5c" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Malevolent Matriarch" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="24e6-af43-3ea2-db09">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">If the active Friendly Zerg Unit declares a Charge action while ON CREEP, it gains +1 Modifier to IMPACT Hit Rolls.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Evolution Chamber" hidden="false" id="eec3-aadb-f425-6bb9">
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="0e00-af95-04c8-0136" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Carapace" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="b060-3eea-8438-aa7d">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Extended Claws" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="ffee-632c-7015-0fb9">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Unit gains a +1 Modifier to all IMPACT Hit Rolls. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hatchery" hidden="false" id="94cc-fab1-f700-ea08">
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="ff7e-692a-b819-0d58" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Lie in Wait" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d57b-5e1f-6d19-5b76">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit gains the Burrowed Status. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Creep Spread" id="f35a-0ec6-1dcd-84a4" hidden="false" type="profile" targetId="8cca-b3c0-8237-ab91"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hydralisk Den" hidden="false" id="53a7-b729-4fbb-fb5e">
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="fdc2-7948-4a01-9691" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Missile Attacks" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="34bb-a0f5-742f-f49f">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Unit’s first Ranged Weapon used gains PRECISION (1). </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lair" hidden="false" id="f63d-240b-84f9-588f">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="ac61-add0-2387-4004" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eef-9511-d85d-1b19"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Creep Spread" id="d5ca-e6a2-99a1-5371" hidden="false" type="profile" targetId="8cca-b3c0-8237-ab91"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Predation" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="9183-31b5-6b87-f13f">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Unit’s Close Combat Weapons gain INSTANT. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Overloard" hidden="false" id="dec9-a9fc-9b05-a33e">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="de00-447d-78e4-776d" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0691-29af-a690-b44d"/>
+      </constraints>
+      <profiles>
+        <profile name="Ventral Sacs" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3f9a-578a-24b1-90d7">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield more than 10&quot; away from any Enemy model. At the End of the Round, the controlling player may Deploy one Ground Unit from Reserves in base-to-base contact with this Faction Indicator.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Excrete Creep" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="b456-faab-c959-9138">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Place a Creep Tumor token on the battlefield Within 6&quot; (Line of Sight is not required) of either a Friendly Entry Edge or an existing Friendly Creep Tumor token. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Overseer" hidden="false" id="e48e-2a7c-139c-8ad7">
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="50fc-5859-4a70-3f6e" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a720-4c52-7da3-170e"/>
+      </constraints>
+      <profiles>
+        <profile name="Oversight Mode" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="505c-f2e3-7d29-986e">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pneumatized Carapace" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7d7e-43ad-a322-1ce1">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Use after a Friendly Unit rolls a D6 for Charge Distance. Roll an additional D6 and use the higher result to calculate the total Charge Distance. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Roach Warren" hidden="false" id="9480-f480-636c-db1d">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Nasty Surprise" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="5b6b-c3e2-21e2-99c3">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit loses the Burrowed Status. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="22e1-3837-07ce-09b1" primary="true" name="Tactical"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spawning Pool" hidden="false" id="7c9e-408d-fa41-5a70">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Feral Rage" id="232b-a53c-131c-88d7" hidden="false" type="profile" targetId="0489-6ed9-bca1-be9c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="aa74-01bf-e3c3-f558" primary="true" name="Tactical"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spawning Pool (Six Pool)" hidden="false" id="1a94-7a75-7470-cc9a">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Feral Rage" id="42ee-2b71-3b69-a3d0" hidden="false" type="profile" targetId="0489-6ed9-bca1-be9c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="6042-132c-4895-cde4" id="012b-974e-7180-88c3" primary="true" name="Tactical"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7641-aa3c-8053-3eb0"/>
+      </constraints>
+      <profiles>
+        <profile name="Timing Push" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="eefe-620a-71e8-45de">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Zergling Unit Deploys from any table edge that is not a Player’s Entry Edge. This action must end more than 10&quot; away from any Enemy model. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
@@ -1370,6 +1701,30 @@
         <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
       </characteristics>
       <comment>Roach(ling)</comment>
+    </profile>
+    <profile name="Living Glob TIssue" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0e98-3f8d-2fc8-74f9">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Creep Removal" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="dc56-7a7c-492a-7eb9">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Creep Spread" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="8cca-b3c0-8237-ab91">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Place a Creep Tumor token on the battlefield Within 6&quot; (Line of Sight is not required) of either a Friendly Entry Edge or an existing Friendly Creep Tumor token. </characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Feral Rage" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="0489-6ed9-bca1-be9c">
+      <characteristics>
+        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">The active Unit’s first Close Combat Weapon used gains PRECISION (2). </characteristic>
+        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </catalogue>

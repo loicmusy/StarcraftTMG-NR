@@ -134,17 +134,17 @@
         </characteristicType>
       </characteristicTypes>
     </profileType>
+    <profileType name="Squad" id="cc01-ffd3-bc71-1efe" hidden="false" kind="tag">
+      <characteristicTypes>
+        <characteristicType name="Supply" id="ee88-5823-7de8-93c0"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="IMPACT (X) Y" id="7805-5c0f-7d68-90c8" hidden="false">
       <description>IMPACT (X) Y Immediately after this Unit completes a successful Charge, check every model in the Fighting Rank or Supporting Rank. For each eligible model, generate X Impact Dice:
-
-
 -If the model is in the Fighting Rank or Supporting Rank against only one Enemy Unit, all X dice go to that Unit.
 - If the model is in the Fighting Rank or Supporting Rank against multiple Enemy Units, the controlling player may split the dice between those Units.
-
-
-
 Roll the allocated dice for each target Unit separately (this is the Impact Hit Roll). For each result of Y or higher, set 1 die into the target’s Armour Pool. Proceed immediately to Armour Rolls. These hits do not generate Surge and treat Damage as 1.</description>
       <alias>IMPACT</alias>
     </rule>
@@ -179,10 +179,11 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <alias>PIERCE</alias>
       <description>When attacking a Unit with the specified Combat Tag, treat this weapon’s Damage characteristic as X.</description>
     </rule>
-    <rule name="DEBUFF" id="db39-98a1-2d62-0e5c" hidden="false">
-      <description>DEBUFF [Characteristic] (X) The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
-- Target Number Characteristic: increase the value by X (harder to roll).
-- Value Characteristic: decrease the value by X (minimum 0).</description>
+    <rule name="BUFF [Characteristic] (X)" id="db39-98a1-2d62-0e5c" hidden="false">
+      <description>The Unit gains a bonus of X to the specified Characteristic until the End of the Round.
+- Target Number Characteristic (e.g. Armour, Hit): reduce the value by X (easier to roll).
+- Value Characteristic (e.g. Speed, RoA): increase the value by X.</description>
+      <alias>BUFF</alias>
     </rule>
     <rule name="PRECISION (X)" id="d05b-cebb-50d1-ad49" hidden="false">
       <description>After rolling to Hit, move up to X failed Attack Dice directly into the Armour Pool. Treat them as successful Hits for all purposes, including Surge.</description>
@@ -214,13 +215,8 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <description>Choose a Leading Model. Remove it and set it Wholly Within X&quot; of its starting position. Then remove and replace all other models in the Unit, maintaining Coherency (Part 4.4). PLACE ignores Gap Clearance, terrain restrictions, and elevation requirements. The Leading Model is removed and set directly, not moved along a path. However, they must end in a legal position. Models may be set Within the Engagement Range of Enemy models (the Unit becomes Engaged) unless stated otherwise.</description>
       <alias>PLACE</alias>
     </rule>
-    <rule name="INSTANT" id="d2f3-d719-3a86-b444" hidden="false">
-      <description>Enemy Units cannot declare or resolve Reaction abilities in response to attacks made with this weapon.</description>
-    </rule>
     <rule name="DISPLACEMENT" id="eb27-1500-88ca-d0f0" hidden="false">
       <description>The Leading Model may end a move Overlapping this Token or Unit (overrides Part 7.3.1).
-
-
 If the Leading Model ends any Move, Deploy, Run, Charge, Disengage, Close Ranks or Special Ability move Overlapping this Token or model, the controlling player of the Leading Model immediately set it in Base-to-Base contact with the Leading Model. If Base-to-Base is not possible, set it as close as possible.</description>
     </rule>
     <rule name="TOUGH (X)" id="9928-edb1-53e5-438f" hidden="false">
@@ -230,15 +226,11 @@ If the Leading Model ends any Move, Deploy, Run, Charge, Disengage, Close Ranks 
     <rule name="SUMMON (Unit Name)" id="1a39-f874-fdf2-c983" hidden="false">
       <description>SUMMON (Unit Name) Set the Leading Model of the named Unit in Base-to-Base contact with the Parent Unit. Set remaining models In Coherency. Models cannot be set Within the Engagement Range of any Enemy Unit.
 
-
 Set an Activation Marker next to the summoned Unit - it cannot be Activated during the Phase in which it was summoned. In subsequent Phases, this Unit must be Activated immediately after its Parent Unit’s activation ends, before the opponent’s next activation.
-
 
 The Summoned Unit cannot be set Within the opponent’s Zone of Influence.
 
-
 The player must have sufficient Available Supply. If the Unit’s Current Supply Value would cause Total Current Supply to exceed the Supply Pool, it cannot be Summoned.
-
 
 If the Parent is not present on the battlefield, this Unit can be Activated normally.</description>
       <alias>SUMMON</alias>
@@ -250,13 +242,11 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
 - If a model cannot be set legally, it cannot be returned.</description>
       <alias>RESPAWN</alias>
     </rule>
-    <rule name="ON CREEP" id="6a15-064c-2136-2005" hidden="false">
-      <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
-    </rule>
-    <rule name="DEBUFF" id="e9c5-7999-24b7-4858" hidden="false">
-      <description>DEBUFF [Characteristic] (X) The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
+    <rule name="DEBUFF [Characteristic] (X)" id="e9c5-7999-24b7-4858" hidden="false">
+      <description>The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
 - Target Number Characteristic: increase the value by X (harder to roll).
 - Value Characteristic: decrease the value by X (minimum 0).</description>
+      <alias>DEBUFF</alias>
     </rule>
     <rule name="IMPASSABLE TERRAIN" id="0c68-af78-c6ca-9cf8" hidden="false">
       <description>A terrain piece is Impassable if it has no Access Point connecting it to an adjacent elevation level. Models cannot move through, onto, or across IMPASSABLE TERRAIN, and no model may end its movement overlapping it. Terrains of sizes 0 and 1 are never considered IMPASSABLE TERRAIN.</description>
@@ -267,6 +257,12 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     <rule name="ANTI-EVADE (X)" id="cfd0-ab4b-fc25-34be" hidden="false">
       <description>When resolving an attack with this weapon against Enemy Units, the target Unit suffers a -X Modifier to its Evade Roll for this attack (Part 8.7.4, Step 4).</description>
       <alias>ANTI-EVADE</alias>
+    </rule>
+    <rule name="PINPOINT" id="f9ad-69a2-80e6-c3a5" hidden="false">
+      <description>Ranged Attacks with this weapon may target Engaged Enemy Units, ignoring the standard Engagement Status restriction (overrides Part 8.7.3, Step 1).</description>
+    </rule>
+    <rule name="STAY IN PLAY" id="3a1b-37a2-e426-abca" hidden="false">
+      <description>This Token, Marker or Ability Effect persists through Cleanup &amp; Refresh (overrides Part 8.9.5). It remains until a specific condition removes it (e.g. destroyed or duration expires).</description>
     </rule>
   </sharedRules>
   <categoryEntries>

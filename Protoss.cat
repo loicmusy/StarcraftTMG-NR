@@ -630,12 +630,6 @@
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Commander" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d320-d47a-b18e-2473">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Phase Prism" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3f76-3ddc-d988-11c4">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When Artanis is nominated to deploy from Reserves, it may resolve the PLACE (0) effect from another Friendly Unit. That Friendly Unit is removed from the battlefield and returned to Reserves. Artanis&apos; Activation ends.</characteristic>
@@ -685,6 +679,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" type="profile" targetId="c429-c517-b5d9-8e78"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="true" id="84f3-7234-2df2-12d5">
       <costs>
