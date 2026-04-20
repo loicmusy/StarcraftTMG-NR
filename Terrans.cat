@@ -63,7 +63,7 @@
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink name="DEBUFF" id="1a9f-af01-37f9-eb71" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="1a9f-af01-37f9-eb71" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
         <infoLink name="PRECISION (X)" id="900a-84d6-15d1-d79c" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
         <infoLink name="NON-LETHAL DAMAGE (X)" id="5ce8-f9dc-ab2d-cb3d" hidden="false" type="rule" targetId="0ecb-de24-de57-9c58"/>
       </infoLinks>
@@ -624,7 +624,7 @@
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Scatter Missiles" hidden="false" id="e2f6-235e-8ce4-8ddd">
                       <costs>
-                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
+                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
                         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
                         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -653,7 +653,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Haywire Missiles" hidden="false" id="1101-160e-5a07-2533">
                       <costs>
-                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
                         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
                         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -977,7 +977,7 @@
       <infoLinks>
         <infoLink name="C-14 Rifle" id="ea01-0a3e-9955-c143" hidden="false" type="profile" targetId="135f-4d13-ea93-602d"/>
         <infoLink name="Marine" id="b366-8b0b-2312-1f45" hidden="false" type="profile" targetId="74d2-7be5-c0fe-34ad"/>
-        <infoLink name="DEBUFF" id="bf17-ff55-9330-9c63" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="bf17-ff55-9330-9c63" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
         <infoLink name="Stimpack" id="d11a-cc3f-8ce2-ca92" hidden="false" type="profile" targetId="cedc-b9f6-3d53-5ae3"/>
         <infoLink name="Slugthrower" id="e85f-5996-4965-00f1" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
         <infoLink name="Grenade - Frag" id="279b-fc9c-a023-8674" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
