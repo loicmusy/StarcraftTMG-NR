@@ -206,6 +206,12 @@
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
+        <profile name="Ground Weapons" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c130-96d0-c76a-8372">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains CRITICAL HIT (1). </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gate Chronoboosted" hidden="false" id="9775-6b26-1f23-8cd0">
