@@ -1586,7 +1586,7 @@
         </profile>
         <profile name="Debilitating Saliva" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="863a-825c-fea9-518b">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when an Enemy Unit Within 8&quot; of this Unit declares a Ranged Attack. Apply DEBUFF Hit (1) to each of that Unit&apos;s Ranged Weapons. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when an Enemy Unit Within 8&quot; of this Unit declares a Ranged Attack. Apply DEBUFF Hit (1) to each of that Unit&apos;s Ranged Weapons.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -1754,8 +1754,8 @@
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="180"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
@@ -1765,7 +1765,7 @@
             <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
             <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
             <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
             <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
           </costs>
