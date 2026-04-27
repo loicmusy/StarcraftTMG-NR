@@ -1764,7 +1764,7 @@
           <costs>
             <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
             <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
             <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
             <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
