@@ -149,7 +149,7 @@
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="3 Corpsers (Roach)" hidden="false" id="444a-8557-cdae-3146">
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -1002,7 +1002,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="202b-cde4-e9ad-71b8" shared="true" childName="Shredding Claws" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="84be-2c80-a993-0b1b" shared="true" childName="Shredding Claws" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1040,41 +1040,10 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="30bc-4d09-9206-a7c5" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shredding Claws" hidden="false" id="202b-cde4-e9ad-71b8">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Shredding Claws" id="3b84-b3b9-3eff-29f8" hidden="false" type="profile" targetId="f9de-0c36-66be-f7a4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0622-7f14-f429-33d6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="c26a-7b5c-202c-a3bc">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed0d-b999-ba09-4fe1" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Adrenal Glands" id="ca9a-6c8d-c384-36bf" hidden="false" type="profile" targetId="56c8-dfe9-d59a-dd79"/>
-                    <infoLink name="PRECISION (X)" id="93a9-7c08-490a-cff8" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Adrenal Glands" hidden="false" id="164b-4ab7-3dbf-8e88" type="selectionEntry" targetId="0c6b-12d8-ddd2-8a09"/>
+                <entryLink import="true" name="Shredding Claws" hidden="false" id="84be-2c80-a993-0b1b" type="selectionEntry" targetId="5a93-b60d-20e9-80e6"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1235,7 +1204,7 @@
         <categoryLink targetId="485c-e8a3-ec4d-88a3" id="1f95-7640-d717-393e" primary="true" name="Core"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="270"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="260"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -1452,10 +1421,10 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Overloard" hidden="false" id="dec9-a9fc-9b05-a33e">
+    <selectionEntry type="upgrade" import="true" name="Overlord" hidden="false" id="dec9-a9fc-9b05-a33e">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -1784,7 +1753,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="66cd-750c-8623-08e1" shared="true" childName="Shredding Claws" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="560d-260f-dca9-d415" shared="true" childName="Shredding Claws" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1822,41 +1791,10 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="9e40-7612-5934-0761" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shredding Claws" hidden="false" id="66cd-750c-8623-08e1">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Shredding Claws" id="0484-c8c1-e5ef-6f5f" hidden="false" type="profile" targetId="f9de-0c36-66be-f7a4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7194-28b4-aff0-f1ab" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="a13e-024a-7ca4-5a2a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0b6-d78a-5705-1ee4" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Adrenal Glands" id="5251-011a-354d-78bd" hidden="false" type="profile" targetId="56c8-dfe9-d59a-dd79"/>
-                    <infoLink name="PRECISION (X)" id="344a-f029-910b-cf50" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Adrenal Glands" hidden="false" id="c666-3f32-0266-ee87" type="selectionEntry" targetId="0c6b-12d8-ddd2-8a09"/>
+                <entryLink import="true" name="Shredding Claws" hidden="false" id="560d-260f-dca9-d415" type="selectionEntry" targetId="5a93-b60d-20e9-80e6"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -2010,4 +1948,39 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="0c6b-12d8-ddd2-8a09">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caf2-eebd-0bd3-4092" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Adrenal Glands" id="534c-fea8-719a-ab8d" hidden="false" type="profile" targetId="56c8-dfe9-d59a-dd79"/>
+        <infoLink name="PRECISION (X)" id="eadc-ff93-d681-3700" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shredding Claws" hidden="false" id="5a93-b60d-20e9-80e6">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shredding Claws" id="3655-b898-fab2-10af" hidden="false" type="profile" targetId="f9de-0c36-66be-f7a4"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed89-b5a1-280f-a6a8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

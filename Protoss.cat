@@ -208,7 +208,7 @@
         </profile>
         <profile name="Ground Weapons" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c130-96d0-c76a-8372">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains CRITICAL HIT (1). </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains CRITICAL HIT (1).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
           </characteristics>
         </profile>
@@ -368,7 +368,7 @@
     <selectionEntry type="upgrade" import="true" name="Twilight Council" hidden="false" id="8305-145f-bdde-9c67">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
@@ -425,7 +425,7 @@
     <selectionEntry type="upgrade" import="true" name="Warp Prism" hidden="false" id="adaa-58e7-37fc-bec8">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -926,7 +926,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Stalker" hidden="false" id="aab3-edc0-70f1-373e">
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>

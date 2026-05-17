@@ -314,7 +314,7 @@
                     <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
+                    <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
                       </conditions>

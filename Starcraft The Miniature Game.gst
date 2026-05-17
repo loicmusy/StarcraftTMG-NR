@@ -212,7 +212,7 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <description>Remove X points of accumulated Damage from the Unit (reduce its Damage Marker accordingly). HEAL cannot return Destroyed models - it only reduces existing Damage. See also: RESPAWN.</description>
     </rule>
     <rule name="PLACE (X)" id="1a3d-86d9-8aa7-68ab" hidden="false">
-      <description>Choose a Leading Model. Remove it and set it Wholly Within X&quot; of its starting position. Then remove and replace all other models in the Unit, maintaining Coherency (Part 4.4). PLACE ignores Gap Clearance, terrain restrictions, and elevation requirements. The Leading Model is removed and set directly, not moved along a path. However, they must end in a legal position. Models may be set Within the Engagement Range of Enemy models (the Unit becomes Engaged) unless stated otherwise.</description>
+      <description>Choose a Leading Model. Remove it and set it Wholly Within X&quot; of its starting position. Then remove and replace all other models in the Unit, maintaining Coherency (Part 4.4). PLACE ignores Gap Clearance, and elevation requirements. The Leading Model is removed and set directly, not moved along a path. However, they must end in a legal position and not Within the Engagement Range. Models using the PLACE effect during the Assault Phase may be set Within the Engagement Range of Enemy models (the Unit becomes Engaged) unless stated otherwise.</description>
       <alias>PLACE</alias>
     </rule>
     <rule name="DISPLACEMENT" id="eb27-1500-88ca-d0f0" hidden="false">
