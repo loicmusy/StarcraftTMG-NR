@@ -1197,22 +1197,10 @@
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
-    <profile name="New Profile" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="acac-c4b1-a208-79b9">
-      <characteristics>
-        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b"/>
-        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52"/>
-      </characteristics>
-    </profile>
     <profile name="Quick Strikes" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="7995-a465-9333-17ea">
       <characteristics>
         <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">The active Unit’s first Close Combat Weapon used gains PRECISION (2).</characteristic>
         <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="New Profile" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="4c1d-d26a-aead-022d">
-      <characteristics>
-        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"/>
-        <characteristic name="Cost" typeId="e11e-d579-0142-8de4"/>
       </characteristics>
     </profile>
     <profile name="Strategic Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e3e8-f973-a8d1-16ef">
@@ -1237,28 +1225,10 @@
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
       </characteristics>
     </profile>
-    <profile name="New Profile" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="05a7-bb10-d5e8-d1f4">
-      <characteristics>
-        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"/>
-        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5"/>
-      </characteristics>
-    </profile>
     <profile name="Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c4c6-376a-082d-f63c">
       <characteristics>
         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, roll 2D6 instead of D6 and use the higher result to add to the Unit’s Speed characteristic.</characteristic>
         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 PE)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="New Profile" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="3d48-40c6-4c19-ec3c">
-      <characteristics>
-        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821"/>
-        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417"/>
-        <characteristic name="RoA" typeId="af32-03e6-6c32-3580"/>
-        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52"/>
-        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
-        <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
-        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7"/>
-        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
       </characteristics>
     </profile>
     <profile name="Psi Blades" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="76e4-fa8c-6eac-1990">

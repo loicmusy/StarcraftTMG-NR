@@ -230,62 +230,15 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Movement Phase" id="2b30-553f-5131-10f0" hidden="false" sortIndex="2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="0c21-9427-02fd-6f7f">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="e1df-3395-029c-3e5f" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="aef5-351a-b672-072d" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d9-4a6a-fb41-ad69" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="ea24-2a36-572a-914c">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8349-4bd4-b9a0-7e66" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Glial Reconstitution" id="2fb1-2dd5-c002-05e7" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
-                    <infoLink name="BUFF [Characteristic] (X)" id="50d9-b854-c7f6-8195" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="2816-8836-f626-b053" type="selectionEntry" targetId="95a5-7e95-ec19-e358"/>
+                <entryLink import="true" name="Glial Reconstitution" hidden="false" id="c3c6-e7de-0c1c-e1e4" type="selectionEntry" targetId="e881-fb11-ba5c-62e6"/>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="cbef-c52c-d929-5527" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hydriodic Bile" hidden="false" id="b2a9-6596-9a10-3eff">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b9-75d8-e66d-332a" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Hydriodic Bile" id="d63d-2cc4-e501-7200" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hydriodic Bile" hidden="false" id="2895-5d61-4ce2-e3af" type="selectionEntry" targetId="7cda-c234-c80a-a11c"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -507,16 +460,8 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Movement Phase" id="ca4c-4976-1534-1b1a" hidden="false" sortIndex="2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="96d6-b48c-edb7-6692">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="f390-4dc6-514c-cf5b" type="selectionEntry" targetId="95a5-7e95-ec19-e358">
                   <modifiers>
                     <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
                       <conditions>
@@ -524,15 +469,8 @@
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="6f25-bb6c-1ea2-bf41" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="be9a-e614-f745-7c17" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a92-692b-673c-e2d7"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="d0d6-d63c-d9f8-dc42" hidden="false">
               <selectionEntries>
@@ -1012,20 +950,8 @@
         <selectionEntryGroup name="Upgrades" id="f38c-14d5-01c6-0e4c" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Movement Phase" id="aeeb-d7c2-7c53-7e6d" hidden="false" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="e050-08d4-bc60-7f75">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="901d-89d6-bc78-e2a8" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="4894-4769-9589-b51e" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="fc25-9f2b-384d-14ff" type="selectionEntry" targetId="95a5-7e95-ec19-e358">
                   <modifiers>
                     <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                       <conditions>
@@ -1033,11 +959,8 @@
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0417-74a5-b8cd-8f15" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="30bc-4d09-9206-a7c5" hidden="false">
               <entryLinks>
@@ -1103,62 +1026,15 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Movement Phase" id="3b44-840d-98fa-f5ee" hidden="false" sortIndex="2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="67f4-fb4c-0670-e766">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="cdc8-0ecb-9a0a-d27a" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="a4a2-d983-fc98-9d39" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724a-3d29-7f48-f8bf" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="5346-8e03-f4ba-cb41">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Glial Reconstitution" id="eabf-6d32-3cac-697b" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
-                    <infoLink name="BUFF [Characteristic] (X)" id="e0e0-6be2-f19c-ad07" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8869-80a0-4968-fb9e" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="ab65-af92-34b0-d998" type="selectionEntry" targetId="95a5-7e95-ec19-e358"/>
+                <entryLink import="true" name="Glial Reconstitution" hidden="false" id="3da6-3772-7a0e-474c" type="selectionEntry" targetId="e881-fb11-ba5c-62e6"/>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="1f99-51e8-bb63-51ab" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hydriodic Bile" hidden="false" id="4caf-b43c-1dc8-8fa7">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Hydriodic Bile" id="a147-bb34-981f-0a2a" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4664-6d23-0c77-075a" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hydriodic Bile" hidden="false" id="185c-6675-015c-fb97" type="selectionEntry" targetId="7cda-c234-c80a-a11c"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1256,24 +1132,9 @@
         <selectionEntryGroup name="Upgrades" id="7b6f-7d84-6e73-f79c" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Movement Phase" id="d341-5207-2525-6178" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="fa26-e5b2-2d92-9f56">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="faaa-301c-2f75-f8da" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78e9-0587-32a5-5ca9" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="3d98-c5bb-713c-09e6" type="selectionEntry" targetId="95a5-7e95-ec19-e358"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1628,62 +1489,15 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Movement Phase" id="beca-a208-a24d-e8a0" hidden="false" sortIndex="2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="011d-d6c8-a332-c666">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="6f3e-c42f-6671-d5c6" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="609e-0edc-93ae-2f99" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22a2-654b-e71d-cfa2" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="ca56-adb8-9571-8abb">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Glial Reconstitution" id="b3fb-2775-c16d-1248" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
-                    <infoLink name="BUFF [Characteristic] (X)" id="d68b-8166-45e2-e6f4" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5975-703d-45dc-7a57" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="dcc5-5a53-486a-ba77" type="selectionEntry" targetId="95a5-7e95-ec19-e358"/>
+                <entryLink import="true" name="Glial Reconstitution" hidden="false" id="8d7b-b022-4f7e-902a" type="selectionEntry" targetId="e881-fb11-ba5c-62e6"/>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="f5f0-636b-28aa-c040" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hydriodic Bile" hidden="false" id="801f-a22c-73d6-415c">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Hydriodic Bile" id="c455-2744-a3a6-bffa" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da63-feb1-7685-b058" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hydriodic Bile" hidden="false" id="8615-b8c8-4750-4ac2" type="selectionEntry" targetId="7cda-c234-c80a-a11c"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1763,20 +1577,8 @@
         <selectionEntryGroup name="Upgrades" id="d637-e08b-7ad3-c9d9" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Movement Phase" id="0121-6ead-df06-6b57" hidden="false" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="8299-534c-dee8-54c2">
-                  <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Burrow Ambush" id="ef1e-2982-3673-1146" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
-                    <infoLink name="PLACE (X)" id="c5bb-c5f2-caae-5a36" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
-                  </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Burrow Ambush" hidden="false" id="6c7e-92ad-bcad-3e64" type="selectionEntry" targetId="95a5-7e95-ec19-e358">
                   <modifiers>
                     <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                       <conditions>
@@ -1784,11 +1586,8 @@
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8bf-dc0f-48ce-4dfb" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="9e40-7612-5934-0761" hidden="false">
               <entryLinks>
@@ -1905,7 +1704,7 @@
       </characteristics>
       <comment>Roach(ling)</comment>
     </profile>
-    <profile name="Living Glob TIssue" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0e98-3f8d-2fc8-74f9">
+    <profile name="Living Glob Tissue" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="0e98-3f8d-2fc8-74f9">
       <characteristics>
         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
@@ -1981,6 +1780,56 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed89-b5a1-280f-a6a8" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Burrow Ambush" hidden="false" id="95a5-7e95-ec19-e358">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Burrow Ambush" id="fc92-00e3-e631-a170" hidden="false" type="profile" targetId="6a03-719a-49fe-1fd4"/>
+        <infoLink name="PLACE (X)" id="80cc-a55e-0d6a-eba5" hidden="false" type="rule" targetId="1a3d-86d9-8aa7-68ab"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cc2-5431-34ff-dd24" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hydriodic Bile" hidden="false" id="7cda-c234-c80a-a11c">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4672-e37e-9d0f-3465" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Hydriodic Bile" id="5c90-cb84-a7c3-af9b" hidden="false" type="profile" targetId="7f8e-efeb-4683-3010"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Glial Reconstitution" hidden="false" id="e881-fb11-ba5c-62e6">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d70-9e46-262d-c082" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Glial Reconstitution" id="6e3d-11c9-9f57-d5a0" hidden="false" type="profile" targetId="c5d5-beb9-00b6-d18c"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="b864-5332-7b81-7a8d" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
