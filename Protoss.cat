@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a993-a28e-5c72-5b0a" name="Protoss" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a993-a28e-5c72-5b0a" name="Protoss" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="13" revision="13" battleScribeVersion="2.03" type="catalogue">
   <categoryEntries>
     <categoryEntry name="Core" id="3057-36a6-b4b3-cddb" hidden="false">
       <modifiers>
@@ -34,6 +34,8 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-min"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-max"/>
       </constraints>
+      <comment>
+</comment>
     </categoryEntry>
     <categoryEntry name="Hero" id="bd6f-bae8-7dee-67be" hidden="false">
       <modifiers>
@@ -514,6 +516,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-2: 0 | 3-4: 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Psionic  Presence" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="3071-5a22-4e60-5e55">
@@ -680,6 +683,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Phase Prism" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3f76-3ddc-d988-11c4">
@@ -756,12 +760,22 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12c-c5c7-136d-2f57"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Zealot" id="3655-06fb-d440-3399" hidden="false" type="profile" targetId="cec2-87db-e412-505f"/>
         <infoLink name="Psi Blades" id="2350-ab72-b5ae-35bb" hidden="false" type="profile" targetId="76e4-fa8c-6eac-1990"/>
         <infoLink name="Leg Enhancements" id="b7f8-6895-8646-ef24" hidden="false" type="profile" targetId="d28b-b20c-980e-26ed"/>
         <infoLink name="Charge" id="02de-ee95-3835-ae2b" hidden="false" type="profile" targetId="c4c6-376a-082d-f63c"/>
       </infoLinks>
       <profiles>
+        <profile name="Praetor Guard (Zealot)" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ef91-8abc-e0b4-4ee1">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2-3: 2</characteristic>
+          </characteristics>
+        </profile>
         <profile name="Shield Overcharge" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="298d-c96f-ef2b-afd2">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit gains TOUGH (2) on the first Armour Roll each Round.</characteristic>
@@ -819,6 +833,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
           </characteristics>
         </profile>
         <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="e626-bfe0-877a-a685">
@@ -876,6 +891,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Restoration" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="e1ee-c45e-2390-2106">
@@ -1111,6 +1127,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Blink" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="bdd4-56f6-53f7-ad30">
@@ -1327,6 +1344,7 @@
         <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
         <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
         <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+        <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2-3: 2</characteristic>
       </characteristics>
     </profile>
     <profile name="Leg Enhancements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d28b-b20c-980e-26ed">

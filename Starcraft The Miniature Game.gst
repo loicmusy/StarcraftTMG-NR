@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-ce49-e853-2fea-6af1" name="Starcraft The Miniature Game" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-ce49-e853-2fea-6af1" name="Starcraft The Miniature Game" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType name=" Minerals" id="5bcf-897a-a5c9-d0e8" defaultCostLimit="2000"/>
     <costType name="  Gas" id="1719-6214-392e-e53f" defaultCostLimit="200"/>
@@ -69,6 +69,7 @@
         <characteristicType name="HP" id="e275-f946-72ee-4a48"/>
         <characteristicType name="Size" id="357b-9a74-5a55-800e" defaultValue="
 "/>
+        <characteristicType name="Supply" id="4fa8-90ab-7d11-c8e3"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Assault Weapon" id="e8b6-5b29-e80c-a3b3" hidden="false" kind="weapon" sortIndex="2">
