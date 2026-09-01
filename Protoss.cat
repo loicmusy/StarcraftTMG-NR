@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a993-a28e-5c72-5b0a" name="Protoss" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="13" revision="13" battleScribeVersion="2.03" type="catalogue">
+<catalogue name="Protoss" id="a993-a28e-5c72-5b0a" battleScribeVersion="2.03" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Core" id="3057-36a6-b4b3-cddb" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17,12 +17,12 @@
     </categoryEntry>
     <categoryEntry name="Elite" id="6089-3431-846d-7bb8" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -31,20 +31,18 @@
     </categoryEntry>
     <categoryEntry name="Faction" id="5eca-d421-1fdc-a95f" hidden="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d68-ef81-f8ef-4f33-max"/>
+        <constraint id="0d68-ef81-f8ef-4f33-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="0d68-ef81-f8ef-4f33-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
-      <comment>
-</comment>
     </categoryEntry>
     <categoryEntry name="Hero" id="bd6f-bae8-7dee-67be" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -53,27 +51,26 @@
     </categoryEntry>
     <categoryEntry name="Other" id="5788-d936-b639-6407" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry name="Raynor&apos;s Raiders" id="4263-804f-d90a-866b" hidden="false"/>
     <categoryEntry name="Support" id="b8a5-0602-9633-c738" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -82,12 +79,12 @@
     </categoryEntry>
     <categoryEntry name="Tactical" id="acb5-b55f-9492-5149" hidden="false">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier field="hidden" type="set" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7d43-eac6-9edf-84f4" shared="true" childName="Daelaam" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -96,47 +93,51 @@
     </categoryEntry>
     <categoryEntry name="Khalai" id="2586-d7c3-73d1-767f" hidden="false"/>
   </categoryEntries>
+  <entryLinks>
+    <entryLink name="Char Plains" id="dmap-link-0005" hidden="false" import="true" targetId="9710-c30a-2bb5-708a" type="selectionEntry"/>
+    <entryLink name="Deployment Maps" id="0950-da2b-d79a-88fe" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
+    <entryLink name="Mission Card" id="4d05-baf0-5014-387b" hidden="false" import="true" targetId="64dc-91cd-0746-c7d3" type="selectionEntry"/>
+  </entryLinks>
   <forceEntries>
-    <forceEntry name="New Force" id="953a-9292-780a-cf11" hidden="false">
+    <forceEntry name="Army" id="953a-9292-780a-cf11" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Pre-Game" id="8273-2d03-9642-24bd" hidden="false" targetId="9b82-d933-7075-8237"/>
+        <categoryLink name="Faction" id="4c69-41f5-5e7c-b6b2" hidden="false" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Tactical" id="6f60-bd85-a647-e9f7" hidden="false" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Core" id="faf6-c124-185f-c6f5" hidden="false" targetId="3057-36a6-b4b3-cddb"/>
+        <categoryLink name="Elite" id="52dd-38fe-bfb1-7740" hidden="false" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Support" id="5d55-cd58-736d-dc5c" hidden="false" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Hero" id="1ee7-53d7-29b9-4ba3" hidden="false" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Other" id="7455-de9b-51ee-a349" hidden="false" targetId="5788-d936-b639-6407"/>
+      </categoryLinks>
       <modifiers>
-        <modifier type="add" value="Not enough Core Supply." field="error">
+        <modifier field="error" type="add" value="Not enough Core Supply.">
           <conditions>
-            <condition type="lessThan" value="0" field="472f-46af-8e02-bfbf" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition childId="any" field="472f-46af-8e02-bfbf" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Not enough Elite Supply." field="error">
+        <modifier field="error" type="add" value="Not enough Elite Supply.">
           <conditions>
-            <condition type="lessThan" value="0" field="f5f9-3591-0f2d-0a53" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+            <condition childId="any" childName="any" field="f5f9-3591-0f2d-0a53" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Not enough Support Supply." field="error">
+        <modifier field="error" type="add" value="Not enough Support Supply.">
           <conditions>
-            <condition type="lessThan" value="0" field="31a6-c1f1-3d47-fa76" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+            <condition childId="any" childName="any" field="31a6-c1f1-3d47-fa76" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Not enough Hero Supply." field="error">
+        <modifier field="error" type="add" value="Not enough Hero Supply.">
           <conditions>
-            <condition type="lessThan" value="0" field="7e61-585f-b715-85e0" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true" childName="any"/>
+            <condition childId="any" childName="any" field="7e61-585f-b715-85e0" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
           </conditions>
         </modifier>
       </modifiers>
-      <categoryLinks>
-        <categoryLink name="Faction" hidden="false" id="4c69-41f5-5e7c-b6b2" targetId="5eca-d421-1fdc-a95f"/>
-        <categoryLink name="Tactical" hidden="false" id="6f60-bd85-a647-e9f7" targetId="acb5-b55f-9492-5149"/>
-        <categoryLink name="Deployment Maps" hidden="false" id="ec57-26da-cf9c-b7c1" targetId="d90f-1f84-6e45-9b27"/>
-        <categoryLink name="Mission Cards" hidden="false" id="a684-d03e-11c1-4d48" targetId="81f8-9a71-68ed-7dc6"/>
-        <categoryLink name="Core" hidden="false" id="faf6-c124-185f-c6f5" targetId="3057-36a6-b4b3-cddb"/>
-        <categoryLink name="Elite" hidden="false" id="52dd-38fe-bfb1-7740" targetId="6089-3431-846d-7bb8"/>
-        <categoryLink name="Support" hidden="false" id="5d55-cd58-736d-dc5c" targetId="b8a5-0602-9633-c738"/>
-        <categoryLink name="Hero" hidden="false" id="1ee7-53d7-29b9-4ba3" targetId="bd6f-bae8-7dee-67be"/>
-        <categoryLink name="Other" hidden="false" id="7455-de9b-51ee-a349" targetId="5788-d936-b639-6407"/>
-      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Daelaam" hidden="false" id="7d43-eac6-9edf-84f4">
+    <selectionEntry name="Daelaam" id="7d43-eac6-9edf-84f4" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="5eca-d421-1fdc-a95f" id="10fe-38fe-c149-aa7e" primary="true" name="Faction"/>
+        <categoryLink name="Faction" id="10fe-38fe-c149-aa7e" primary="true" targetId="5eca-d421-1fdc-a95f"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -150,14 +151,14 @@
         <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
-        <profile name="Mass Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="4799-d1bc-6d70-9f2b">
+        <profile name="Mass Recall" id="4799-d1bc-6d70-9f2b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <comment>Faction Card</comment>
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Set a Faction Indicator anywhere on the battlefield. All Friendly Protoss Units Within 6&quot; of this Faction Indicator are removed from the battlefield and returned to Reserves.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
-          <comment>Faction Card</comment>
         </profile>
-        <profile name="Dae’Uhl" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="509f-666c-f99f-c763">
+        <profile name="Dae’Uhl" id="509f-666c-f99f-c763" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When a Friendly Unit receives Damage, reduce the Total Damage by 2 (to a minimum of 1).</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
@@ -165,9 +166,9 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Khalai" hidden="false" id="41ab-8fa0-e055-c722">
+    <selectionEntry name="Khalai" id="41ab-8fa0-e055-c722" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="5eca-d421-1fdc-a95f" id="84a1-453e-8a28-2833" primary="true" name="Faction"/>
+        <categoryLink name="Faction" id="84a1-453e-8a28-2833" primary="true" targetId="5eca-d421-1fdc-a95f"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -181,25 +182,25 @@
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
-        <profile name="Pylon Warp-In" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d158-0c1b-f5a7-a9c8">
+        <profile name="Pylon Warp-In" id="d158-0c1b-f5a7-a9c8" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <comment>Faction Card</comment>
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If there is no Friendly Pylon on the battlefield, set a Friendly Pylon Unit anywhere on the GROUND LEVEL of the battlefield more than 10&quot; away from any Enemy model. This Round, the Pylon is not eligible to use its Special Abilities (excluding Structure).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
-          <comment>Faction Card</comment>
         </profile>
-        <profile name="Bound by the Khala" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5c86-647f-9a78-ab74">
+        <profile name="Bound by the Khala" id="5c86-647f-9a78-ab74" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <comment>Faction Card</comment>
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">At the end of the active Unit’s Activation, select one other Friendly Unit eligible to Activate in the current Phase. Immediately Activate that Unit.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
-          <comment>Faction Card</comment>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Forge" hidden="false" id="9031-163e-ba0e-53b1">
+    <selectionEntry name="Forge" id="9031-163e-ba0e-53b1" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="25a0-99e3-cd47-24e2" primary="true" name="Tactical"/>
+        <categoryLink name="Tactical" id="25a0-99e3-cd47-24e2" primary="true" targetId="acb5-b55f-9492-5149"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -213,13 +214,13 @@
         <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
-        <profile name="Ground Armor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d43b-2b13-5d92-99cd">
+        <profile name="Ground Armor" id="d43b-2b13-5d92-99cd" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Ground Unit makes an Armour Roll. That Unit gains TOUGH (1) for this roll.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ground Weapons" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c130-96d0-c76a-8372">
+        <profile name="Ground Weapons" id="c130-96d0-c76a-8372" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains CRITICAL HIT (1).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
@@ -227,7 +228,13 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gate Chronoboosted" hidden="false" id="9775-6b26-1f23-8cd0">
+    <selectionEntry name="Gate Chronoboosted" id="9775-6b26-1f23-8cd0" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="2f38-b805-74be-3e28" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="afa9-c282-74ad-5234" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
@@ -239,25 +246,22 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="2f38-b805-74be-3e28" primary="true" name="Tactical"/>
-      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Quick Strikes" id="b305-a1b6-9b41-a5fd" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
+      </infoLinks>
       <profiles>
-        <profile name="Zealous Charge" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="fa7a-e308-916c-6ead">
+        <profile name="Zealous Charge" id="fa7a-e308-916c-6ead" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains BUFF Speed (2).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Quick Strikes" id="b305-a1b6-9b41-a5fd" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
-      </infoLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa9-c282-74ad-5234"/>
-      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gateway" hidden="false" id="a14b-449a-ab4d-31bd">
+    <selectionEntry name="Gateway" id="a14b-449a-ab4d-31bd" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="b607-1f5f-939a-f6bd" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
@@ -270,16 +274,16 @@
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <infoLinks>
-        <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
+        <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="b607-1f5f-939a-f6bd" primary="true" name="Tactical"/>
-      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nexus" hidden="false" id="fca5-685d-13ce-6132">
+    <selectionEntry name="Nexus" id="fca5-685d-13ce-6132" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="197c-ea64-5e9f-8b5c" primary="true" name="Tactical"/>
+        <categoryLink name="Tactical" id="197c-ea64-5e9f-8b5c" primary="true" targetId="acb5-b55f-9492-5149"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="19de-077e-e4ab-8c0c" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
@@ -291,14 +295,11 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19de-077e-e4ab-8c0c"/>
-      </constraints>
       <infoLinks>
-        <infoLink name="Strategic Recall" id="d558-febf-9a01-3d10" hidden="false" type="profile" targetId="e3e8-f973-a8d1-16ef"/>
+        <infoLink name="Strategic Recall" id="d558-febf-9a01-3d10" hidden="false" targetId="e3e8-f973-a8d1-16ef" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Ancient Pride" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="5a63-1440-5842-2af3">
+        <profile name="Ancient Pride" id="5a63-1440-5842-2af3" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The active Unit’s first Weapon used gains INSTANT.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
@@ -306,10 +307,13 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Observer" hidden="false" id="8ef0-1923-a76b-682a">
+    <selectionEntry name="Observer" id="8ef0-1923-a76b-682a" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="c39e-8488-5eed-611f" primary="true" name="Tactical"/>
+        <categoryLink name="Tactical" id="c39e-8488-5eed-611f" primary="true" targetId="acb5-b55f-9492-5149"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="2520-f1a0-0277-8a44" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
@@ -321,17 +325,14 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2520-f1a0-0277-8a44"/>
-      </constraints>
       <profiles>
-        <profile name="Surveillance" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="7507-f6ba-d3f4-42cc">
+        <profile name="Surveillance" id="7507-f6ba-d3f4-42cc" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN Status.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
-        <profile name="Gravitic Boosters" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="68ee-85a2-820b-00b9">
+        <profile name="Gravitic Boosters" id="68ee-85a2-820b-00b9" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Use after a Friendly Unit rolls a D6 for Charge Distance. Add 1 to the Charge Distance for this Unit.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction</characteristic>
@@ -339,7 +340,13 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Overcharged Nexus" hidden="false" id="c46e-a559-df9e-2af5">
+    <selectionEntry name="Overcharged Nexus" id="c46e-a559-df9e-2af5" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="569a-5ec5-bdb9-1f3c" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="1392-166e-9e69-4981" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
@@ -351,28 +358,25 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="569a-5ec5-bdb9-1f3c" primary="true" name="Tactical"/>
-      </categoryLinks>
       <infoLinks>
-        <infoLink name="Strategic Recall" id="f74f-8940-46db-9816" hidden="false" type="profile" targetId="e3e8-f973-a8d1-16ef"/>
+        <infoLink name="Strategic Recall" id="f74f-8940-46db-9816" hidden="false" targetId="e3e8-f973-a8d1-16ef" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Photon Overcharge" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="fb13-a53b-05fb-250f">
+        <profile name="Photon Overcharge" id="fb13-a53b-05fb-250f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when an Enemy Unit enters the battlefield from Reserves via a location other than its own Entry Edge. That Unit immediately suffers HITS 3 (1).</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1392-166e-9e69-4981"/>
-      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Field" hidden="false" id="9a2a-ad36-4f4a-7bbf">
+    <selectionEntry name="Power Field" id="9a2a-ad36-4f4a-7bbf" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="87af-9722-8535-de06" primary="true" name="Tactical"/>
+        <categoryLink name="Tactical" id="87af-9722-8535-de06" primary="true" targetId="acb5-b55f-9492-5149"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="cdcd-371a-75a7-f729" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
@@ -384,11 +388,8 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdcd-371a-75a7-f729"/>
-      </constraints>
       <profiles>
-        <profile name="Guardian Shell" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="be2f-abec-25e9-b651">
+        <profile name="Guardian Shell" id="be2f-abec-25e9-b651" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Ground Unit makes an Armour Roll. That Unit gains DODGE (2) for this roll.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
@@ -396,7 +397,13 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twilight Council" hidden="false" id="8305-145f-bdde-9c67">
+    <selectionEntry name="Twilight Council" id="8305-145f-bdde-9c67" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="0bfa-4c90-8dca-0116" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="4bf4-aceb-e4fc-7e61" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
@@ -408,28 +415,28 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="0bfa-4c90-8dca-0116" primary="true" name="Tactical"/>
-      </categoryLinks>
       <profiles>
-        <profile name="Veil of Shadows" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8630-ac9f-de87-1c80">
+        <profile name="Veil of Shadows" id="8630-ac9f-de87-1c80" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use after a Friendly Unit resolves a PLACE effect. That Unit immediately resolves the HEAL (2) effect.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
-        <profile name="Weapons of the Firstborn" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="6a48-613f-b3cb-9ad7">
+        <profile name="Weapons of the Firstborn" id="6a48-613f-b3cb-9ad7" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The active Ground Unit’s first Ranged Weapon used gains BUFF Range (4).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf4-aceb-e4fc-7e61"/>
-      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warp Gate" hidden="false" id="86f1-c08a-acb6-ab9c">
+    <selectionEntry name="Warp Gate" id="86f1-c08a-acb6-ab9c" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="625c-47d0-a001-6950" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="6fbe-3a38-6194-1c07" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
@@ -441,17 +448,11 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="625c-47d0-a001-6950" primary="true" name="Tactical"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fbe-3a38-6194-1c07"/>
-      </constraints>
       <infoLinks>
-        <infoLink name="Quick Strikes" id="a51c-fc6b-9638-266e" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
+        <infoLink name="Quick Strikes" id="a51c-fc6b-9638-266e" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Warp In" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="2705-6d37-8461-557d">
+        <profile name="Warp In" id="2705-6d37-8461-557d" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Ground Unit Deploys from any table edge that is not a player’s Entry Edge. This deployment must end more than 10&quot; away from any Enemy model. The controlling player cannot use this ability if another Friendly Ground Unit has already Deployed this Round.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
@@ -459,7 +460,13 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warp Prism" hidden="false" id="adaa-58e7-37fc-bec8">
+    <selectionEntry name="Warp Prism" id="adaa-58e7-37fc-bec8" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="5d4c-127b-7404-a9e7" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="ff3b-9e13-7eb7-66c5" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
@@ -472,27 +479,27 @@
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
-        <profile name="Phase" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="60ce-bc67-59ed-0c90">
+        <profile name="Phase" id="60ce-bc67-59ed-0c90" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit resolves the PLACE (3) effect.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
-        <profile name="Warp Conduit" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1e30-9c91-1615-0500">
+        <profile name="Warp Conduit" id="1e30-9c91-1615-0500" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator anywhere on the battlefield more than 10&quot; away from any Enemy model. At the End of the Round, the controlling player may Deploy one Ground Unit from Reserves in base-to-base contact with this Faction Indicator.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3b-9e13-7eb7-66c5"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="acb5-b55f-9492-5149" id="5d4c-127b-7404-a9e7" primary="true" name="Tactical"/>
-      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Adepts" hidden="false" id="e7ab-733c-ce24-a503">
+    <selectionEntry name="Adepts" id="e7ab-733c-ce24-a503" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Core" id="8138-a4e2-7408-77a7" primary="true" targetId="3057-36a6-b4b3-cddb"/>
+        <categoryLink name="Ground" id="ebe8-9bea-f8f1-dce0" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Light" id="90c4-5857-b286-7427" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Biological" id="274f-a24e-85f8-2628" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+      </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -501,14 +508,8 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="3057-36a6-b4b3-cddb" id="8138-a4e2-7408-77a7" primary="true" name="Core"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="ebe8-9bea-f8f1-dce0" primary="false" name="Ground"/>
-        <categoryLink targetId="8312-ca6b-fa38-deef" id="90c4-5857-b286-7427" primary="false" name="Light"/>
-        <categoryLink targetId="8b0f-c3cd-9487-5030" id="274f-a24e-85f8-2628" primary="false" name="Biological"/>
-      </categoryLinks>
       <profiles>
-        <profile name="Adept" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="3245-d38b-7f77-75ea">
+        <profile name="Adept" id="3245-d38b-7f77-75ea" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">2</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">5/8</characteristic>
@@ -519,19 +520,19 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-2: 0 | 3-4: 1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Psionic  Presence" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="3071-5a22-4e60-5e55">
+        <profile name="Psionic  Presence" id="3071-5a22-4e60-5e55" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">All Weapons of Friendly Units targeting an Enemy Unit Within 4&quot; of this Unit’s Shade token gain PRECISION (1).</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Psionic Transfer" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="9955-c653-4b3f-6ba4">
+        <profile name="Psionic Transfer" id="9955-c653-4b3f-6ba4" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Shade token Wholly Within 12&quot; of any model in this Unit. At the End of the Round, the controlling player may set all models of this Unit in Coherency, treating the Shade token as the Leading Model. The Shade token has DISPLACEMENT.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Glaive Cannon" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="d63b-bed1-2490-0c09">
+        <profile name="Glaive Cannon" id="d63b-bed1-2490-0c09" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
             <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
@@ -543,7 +544,7 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Strike" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="236f-64e4-1200-fd4e">
+        <profile name="Strike" id="236f-64e4-1200-fd4e" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -555,20 +556,31 @@
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fe33-7ab6-bd8d-96d0" shared="true" childName="Glaive Strike" includeChildSelections="true" includeChildForces="true"/>
+                <condition childId="fe33-7ab6-bd8d-96d0" childName="Glaive Strike" field="selections" includeChildForces="true" includeChildSelections="true" scope="self" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Adept" id="d658-8578-21d4-c2e6" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="01b3-10a2-edef-ddb9-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="01b3-10a2-edef-ddb9-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="8353-df12-c4aa-b67e" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Assault Phase" id="6640-60c3-be39-96b9" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Resonating Glaives" hidden="false" id="eebc-71e9-7451-d874">
+                <selectionEntry name="Resonating Glaives" id="eebc-71e9-7451-d874" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="6bdd-7f12-01cf-5cfc" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -578,18 +590,18 @@
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Resonating Glaives" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="e0cf-d606-09d9-487a">
+                    <profile name="Resonating Glaives" id="e0cf-d606-09d9-487a" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit&apos;s Glaive Cannon gains BUFF RoA (1).</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 PE)</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bdd-7f12-01cf-5cfc"/>
-                  </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Guidance" hidden="false" id="e167-941d-4dc7-a3b1">
+                <selectionEntry name="Guidance" id="e167-941d-4dc7-a3b1" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="d179-017c-36d0-eb65" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -598,11 +610,8 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d179-017c-36d0-eb65"/>
-                  </constraints>
                   <profiles>
-                    <profile name="Guidance" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="422a-23bf-f886-821d">
+                    <profile name="Guidance" id="422a-23bf-f886-821d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit&apos;s Glaive Cannon Ranged weapon gains ANTI-EVADE (2).</characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
@@ -614,7 +623,10 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="ac62-fb9d-c068-0408" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Glaive Strike" hidden="false" id="fe33-7ab6-bd8d-96d0">
+                <selectionEntry name="Glaive Strike" id="fe33-7ab6-bd8d-96d0" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="0677-6b84-e93a-b8b9" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -624,7 +636,7 @@
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="Glaive Strike" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="a667-44cc-0780-a5d7">
+                    <profile name="Glaive Strike" id="a667-44cc-0780-a5d7" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
                       <characteristics>
                         <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
                         <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -637,25 +649,24 @@
                       </characteristics>
                     </profile>
                   </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0677-6b84-e93a-b8b9"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Adept" hidden="false" id="d658-8578-21d4-c2e6">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="01b3-10a2-edef-ddb9-min" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="01b3-10a2-edef-ddb9-max" includeChildSelections="false" automatic="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Artanis" hidden="false" id="e218-f6b9-e94f-8ae9">
+    <selectionEntry name="Artanis" id="e218-f6b9-e94f-8ae9" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Hero" id="c8c8-a8a5-8058-84d2" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Biological" id="4fd8-ac59-27f3-26f0" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Ground" id="4ea2-173e-221e-122b" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Psionic" id="8562-47ed-b570-4562" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Unique" id="ae88-0f60-df68-57b9" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="ea2f-654f-949c-032b" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -664,18 +675,11 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="bd6f-bae8-7dee-67be" id="c8c8-a8a5-8058-84d2" primary="true" name="Hero"/>
-        <categoryLink targetId="8b0f-c3cd-9487-5030" id="4fd8-ac59-27f3-26f0" primary="false" name="Biological"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="4ea2-173e-221e-122b" primary="false" name="Ground"/>
-        <categoryLink targetId="b915-b8d0-e25e-d12c" id="8562-47ed-b570-4562" primary="false" name="Psionic"/>
-        <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="ae88-0f60-df68-57b9" primary="false" name="Unique"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea2f-654f-949c-032b"/>
-      </constraints>
+      <infoLinks>
+        <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" targetId="c429-c517-b5d9-8e78" type="profile"/>
+      </infoLinks>
       <profiles>
-        <profile name="Artanis" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="2126-3b5d-161f-b943">
+        <profile name="Artanis" id="2126-3b5d-161f-b943" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">4</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
@@ -686,31 +690,31 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Phase Prism" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3f76-3ddc-d988-11c4">
+        <profile name="Phase Prism" id="3f76-3ddc-d988-11c4" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When Artanis is nominated to deploy from Reserves, it may resolve the PLACE (0) effect from another Friendly Unit. That Friendly Unit is removed from the battlefield and returned to Reserves. Artanis&apos; Activation ends.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hierarch’s Stand" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="f0d7-dc30-2a75-6334">
+        <profile name="Hierarch’s Stand" id="f0d7-dc30-2a75-6334" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When another Friendly Unit Within 8&quot; is declared as the target of a Ranged Attack and this Unit is a valid target, redirect the attack to this Unit. This Unit is eligible to make an Evade Roll against the redirected attack. This Special Ability remains active until the End of the current Activation.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Lightning Dash" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="26c9-0c0f-479e-9762">
+        <profile name="Lightning Dash" id="26c9-0c0f-479e-9762" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">After this Unit resolves a successful Charge action, it may declare a second Charge action against a different Enemy Unit, ignoring the restriction on Charging while Engaged. The Devastating Charge ability does not trigger a second time.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reactive (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="ee1c-04a3-ef94-80a6">
+        <profile name="Devastating Charge" id="ee1c-04a3-ef94-80a6" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (6) 4+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Pasive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Twilight Blades Strike" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="56ad-6481-86e0-510f">
+        <profile name="Twilight Blades Strike" id="56ad-6481-86e0-510f" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -722,7 +726,7 @@
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
           </characteristics>
         </profile>
-        <profile name="Twilight Blades Sweep" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="6e4c-e6fc-0c66-ab51">
+        <profile name="Twilight Blades Sweep" id="6e4c-e6fc-0c66-ab51" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -735,11 +739,19 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" type="profile" targetId="c429-c517-b5d9-8e78"/>
-      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Praetor Guards" hidden="true" id="84f3-7234-2df2-12d5">
+    <selectionEntry name="Praetor Guards" id="84f3-7234-2df2-12d5" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Khalai" id="89ab-eb62-80e3-70f5" primary="false" targetId="2586-d7c3-73d1-767f"/>
+        <categoryLink name="Light" id="e18d-11b7-da1b-7321" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="7220-5d06-2ecb-c906" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Biological" id="f794-8794-7860-c849" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Unique" id="ff09-1eea-a6cd-a070" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+        <categoryLink name="Elite" id="a7e9-294e-db9d-3eb9" primary="true" targetId="6089-3431-846d-7bb8"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="b12c-c5c7-136d-2f57" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -748,24 +760,20 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="2586-d7c3-73d1-767f" id="89ab-eb62-80e3-70f5" primary="false" name="Khalai"/>
-        <categoryLink targetId="8312-ca6b-fa38-deef" id="e18d-11b7-da1b-7321" primary="false" name="Light"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="7220-5d06-2ecb-c906" primary="false" name="Ground"/>
-        <categoryLink targetId="8b0f-c3cd-9487-5030" id="f794-8794-7860-c849" primary="false" name="Biological"/>
-        <categoryLink targetId="5adb-d04b-d3a5-9c7b" id="ff09-1eea-a6cd-a070" primary="false" name="Unique"/>
-        <categoryLink targetId="6089-3431-846d-7bb8" id="a7e9-294e-db9d-3eb9" primary="true" name="Elite"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12c-c5c7-136d-2f57"/>
-      </constraints>
       <infoLinks>
-        <infoLink name="Psi Blades" id="2350-ab72-b5ae-35bb" hidden="false" type="profile" targetId="76e4-fa8c-6eac-1990"/>
-        <infoLink name="Leg Enhancements" id="b7f8-6895-8646-ef24" hidden="false" type="profile" targetId="d28b-b20c-980e-26ed"/>
-        <infoLink name="Charge" id="02de-ee95-3835-ae2b" hidden="false" type="profile" targetId="c4c6-376a-082d-f63c"/>
+        <infoLink name="Psi Blades" id="2350-ab72-b5ae-35bb" hidden="false" targetId="76e4-fa8c-6eac-1990" type="profile"/>
+        <infoLink name="Leg Enhancements" id="b7f8-6895-8646-ef24" hidden="false" targetId="d28b-b20c-980e-26ed" type="profile"/>
+        <infoLink name="Charge" id="02de-ee95-3835-ae2b" hidden="false" targetId="c4c6-376a-082d-f63c" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile name="Praetor Guard (Zealot)" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ef91-8abc-e0b4-4ee1">
+        <profile name="Praetor Guard (Zealot)" id="ef91-8abc-e0b4-4ee1" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
@@ -776,56 +784,59 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2-3: 2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Shield Overcharge" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="298d-c96f-ef2b-afd2">
+        <profile name="Shield Overcharge" id="298d-c96f-ef2b-afd2" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit gains TOUGH (2) on the first Armour Roll each Round.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="a3cd-e8fe-aa96-41b3">
+        <profile name="Devastating Charge" id="a3cd-e8fe-aa96-41b3" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (3) 4+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Titan Killers" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="923b-ed1d-b1dc-1d9c">
+        <profile name="Titan Killers" id="923b-ed1d-b1dc-1d9c" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">When this Unit makes a Close Combat Attack, and the target is Size 3 or larger, the weapon’s Damage characteristic is treated as 2.</characteristic>
             <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Precognition" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="f9f4-7b66-51b4-ee09">
+        <profile name="Precognition" id="f9f4-7b66-51b4-ee09" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">This Unit is eligible to make an Evade roll against all attacks targeting it.</characteristic>
             <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" childName="Khalai" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Praetor Guard" hidden="false" id="ae43-f40a-5851-b14d">
+        <selectionEntry name="Praetor Guard" id="ae43-f40a-5851-b14d" hidden="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="afc2-7699-f92d-fa49-min" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="afc2-7699-f92d-fa49-max" includeChildSelections="false"/>
+            <constraint id="afc2-7699-f92d-fa49-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="afc2-7699-f92d-fa49-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pylon" hidden="true" id="b174-1572-feda-5f15">
+    <selectionEntry name="Pylon" id="b174-1572-feda-5f15" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink targetId="5788-d936-b639-6407" id="ab09-3621-a57f-ac54" primary="true" name="Other"/>
-        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="2913-ffec-a79f-4fa0" primary="false" name="Armoured"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="3371-b8ef-dd64-92d0" primary="false" name="Ground"/>
-        <categoryLink targetId="2586-d7c3-73d1-767f" id="0070-f58f-42b0-1647" primary="false" name="Khalai"/>
+        <categoryLink name="Other" id="ab09-3621-a57f-ac54" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Armoured" id="2913-ffec-a79f-4fa0" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Ground" id="3371-b8ef-dd64-92d0" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Khalai" id="0070-f58f-42b0-1647" primary="false" targetId="2586-d7c3-73d1-767f"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="3e89-5cb9-830d-b681" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile name="Pylon" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="8e32-40a3-972e-e0ef">
+        <profile name="Pylon" id="8e32-40a3-972e-e0ef" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">2</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
@@ -836,37 +847,34 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
           </characteristics>
         </profile>
-        <profile name="Structure" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="e626-bfe0-877a-a685">
+        <profile name="Structure" id="e626-bfe0-877a-a685" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Khalai Ingenuity" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="1f4e-b1be-8473-d7e2">
+        <profile name="Khalai Ingenuity" id="1f4e-b1be-8473-d7e2" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, when a Friendly Unit Within 4&quot; of this Pylon uses a Special Ability that costs Psionic Energy, that ability’s PE cost is reduced by 1.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
-        <profile name="Warp Conduit" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5799-cd35-02ba-0029">
+        <profile name="Warp Conduit" id="5799-cd35-02ba-0029" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Round, the controlling player may deploy a Ground Unit from Reserves using this Pylon base as the Entry Edge. This Unit&apos;s Activation ends.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e89-5cb9-830d-b681"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ab-8fa0-e055-c722" shared="true" includeChildSelections="true" includeChildForces="true" childName="Khalai"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Sentries" hidden="false" id="c2e7-d982-ac07-63c6">
+    <selectionEntry name="Sentries" id="c2e7-d982-ac07-63c6" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Support" id="e749-d3f7-f09d-aa62" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Light" id="aa36-9051-0376-8e88" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name=" Mechanical" id="c674-139b-977b-4afb" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Ground" id="adfe-2997-fb99-920b" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Psionic" id="03a5-66eb-e321-184c" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+      </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="130"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -875,15 +883,8 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="b8a5-0602-9633-c738" id="e749-d3f7-f09d-aa62" primary="true" name="Support"/>
-        <categoryLink targetId="8312-ca6b-fa38-deef" id="aa36-9051-0376-8e88" primary="false" name="Light"/>
-        <categoryLink targetId="e9d0-aa9f-8c5e-a2c3" id="c674-139b-977b-4afb" primary="false" name=" Mechanical"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="adfe-2997-fb99-920b" primary="false" name="Ground"/>
-        <categoryLink targetId="b915-b8d0-e25e-d12c" id="03a5-66eb-e321-184c" primary="false" name="Psionic"/>
-      </categoryLinks>
       <profiles>
-        <profile name="Sentry" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="9c92-bd4f-e370-2866">
+        <profile name="Sentry" id="9c92-bd4f-e370-2866" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">2</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
@@ -894,25 +895,25 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Restoration" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="e1ee-c45e-2390-2106">
+        <profile name="Restoration" id="e1ee-c45e-2390-2106" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when a Friendly Unit Within 4&quot; receives a DEBUFF. Remove all DEBUFFS from it.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Force Field" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="3bed-bc23-eac6-223a">
+        <profile name="Force Field" id="3bed-bc23-eac6-223a" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Force Field token Within 8&quot; in an unoccupied space. Units of Size 2 or lower cannot move across Force Fields. Models of Size 3 or more can move over it, and it&apos;s then removed.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Guardian Shield" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="2271-b066-bdd9-af32">
+        <profile name="Guardian Shield" id="2271-b066-bdd9-af32" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">All Ranged Attacks targeting a Friendly Unit Within 4&quot; (Line of Sight is not required) are made with 1 fewer die in the Attack Pool.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Disruption Beam" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="d3ab-9181-b31f-8cb3">
+        <profile name="Disruption Beam" id="d3ab-9181-b31f-8cb3" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
             <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
@@ -924,7 +925,7 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INSTANT</characteristic>
           </characteristics>
         </profile>
-        <profile name="Beam" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="f762-5f99-dec2-b554">
+        <profile name="Beam" id="f762-5f99-dec2-b554" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -937,12 +938,23 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Sentry" id="564c-a87b-2c68-fc3c" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="0c81-2888-ede7-3c2f-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="0c81-2888-ede7-3c2f-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="41b8-2877-8715-8a88" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Movement Phase" id="185f-136f-eeec-5e03" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Solid-Field Projector" hidden="false" id="eaf3-ec71-bd19-bcaa">
+                <selectionEntry name="Solid-Field Projector" id="eaf3-ec71-bd19-bcaa" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="fc54-1e7b-022b-4bfa" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -951,11 +963,8 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc54-1e7b-022b-4bfa"/>
-                  </constraints>
                   <profiles>
-                    <profile name="Solid-Field Projectors" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="9ab6-353c-cbc0-e1b0">
+                    <profile name="Solid-Field Projectors" id="9ab6-353c-cbc0-e1b0" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Force Field token Within 8&quot; in an unoccupied space. Units of Size 2 or lower cannot move across Force Fields. Models of Size 3 or more can move over it, and it&apos;s then removed.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
@@ -967,7 +976,10 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="aee5-9d8f-e5f2-9d53" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hallucination" hidden="false" id="e231-6dd2-ba4f-8561">
+                <selectionEntry name="Hallucination" id="e231-6dd2-ba4f-8561" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="262c-649d-9150-cbe6" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -976,11 +988,8 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="262c-649d-9150-cbe6"/>
-                  </constraints>
                   <profiles>
-                    <profile name="Hallucination" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="5537-2987-8cbc-b637">
+                    <profile name="Hallucination" id="5537-2987-8cbc-b637" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Unit declares a Ranged Attack against a Friendly Unit Within 4&quot;, the targeted Friendly Unit is eligible to make an Evade Roll against that attack.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 PE)</characteristic>
@@ -993,16 +1002,14 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sentry" hidden="false" id="564c-a87b-2c68-fc3c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0c81-2888-ede7-3c2f-min" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c81-2888-ede7-3c2f-max" includeChildSelections="false" automatic="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Stalker" hidden="false" id="aab3-edc0-70f1-373e">
+    <selectionEntry name="Stalker" id="aab3-edc0-70f1-373e" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Elite" id="7191-a71e-43d7-d9a2" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Armoured" id="8447-52ed-6963-26b2" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Ground" id="0d91-a7cd-da7e-7a68" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name=" Mechanical" id="c188-831b-e6c5-38f8" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+      </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1011,115 +1018,11 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Reinforce" hidden="false" id="e38a-46c4-60de-6eeb">
-          <costs>
-            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
-            <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
-            <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-            <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227c-7271-048c-497a"/>
-          </constraints>
-          <modifiers>
-            <modifier type="append" value="s" field="name" arg="1" scope="unit" join=""/>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Stalker" hidden="false" id="f8b4-e37c-19da-a050">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c26-3f1d-ef12-1a3b-min" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c26-3f1d-ef12-1a3b-max" includeChildSelections="false" automatic="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="2" field="1c26-3f1d-ef12-1a3b-min">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="1c26-3f1d-ef12-1a3b-max">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="6089-3431-846d-7bb8" id="7191-a71e-43d7-d9a2" primary="true" name="Elite"/>
-        <categoryLink targetId="03d5-bf1b-74fa-ae6a" id="8447-52ed-6963-26b2" primary="false" name="Armoured"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="0d91-a7cd-da7e-7a68" primary="false" name="Ground"/>
-        <categoryLink targetId="e9d0-aa9f-8c5e-a2c3" id="c188-831b-e6c5-38f8" primary="false" name=" Mechanical"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="2048-62fa-2e4b-25c9" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Path of Shadows" hidden="false" id="1ed0-10f0-9e0f-fe3b">
-              <costs>
-                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Path of Shadows" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="45e7-9b9a-d63f-dc70">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit gains HIDDEN Status until it performs another action.</characteristic>
-                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 PE)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7b-b22b-cab7-92d7"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="40" field="5bcf-897a-a5c9-d0e8">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fury of the Nerazim" hidden="false" id="8b8b-6e78-174f-1bd0">
-              <costs>
-                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
-                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b1b-c064-4b77-7d63"/>
-              </constraints>
-              <profiles>
-                <profile name="Fury of the Nerazim" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="92f2-0d12-7c9a-a84c">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit attacks an Enemy Unit that has already been Activated during this Phase, its Particle Disruptors gain INSTANT for that attack.</characteristic>
-                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Squadron" id="8999-12ea-2489-79b6" hidden="false" type="profile" targetId="fc8c-6bff-6d80-b316"/>
+        <infoLink name="Squadron" id="8999-12ea-2489-79b6" hidden="false" targetId="fc8c-6bff-6d80-b316" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Stalker" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="5e42-cb2d-3136-61b0">
+        <profile name="Stalker" id="5e42-cb2d-3136-61b0" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/8</characteristic>
@@ -1130,13 +1033,13 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Blink" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="bdd4-56f6-53f7-ad30">
+        <profile name="Blink" id="bdd4-56f6-53f7-ad30" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the PLACE (6) effect. Models set by this effect cannot be set up Within the Engagement Range of any Enemy Unit.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Particle Disruptors" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="ac11-18e0-5bed-48a9">
+        <profile name="Particle Disruptors" id="ac11-18e0-5bed-48a9" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
             <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
@@ -1148,7 +1051,7 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
           </characteristics>
         </profile>
-        <profile name="Stomp" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="c1d1-0a5c-2029-b819">
+        <profile name="Stomp" id="c1d1-0a5c-2029-b819" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
             <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
@@ -1161,13 +1064,111 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Reinforce" id="e38a-46c4-60de-6eeb" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="227c-7271-048c-497a" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
+            <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+            <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+            <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier arg="1" field="name" join="" scope="unit" type="append" value="s"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry name="Stalker" id="f8b4-e37c-19da-a050" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1c26-3f1d-ef12-1a3b-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="1c26-3f1d-ef12-1a3b-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <modifiers>
+            <modifier field="1c26-3f1d-ef12-1a3b-min" type="set" value="2">
+              <conditions>
+                <condition childId="e38a-46c4-60de-6eeb" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="1c26-3f1d-ef12-1a3b-max" type="set" value="2">
+              <conditions>
+                <condition childId="e38a-46c4-60de-6eeb" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2048-62fa-2e4b-25c9" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Path of Shadows" id="1ed0-10f0-9e0f-fe3b" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="9e7b-b22b-cab7-92d7" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="5bcf-897a-a5c9-d0e8" type="set" value="40">
+                  <conditions>
+                    <condition childId="e38a-46c4-60de-6eeb" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Path of Shadows" id="45e7-9b9a-d63f-dc70" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit gains HIDDEN Status until it performs another action.</characteristic>
+                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 PE)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Fury of the Nerazim" id="8b8b-6e78-174f-1bd0" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="6b1b-c064-4b77-7d63" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="5bcf-897a-a5c9-d0e8" type="set" value="30">
+                  <conditions>
+                    <condition childId="e38a-46c4-60de-6eeb" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Fury of the Nerazim" id="92f2-0d12-7c9a-a84c" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit attacks an Enemy Unit that has already been Activated during this Phase, its Particle Disruptors gain INSTANT for that attack.</characteristic>
+                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Zealots" hidden="false" id="9414-3605-697b-819a">
+    <selectionEntry name="Zealots" id="9414-3605-697b-819a" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink targetId="8312-ca6b-fa38-deef" id="87ba-4bb7-6e03-46f4" primary="false" name="Light"/>
-        <categoryLink targetId="b947-4784-f388-d6a2" id="3f60-0985-eb44-caa9" primary="false" name="Ground"/>
-        <categoryLink targetId="8b0f-c3cd-9487-5030" id="a81c-31e5-1fa6-b6c1" primary="false" name="Biological"/>
-        <categoryLink targetId="3057-36a6-b4b3-cddb" id="af51-4ed2-d4ed-9c97" primary="true" name="Core"/>
+        <categoryLink name="Light" id="87ba-4bb7-6e03-46f4" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="3f60-0985-eb44-caa9" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Biological" id="a81c-31e5-1fa6-b6c1" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Core" id="af51-4ed2-d4ed-9c97" primary="true" targetId="3057-36a6-b4b3-cddb"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
@@ -1177,12 +1178,36 @@
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Zealot" id="ecc6-929a-cc25-bd7b" hidden="false" targetId="cec2-87db-e412-505f" type="profile"/>
+        <infoLink name="Psi Blades" id="57eb-eb4c-3a92-a759" hidden="false" targetId="76e4-fa8c-6eac-1990" type="profile"/>
+        <infoLink name="Charge" id="0d60-0bbf-b6ae-6a38" hidden="false" targetId="c4c6-376a-082d-f63c" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Devastating Charge" id="3e68-3c70-6c4e-098d" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (3) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Zealot" id="c300-a802-ddc1-e1ff" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="808f-ac53-245b-e35a-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="808f-ac53-245b-e35a-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="bb44-8802-02ce-172a" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Movement Phase" id="7775-e0d5-c4a2-fa27" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Leg Enhancements" hidden="false" id="29ca-9e6a-5e5d-8601">
+                <selectionEntry name="Leg Enhancements" id="29ca-9e6a-5e5d-8601" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="2fbf-aad5-605d-5615" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1191,18 +1216,18 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fbf-aad5-605d-5615"/>
-                  </constraints>
                   <infoLinks>
-                    <infoLink name="Leg Enhancements" id="82fa-a708-4c23-1d43" hidden="false" type="profile" targetId="d28b-b20c-980e-26ed"/>
+                    <infoLink name="Leg Enhancements" id="82fa-a708-4c23-1d43" hidden="false" targetId="d28b-b20c-980e-26ed" type="profile"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Phase" id="58ac-5c61-4e65-1295" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="My Life for Aiur" hidden="false" id="9001-c31a-5c95-8fbb">
+                <selectionEntry name="My Life for Aiur" id="9001-c31a-5c95-8fbb" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="f8d6-f166-9924-95ba" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1212,22 +1237,22 @@
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <profiles>
-                    <profile name="My Life for Aiur" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="f180-f20d-036f-73c8">
+                    <profile name="My Life for Aiur" id="f180-f20d-036f-73c8" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves IMPACT, each eligible model generates 1 additional IMPACT die.</characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8d6-f166-9924-95ba"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="27c6-538e-e721-b9cc" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Zealous Round" hidden="false" id="0af2-9e5d-0522-cc4a">
+                <selectionEntry name="Zealous Round" id="0af2-9e5d-0522-cc4a" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="3e81-c632-bc81-6f26" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1236,11 +1261,8 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e81-c632-bc81-6f26"/>
-                  </constraints>
                   <profiles>
-                    <profile name="Zealous Round" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="5049-b640-9bb1-4010">
+                    <profile name="Zealous Round" id="5049-b640-9bb1-4010" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit is not Activated and receives Damage, the controlling player may count this Unit as Activated in this Phase (flip its Activation Marker) to reduce the Total Damage by 2.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 PE)</characteristic>
@@ -1252,7 +1274,10 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="e7dc-e2ac-fe7f-aad3" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="We Stand as One" hidden="false" id="dccf-33b2-c4d7-c6ee">
+                <selectionEntry name="We Stand as One" id="dccf-33b2-c4d7-c6ee" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="588e-cc89-0dc5-6ab9" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <costs>
                     <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1261,11 +1286,8 @@
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="588e-cc89-0dc5-6ab9"/>
-                  </constraints>
                   <profiles>
-                    <profile name="We Stand as One" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="5189-cb4c-7fe7-ce42">
+                    <profile name="We Stand as One" id="5189-cb4c-7fe7-ce42" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
                       <characteristics>
                         <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">When this Unit makes a Close Combat Attack, if the target is Engaged with at least 1 other Friendly Unit, this Unit&apos;s Close Combat Weapon gains PRECISION (2).</characteristic>
                         <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
@@ -1278,65 +1300,22 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Zealot" id="ecc6-929a-cc25-bd7b" hidden="false" type="profile" targetId="cec2-87db-e412-505f"/>
-        <infoLink name="Psi Blades" id="57eb-eb4c-3a92-a759" hidden="false" type="profile" targetId="76e4-fa8c-6eac-1990"/>
-        <infoLink name="Charge" id="0d60-0bbf-b6ae-6a38" hidden="false" type="profile" targetId="c4c6-376a-082d-f63c"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="3e68-3c70-6c4e-098d">
-          <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (3) 4+ effect.</characteristic>
-            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Zealot" hidden="false" id="c300-a802-ddc1-e1ff">
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="808f-ac53-245b-e35a-min" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="808f-ac53-245b-e35a-max" includeChildSelections="false" automatic="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
-  <entryLinks>
-    <entryLink import="true" name="Abandoned Camp" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
-    <entryLink import="true" name="Acropolis" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
-    <entryLink import="true" name="Agria Valley" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
-    <entryLink import="true" name="Breach" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
-    <entryLink import="true" name="Char Plains" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
-    <entryLink import="true" name="Dirt Side" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
-    <entryLink import="true" name="Frontier" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
-    <entryLink import="true" name="Gauntlet" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
-    <entryLink import="true" name="Proving Grounds" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
-    <entryLink import="true" name="Typhoon" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
-    <entryLink import="true" name="Divide and Conquer" hidden="false" id="8590-cede-d790-ac44" type="selectionEntry" targetId="867c-9d4b-143d-eca1"/>
-    <entryLink import="true" name="Divide and Conquer" hidden="false" id="f9b3-74e9-aacc-f454" type="selectionEntry" targetId="4bb0-33b7-8631-a7d6"/>
-    <entryLink import="true" name="Frontlines" hidden="false" id="86e3-4136-e95f-a05f" type="selectionEntry" targetId="0bea-4ed7-720a-e4c3"/>
-    <entryLink import="true" name="Frontlines" hidden="false" id="b021-1323-38d9-ed51" type="selectionEntry" targetId="ed0b-9c9c-e1d7-af7e"/>
-    <entryLink import="true" name="Gather the Resources" hidden="false" id="00d0-2bdf-2e0f-5e34" type="selectionEntry" targetId="9448-133e-5048-c69c"/>
-    <entryLink import="true" name="Gather the Resources" hidden="false" id="1837-6bc8-2fae-a043" type="selectionEntry" targetId="9462-75bd-3874-4107"/>
-    <entryLink import="true" name="Hold Position" hidden="false" id="7797-1abc-fa16-45a1" type="selectionEntry" targetId="8d8b-9f4b-1186-51b7"/>
-    <entryLink import="true" name="Hold Position" hidden="false" id="346f-9732-0090-bd15" type="selectionEntry" targetId="782c-42a3-2e29-105b"/>
-    <entryLink import="true" name="Supply Drop" hidden="false" id="f182-ed28-4bf9-1a6f" type="selectionEntry" targetId="c0bd-6ca6-4efb-5f19"/>
-    <entryLink import="true" name="Supply Drop" hidden="false" id="f653-f03b-5931-a7b6" type="selectionEntry" targetId="6f6a-bca3-b232-6236"/>
-  </entryLinks>
   <sharedProfiles>
-    <profile name="Quick Strikes" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)" hidden="false" id="7995-a465-9333-17ea">
+    <profile name="Quick Strikes" id="7995-a465-9333-17ea" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">The active Unit’s first Close Combat Weapon used gains PRECISION (2).</characteristic>
         <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
       </characteristics>
     </profile>
-    <profile name="Strategic Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="e3e8-f973-a8d1-16ef">
+    <profile name="Strategic Recall" id="e3e8-f973-a8d1-16ef" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is returned to Reserves instead of performing an action.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
-    <profile name="Zealot" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="cec2-87db-e412-505f">
+    <profile name="Zealot" id="cec2-87db-e412-505f" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
       <characteristics>
         <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
         <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
@@ -1347,19 +1326,19 @@
         <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2-3: 2</characteristic>
       </characteristics>
     </profile>
-    <profile name="Leg Enhancements" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d28b-b20c-980e-26ed">
+    <profile name="Leg Enhancements" id="d28b-b20c-980e-26ed" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit performs a 2&quot; Move action. This does not count towards its action limit.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="c4c6-376a-082d-f63c">
+    <profile name="Charge" id="c4c6-376a-082d-f63c" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, roll 2D6 instead of D6 and use the higher result to add to the Unit’s Speed characteristic.</characteristic>
         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 PE)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Psi Blades" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon" hidden="false" id="76e4-fa8c-6eac-1990">
+    <profile name="Psi Blades" id="76e4-fa8c-6eac-1990" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
       <characteristics>
         <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
         <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
