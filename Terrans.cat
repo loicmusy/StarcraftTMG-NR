@@ -699,9 +699,6 @@
           <constraints>
             <constraint id="f89f-279e-0e69-e64d" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="C-14 Rifle" id="226c-7301-0163-1a8d" hidden="false" targetId="135f-4d13-ea93-602d" type="profile"/>
-          </infoLinks>
           <profiles>
             <profile name="C-14 Rifle" id="7683-f981-09a8-c61b" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
               <comment>J. Raynor version</comment>
