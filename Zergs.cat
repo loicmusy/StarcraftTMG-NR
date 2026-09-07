@@ -1731,6 +1731,140 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry name="Ravagers" id="1383-0c88-6363-8d90" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Armoured" id="4897-d976-ed30-c61b" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Biological" id="7392-5a3e-6ff1-a679" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Ground" id="4c14-ab3c-1d55-2726" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Core" id="1b9e-e7be-9a56-34b9" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Squadron" id="5365-a20d-5086-c121" hidden="false" targetId="fc8c-6bff-6d80-b316" type="profile"/>
+        <infoLink name="Claws" id="950f-49cf-5375-cf53" hidden="false" targetId="9991-19ca-327a-9240" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Ravager" id="db6f-377c-ed06-93a1" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/8</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">9</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Corrosive Bile" id="37a4-0f61-2876-97a8" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">For each model in this Unit, set one Corrosive Bile token on the battlefield Within 14&quot; of that model. These tokens are not removed if this Unit is Destroyed. At the End of the Assault Phase, each Unit suffers HITS 5 (1) effect for each of this Unit&apos;s Corrosive Bile tokens it is Within 1&quot; of. Then, remove all of this Unit&apos;s Corrosive Bile tokens from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deep Tunnel" id="1009-c258-0755-5017" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Ravager Burrow token Wholly Within 12&quot; of any model in this Unit. At the End of the Round, the controlling player may set all models of this Units in Coherency, treating the Ravager Burrow token as the Leading Model. The Ravager Burrow token has DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plasma Discharge" id="eac8-b110-c2e9-47ff" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3+1</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="13e9-0979-eef7-2092" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Ravager" id="b2ea-3646-c5c7-3ac9" hidden="false" import="true" type="model"/>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="300c-edf2-a8f4-df98" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phase" id="94bb-2a59-b2d8-6dd5" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Bloated Bile Ducts" id="0332-c7ff-50b1-1e44" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="b48f-06ba-b7b6-2405" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Bloated Bile Ducts" id="8eb9-b5ef-d6c9-5354" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Increase the area of effect of the Unit&apos;s Corrosive Bile ability to 2&quot;.</characteristic>
+                        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Movement Phase" id="0fcd-39a1-2bae-0e34" hidden="false">
+              <entryLinks>
+                <entryLink name="Burrow Ambush" id="04ec-aa7e-bf25-e897" hidden="false" import="true" targetId="95a5-7e95-ec19-e358" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="6d73-4fcb-31cd-bac4" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Potent Bile" id="9b29-32e4-ff36-55c1" hidden="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink name="DEBUFF [Characteristic] (X)" id="a58c-24f5-5521-4f0b" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Potent Bile" id="efc3-6c6a-22d7-5f74" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Before an Enemy Unit resolves an Armour Roll against the HITS effect generated by this Unit&apos;s Corrosive Bile ability, that Unit suffers DEBUFF Armour (1)</characteristic>
+                        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Cocoon" id="e151-3f28-84e9-3ea6" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="MORPH (Name)" id="9861-7cdf-23de-493a" hidden="false" targetId="fbcd-73d9-3967-1dd3" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Spawn Larva" id="cee5-169d-9a7b-f84f" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Friendly non-Unique Biological Unit with a Size Characteristic of 1 resolve the Respawn (2) effect.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ravager Morph" id="47f9-d2c5-7dd4-7ed1" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once Per Game.
+The active Friendly Roach Unit performs MORPH (Ravager) 1.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Zerg Creep" id="ace7-328b-a155-9023" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">

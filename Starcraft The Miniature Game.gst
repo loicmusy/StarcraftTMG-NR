@@ -75,8 +75,8 @@
           </formatRules>
         </characteristicType>
         <characteristicType name="Spd" id="1b39-d395-b125-7ea9"/>
-        <characteristicType name="Eva" id="bc5e-a9b9-f09d-8dec"/>
         <characteristicType name="Arm" id="08b0-2471-8408-9222"/>
+        <characteristicType name="Eva" id="bc5e-a9b9-f09d-8dec"/>
         <characteristicType name="HP" id="e275-f946-72ee-4a48"/>
         <characteristicType name="Size" id="357b-9a74-5a55-800e" defaultValue="
 "/>
@@ -209,6 +209,12 @@
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
+    <profile name="Indomitable" id="c6e7-5b8f-5d8f-0626" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="IMPACT (X) Y" id="7805-5c0f-7d68-90c8" hidden="false">
@@ -336,6 +342,17 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="BURST FIRE Y” (X)" id="3ec2-22f8-fa75-469b" hidden="false" page="When making a Ranged Attack against a target Within Y” of the attacking model, increase this weapon’s RoA by X for that attack.">
       <alias>BURST FIRE</alias>
+    </rule>
+    <rule name="SIEGE MODE" id="ba45-b6a8-33d0-f628" hidden="false">
+      <description>While a Unit has the SIEGE MODE Status, apply the following rules:
+
+• This Unit cannot perform the Move, Disengage, Run, Charge or Close Ranks actions.
+• Weapons profile with Siege Mode Status can only be used while this unit has SIEGE MODE Status.
+• While this unit has Siege Mode Status any other weapons can&apos;t be used.
+• When this Unit is returned to Reserves, it loses the SIEGE MODE Status.</description>
+    </rule>
+    <rule name="MORPH (Name)" id="fbcd-73d9-3967-1dd3" hidden="false">
+      <description>The controlling player must have sufficient Available Supply. Set one (Name) model in Base-to-Base contact with a model from the active Unit, then remove that model from the battlefield. The (Name) model forms a new Unit and cannot be set Within 1&quot; of any Enemy Unit. Place an Activation Marker next to the new Unit; it cannot be Activated for the remainder of the Round.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -664,7 +681,7 @@ Gain 2 VP for Controlling Mission Marker 5.</characteristic>
               </profiles>
             </selectionEntry>
             <selectionEntry name="Frontlines" id="0bea-4ed7-720a-e4c3" hidden="false" import="true" type="upgrade">
-              <comment>Engagement Mission Card | Website ID: mission_frontlines </comment>
+              <comment>Engagement Mission Card | Website ID: mission_frontlines</comment>
               <constraints>
                 <constraint id="46b5-7ab4-d357-5fdf" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
