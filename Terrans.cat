@@ -1159,7 +1159,7 @@
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-3: 0 | 4-6: 1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-6: 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Rapid Reinforcements" id="19a8-73ca-085a-8f13" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">

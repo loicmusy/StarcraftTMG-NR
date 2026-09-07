@@ -588,16 +588,16 @@
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Crushing Grip" id="c9d9-0041-abae-7717" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+        <profile name="Crushing Grip" id="c9d9-0041-abae-7717" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 12&quot;. That Unit counts as Activated in this Phase (set an Activation Marker next to it).</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. That Unit counts as Activated in this Phase (set an Activation Marker next to it).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Mutating Carapace" id="147b-7ae4-a0c4-8a76" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+        <profile name="Mutating Carapace" id="147b-7ae4-a0c4-8a76" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Select one Enemy Unit Within 18&quot;. This Unit is eligible to make an Evade Roll against all attacks made by the selected Enemy Unit, with a +2 Modifier applied to those Evade Rolls.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 18&quot;. This Unit is eligible to make an Evade Roll against all attacks made by the selected Enemy Unit, with a +2 Modifier applied to those Evade Rolls.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
         <profile name="Energy Blast" id="85cb-48d0-0046-6ba3" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
