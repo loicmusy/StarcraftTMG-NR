@@ -1786,7 +1786,12 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Ravager" id="b2ea-3646-c5c7-3ac9" hidden="false" import="true" type="model"/>
+        <selectionEntry name="Ravager" id="b2ea-3646-c5c7-3ac9" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="289a-29a5-a250-8154-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="289a-29a5-a250-8154-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="300c-edf2-a8f4-df98" hidden="false">
@@ -1816,6 +1821,9 @@
             <selectionEntryGroup name="Assault Phase" id="6d73-4fcb-31cd-bac4" hidden="false">
               <selectionEntries>
                 <selectionEntry name="Potent Bile" id="9b29-32e4-ff36-55c1" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="c9a8-f70f-3bc9-7599" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <infoLinks>
                     <infoLink name="DEBUFF [Characteristic] (X)" id="a58c-24f5-5521-4f0b" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
                   </infoLinks>
@@ -1835,6 +1843,9 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Cocoon" id="e151-3f28-84e9-3ea6" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="a214-619e-958d-64e1" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>

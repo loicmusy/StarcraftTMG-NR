@@ -9,6 +9,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -23,6 +24,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -43,6 +45,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -57,6 +60,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -71,6 +75,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -85,6 +90,7 @@
               <conditions>
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1448,7 +1454,7 @@
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="60e8-98b7-764c-6da2" childName="Left Phase Disruptor" field="selections" scope="model-or-unit" shared="true" type="atLeast" value="1"/>
+                <condition childId="60e8-98b7-764c-6da2" childName="Left Phase Disruptor" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1467,7 +1473,7 @@
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="0ab1-9524-6959-9b0e" childName="Right Phase Disruptor" field="selections" scope="model-or-unit" shared="true" type="atLeast" value="1"/>
+                <condition childId="0ab1-9524-6959-9b0e" childName="Right Phase Disruptor" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1498,7 +1504,6 @@
               <selectionEntries>
                 <selectionEntry name="Shield Overcharge" id="9507-1df4-4ec0-5f72" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="0459-3233-bf10-09ab-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="0459-3233-bf10-09ab-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
@@ -1516,7 +1521,6 @@
               <selectionEntries>
                 <selectionEntry name="Left Phase Disruptor" id="60e8-98b7-764c-6da2" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="59c8-b444-b71d-db50-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="59c8-b444-b71d-db50-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
@@ -1536,7 +1540,6 @@
                 </selectionEntry>
                 <selectionEntry name="Right Phase Disruptor" id="0ab1-9524-6959-9b0e" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="84d3-db02-c839-7039-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="84d3-db02-c839-7039-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
@@ -1555,16 +1558,22 @@
                   </profiles>
                 </selectionEntry>
                 <selectionEntry name="Fury Unyielding" id="137e-8144-90b2-9718" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="5766-144c-242e-6b2e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <profiles>
                     <profile name="Fury Unyielding" id="a0d7-20fe-0bcb-5a40" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit is Within 3&quot; of a Mission Marker, its Ranged Weapons gain CRITICAL HIT (1) when targeting an Enemy Unit that is also Within 3&quot; of the same Mission Marker. </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit is Within 3&quot; of a Mission Marker, its Ranged Weapons gain CRITICAL HIT (1) when targeting an Enemy Unit that is also Within 3&quot; of the same Mission Marker.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                 </selectionEntry>
                 <selectionEntry name="For the Ancients" id="a75e-b377-c615-f571" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="13be-0332-fe0e-dfe3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <profiles>
                     <profile name="For the Ancients" id="b13a-afca-80d5-e195" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
