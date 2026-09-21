@@ -1472,7 +1472,7 @@
             <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
-            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">Concentrated Fire (1), Long Range (16)</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CONCENTRATED FIRE (1), LONG RANGE (16)</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="true">
@@ -1491,7 +1491,7 @@
             <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
-            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">Concentrated Fire (1), Long Range (16), SIDEARM</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CONCENTRATED FIRE (1), LONG RANGE (16), SIDEARM</characteristic>
           </characteristics>
           <modifiers>
             <modifier field="hidden" type="set" value="true">

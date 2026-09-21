@@ -245,8 +245,8 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
     <rule name="SPECIALIST" id="1974-2d46-8d07-3b29" hidden="false">
       <description>A Unit may include only one model equipped with this weapon. Multiple upgrades configuring more than one instance of this weapon are not permitted (Part 9.1.7).</description>
     </rule>
-    <rule name="REPETABLE" id="f895-258a-9487-f59a" hidden="false">
-      <description>REPEATABLE. Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects: 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 2 CP: Remove the Activation Marker from that Unit.</description>
+    <rule name="REPEATABLE" id="f895-258a-9487-f59a" hidden="false">
+      <description>Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects: 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 2 CP: Remove the Activation Marker from that Unit.</description>
     </rule>
     <rule name="BULKY" id="f460-74cd-768c-a9e4" hidden="false">
       <description>This weapon cannot be used to make a Ranged Attack while the Unit is currently Engaged (Part 8.7.3).</description>
@@ -353,7 +353,19 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="MORPH (Name)" id="fbcd-73d9-3967-1dd3" hidden="false">
       <description>The controlling player must have sufficient Available Supply. Set one (Name) model in Base-to-Base contact with a model from the active Unit, then remove that model from the battlefield. The (Name) model forms a new Unit and cannot be set Within 1&quot; of any Enemy Unit. Place an Activation Marker next to the new Unit; it cannot be Activated for the remainder of the Round.</description>
+      <alias>MORPH</alias>
     </rule>
+    <rule name="SHIELDED" id="137d-a280-957d-d27a" hidden="false">
+      <description>If a Shield value is present on a Unit Card, add it to the Hit Points (HP) of the first model. The Unit is Shielded. The Unit loses its Shielded Status when the Total Damage assigned to it exceeds its Shield value or when the first model in the Unit is removed.
+
+
+The Shielded Status is referenced by other abilities. Losing Shielded Status does not remove any remaining Hit Points, it only ends effects that require the Unit to be Shielded. Shielded Status cannot be restored by HEAL.</description>
+      <alias>Shielded</alias>
+    </rule>
+    <rule name="STATIONARY" id="d9e4-a69c-36e9-00cd" hidden="false">
+      <description>At the Start of the Round, all Units gain this Status. A Unit immediately loses this Status if any model in this Unit moves, is moved, or is PLACED for any reason.</description>
+    </rule>
+    <rule name="CONCENTRATED FIRE" id="613f-4376-5945-9fb6" hidden="false"/>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry name="Deployment Maps" id="d444-6767-cbfc-bf56" defaultAmount="1" hidden="false" import="true" type="upgrade">
