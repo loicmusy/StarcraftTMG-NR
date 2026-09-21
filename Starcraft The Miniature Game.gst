@@ -364,6 +364,7 @@ The Shielded Status is referenced by other abilities. Losing Shielded Status doe
     </rule>
     <rule name="STATIONARY" id="d9e4-a69c-36e9-00cd" hidden="false">
       <description>At the Start of the Round, all Units gain this Status. A Unit immediately loses this Status if any model in this Unit moves, is moved, or is PLACED for any reason.</description>
+      <alias>Stationary</alias>
     </rule>
     <rule name="CONCENTRATED FIRE" id="613f-4376-5945-9fb6" hidden="false"/>
   </sharedRules>
