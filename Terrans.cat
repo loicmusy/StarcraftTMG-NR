@@ -1381,15 +1381,8 @@
       </costs>
       <infoLinks>
         <infoLink name="HEAL (X)" id="d4bc-ed4c-8182-744f" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
+        <infoLink name="Field Repair" id="3d45-cd25-bd66-621a" hidden="false" targetId="5bb0-86b2-6f7a-3ced" type="profile"/>
       </infoLinks>
-      <profiles>
-        <profile name="Field Repair" id="5bb0-86b2-6f7a-3ced" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
-            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry name="Orbital Command" id="2da0-87db-783a-f81d" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1550,33 +1543,45 @@
         <categoryLink name=" Mechanical" id="085b-338c-ed82-9a0d" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="926c-d6cc-2cfb-278b" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="220"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <infoLinks>
         <infoLink name="SIEGE MODE" id="5968-be1c-9d52-ace8" hidden="false" targetId="ba45-b6a8-33d0-f628" type="rule"/>
         <infoLink name="PIERCE [TAG] X" id="40cc-c345-bd89-60ca" hidden="false" targetId="8a5b-c6c7-6abf-6879" type="rule"/>
         <infoLink name="TOUGH (X)" id="3024-9020-6cac-84a6" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
         <infoLink name="IMPACT (X) Y" id="b34d-dc10-5c54-6027" hidden="false" targetId="7805-5c0f-7d68-90c8" type="rule"/>
+        <infoLink name="Indomitable" id="ea51-7c07-41bd-1aa8" hidden="false" targetId="c6e7-5b8f-5d8f-0626" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="Siege Tank" id="c8fb-ba71-94f7-0d8e" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">-</characteristic>
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">-</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">14</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Large" id="70f6-d231-a288-6d38" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit&apos;s Leading Model moves, it cannot pass through physical gaps smaller than 3&quot; wide, regardless of its size. If the Leading Model&apos;s path of travel passes through, or any model in this Units ends its movement on a Size 0 or Size 1 Impassible Terrain piece during any movement action, that terrain piece is immediately removed from the game.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit&apos;s Leading Model moves, it cannot pass through physical gaps smaller than 3&quot; wide, regardless of its size. If the Leading Model&apos;s path of travel passes through, or any model in this Unit ends its movement on a Size 0 or Size 1 Impassible Terrain piece (excluding Tokens) during any movement action, that terrain piece is immediately removed from the game.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Heavy Plating" id="52a1-55fa-8758-5a63" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Whenever this Unit resolves an Armour Roll, it gains TOUGH (1), provided it does not currently have the SIEGE MODE Status.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves an Armour Roll, it gains TOUGH (1), provided it does not currently have the SIEGE MODE Status. </characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1594,7 +1599,7 @@
         </profile>
         <profile name="Shock Cannon" id="9b02-6a47-84c8-a705" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
           <characteristics>
-            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
             <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
             <characteristic name="RoA" typeId="6594-a81b-03da-75a1">BT+4</characteristic>
             <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
@@ -1604,27 +1609,21 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">SIEGE MODE Status</characteristic>
           </characteristics>
         </profile>
-        <profile name="Indomitable" id="3133-e902-ad85-1800" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
-            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Point Blank" id="d4fe-7fd1-46cb-e6de" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit has the SIEGE MODE Status, it cannot target Enemy Units it is Engaged with.</characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit has the SIEGE MODE Status, it cannot target Enemy Units it is Engaged with. </characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Aftershock Rounds" id="8a2f-531a-5faa-79a0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit has the SIEGE MODE Status, its Damage characteristic is treated as equal to the Size characteristic of the current target Unit (to a minimum of 1).</characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit has the SIEGE MODE Status, its Damage characteristic is treated as equal to the Size characteristic of the current target Unit (to a minimum of 1). </characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" id="e619-edc4-e1da-35f0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect. </characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1650,14 +1649,24 @@
                   <constraints>
                     <constraint id="39a6-e86e-dc68-d2f3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <infoLinks>
                     <infoLink name="SIEGE MODE" id="e472-d723-3bc5-f974" hidden="false" targetId="ba45-b6a8-33d0-f628" type="rule"/>
                   </infoLinks>
                   <profiles>
                     <profile name="Mode Transformation" id="092c-2078-960c-08fb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status.
-While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> The active Unit gains or loses the SIEGE MODE Status. While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1667,6 +1676,17 @@ While this Unit has the SIEGE MODE Status, its Size characteristic is treated as
                   <constraints>
                     <constraint id="4df0-a13a-e27d-fe62" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Coordinated Strike" id="b606-40b2-27e0-f5f0" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
@@ -1684,6 +1704,17 @@ While this Unit has the SIEGE MODE Status, its Size characteristic is treated as
                   <constraints>
                     <constraint id="5b9e-5399-e72b-fd43" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <infoLinks>
                     <infoLink name="PINPOINT" id="6336-eae2-4d23-4acd" hidden="false" targetId="f9ad-69a2-80e6-c3a5" type="rule"/>
                     <infoLink name="LOCKED IN (X)" id="75ae-4877-b080-6c8b" hidden="false" targetId="7cfe-f96a-bbcb-8220" type="rule"/>
@@ -1691,8 +1722,7 @@ While this Unit has the SIEGE MODE Status, its Size characteristic is treated as
                   <profiles>
                     <profile name="Shaped Blast" id="7f15-0ea5-a1fb-a512" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once per Game.
-When this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4).</characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"> Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4). </characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1702,6 +1732,17 @@ When this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4
                   <constraints>
                     <constraint id="c65b-4a94-fdb1-5c02" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <infoLinks>
                     <infoLink name="INDIRECT FIRE" id="d554-bc4a-878c-b15e" hidden="false" targetId="a19f-0594-dd63-2656" type="rule"/>
                     <infoLink name="LONG RANGE (X&quot;)" id="6908-0e97-ab09-d116" hidden="false" targetId="a7d8-c669-4f19-2b97" type="rule"/>
@@ -1709,8 +1750,7 @@ When this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4
                   <profiles>
                     <profile name="Smart Shells" id="7fc7-4c9c-2ed3-b26b" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once Per Game.
-When this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RANGE (24).</characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"> Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RANGE (24). </characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1742,17 +1782,12 @@ When this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RA
       <infoLinks>
         <infoLink name="HEAL (X)" id="2cd7-db32-68cd-0693" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
         <infoLink name="PRECISION (X)" id="4d63-483a-e151-ff98" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="Field Repair" id="1015-3e5f-d269-a3a9" hidden="false" targetId="5bb0-86b2-6f7a-3ced" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Field Repair" id="576f-9de2-c3db-df7c" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
-            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Pound &apos;em Flat!" id="064a-e420-277b-2a7f" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If the active Mechanical Unit has the Stationary Status, its first Ranged Weapon used gains PRECISION (2)</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If the active Mechanical Unit has the Stationary Status, its first Ranged Weapon used gains PRECISION (2). </characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
@@ -1828,6 +1863,12 @@ When this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RA
     <profile name="Go! Go! Go!" id="1721-d5ac-ed20-9063" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit performs a 2&quot; Move action. This does not count towards its action limit.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Field Repair" id="5bb0-86b2-6f7a-3ced" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>

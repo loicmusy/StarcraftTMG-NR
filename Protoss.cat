@@ -1340,7 +1340,19 @@
         <categoryLink name="Biological" id="9653-45f1-bb4a-9199" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Ground" id="1ed1-c2ba-7a7a-cb26" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Light" id="b86b-eeda-4189-21c5" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Nerazim" id="a594-5393-d344-40b0" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="210"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
           <conditions>
@@ -1362,13 +1374,13 @@
         </profile>
         <profile name="Nerazim Farsight" id="e42f-bcc9-fa98-cd9d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of a Shade token, they lose HIDDEN Status.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit&apos;s Shade token, they lose HIDDEN Status. </characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Psionic Transfer" id="8959-5b4f-aed5-54a6" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Shade token Wholly Within 12&quot; of any model in this Unit. At the ENd of the Round, the controlling player may set all models of this Unit in Coherency, treating the Shade token as the Leading Model. The Shade token as DISPLACEMENT.</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Shade token Wholly Within 12&quot; of any model in this Unit. At the End of the Round, the controlling player may set all models of this Unit in Coherency, treating the Shade token as the Leading Model. The Shade token has DISPLACEMENT. </characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
@@ -1406,8 +1418,8 @@
       <selectionEntries>
         <selectionEntry name="Nerazim Watcher (Adept)" id="0425-ed9c-e228-19c1" hidden="false" import="true" type="model">
           <constraints>
-            <constraint id="16b3-2bd4-4d05-e6ba-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
-            <constraint id="16b3-2bd4-4d05-e6ba-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
+            <constraint id="16b3-2bd4-4d05-e6ba-min-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="16b3-2bd4-4d05-e6ba-min-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1419,6 +1431,17 @@
         <categoryLink name=" Mechanical" id="50a2-d9e5-e2ba-f211" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="bf15-dbbc-8a25-9ed6" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <infoLinks>
         <infoLink name="Indomitable" id="a35c-4006-99a7-837f" hidden="false" targetId="c6e7-5b8f-5d8f-0626" type="profile"/>
       </infoLinks>
@@ -1431,12 +1454,12 @@
             <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"/>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Improved Barrier" id="f0c0-8311-e1ae-6602" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when this Unit is selected as the target of an attack. If this Unit has the Shielded Status, the Damage characteristic of the attacking weapon is treated as a maximum of 1 for this attack.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when this Unit is selected as the target of an attack. If this Unit has the Shielded Status, the Damage characteristic of the attacking weapon is treated as a maximum of 1 for this attack. </characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (0 PE)</characteristic>
           </characteristics>
         </profile>
@@ -1480,7 +1503,7 @@
         </profile>
         <profile name="Devastating Charge" id="f4a5-fd98-507c-6cd9" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect. </characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1506,10 +1529,21 @@
                   <constraints>
                     <constraint id="0459-3233-bf10-09ab-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Shield Overcharge" id="edc4-03e5-9610-3e45" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before this Unit makes an Armour Roll. If this Unit has the Shielded Status, It gains TOUGH (2) for this roll.</characteristic>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before this Unit makes an Armour Roll. If this Unit has the Shielded Status, It gains TOUGH (2) for this roll. </characteristic>
                         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
                       </characteristics>
                     </profile>
@@ -1523,6 +1557,17 @@
                   <constraints>
                     <constraint id="59c8-b444-b71d-db50-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Left Phase Disruptor" id="3a0c-b572-8999-7a5f" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
                       <characteristics>
@@ -1542,6 +1587,17 @@
                   <constraints>
                     <constraint id="84d3-db02-c839-7039-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Right Phase Disruptor" id="586a-ed2f-680f-48ab" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
                       <characteristics>
@@ -1561,10 +1617,21 @@
                   <constraints>
                     <constraint id="5766-144c-242e-6b2e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Fury Unyielding" id="a0d7-20fe-0bcb-5a40" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit is Within 3&quot; of a Mission Marker, its Ranged Weapons gain CRITICAL HIT (1) when targeting an Enemy Unit that is also Within 3&quot; of the same Mission Marker.</characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit is Within 3&quot; of a Mission Marker, its Ranged Weapons gain CRITICAL HIT (1) when targeting an Enemy Unit that is also Within 3&quot; of that same Mission Marker. </characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
                       </characteristics>
                     </profile>
@@ -1574,10 +1641,21 @@
                   <constraints>
                     <constraint id="13be-0332-fe0e-dfe3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="For the Ancients" id="b13a-afca-80d5-e195" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit makes a Ranged Attack, if the target Unit is more than 8&quot; away, the attacking weapon gain PRECISION (1).</characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit makes a Ranged Attack, if the target Unit is more than 8&quot; away, the attacking weapons gain PRECISION (1).</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
                       </characteristics>
                     </profile>
@@ -1619,10 +1697,22 @@
         <categoryLink name="Biological" id="835f-a241-fd68-89d7" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Psionic" id="ee92-aaec-94be-48b4" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="6ee3-ec47-7184-5838" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="7989-50d8-389d-47d1" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Blink" id="83af-4204-f524-00a2" hidden="false" targetId="6ca7-5027-86f4-4e3a" type="profile"/>
-      </infoLinks>
+      <constraints>
+        <constraint id="de00-73e0-8ef9-1368" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <profiles>
         <profile name="Zeratul" id="ecf5-e85a-15dd-2a19" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
@@ -1643,26 +1733,20 @@
         </profile>
         <profile name="Prophetic Vision" id="e408-7a55-5040-7e23" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">REPETABLE. Use when this Unit is selected as the target of an attack. This Unit&apos;s Evade characteristic is treated as 4+ against this attack.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">REPEATABLE. Use when this Unit is selected as the target of an attack. This Unit&apos;s Evade characteristic is treated as 4+ against this attack and cannot be modified. </characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
           </characteristics>
         </profile>
         <profile name="Sentenced to Death" id="0ec7-be54-ce7c-216b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"/>
-            <characteristic name="Cost" typeId="e11e-d579-0142-8de4"/>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target Enemy Unit on the battlefield. Whenever Zeratul makes a Close Combat Attack targeting the selected Unit, its weapon gains CRITICAL HIT (2). </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
         <profile name="Void Prison" id="f149-170d-3172-0722" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator of the battlefield Within 8&quot; of this Unit. While Enemy Units are Within 2&quot; of this Faction Indicator they suffer DEBUFF Speed (2).</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator on the battlefield Within 8&quot; of this Unit. While Enemy Units are Within 2&quot; of this Faction Indicator they suffer DEBUFF Speed (2). </characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Zeratul" id="69dc-1bac-c6c7-349d" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect.</characteristic>
-            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Master Warp Blade" id="8876-fd2b-979d-527c" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
@@ -1683,6 +1767,18 @@
             <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Void Blink" id="487c-d9f5-ffa8-52fd" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">If Unengaged, resolve the PLACE (6) effect. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="865d-aeba-13ca-2f81" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry name="Nerazim" id="3fd8-47cc-7cf1-c106" hidden="false" import="true" type="upgrade">
@@ -1699,18 +1795,18 @@
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
-        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Might of the Nerazim" id="a455-40ca-1bbe-253b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If a Friendly Unit loses the HIDDEN Status it gains Buff Speed (2) and its first Weapon used CRITICAL HIT (2).</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If a Friendly Unit loses the HIDDEN Status, it gains Buff Speed (2) and its first Weapon used CRITICAL HIT (2). </characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
         <profile name="Darkness Descends" id="0e57-2f2a-711d-c9bf" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit gains the HIDDEN Status until the End of the Round.</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit gains the HIDDEN Status until the End of the Round. </characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
