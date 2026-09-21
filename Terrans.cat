@@ -614,7 +614,7 @@
         <infoLink name="PINPOINT" id="8445-a7a1-6bd9-a572" hidden="false" targetId="f9ad-69a2-80e6-c3a5" type="rule"/>
         <infoLink name="BULKY" id="25ec-b111-4273-a997" hidden="false" targetId="f460-74cd-768c-a9e4" type="rule"/>
         <infoLink name="SIDEARM" id="a4c4-293d-35cb-0986" hidden="false" targetId="870d-b754-2961-8cb6" type="rule"/>
-        <infoLink name="REPETABLE" id="137a-8949-2c0f-6ec2" hidden="false" targetId="f895-258a-9487-f59a" type="rule"/>
+        <infoLink name="REPEATABLE" id="137a-8949-2c0f-6ec2" hidden="false" targetId="f895-258a-9487-f59a" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="&quot;Justice&quot; Revolver" id="001c-0ecc-b258-af11" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
@@ -1581,7 +1581,7 @@
         </profile>
         <profile name="Heavy Plating" id="52a1-55fa-8758-5a63" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves an Armour Roll, it gains TOUGH (1), provided it does not currently have the SIEGE MODE Status. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves an Armour Roll, it gains TOUGH (1), provided it does not currently have the SIEGE MODE Status.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1611,19 +1611,19 @@
         </profile>
         <profile name="Point Blank" id="d4fe-7fd1-46cb-e6de" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit has the SIEGE MODE Status, it cannot target Enemy Units it is Engaged with. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit has the SIEGE MODE Status, it cannot target Enemy Units it is Engaged with.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Aftershock Rounds" id="8a2f-531a-5faa-79a0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit has the SIEGE MODE Status, its Damage characteristic is treated as equal to the Size characteristic of the current target Unit (to a minimum of 1). </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit has the SIEGE MODE Status, its Damage characteristic is treated as equal to the Size characteristic of the current target Unit (to a minimum of 1).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
         <profile name="Devastating Charge" id="e619-edc4-e1da-35f0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect. </characteristic>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
         </profile>
@@ -1666,7 +1666,7 @@
                   <profiles>
                     <profile name="Mode Transformation" id="092c-2078-960c-08fb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e"> The active Unit gains or loses the SIEGE MODE Status. While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status. While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1722,7 +1722,7 @@
                   <profiles>
                     <profile name="Shaped Blast" id="7f15-0ea5-a1fb-a512" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"> Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4). </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4).</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1750,7 +1750,7 @@
                   <profiles>
                     <profile name="Smart Shells" id="7fc7-4c9c-2ed3-b26b" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9"> Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RANGE (24). </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RANGE (24).</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1771,6 +1771,7 @@
       </constraints>
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -1787,7 +1788,7 @@
       <profiles>
         <profile name="Pound &apos;em Flat!" id="064a-e420-277b-2a7f" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If the active Mechanical Unit has the Stationary Status, its first Ranged Weapon used gains PRECISION (2). </characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If the active Mechanical Unit has the Stationary Status, its first Ranged Weapon used gains PRECISION (2).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
