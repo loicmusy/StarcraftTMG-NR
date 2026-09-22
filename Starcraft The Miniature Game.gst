@@ -802,7 +802,7 @@ Special Winning Conditions: The game ends immediately if a Player leads by 10+ V
               </profiles>
             </selectionEntry>
             <selectionEntry name="Hold Position" id="8d8b-9f4b-1186-51b7" hidden="false" import="true" type="upgrade">
-              <comment>Standard Engagement Mission Card | Website ID: mission_hold_position</comment>
+              <comment>Engagement Mission Card | Website ID: mission_hold_position</comment>
               <constraints>
                 <constraint id="7db9-8531-9e88-c73c" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -898,6 +898,76 @@ From the Start of the Second Round: For each activated Controlled Mission Marker
                     <modifier id="e510-81c6-0055-3cdd" field="hidden" type="set" value="true">
                       <conditions>
                         <condition id="fd57-4aaf-5d1c-e2d4" childId="any" field="limit::5bcf-897a-a5c9-d0e8" includeChildForces="false" includeChildSelections="false" scope="roster" shared="true" type="greaterThan" value="1000"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Artefact Hunt" id="8a33-18ba-2a41-790d" hidden="false" import="true" type="upgrade">
+              <comment>Engagement Mission Card | Website ID: mission_artefact_hunt</comment>
+              <constraints>
+                <constraint id="0e7f-8299-0999-eb36" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Artefact Hunt" id="79d4-c80f-7dbb-240e" hidden="false" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card">
+                  <comment>Standard</comment>
+                  <characteristics>
+                    <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+                    <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+                    <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">6</characteristic>
+                    <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2</characteristic>
+                    <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+                    <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+
+End of Round 5:
+Gain 4 VP for each Friendly Unit that CLAIM Mission Marker and its Wholly Within Friendly Zone of Influence.
+
+Gain 2 VP for each Mission Marker associated with your colour that is not currently CLAIM by an Enemy Unit.</characteristic>
+                    <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Scoring Phase: From the Start of the Second Round, if a Unit is Within 3&quot; of a Controlled Mission Marker that is Neutral or associated with the Opponent colour, that Unit may CLAIM it.
+
+CLAIM: Place the Mission Marker on the Unit Card.
+A Unit carrying a Mission Marker must DROP it if:
+- It resolves a PLACE effect.
+- It has its Current Supply Value reduced.
+- It is Engaged with Enemies having a greater combined Current Supply Value.
+- It is Destroyed, removed from the battlefield, or returned in Reserves.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier id="0c89-4de5-1ba8-20d9" field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition id="7c51-be95-fe02-c295" childId="any" field="limit::5bcf-897a-a5c9-d0e8" includeChildForces="false" includeChildSelections="false" scope="roster" shared="true" type="lessThan" value="1001"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Artefact Hunt" id="c666-754e-6a58-6e3a" hidden="false" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card">
+                  <comment>Skirmish</comment>
+                  <characteristics>
+                    <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Engagement</characteristic>
+                    <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+                    <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">3</characteristic>
+                    <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1</characteristic>
+                    <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+                    <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+
+End of Round 5:
+Gain 3 VP for each Friendly Unit that CLAIM Mission Marker and its Wholly Within Friendly Zone of Influence.
+
+Gain 1 VP for each Mission Marker associated with your colour that is not currently CLAIM by an Enemy Unit.</characteristic>
+                    <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Scoring Phase: From the Start of the Second Round, if a Unit is Within 3&quot; of a Controlled Mission Marker that is Neutral or associated with the Opponent colour, that Unit may CLAIM it.
+
+CLAIM: Place the Mission Marker on the Unit Card.
+A Unit carrying a Mission Marker must DROP it if:
+- It resolves a PLACE effect.
+- It has its Current Supply Value reduced.
+- It is Engaged with Enemies having a greater combined Current Supply Value.
+- It is Destroyed, removed from the battlefield, or returned in Reserves.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier id="d09d-acef-fcdf-a390" field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition id="caf5-f5e3-010a-2fc6" childId="any" field="limit::5bcf-897a-a5c9-d0e8" includeChildForces="false" includeChildSelections="false" scope="roster" shared="true" type="greaterThan" value="1000"/>
                       </conditions>
                     </modifier>
                   </modifiers>
