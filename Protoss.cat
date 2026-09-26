@@ -1317,7 +1317,7 @@
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
-        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Personal transport" id="8ba5-2e5b-88d2-8b1b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
@@ -1680,7 +1680,7 @@
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
-        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Plasma Shields" id="4244-0ba8-d149-a4fe" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
