@@ -99,6 +99,7 @@
     </categoryEntry>
     <categoryEntry name="Khalai" id="2586-d7c3-73d1-767f" hidden="false"/>
     <categoryEntry name="Nerazim" id="270e-fd7b-cf96-a10f" hidden="false"/>
+    <categoryEntry name="Templar Caste" id="4145-00ad-e852-8e94" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Char Plains" id="dmap-link-0005" hidden="false" import="true" targetId="9710-c30a-2bb5-708a" type="selectionEntry"/>
@@ -1327,7 +1328,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Void Seeker" id="2bec-c579-e76b-5ce2" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Void Seeker" id="2bec-c579-e76b-5ce2" hidden="true" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink name="Tactical" id="55a3-94bc-c694-db20" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
         <categoryLink name="Nerazim" id="18ab-d1c5-179b-8d7f" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
@@ -1343,6 +1344,13 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Personal transport" id="8ba5-2e5b-88d2-8b1b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
@@ -1832,6 +1840,419 @@
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Unit gains the HIDDEN Status until the End of the Round.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Tassadar" id="6c5a-37a6-1a23-40dd" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Hero" id="652c-a9b6-ef58-0283" hidden="false" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Unique" id="2deb-148a-f8d6-f09b" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+        <categoryLink name="Biological" id="41c4-9046-b010-f026" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Psionic" id="9fef-b6e4-5f6f-ee90" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="50ab-341f-b4c4-ecc8" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="a45f-7820-7360-65b4" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Tassadar" id="6def-854b-85aa-c40b" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commander" id="d05a-5ba9-6d4a-7966" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Force Wall" id="7615-fda2-907a-4a07" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set two Force Wall tokens Wholly Within 8&quot; in an unoccupied space. Units of Size 2 or lower cannot move across the Force Wall. Models of Size 3 or more can move over it, and it&apos;s then removed.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Executor&apos;s Will" id="fa66-6445-7bef-44d7" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target two Enemy Units on the battlefield (Line of Sight is not required) and place a Faction Indicator next to each of them. During the next Assault Phase, if either of these Units ends its Activation while its Faction Indicator remains on the battlefield, you may Activate two Friendly Units consecutively. Remove both Faction Indicators after any Enemy Unit completes its Activation in the following Assault Phase.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Khala&apos;s Gift" id="d2e4-575e-c271-dc13" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target another Friendly Biological Unit Within 12&quot;. Until the End of the Round, that Unit resolves its first Special Ability with the cost reduced by 1 (to a minimum of 0).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Resonance Beam" id="42db-e0a8-383b-ee6f" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INSTANT</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Telekinetic Push" id="cd2d-2bcf-2798-11c6" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Set each Friendly Force Wall token Wholly Within 6&quot; of its current position.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">1 PE</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Psi Lightning" id="ee83-968d-f365-5eb0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Each Unit Within 2&quot; of one or more Friendly Force Wall tokens suffers 1 Damage.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="5e0b-27a9-e329-4683" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">6</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Twilight Templar (High Templar)" id="821c-1b11-1aa8-5c21" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Support" id="3d8c-02d8-1bb4-f8b7" hidden="false" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Templar Caste" id="8079-edb8-5751-680e" hidden="false" primary="false" targetId="4145-00ad-e852-8e94"/>
+        <categoryLink name="Biological" id="c9eb-4f57-ecf2-c557" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Light" id="fb04-7844-4129-a8cc" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Psionic" id="d1eb-0f9f-74ea-ced0" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="69de-312c-a3ed-1e40" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="513b-a00c-fd26-2ea4" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="dae7-3719-6733-c3be" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="4145-00ad-e852-8e94" childName="Templar Caste" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Twilight Templar (High Templar)" id="44de-8daf-7d09-f321" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bound by the Khala" id="c675-1678-6232-e57f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when the Current Supply Value of another Friendly Unit Within 8&quot; of this Unit is reduced. Return one Non-Unique Exhausted Tactical Card to the Ready state.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warp-In" id="23e2-a6e7-f9e6-5cff" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the PLACE (6) effect.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Psionic Gale" id="5834-1162-51d0-2a09" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 4+, that Unit suffers an effect depending on the current Phase: Movement Phase: NON-LETHAL DAMAGE (1). Assault Phase: 1 Damage. If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Feedback" id="8360-59a4-df5b-c5ff" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target one Enemy Mechanical or Psionic Unit Within 8&quot;. Until the End of the Round, after that Unit resolves an Active or Reaction Special Ability (excluding abilities granted by a Tactical Card or Faction Card), it suffers NON-LETHAL DAMAGE (3).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Psi Blast" id="9ec2-ac04-d38d-c6c6" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INSTANT</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="9324-60ab-8be2-9f3c" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">1</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="High Templar" id="cb58-2b5c-32f6-46db" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Support" id="f5b0-ced6-dc7f-403c" hidden="false" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Biological" id="fc54-74eb-c54c-a7e3" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Light" id="d9bf-3a32-64a6-dcdc" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Psionic" id="fed7-2819-89e9-00c1" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="5401-b905-aaee-5f17" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="130"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="High Templar" id="9f4e-9ed7-cba4-358b" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1 | 3-4: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Our Minds as One" id="b536-6a30-5d27-4b18" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit&apos;s Current Supply Value is 2, it gains the following effects: The first Special Ability resolved by this Unit each Round has its PE cost reduced by 1 (to a minimum of 0). Apply a +1 Modifier to the dice rolled for its Psionic Storm Special Ability.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Feedback" id="1e75-a06b-e652-270e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target one Enemy Mechanical or Psionic Unit Within 8&quot;. Until the End of the Round, after that Unit resolves an Active or Reaction Special Ability (excluding abilities granted by a Tactical Card or Faction Card), it suffers NON-LETHAL DAMAGE (3).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Psi Blast" id="5e71-b7be-12de-9e30" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">1</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INSTANT</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="3217-1578-ba62-d21d" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">1</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Reinforce" id="f531-71b3-24b1-84c3" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="6701-39d8-54c4-aad7" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
+            <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+            <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+            <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+            <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+            <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+            <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry name="High Templar" id="1259-0318-9205-4761" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1192-625c-f21b-d9c0-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="1192-625c-f21b-d9c0-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <modifiers>
+            <modifier field="1192-625c-f21b-d9c0-min" type="set" value="4">
+              <conditions>
+                <condition childId="f531-71b3-24b1-84c3" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="1192-625c-f21b-d9c0-max" type="set" value="4">
+              <conditions>
+                <condition childId="f531-71b3-24b1-84c3" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="aded-9d6d-3637-cd78" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Psionic Storm" id="298e-5d73-89cd-0926" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="6457-d0d6-45eb-d796" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="5bcf-897a-a5c9-d0e8" type="set" value="30">
+                  <conditions>
+                    <condition childId="f531-71b3-24b1-84c3" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Psionic Storm" id="19bc-793f-033c-3881" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 5+, that Unit suffers an effect depending on the current Phase: Movement Phase: NON-LETHAL DAMAGE (1). Assault Phase: 1 Damage. If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
+                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 PE)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Farsight" id="69ca-5a4e-0a4e-266f" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="c6a0-2372-3f05-c358" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Farsight" id="74ea-eaef-1f51-5935" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target one Friendly Unit Within 12&quot;. Until the End of the Round, that Unit is eligible to make an Evade Roll against any attacks targeting it.</characteristic>
+                    <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Templar Archives" id="67c7-5c04-72f3-c2cb" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="209c-8115-4400-6915" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="099a-eedc-cc3b-bcfe" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Ancestral Wisdom" id="3e86-d1e2-03cd-c7b6" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, when a Friendly Support Unit activates a Special Ability that costs PE, resolve that ability with its PE cost reduced by 1 (to a minimum of 0). Do not Exhaust this card.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Templar Caste" id="e5c5-4e77-5031-3173" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Faction" id="7fc2-f23e-e870-a4c8" hidden="false" primary="false" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Templar Caste" id="365e-f6be-af53-3e78" hidden="false" primary="false" targetId="4145-00ad-e852-8e94"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Our Duty is Unending" id="84e0-a4ec-c46b-d834" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Game. Select up to two of your Exhausted Tactical Cards. Return them to the Ready state.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Khassar de Templari" id="9f5f-9b58-8d30-4b0f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Instead of performing an action, select one other Friendly Biological Unit that has already been Activated this Phase. That Unit immediately performs one action available in the current Phase, then suffers NON-LETHAL DAMAGE (3).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
           </characteristics>
         </profile>
       </profiles>
