@@ -9,6 +9,7 @@
               <conditions>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -23,6 +24,7 @@
               <conditions>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -43,6 +45,7 @@
               <conditions>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -57,6 +60,7 @@
               <conditions>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -71,6 +75,7 @@
               <conditions>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -86,12 +91,14 @@
               <conditions>
                 <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="7ff2-1bc0-6342-f6f0" childName="Terran Armed Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Nova Covert Ops" id="a009-b277-27b7-c7ab" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Deployment Maps" id="8e20-b4ea-04ba-ad86" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
@@ -439,6 +446,13 @@
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier field="454d-a5c1-6c5e-8a4e" join=", " skipIfPresent="LONG RANGE" type="append" value="LONG RANGE (16&quot;)">
+              <conditions>
+                <condition childId="a9a8-0fd4-133a-c703" childName="Laser Targeting Systems" field="selections" includeChildSelections="true" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Marauders" id="ed00-4582-6d69-2031" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
@@ -1077,54 +1091,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Point Defense Drone" id="ff3f-4fb0-21cd-6565" hidden="true" import="true" type="model">
-      <categoryLinks>
-        <categoryLink name="Raynor&apos;s Raiders" id="91d7-8d48-ea1e-4188" primary="false" targetId="87df-f89f-67c4-21cf"/>
-        <categoryLink name="Armoured" id="6ccc-4d2b-8afd-b919" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
-        <categoryLink name=" Mechanical" id="0163-9f9e-79d7-e23e" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
-        <categoryLink name="Flying" id="a49c-d648-5971-ec49" primary="false" targetId="46e8-c643-c323-b4c1"/>
-        <categoryLink name="Other" id="8579-cf4b-de6d-c110" primary="true" targetId="8a38-b874-adc2-a411"/>
-      </categoryLinks>
-      <constraints>
-        <constraint id="e245-f057-ea3c-f3e5" field="selections" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Structure" id="97fe-492f-c084-fb76" hidden="false" targetId="d3a4-0dbc-a379-e0fa" type="profile"/>
-        <infoLink name="DISPLACEMENT" id="bd28-f3ce-89f2-6fc9" hidden="false" targetId="eb27-1500-88ca-d0f0" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier field="hidden" type="set" value="false">
-          <conditions>
-            <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile name="Point Defense Drone" id="90c2-8549-3bc4-d51f" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
-          <characteristics>
-            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
-            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
-            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
-            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
-            <characteristic name="Size" typeId="357b-9a74-5a55-800e">-</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Gliding" id="cbdc-39c2-6bc8-b9fc" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This model has DISPLACEMENT.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Point Defense Laser" id="64d7-5e8b-1f19-55cb" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When another Friendly Unit Within 4&quot; is targeted by a Ranged Attack without the INSTANT keyword, remove up to 2 dice from the Attack Pool. Then remove this Unit from the battlefield.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry name="Raynor&apos;s Raiders" id="2f91-0a90-4a5c-444c" hidden="true" import="true" type="unit">
       <categoryLinks>
@@ -1809,6 +1775,686 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry name="Nova Covert Ops" id="3f61-015e-68de-9643" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Faction" id="b2b0-4cee-c2ed-e4c1" hidden="false" primary="true" targetId="e4d8-c158-a9fd-08ba"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="3"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Griffin Support" id="f627-6fcf-832f-891a" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Friendly Sabotage Drone Unit Within 12&quot; of a Friendly Unit, more than 1&quot; away from any Enemy model. Remove this Unit at the End of the Round. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mark for Death" id="bc81-aeb5-4be5-0ad3" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target an Enemy Unit on the battlefield. When a Friendly Unit makes an Attack targeting that Unit, its first Melee or Ranged Weapon used gains CRITICAL HIT (1) and PRECISION (1). </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Auto-Turret" id="4f52-bda3-2467-4c01" hidden="true" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Other" id="e5de-335f-3f5d-af6c" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
+        <categoryLink name="Armoured" id="5941-2930-c945-768f" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name=" Mechanical" id="9e93-4c96-9545-adbe" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Ground" id="0aa9-f836-26a2-5cde" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="6155-ee8e-82e6-d44c" automatic="true" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="9ea1-ad1b-35b2-6b14" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Timed Life" id="ad87-5183-349d-e755" hidden="false" targetId="4bcb-7f0d-a8aa-20c0" type="profile"/>
+        <infoLink name="Structure" id="84bb-3697-24d8-70cd" hidden="false" targetId="d3a4-0dbc-a379-e0fa" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="c399-cb95-2b68-4939" childName="Raven" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="6155-ee8e-82e6-d44c" type="set" value="1">
+          <conditions>
+            <condition childId="c399-cb95-2b68-4939" childName="Raven" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Auto-Turret" id="925e-480f-bf6d-0b96" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"/>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gauss Canon" id="2fd2-ea8d-23a7-f100" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">Pinpoint</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overwatch" id="063e-e104-2bc0-3011" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Use when an Enemy Unit ends its Activation Within 8&quot; of this Unit. This Unit immediately performs a Ranged Attack against that Enemy Unit. </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Point Defense Drone" id="ff3f-4fb0-21cd-6565" hidden="true" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Raynor&apos;s Raiders" id="91d7-8d48-ea1e-4188" hidden="false" primary="false" targetId="87df-f89f-67c4-21cf"/>
+        <categoryLink name="Armoured" id="6ccc-4d2b-8afd-b919" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name=" Mechanical" id="0163-9f9e-79d7-e23e" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Flying" id="a49c-d648-5971-ec49" hidden="false" primary="false" targetId="46e8-c643-c323-b4c1"/>
+        <categoryLink name="Other" id="8579-cf4b-de6d-c110" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="839d-3bde-6d46-c81f" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+        <constraint id="a93a-9cde-356f-5949" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Structure" id="97fe-492f-c084-fb76" hidden="false" targetId="d3a4-0dbc-a379-e0fa" type="profile"/>
+        <infoLink name="DISPLACEMENT" id="bd28-f3ce-89f2-6fc9" hidden="false" targetId="eb27-1500-88ca-d0f0" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="a93a-9cde-356f-5949" type="set" value="1">
+          <conditions>
+            <condition childId="60b3-fffd-a15a-4cea" childName="Raynor&apos;s Raiders" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Point Defense Drone" id="90c2-8549-3bc4-d51f" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">-</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gliding" id="cbdc-39c2-6bc8-b9fc" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This model has DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Point Defense Laser" id="64d7-5e8b-1f19-55cb" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When another Friendly Unit Within 4&quot; is targeted by a Ranged Attack without the INSTANT keyword, remove up to 2 dice from the Attack Pool. Then remove this Unit from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Holo Decoy" id="22fa-f773-07a0-9129" hidden="true" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Other" id="58d6-bd8a-ee86-bf86" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
+        <categoryLink name="Biological" id="6f6f-32d9-fc7c-f1a3" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Psionic" id="078e-ab88-9e30-3708" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="0a50-ca61-2888-53e3" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="34a4-3e6e-6a4e-5a96" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+        <constraint id="69be-5297-1605-1c87" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Timed Life" id="b7e7-3010-49ed-5b11" hidden="false" targetId="4bcb-7f0d-a8aa-20c0" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="1cb4-21cd-10e0-6ba7" childName="Nova" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="69be-5297-1605-1c87" type="set" value="1">
+          <conditions>
+            <condition childId="1cb4-21cd-10e0-6ba7" childName="Nova" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Holo Decoy" id="16db-cdff-d043-fdc2" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lethal Hologram " id="b3cb-6c0e-518c-d1ad" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf"> All Weapons of Friendly Units targeting an Enemy Unit Within 4&quot; of this Unit gain PRECISION (1). </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Surprise!" id="c217-7f81-d552-241a" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">At the End of the Round, you can set a Friendly Nova Stealth Mode or Nova Assault Mode in Coherency with this Unit. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Decoy" id="a3ed-f119-3bfd-1a38" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit is never Engaged. It cannot Engage Enemy Units, cannot be Engaged by Enemy Units and cannot perform a Charge Action. This Unit cannot be the target of an ability, unless stated otherwise. It can never Control or Contest Mission Markers. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Nova" id="1cb4-21cd-10e0-6ba7" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Hero" id="0627-36db-14b7-2dd1" hidden="false" primary="true" targetId="be84-e5cd-5ba0-b60b"/>
+        <categoryLink name="Biological" id="eedb-e330-5108-5eeb" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Psionic" id="7747-a9e5-612c-1062" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="8099-c257-47bc-ddb3" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="3e43-7f11-77e5-65d1" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="2cbb-929b-17fb-b491" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Nova" id="b54e-03c7-3b73-92e6" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Battle Preparation " id="1ee0-99f3-58c9-4de1" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, your army cannot include both the Nova Assault Mode Unit and the Nova Stealth Mode Unit. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghost Visor " id="c57e-96fd-6e70-12e1" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit, they lose the HIDDEN Status. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Holo Decoy" id="08a2-61f3-01e7-901b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the SUMMON (Holo Decoy) effect. Then, Holo Decoy may immediately perform a Move action. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Super Stimpack " id="f48a-1c1a-21ce-0ff1" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit gains BUFF Speed (2). Additionally, all its Weapons gain PRECISION (2). </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mode" id="7f29-a202-6d03-5841" flatten="true" hidden="false" sortIndex="-1">
+          <constraints>
+            <constraint id="b583-6d7d-c847-ea44-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="b583-6d7d-c847-ea44-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Stealth Mode" id="0794-117f-bd6b-f07a" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Tactical Stealth Suit" id="d2ad-f664-82a8-5867" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">After this Unit fully resolves an Action, it gains the HIDDEN Status. </characteristic>
+                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="C-20A Canister Rifle" id="d177-f170-4d7f-1d00" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+                    <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                    <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+                    <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                    <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+                    <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+                    <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+                    <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CRITICAL HIT (2), LONG RANGE (18&quot;)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Combat Knife" id="738f-6af4-38f3-0dd5" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+                    <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+                    <characteristic name="RoA" typeId="af32-03e6-6c32-3580">3</characteristic>
+                    <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+                    <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+                    <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+                    <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+                    <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+                  </characteristics>
+                </profile>
+                <profile name="Head Shot" id="25a6-f2cc-a85b-cb1d" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once Per Game. While this Unit is Unengaged and has the Stationary Status, when it makes a Ranged Attack with its C-20A Canister Rifle, treat that weapon&apos;s Damage characteristic as 3, and it gains CONCENTRATED FIRE (1). </characteristic>
+                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1CP)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Operational Efficiency" id="c2fe-882a-57ce-d68b" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">After this Unit fully resolves a Ranged Attack with its C-20A Canister Rifle, if the target Enemy Unit was Destroyed or its Current Supply Value was reduced, the active player may return one of their Exhausted non-Unique Tactical Cards to its Ready state. </characteristic>
+                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Assault Mode" id="cfcd-3961-d5d4-0814" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="260"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hellfire Shotgun" id="1fdb-ee13-67e9-ada8" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+                    <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+                    <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                    <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+                    <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+                    <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+                    <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+                    <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), BURST FIRE 4&quot; (3)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Phase Reactor Suit" id="924d-b4af-9b0c-c174" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">If Unengaged, resolve the PLACE (6) effect. </characteristic>
+                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 CP)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Devastating Charge" id="c957-2414-1fda-8550" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect. </characteristic>
+                    <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Monomolecular Blade" id="8ec7-f49f-8f5e-9507" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+                    <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+                    <characteristic name="RoA" typeId="af32-03e6-6c32-3580">8</characteristic>
+                    <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+                    <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Light, Armoured</characteristic>
+                    <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D6</characteristic>
+                    <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+                    <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Raven" id="c399-cb95-2b68-4939" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Support" id="31d0-77b4-05e4-7129" hidden="false" primary="true" targetId="c453-061d-5a99-2d4f"/>
+        <categoryLink name="Light" id="2f46-7f49-7a6c-2512" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name=" Mechanical" id="54cf-96cc-9663-06bf" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Flying" id="0ee6-9f10-5de1-cdca" hidden="false" primary="false" targetId="46e8-c643-c323-b4c1"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Raven" id="c881-9b0f-cb8c-1993" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">
+</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detection" id="1811-7d70-0fa0-8b9c" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit, they lose the HIDDEN Status. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deploy Auto-Turret" id="56e2-35c0-7b0f-8a90" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Friendly Auto-Turret Unit Within 6&quot;, and not Within the Engagement Range of any Enemy Unit. </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Anti-Armour Missile" id="603d-a666-86ca-00cb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. Apply DEBUFF Armour (1). </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Railguns" id="84f1-2641-f76b-1359" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="03ac-44e2-887e-9f84" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phase" id="6302-3aa6-0793-ef11" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry name="Corvid Reactor" id="dd92-e5d1-670b-b83b" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="4e37-82df-fe97-9531-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="4e37-82df-fe97-9531-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Corvid Reactor" id="631d-9c96-b9df-7a4d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit may resolve its first Special Ability with the CP cost reduced by 1 if it targets the closest Enemy Unit. </characteristic>
+                        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Movement Phase" id="12fa-8a88-400d-1fde" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry name="Internal Tech Module" id="abe4-2681-9ef9-6069" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="ace2-99b8-4b1a-98e5-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="ace2-99b8-4b1a-98e5-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Internal Tech Module" id="c45e-fd3e-6c89-ccd0" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from Reserves, it may Deploy from any table edge that is not a player&apos;s Entry Edge. This Unit cannot be set Within 8&quot; of any Enemy model. </characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Seeker Missile" id="3199-2988-4ece-87f7" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="bbb2-85d7-ae40-662c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="bbb2-85d7-ae40-662c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Seeker Missile" id="eabd-6dc3-8781-733d" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. At the End of the Assault Phase, if that Enemy Unit has the Stationary Status or it is Within 8&apos;&apos; of this Unit, it suffers HITS 4 (2). If that Unit is Engaged, it is eligible to make an Evade Roll against these hits. </characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1CP)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="67f7-6826-669d-1cf7" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Explosive Shrapnel Shells" id="7a20-5409-d801-7db0" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="08a7-4044-587c-ab5e-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="08a7-4044-587c-ab5e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Explosive Shrapnel Shells" id="b245-0ac9-3f0c-60a7" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">The Gauss Cannon of the Auto-Turret set by this Unit gains Surge Type: Light and S-Dice: D3+1. </characteristic>
+                        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Sabotage Drone" id="0d3a-9c04-5e2f-7458" hidden="true" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Other" id="93d9-fc85-0bc9-4b00" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
+        <categoryLink name="Armoured" id="4e56-6231-23ae-45ff" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name=" Mechanical" id="ac70-ad37-7538-d53c" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Ground" id="8c0b-e196-e37d-ea17" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="9a09-b99f-c745-a303" automatic="true" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="0"/>
+        <constraint id="c6b4-7b21-6b0c-90ed" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Structure" id="1c4e-3395-a4de-4c37" hidden="false" targetId="d3a4-0dbc-a379-e0fa" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="9a09-b99f-c745-a303" type="set" value="1">
+          <conditions>
+            <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Have a Nice Day" id="5d74-4729-d179-1647" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">At the End of the Assault Phase, target each Unit Within 3&quot; of this Unit (including Units with the Structure ability) suffers HITS 5 (1). If an affected Unit has the Structure ability, that Unit suffers an additional HITS 5 (1). </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Spec Ops Marauder (Marauder)" id="557c-f482-dc3b-af40" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Nova Covert Ops" id="31e4-badc-4a40-9a30" hidden="false" primary="false" targetId="a009-b277-27b7-c7ab"/>
+        <categoryLink name="Armoured" id="47b7-237c-5950-781d" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Biological" id="0463-5f67-0d1f-1dc8" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Ground" id="2b5f-60db-4dcf-c319" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Core" id="89ee-9039-b093-a23c" hidden="false" primary="true" targetId="3874-6187-bb5c-3ad3"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="3f61-015e-68de-9643" childName="Nova Covert Ops" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Spec Ops Marauder (Marauder)" id="0345-18db-ede1-4f21" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">5</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 0 | 2-2: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spec Ops Armour" id="ddf8-8030-1a11-6c25" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit gains the HIDDEN Status until it performs another action. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commando Stimpack" id="95df-a52e-9cd8-7c6c" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit gains BUFF Speed (3). Additionally, its Quad K12 and all Close Combat Weapons gain PRECISION (2). </characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Quad K12" id="ef49-40f5-8c0e-040b" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (16&quot;), PIERCE Armoured (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Magrail Munitions" id="225c-32c2-04e3-99ca" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">This Unit&apos;s first Attack in the game with its Quad K12 gains PIERCE Armoured (3). </characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suppression Shells" id="9d22-0019-2666-b505" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy declares a Charge against a Friendly Unit Within 8&quot;, that Enemy gains DEBUFF Speed (3).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="ac17-cffa-dc80-22ce" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <comment>Spec Ops Marauder</comment>
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">3</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Marauder" id="90e6-9384-9499-fbec" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="1588-31a1-6efd-71a5-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="1588-31a1-6efd-71a5-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Marine" id="74d2-7be5-c0fe-34ad" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -1886,6 +2532,12 @@
       <characteristics>
         <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Timed Life" id="4bcb-7f0d-a8aa-20c0" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Remove this Unit at the End of the Round. </characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
