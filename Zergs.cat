@@ -190,6 +190,17 @@
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition childId="7cda-c234-c80a-a11c" childName="Hydriodic Bile" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="89cf-90ae-fc8c-167a" type="set" value="Light"/>
+                <modifier field="3779-8372-ef25-255d" type="set" value="D3+1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Claws" id="a6cb-d77b-4392-9bfb" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <comment>Corpser</comment>
@@ -1055,7 +1066,6 @@
         <infoLink name="Claws" id="90d3-d63b-68eb-7ad5" hidden="false" targetId="9991-19ca-327a-9240" type="profile"/>
         <infoLink name="HEAL (X)" id="703b-6a22-b563-e850" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
         <infoLink name="Roach" id="f988-d2ba-eb27-5160" hidden="false" targetId="fd5b-2fcf-9f56-65ef" type="profile"/>
-        <infoLink name="Acid Saliva" id="af77-d63e-bb4d-c97c" hidden="false" targetId="0d1a-e31f-ce44-7f01" type="profile"/>
         <infoLink name="Regeneration" id="6168-a3bf-5a39-4e69" hidden="false" targetId="8818-270f-f343-09e9" type="profile"/>
       </infoLinks>
       <profiles>
@@ -1064,6 +1074,29 @@
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Acid Saliva" id="0d1a-e31f-ce44-7f01" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition childId="7cda-c234-c80a-a11c" childName="Hydriodic Bile" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="89cf-90ae-fc8c-167a" type="set" value="Light"/>
+                <modifier field="3779-8372-ef25-255d" type="set" value="D3+1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <selectionEntries>
@@ -1560,6 +1593,17 @@
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition childId="7cda-c234-c80a-a11c" childName="Hydriodic Bile" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier field="89cf-90ae-fc8c-167a" type="set" value="Light"/>
+                <modifier field="3779-8372-ef25-255d" type="set" value="D3+1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Vile Claws" id="3800-faed-fe7a-e892" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
           <characteristics>
@@ -2090,18 +2134,6 @@
       <characteristics>
         <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">The active Unit’s first Close Combat Weapon used gains PRECISION (2).</characteristic>
         <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Acid Saliva" id="0d1a-e31f-ce44-7f01" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
-      <characteristics>
-        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
-        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
-        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
-        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
-        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
-        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
-        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
-        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
       </characteristics>
     </profile>
     <profile name="Regeneration" id="8818-270f-f343-09e9" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
