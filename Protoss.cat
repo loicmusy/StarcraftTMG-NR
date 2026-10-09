@@ -102,6 +102,7 @@
     <categoryEntry name="Templar Caste" id="4145-00ad-e852-8e94" hidden="false"/>
   </categoryEntries>
   <entryLinks>
+    <entryLink name="Char Plains" id="dmap-link-0005" hidden="false" import="true" targetId="9710-c30a-2bb5-708a" type="selectionEntry"/>
     <entryLink name="Deployment Maps" id="0950-da2b-d79a-88fe" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
     <entryLink name="Mission Card" id="4d05-baf0-5014-387b" hidden="false" import="true" targetId="64dc-91cd-0746-c7d3" type="selectionEntry"/>
   </entryLinks>
@@ -843,15 +844,9 @@
       </categoryLinks>
       <constraints>
         <constraint id="3e89-5cb9-830d-b681" field="selections" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="c4c9-6812-30b9-ea3f" field="selections" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
-          <conditions>
-            <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-          </conditions>
-        </modifier>
-        <modifier field="c4c9-6812-30b9-ea3f" type="set" value="1">
           <conditions>
             <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
           </conditions>
@@ -1981,8 +1976,8 @@
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
-            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
@@ -2062,8 +2057,8 @@
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
-            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1 | 3-4: 2</characteristic>
@@ -2123,7 +2118,7 @@
             <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry name="High Templar" id="1259-0318-9205-4761" hidden="false" import="true" type="model">
+        <selectionEntry name="High Templar" id="1259-0318-9205-4761" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="1192-625c-f21b-d9c0-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="1192-625c-f21b-d9c0-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="2"/>
