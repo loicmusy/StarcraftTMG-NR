@@ -104,6 +104,7 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Zagara&apos;s Swarm" id="bf0c-dea4-0e62-722f" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Deployment Maps" id="c04e-ce0f-fa74-f3dc" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
@@ -2022,6 +2023,468 @@
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. The active Friendly Roach Unit performs MORPH (Ravager) 1.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Zagara&apos;s Swarm" id="9816-fbfc-ba6d-25b9" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Faction" id="1d1b-17b8-cfe5-c3d2" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
+        <categoryLink name="Zagara&apos;s Swarm" id="531c-193c-b82f-e5e3" hidden="false" primary="false" targetId="bf0c-dea4-0e62-722f"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="4"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Instinctive Reaction" id="c270-e5a4-431a-57dd" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when an Enemy Unit declares a Close Combat Attack against a Friendly Unit. That Friendly Unit becomes eligible to make an Evade Roll against that attack.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Instinctive Reaction</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zerg Creep" id="7ec0-79d3-ae60-2f63" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, select exactly one Creep Card and add it to their Army List, paying its listed cost (if any).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scourge Queen" id="f6c3-ae3e-e667-6e5c" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">If the active Unit contains more models than the combined number of models in all Engaged Enemy Units, its Close Combat Weapons gain INSTANT and PRECISION (4).</characteristic>
+            <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Defiler Mound" id="ca21-7243-4630-27d0" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="5ac3-3fbe-0322-9ebc" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="4afd-2b5c-f420-7a1c" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Poisonous Essence" id="c942-b0e5-853b-d0ca" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator on the active Friendly Unit. At the end of the Assault Phase, all Biological Enemy Units Engaged with the marked Unit suffer NON-LETHAL DAMAGE (2).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tunnel Network" id="2aac-9444-1018-4e74" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active, Unengaged Ground Unit is returned to Reserves instead of performing an action.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Reactive Creep" id="385a-ad89-b71b-17c0" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Creep" id="622a-e874-83bd-4032" hidden="false" primary="true" targetId="33f8-3892-abc6-952c"/>
+        <categoryLink name="Tactical" id="8e47-98cd-8932-1414" hidden="false" primary="false" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="10"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Reactive Tissue" id="e5e6-1bcc-0099-088b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While a Friendly Zerg Unit is ON CREEP, it gains DODGE (1) against any attacks targeting it.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Living Glob of Tissue" id="ec7b-b788-a63d-a83b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Creep Removale" id="87fa-539d-8ac5-349a" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Zagara" id="4d0a-612f-59dc-215c" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Hero" id="d9ed-98ef-ce8e-f309" hidden="false" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
+        <categoryLink name="Biological" id="ac50-aa9a-e397-1a31" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Psionic" id="b5ca-0c70-2903-925b" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="362c-cc90-d2e0-b761" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="6bfe-c01b-e777-bdd1" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="1a90-05ff-479d-5c7f" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Commander" id="3bd1-3351-cf8c-2abf" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zagara" id="5a5f-135e-1bb2-7c92" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">-</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">10</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transfusion" id="f13e-dc0f-45f0-e700" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use when another Friendly Biological Unit (including a Structure) suffers Damage Within 4&quot;. Reduce the Total Damage before allocation by 2.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Psionic Link" id="de73-a1a6-e4fe-300d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, if there are at least 7 Friendly models Within 6&quot; of this Unit, it may resolve its Special Ability with the BM cost reduced by 1.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Broodmother" id="1060-a9d6-8c5d-e172" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round: Units of Size 1 gain a +1 Modifier to all IMPACT Rolls. All weapons of Size 2 Units gain CRITICAL HIT (1). Units of Size 3 or more gain TOUGH (1).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infested Drop" id="8954-0656-ce63-8c7c" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The base of the Zagara counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 1 may be Deployed via this Entry Edge.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zagara&apos;s Talons" id="2abc-0b93-9abe-2e85" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+        <profile name="Zagara&apos;s Acid Spines" id="6216-11cc-d835-b162" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">14</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Flying</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">8</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable" id="2025-f85f-96e5-f259" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="a661-2551-d029-4f20" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (6) 3+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Talons" id="0150-ade2-eb49-365e" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">4</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Vileling (Zergling)" id="6798-bc4b-91a3-afd6" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Core" id="9fe2-6985-16a7-5772" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
+        <categoryLink name="Zagara&apos;s Swarm" id="9ce4-607e-df4e-b535" hidden="false" primary="false" targetId="bf0c-dea4-0e62-722f"/>
+        <categoryLink name="Biological" id="2a9f-ff24-e25d-4878" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Light" id="12f7-70ef-d954-063e" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="8f8e-8908-68e0-87b6" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="180"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="9816-fbfc-ba6d-25b9" childName="Zagara&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Vileling (Zergling)" id="15e7-e36b-45a8-cb96" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/8</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-6: 1 | 7-18: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Squadron" id="f5c1-80e8-497a-8cbe" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit’s Horizontal Coherency is 4&quot;.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Burrow Ambush" id="d588-a783-c130-c1a2" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zergling Reconstitution" id="7643-8279-46d0-c2b1" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the RESPAWN (2) effect, or RESPAWN (3) if the Unit is ON CREEP.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Metabolic Boost" id="c002-5f2a-2f27-915f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When determining Charge Distance for this Unit, roll 2D6 instead of D6 and use the higher result to add to the Unit’s Speed characteristic.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="c294-614f-587e-cd8b" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (1) 5+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Claws" id="8863-7ec9-2cfa-aff0" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+        <profile name="Debilitating Claws" id="c295-f75d-d81f-091d" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">After an Enemy Unit suffers Damage from this Unit, apply DEBUFF Hit (1) to each of that Unit&apos;s Weapons.</characteristic>
+            <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Defiler" id="be84-6b50-90eb-1be2" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Support" id="8dd3-c8b8-8c10-af70" hidden="false" primary="true" targetId="4b2e-4afe-1949-a29b"/>
+        <categoryLink name="Biological" id="5318-e10e-2974-fc98" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Light" id="e283-737b-2e10-3e4a" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Psionic" id="dbed-15ae-14e0-03de" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="b525-775e-4125-d190" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="130"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Defiler" id="3cd9-40a9-1931-1e26" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">-</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Consume" id="46e1-bb24-c110-6f9f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves a Special Ability that costs BM, it can remove one model from a Friendly Unit Within 4&quot; to generate 1 BM to spend towards that ability’s cost.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gestate Dark Swarm" id="bd30-3bce-6732-7d62" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Dark Swarm token in an unoccupied space Within 4&quot; and Line of Sight of this Unit. The Dark Swarm token has DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dark Swarm" id="102c-087a-cc53-40a1" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">REPEATABLE. Use when a Friendly Unit Within 4&quot; of a Friendly Dark Swarm token is selected as the target of an attack. If this Unit is Within 4&apos;&apos; of the same token, the Targeted Friendly Unit is eligible to make an Evade Roll against that attack. If the targeted Unit is a Size 1, it gains a +1 Modifier to this Evade Roll.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="ecec-2d49-99c6-38fc" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Claws" id="8959-f5b2-f8a5-92bf" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">4</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">-</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">-</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Bile Launcher" id="0f80-f2a5-ec3a-86a2" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Support" id="e67e-37a4-47b3-9163" hidden="false" primary="true" targetId="4b2e-4afe-1949-a29b"/>
+        <categoryLink name="Armoured" id="2ccc-cdab-49fd-7f55" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Biological" id="f185-09d4-6554-5100" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Ground" id="3725-640c-ee97-b92e" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="3b4c-a0e1-71bc-da76" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="a0e9-e4de-b840-5b20" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Bile Launcher" id="e66a-7a46-8505-9236" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">-</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">-</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">-</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">10</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Biological Structure" id="6fd1-5d50-19c4-64f9" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot gain the BURROWED Status, cannot be returned to Reserves, and is immune to the IMPACT keyword.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Source of Creep" id="03b2-70de-f0ea-221d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">A Friendly or Enemy Ground Zerg Unit Within 6&quot; of this Unit, counts as being ON CREEP.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detection" id="40c0-c8f1-22b8-32c6" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 6&quot; of this Unit, they lose the HIDDEN Status.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Burrow Ambush" id="a550-2e02-f38a-743e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bombard" id="fba8-a3f0-47f8-ae64" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Bile Bomb token on the battlefield Within 24&quot; of this Unit. When this Unit resolves a Ranged Attack using the Bile Bomb weapon profile this Round, it may choose to ignore the weapon&apos;s standard Range characteristic. If it does, it may target an Enemy Unit that is Within 3&quot; of that token (Line of Sight is not required), ignoring the HIDDEN Status. After the attack is fully resolved, remove the Bile Bomb token from the battlefield. When the Bile Bomb token is about to be removed, set a Creep Tumor token in base-to-base contact with it. The Bile Bomb token has DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable" id="f032-c5a6-70cc-1830" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bile Bomb" id="3cd2-76a2-7fdc-fe9c" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2), PINPOINT</characteristic>
           </characteristics>
         </profile>
       </profiles>
