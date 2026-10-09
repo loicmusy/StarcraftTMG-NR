@@ -293,7 +293,7 @@
       </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="2"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -413,7 +413,7 @@
       </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
@@ -508,12 +508,15 @@
         <categoryLink name="Biological" id="274f-a24e-85f8-2628" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Adept" id="3245-d38b-7f77-75ea" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -675,12 +678,15 @@
         <constraint id="ea2f-654f-949c-032b" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="270"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" targetId="c429-c517-b5d9-8e78" type="profile"/>
@@ -760,12 +766,15 @@
         <constraint id="b12c-c5c7-136d-2f57" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="260"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Psi Blades" id="2350-ab72-b5ae-35bb" hidden="false" targetId="76e4-fa8c-6eac-1990" type="profile"/>
@@ -963,12 +972,15 @@
                     <constraint id="fc54-1e7b-022b-4bfa" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
                   </costs>
                   <profiles>
                     <profile name="Solid-Field Projectors" id="9ab6-353c-cbc0-e1b0" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
@@ -988,12 +1000,15 @@
                     <constraint id="262c-649d-9150-cbe6" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
                     <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                     <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
                   </costs>
                   <profiles>
                     <profile name="Hallucination" id="5537-2987-8cbc-b637" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
@@ -1018,12 +1033,15 @@
         <categoryLink name=" Mechanical" id="c188-831b-e6c5-38f8" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Squadron" id="8999-12ea-2489-79b6" hidden="false" targetId="fc8c-6bff-6d80-b316" type="profile"/>
@@ -1072,12 +1090,15 @@
             <constraint id="227c-7271-048c-497a" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
-            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="110"/>
             <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
             <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
             <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
             <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+            <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+            <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+            <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
           </costs>
           <modifiers>
             <modifier arg="1" field="name" join="" scope="unit" type="append" value="s"/>
@@ -1173,12 +1194,15 @@
         <categoryLink name="Core" id="af51-4ed2-d4ed-9c97" primary="true" targetId="3057-36a6-b4b3-cddb"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-2"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Zealot" id="ecc6-929a-cc25-bd7b" hidden="false" targetId="cec2-87db-e412-505f" type="profile"/>

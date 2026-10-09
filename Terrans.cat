@@ -142,12 +142,15 @@
         <categoryLink name="Biological" id="7c54-afdd-5a50-0ba8" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
         <cost name="Gas" typeId="e617-ddca-8728-f42f" value="0"/>
         <cost name="Support" typeId="8a22-4e4a-7691-7495" value="0"/>
         <cost name="Core" typeId="d8b1-aeb3-2f7a-33e5" value="0"/>
@@ -387,12 +390,15 @@
         <categoryLink name="Armoured" id="a29a-35fd-72a4-6c4c" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
       </categoryLinks>
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="DEBUFF [Characteristic] (X)" id="5707-32d3-8fa6-3091" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
@@ -503,7 +509,7 @@
                     <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <modifiers>
-                    <modifier field="5bcf-897a-a5c9-d0e8" type="set" value="30">
+                    <modifier field="5bcf-897a-a5c9-d0e8" type="set" value="40">
                       <conditions>
                         <condition childId="3626-6c66-89a9-b83a" childName="Reinforce" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
                       </conditions>
@@ -598,7 +604,7 @@
         <constraint id="f1a9-c178-a6ce-97cf" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -725,12 +731,15 @@
         <categoryLink name=" Mechanical" id="ce8b-78e0-deaf-ab81" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
       </categoryLinks>
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="190"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="180"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="SIDEARM" id="1ea8-558b-1a9d-f255" hidden="false" targetId="870d-b754-2961-8cb6" type="rule"/>
@@ -935,12 +944,15 @@
         <categoryLink name="Biological" id="545c-1fa6-0004-f11c" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
       <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="110"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="120"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="-1"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Strike" id="2495-4c57-e27e-5cf9" hidden="false" targetId="2575-908c-7384-dc80" type="profile"/>
@@ -1043,12 +1055,15 @@
                 <constraint id="3680-ab82-ce26-2f1e" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
-                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+                <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                 <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
                 <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                 <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
                 <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
                 <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
               </costs>
               <profiles>
                 <profile name="Stabilizer Medpacks" id="19a8-8ad8-1be5-a6bd" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
@@ -1224,7 +1239,7 @@
       </categoryLinks>
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="30"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -1276,7 +1291,7 @@
       </constraints>
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="Gas" typeId="1719-6214-392e-e53f" value="45"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
@@ -1306,7 +1321,7 @@
       </constraints>
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="Gas" typeId="1719-6214-392e-e53f" value="40"/>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="35"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
@@ -1518,7 +1533,7 @@
       </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
