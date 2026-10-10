@@ -1996,6 +1996,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Twilight Templar" id="72f4-e382-51d1-b10f" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="c324-5d14-b6f1-72b5-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="2"/>
+            <constraint id="c324-5d14-b6f1-72b5-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="High Templar" id="cb58-2b5c-32f6-46db" hidden="false" import="true" type="unit">
       <categoryLinks>

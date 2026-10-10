@@ -2267,6 +2267,17 @@
                   <constraints>
                     <constraint id="08a7-4044-587c-ab5e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Explosive Shrapnel Shells" id="b245-0ac9-3f0c-60a7" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
@@ -2313,6 +2324,17 @@
           <characteristics>
             <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">At the End of the Assault Phase, target each Unit Within 3&quot; of this Unit (including Units with the Structure ability) suffers HITS 5 (1). If an affected Unit has the Structure ability, that Unit suffers an additional HITS 5 (1).</characteristic>
             <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sabotage Drone" id="6a19-4d35-0062-9450" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2413,6 +2435,30 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Vanadium Plating" id="4372-d169-f01d-c927" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="d10c-a76a-bcd5-798e" hidden="false" primary="true" targetId="45a9-5def-355b-0560"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="25"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Crystalline Alloy" id="3211-bc01-2b4f-9c28" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains DODGE (2) for this roll. </characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
