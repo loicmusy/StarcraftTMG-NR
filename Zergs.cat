@@ -4,28 +4,18 @@
     <categoryEntry name="Core" id="485c-e8a3-ec4d-88a3" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Elite" id="1239-f2f6-df3a-784b" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
@@ -33,42 +23,27 @@
     <categoryEntry name="Hero" id="1ae2-afdf-6b77-0afe" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Support" id="4b2e-4afe-1949-a29b" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Tactical" id="6042-132c-4895-cde4" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
@@ -76,14 +51,9 @@
     <categoryEntry name="Other" id="576e-0d70-bca0-9668" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
@@ -93,14 +63,9 @@
       </constraints>
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="e467-3028-f8e6-6980" childName="Zerg Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
         </modifier>
       </modifiers>
     </categoryEntry>
