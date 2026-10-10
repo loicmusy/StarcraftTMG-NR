@@ -3,7 +3,7 @@
 [![Open Issues](https://img.shields.io/github/issues/loicmusy/starcraftTMG-NR)](https://github.com/<org>/<repo>/issues)
 [![Latest Release](https://img.shields.io/github/v/release/loicmusy/starcraftTMG-NR)](https://github.com/<org>/<repo>/releases)
 
-[![Rule Version](https://img.shields.io/badge/Rule%20Version-1.4beta-orange)](https://sc.starcraft-tmg.com/)
+[![Rule Version](https://img.shields.io/badge/Rule%20Version-wave3-orange)](https://sc.starcraft-tmg.com/)
 
 This project is not affiliated with or endorsed by Archon Studio. 
 
