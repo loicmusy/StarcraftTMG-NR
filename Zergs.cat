@@ -2369,6 +2369,80 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="8c77-7e49-d859-8343" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="af84-b6d0-39ac-69c9" hidden="false" sortIndex="-1">
+              <entryLinks>
+                <entryLink name="Burrow Ambush" id="d396-2298-1813-f964" hidden="false" import="true" targetId="95a5-7e95-ec19-e358" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="4511-6b51-c4bb-f991" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Plague" id="1581-f01a-4444-c0db" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="995d-750e-3227-11e0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Plague" id="deba-28e9-0dba-5b3f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+. </characteristic>
+                        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (X BM)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combat Phase" id="78ee-88b9-72bf-920e" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Cancerous Bite" id="06a7-cbeb-fa85-0f9c" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="1806-1824-dc4a-c85b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Cancerous Bite" id="5ad1-2032-8ba9-e8ec" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+                      <characteristics>
+                        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+                        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+                        <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+                        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+                        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
+</characteristic>
+                        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
+                        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (1), SIDEARM</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Bile Launcher" id="0f80-f2a5-ec3a-86a2" hidden="false" import="true" type="unit">
       <categoryLinks>
