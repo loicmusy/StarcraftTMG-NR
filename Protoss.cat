@@ -2079,7 +2079,7 @@
             <constraint id="6701-39d8-54c4-aad7" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
-            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="70"/>
             <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
             <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
             <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
