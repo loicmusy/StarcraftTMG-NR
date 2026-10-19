@@ -1944,7 +1944,7 @@
             <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Bound by the Khala" id="c675-1678-6232-e57f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
