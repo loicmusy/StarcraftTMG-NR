@@ -1069,7 +1069,7 @@
             <modifier arg="1" field="name" join="" scope="unit" type="append" value="s"/>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Stalker" id="f8b4-e37c-19da-a050" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Stalker" id="f8b4-e37c-19da-a050" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="1c26-3f1d-ef12-1a3b-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="1c26-3f1d-ef12-1a3b-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
