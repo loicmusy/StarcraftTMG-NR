@@ -46,3 +46,23 @@ Releases are tagged following `[gameversion]rev[currentrevision]`.
 All data is sourced from the official [**Archon Studio** website](https://sc.starcraft-tmg.com/)
 
 If you spot an inaccuracy, please open an issue and cite the relevant document so it can be verified before a fix is merged. You can use the "Report Issue" button on New Recruit and it will automatically open an Issue on Github.
+
+## Update official unit data
+
+Install Node.js 22 or later. Run `update:preview` or `update:apply` from
+your IDE's npm panel. Preview lists files that would change and apply
+writes the changes to the existing catalogs and game system.
+
+The updater uses the official Command Center for matched unit stats, base
+and reinforcement prices, compatible upgrade prices, tactical gas costs,
+existing ability effects, and matching glossary descriptions. Review the
+catalog diff before publishing.
+
+To save the source records as JSON, pass `--source-output=official-data.json`.
+You can replay a saved snapshot with `--source-input=official-data.json`.
+
+The updater can generate missing units and plain-text glossary rules in existing
+catalogs. Review generated entries before publishing. Existing hand-authored IDs,
+weapon replacement logic, faction restrictions, and other New Recruit-specific
+behavior may require manual mapping. Catalog creation and faction and tactical
+effects are outside the automatic import.
