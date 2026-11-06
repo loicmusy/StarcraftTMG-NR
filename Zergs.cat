@@ -198,7 +198,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Corpser" id="4ac0-37c7-6455-bf2e" hidden="false" import="true" sortIndex="-1" type="upgrade">
+        <selectionEntry name="Corpser" id="4ac0-37c7-6455-bf2e" hidden="false" import="true" sortIndex="-1" type="model">
           <constraints>
             <constraint id="7b69-b961-9656-c967-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="7b69-b961-9656-c967-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
@@ -1074,7 +1074,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Roach" id="0674-8198-2994-bdeb" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Roach" id="0674-8198-2994-bdeb" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="69bf-1dbe-3641-31d3-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="69bf-1dbe-3641-31d3-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
@@ -1599,7 +1599,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Vile" id="d433-d72e-dbe2-9733" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Vile" id="d433-d72e-dbe2-9733" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="a791-366c-a6e3-5688-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="a791-366c-a6e3-5688-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
