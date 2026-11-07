@@ -218,8 +218,8 @@
   </sharedProfiles>
   <sharedRules>
     <rule name="IMPACT (X) Y" id="7805-5c0f-7d68-90c8" hidden="false">
-      <description>IMPACT (X) Y Immediately after this Unit completes a successful Charge, check every model in the Fighting Rank or Supporting Rank. For each eligible model, generate X Impact Dice:
--If the model is in the Fighting Rank or Supporting Rank against only one Enemy Unit, all X dice go to that Unit.
+      <description>Immediately after this Unit completes a successful Charge, check every model in the Fighting Rank or Supporting Rank. For each eligible model, generate X Impact Dice:
+- If the model is in the Fighting Rank or Supporting Rank against only one Enemy Unit, all X dice go to that Unit.
 - If the model is in the Fighting Rank or Supporting Rank against multiple Enemy Units, the controlling player may split the dice between those Units.
 Roll the allocated dice for each target Unit separately (this is the Impact Hit Roll). For each result of Y or higher, set 1 die into the target’s Armour Pool. Proceed immediately to Armour Rolls. These hits do not generate Surge and treat Damage as 1.</description>
       <alias>IMPACT</alias>
@@ -240,13 +240,13 @@ If a Batch contains models at both Standard and Long Range, generate the total d
 Attacks made with each SIDEARM must be resolved in separate Batches. Because they are separate Batches, SIDEARM attacks may target a different Enemy Unit than the Unit&apos;s other weapons, subject to all standard target eligibility requirements.</description>
     </rule>
     <rule name="INDIRECT FIRE" id="a19f-0594-dd63-2656" hidden="false">
-      <description>Ranged Attacks with this weapon may ignore Line of Sight when selecting a target and resolving Damage. The target must still be Within Range. If the target is not Visible, it may make an Evade Roll against this attack.</description>
+      <description>Ranged Attacks with this weapon may ignore Line of Sight when selecting a target and resolving Damage. The target must still be Within Range. If the target is not within Line of Sight, it may make an Evade Roll against this attack.</description>
     </rule>
     <rule name="SPECIALIST" id="1974-2d46-8d07-3b29" hidden="false">
       <description>A Unit may include only one model equipped with this weapon. Multiple upgrades configuring more than one instance of this weapon are not permitted (Part 9.1.7).</description>
     </rule>
     <rule name="REPEATABLE" id="f895-258a-9487-f59a" hidden="false">
-      <description>Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects: 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 2 CP: Remove the Activation Marker from that Unit.</description>
+      <description>This ability is exempt from the Once Per Round limit (Part 2.7.1). It may be used multiple times per Round and per Activation, provided all Costs and trigger conditions are met each time.</description>
     </rule>
     <rule name="BULKY" id="f460-74cd-768c-a9e4" hidden="false">
       <description>This weapon cannot be used to make a Ranged Attack while the Unit is currently Engaged (Part 8.7.3).</description>
@@ -256,9 +256,9 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <alias>PIERCE</alias>
     </rule>
     <rule name="BUFF [Characteristic] (X)" id="db39-98a1-2d62-0e5c" hidden="false">
-      <description>The Unit gains a bonus of X to the specified Characteristic until the End of the Round.
-- Target Number Characteristic (e.g. Armour, Hit): reduce the value by X (easier to roll).
-- Value Characteristic (e.g. Speed, RoA): increase the value by X.</description>
+      <description>The Unit gains a bonus of X to the specified characteristic until the End of the Round.
+- Target Number characteristic (e.g. Armour, Hit): reduce the value by X (easier to roll).
+- Value characteristic (e.g. Speed, RoA): increase the value by X.</description>
       <alias>BUFF</alias>
     </rule>
     <rule name="PRECISION (X)" id="d05b-cebb-50d1-ad49" hidden="false">
@@ -266,7 +266,7 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <alias>PRECISION</alias>
     </rule>
     <rule name="NON-LETHAL DAMAGE (X)" id="0ecb-de24-de57-9c58" hidden="false">
-      <description>The Unit suffers X points of Damage. Add this amount effectively to the Unit’s Damage Marker. Unlike standard Damage, NON-LETHAL DAMAGE does not trigger the Remove Casualties step (Part 8.7.4, Step 5), even if Total Damage exceeds a model’s HP. If the Unit subsequently suffers standard Damage, the combined Total Damage triggers casualty removal normally.</description>
+      <description>The Unit suffers X points of Damage. Add this amount effectively to the Unit’s Damage Marker. Do not remove any models, even if Total Damage exceeds a model’s HP. If the Unit subsequently suffers standard Damage, the combined Total Damage triggers casualty removal normally.</description>
       <alias>NON-LETHAL DAMAGE</alias>
     </rule>
     <rule name="CRITICAL HIT (X)" id="3f61-d287-410a-0484" hidden="false">
@@ -274,10 +274,11 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <alias>CRITICAL HIT</alias>
     </rule>
     <rule name="ON CREEP" id="b8db-d01a-89fd-efd3" hidden="false">
-      <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP Keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
+      <description>A Friendly or Enemy Ground Zerg Unit is considered to be ON CREEP while it is Within 6&quot; of any Creep Tumor Token or any model designated as a Source of Creep. While satisfying this condition, the Unit gains the ON CREEP keyword. This allows the Unit to trigger specific Special Abilities or Upgrades that require this state.</description>
     </rule>
     <rule name="HIDDEN" id="4bf6-1de9-71aa-02a4" hidden="false">
-      <description>This Unit cannot be selected as the target of a Ranged Attack or any LoS-requiring Special Ability unless the acting model is Within 4&quot; of it. A HIDDEN Unit is immune to the IMPACT Keyword. A HIDDEN Unit may make an Evade Roll against every attack targeting it.</description>
+      <description>This Unit cannot be selected as the target of a Ranged Attack or any LoS-requiring Special Ability unless the acting model is Within 4&quot; of it. A HIDDEN Unit is immune to the IMPACT keyword. A HIDDEN Unit may make an Evade Roll against every attack targeting it.
+- HIDDEN is classified as a Status.</description>
     </rule>
     <rule name="LOCKED IN (X)" id="7cfe-f96a-bbcb-8220" hidden="false">
       <description>When making a Ranged Attack with this weapon, add X to its RoA if the target Unit has Stationary Status.</description>
@@ -288,19 +289,20 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <alias>HEAL</alias>
     </rule>
     <rule name="PLACE (X)" id="1a3d-86d9-8aa7-68ab" hidden="false">
-      <description>Choose a Leading Model. Remove it and set it Wholly Within X&quot; of its starting position. Then remove and replace all other models in the Unit, maintaining Coherency (Part 4.4). PLACE ignores Gap Clearance, and elevation requirements. The Leading Model is removed and set directly, not moved along a path. However, they must end in a legal position and not Within the Engagement Range. Models using the PLACE effect during the Assault Phase may be set Within the Engagement Range of Enemy models (the Unit becomes Engaged) unless stated otherwise.</description>
+      <description>Choose a Leading Model. Remove it and set it Wholly Within X&quot; of its starting position. Then remove and replace all other models in the Unit, maintaining Coherency (Part 4.4). PLACE ignores Gap Clearance, and elevation requirements. The Leading Model is removed and set directly, not moved along a path. However, they must end in a legal position and not Within the Engagement Range of any enemy model. Models using the PLACE effect during the Assault Phase may be set Within the Engagement Range of Enemy models (the Unit becomes Engaged) unless stated otherwise.</description>
       <alias>PLACE</alias>
     </rule>
     <rule name="DISPLACEMENT" id="eb27-1500-88ca-d0f0" hidden="false">
-      <description>The Leading Model may end a move Overlapping this Token or Unit (overrides Part 7.3.1).
-If the Leading Model ends any Move, Deploy, Run, Charge, Disengage, Close Ranks or Special Ability move Overlapping this Token or model, the controlling player of the Leading Model immediately set it in Base-to-Base contact with the Leading Model. If Base-to-Base is not possible, set it as close as possible.</description>
+      <description>The Leading Model may end a move overlapping this Token or Unit (overrides Part 7.3.1).
+
+If the Leading Model ends any Move, Deploy, Run, Charge, Disengage, Close Ranks or Special Ability move overlapping this Token or model, the controlling player of the Leading Model immediately sets it in Base-to-Base contact with the Leading Model. If Base-to-Base is not possible, set it as close as possible.</description>
     </rule>
     <rule name="TOUGH (X)" id="9928-edb1-53e5-438f" hidden="false">
       <description>When this Unit resolves an Armour Roll, change up to X failed results into successes. Treat them as meeting or exceeding the Armour characteristic - discard them without moving to the Damage Pool.</description>
       <alias>TOUGH</alias>
     </rule>
     <rule name="SUMMON (Unit Name)" id="1a39-f874-fdf2-c983" hidden="false">
-      <description>SUMMON (Unit Name) Set the Leading Model of the named Unit in Base-to-Base contact with the Parent Unit. Set remaining models In Coherency. Models cannot be set Within the Engagement Range of any Enemy Unit.
+      <description>Set the Leading Model of the named Unit in Base-to-Base contact with the Parent Unit. Set remaining models In Coherency. Models cannot be set Within the Engagement Range of any Enemy Unit.
 
 Set an Activation Marker next to the summoned Unit - it cannot be Activated during the Phase in which it was summoned. In subsequent Phases, this Unit must be Activated immediately after its Parent Unit’s activation ends, before the opponent’s next activation.
 
@@ -319,13 +321,13 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
       <alias>RESPAWN</alias>
     </rule>
     <rule name="DEBUFF [Characteristic] (X)" id="e9c5-7999-24b7-4858" hidden="false">
-      <description>The Unit suffers a penalty of X to the specified Characteristic until the End of the Round.
-- Target Number Characteristic: increase the value by X (harder to roll).
-- Value Characteristic: decrease the value by X (minimum 0).</description>
+      <description>The Unit suffers a penalty of X to the specified characteristic until the End of the Round.
+- Target Number characteristic: increase the value by X (harder to roll).
+- Value characteristic: decrease the value by X (minimum 0).</description>
       <alias>DEBUFF</alias>
     </rule>
     <rule name="IMPASSABLE TERRAIN" id="0c68-af78-c6ca-9cf8" hidden="false">
-      <description>A terrain piece is Impassable if it has no Access Point connecting it to an adjacent elevation level. Models cannot move through, onto, or across IMPASSABLE TERRAIN, and no model may end its movement overlapping it. Terrains of sizes 0 and 1 are never considered IMPASSABLE TERRAIN.</description>
+      <description>A terrain piece is Impassable if it has no Access Point connecting it to an adjacent elevation level. Models cannot move through, onto, or across IMPASSABLE TERRAIN, and no model may end its movement overlapping it. Models can move through Terrain of Sizes 0 and 1.</description>
     </rule>
     <rule name="INSTANT" id="a6a8-9065-8680-ddbd" hidden="false">
       <description>Enemy Units cannot declare or resolve Reaction abilities in response to attacks made with this weapon.</description>
@@ -345,11 +347,10 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="SIEGE MODE" id="ba45-b6a8-33d0-f628" hidden="false">
       <description>While a Unit has the SIEGE MODE Status, apply the following rules:
-
-• This Unit cannot perform the Move, Disengage, Run, Charge or Close Ranks actions.
-• Weapons profile with Siege Mode Status can only be used while this unit has SIEGE MODE Status.
-• While this unit has Siege Mode Status any other weapons can&apos;t be used.
-• When this Unit is returned to Reserves, it loses the SIEGE MODE Status.</description>
+- This Unit cannot perform the Move, Disengage, Run, Charge or Close Ranks actions.
+- Weapons profile with Siege Mode Status can only be used while this unit has SIEGE MODE Status.
+- While this unit has Siege Mode Status any other weapons can&apos;t be used.
+- When this Unit is returned to Reserves, it loses the SIEGE MODE Status.</description>
     </rule>
     <rule name="MORPH (Name)" id="fbcd-73d9-3967-1dd3" hidden="false">
       <description>The controlling player must have sufficient Available Supply. Set one (Name) model in Base-to-Base contact with a model from the active Unit, then remove that model from the battlefield. The (Name) model forms a new Unit and cannot be set Within 1&quot; of any Enemy Unit. Place an Activation Marker next to the new Unit; it cannot be Activated for the remainder of the Round.</description>
@@ -357,7 +358,6 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     </rule>
     <rule name="SHIELDED" id="137d-a280-957d-d27a" hidden="false">
       <description>If a Shield value is present on a Unit Card, add it to the Hit Points (HP) of the first model. The Unit is Shielded. The Unit loses its Shielded Status when the Total Damage assigned to it exceeds its Shield value or when the first model in the Unit is removed.
-
 
 The Shielded Status is referenced by other abilities. Losing Shielded Status does not remove any remaining Hit Points, it only ends effects that require the Unit to be Shielded. Shielded Status cannot be restored by HEAL.</description>
       <alias>Shielded</alias>
@@ -367,6 +367,271 @@ The Shielded Status is referenced by other abilities. Losing Shielded Status doe
       <alias>Stationary</alias>
     </rule>
     <rule name="CONCENTRATED FIRE" id="613f-4376-5945-9fb6" hidden="false"/>
+    <rule name="ACCESS POINT" id="d396-cd4a-d840-150a" hidden="false">
+      <description>Part of a Terrain that connects different elevation levels. Models moving through an ACCESS POINT can change their elevation.</description>
+    </rule>
+    <rule name="ACTIVE PLAYER" id="1026-f3b3-aaf1-d54f" hidden="false">
+      <description>The player whose turn it is to act.</description>
+    </rule>
+    <rule name="ARMY SLOT" id="3837-6a72-d31f-dbfc" hidden="false">
+      <description>Army Slots determine how many and what types of Units may be included in an army. Each Army Slot has a specific type: Core, Elite, Support, Air, or Hero. Every Unit occupies a number of Army Slots of its designated type equal to its starting Supply Value.
+
+The Faction Card provides the initial pool of Army Slots. Additional Army Slots are unlocked by purchasing Tactical Cards with Vespene Gas during Army Building (Part 9.1.5). Unused Army Slots are lost - they cannot be converted, exchanged, or carried forward.</description>
+    </rule>
+    <rule name="AVAILABLE SUPPLY" id="6313-2477-8763-29d8" hidden="false">
+      <description>Available Supply is the remaining Supply capacity available for new deployments. It equals the current Supply Pool minus the Total Current Supply Value of all Friendly Units on the battlefield (Part 8.3.2).
+
+A Unit may only be deployed from Reserves if its Current Supply Value is less than or equal to the Available Supply. At no point may the Total Current Supply of a player&apos;s on-table Units exceed the Supply Pool. Units Destroyed or reduced by casualties free up Available Supply for new arrivals. In the final Round of the game, the Supply Pool becomes unlimited, and the Available Supply restrictions are lifted.</description>
+    </rule>
+    <rule name="BLOCKING TERRAIN" id="3506-f9c7-50c9-c042" hidden="false">
+      <description>Any terrain piece with an Effective Size of 1 or greater. Blocking Terrain obstructs Line of Sight according to the Cover rules (Part 7.1.1).
+
+Whether a model may move through that terrain is determined separately by the movement rules, terrain Size, ACCESS POINTS, Gap Clearance, and any relevant terrain keywords.</description>
+    </rule>
+    <rule name="BURROWED" id="084d-5e28-3191-10f2" hidden="false">
+      <description>- BURROWED is classified as a Status.
+- A BURROWED Unit has the HIDDEN Status.
+- Its Size is treated as 0 for all purposes
+- Its Current Supply Value is treated as 0 for Disengage checks.
+- A BURROWED Unit cannot Control or Contest Mission Markers (overrides Parts 6.2 and 8.9.1).
+- While BURROWED, the Unit may only perform Deploy, Move, Disengage, Run, Hold and Close Ranks actions. Performing any of these (except Hold) immediately removes the BURROWED status.
+- BURROWED Units may use Special Abilities unless stated otherwise.
+- BURROWED Units may make an Evade Roll against every attack targeting them.
+- Other models may move through a BURROWED Unit’s models, provided they do not end Within the Engagement Range of the BURROWED Unit (overrides Part 8.5.3).
+- If a BURROWED Unit is Engaged at the start of the Combat Phase, it must be Activated but cannot perform a Close Combat Attack in its BURROWED state. The Unit may perform Close Ranks as its first step, which immediately removes the BURROWED status. Once the status is removed, the Unit completes the remaining steps of the Close Combat Attack normally. If the Unit does not or cannot perform Close Ranks, it does not attack. Enemy Units Engaged with a BURROWED Unit may attack it as normal regardless of its status.</description>
+    </rule>
+    <rule name="COMBAT TAGS" id="728f-57e3-9078-eb8a" hidden="false">
+      <description>Combat Tags are keywords printed on a Unit Card that identify a Unit&apos;s physical nature and tactical class.
+
+Type Tags: Armoured, Biological, Light, Mechanical, Psionic, Flying, and Ground.
+- Targeting: Some weapons can fire only at specific Combat Tags (e.g., &quot;Target: Flying&quot;).
+- Surge: A weapon&apos;s Surge efficiency triggers only when the target has the Combat Tag listed in the weapon&apos;s Surge Type (Part 8.7.4).
+- Bonuses: Abilities such as ANTI-EVADE (X) or PIERCE (X) often apply only against specific Combat Tags.
+Note: The Ground Combat Tag and the GROUND LEVEL elevation (Part 8.5.3) are distinct concepts. A Flying Unit standing on the playmat is at GROUND LEVEL but does not have the Ground Combat Tag. Throughout these rules, Ground in bold always refers to the Combat Tag. GROUND LEVEL always refers to elevation.</description>
+    </rule>
+    <rule name="CONCENTRATED FIRE (X)" id="d460-c7d3-7957-896c" hidden="false">
+      <description>Attacks with this weapon may remove no more than X models as casualties. Once X models have been removed, discard any remaining Total Damage. It is not recorded as a Damage Marker and does not carry over.</description>
+    </rule>
+    <rule name="CONTROLLING PLAYER" id="714a-7a23-fb56-646d" hidden="false">
+      <description>The player who commands a specific Unit, model, or Token. They make all decisions and roll all dice. Certain abilities (e.g., Neural Parasite) can transfer control; the new controller then acts in every respect as though the Unit were their own.</description>
+    </rule>
+    <rule name="CURRENT SUPPLY VALUE" id="d6ab-63fa-97ea-1a8e" hidden="false">
+      <description>The Current Supply Value of a Unit is its Supply Value at this moment, based on the number of models remaining in the Unit as shown on the Supply Profile (Part 6.1). Update the Current Supply Value immediately whenever a casualty reduces the model count into a lower bracket.
+
+The Current Supply Value is referenced when checking whether a Unit may be deployed from Reserves (Part 8.3.2), when determining Mission Marker Control (Part 8.9.1), when evaluating Tactical Mass for Disengage (Part 8.5.4), and when calculating Victory Points for Supply-based scoring conditions.</description>
+    </rule>
+    <rule name="DODGE (X)" id="a478-fc7f-7832-e386" hidden="false">
+      <description>When this Unit is targeted by an attack, reduce the number of dice moved from the Armour Pool to the Damage Pool by Surge or CRITICAL HIT by X (minimum 0). Apply during the Resolve Surge step.</description>
+    </rule>
+    <rule name="EFFECTIVE SIZE" id="ae3e-c47e-c43a-4d07" hidden="false">
+      <description>A model&apos;s Effective Size is equal to its Size characteristic plus the Size of any terrain it is standing on (Part 7.1.2).
+
+A model at GROUND LEVEL has an Effective Size equal to its own Size characteristic only. A model on HIGH GROUND (Size 3+) or MID GROUND (Size 1–2) adds the terrain&apos;s Size to its own. Terrain pieces set on elevated surfaces stack in the same way- a terrain piece&apos;s Effective Size equals its own Size plus the Size of the terrain it stands on.
+
+Effective Size determines which terrain blocks Line of Sight through Full Cover and Direct Cover (Part 7.1.1). Flying models are treated as having an Effective Size higher than any terrain piece on the table for Cover purposes (Part 7.1.4).</description>
+    </rule>
+    <rule name="ELEVATION LEVEL" id="2d7a-59b1-0e8b-1692" hidden="false">
+      <description>Models can stand one of three elevations:
+- GROUND LEVEL: Standing directly on the playmat.
+- MID GROUND: Standing on horizontal terrain of Size 1 or 2.
+- HIGH GROUND: Standing on horizontal terrain of Size 3 or larger.
+The model stands on Elevation if its base is at that elevation. If the model’s base is on multiple elevation levels, assume it is standing on the highest of those elevations.</description>
+    </rule>
+    <rule name="ENEMY" id="c078-d8f7-1e6b-89ab" hidden="false">
+      <description>All Units, Tokens, and cards belonging to the opponent are Enemies. In team games, all opposing players&apos; Units, Tokens, and cards are Enemies. A Unit may never target a Friendly Unit with an attack unless a rule explicitly states otherwise. Enemy is the opposite of Friendly and is referenced throughout the rules to determine valid targets, Engagement, and Mission Marker contests.</description>
+    </rule>
+    <rule name="ENGAGED" id="fc19-8fda-8da9-a3bc" hidden="false">
+      <description>A Ground Unit is Engaged when any of its models is Within 1&quot; (Engagement Range) of any model in an Enemy Ground Unit, provided the following conditions are met (Part 7.2.1):
+- Combat Tags match: Ground models Engage only Ground models. Flying models cannot be Engaged by any model.
+- Terrain does not block: Size 2+ terrain between the models prevents Engagement, even if they are Within 1&quot;. Models on HIGH GROUND cannot Engage models at GROUND LEVEL, and vice versa.
+When any model in a Unit is Engaged, the entire Unit is considered Engaged. An Engaged Unit cannot perform a standard Move - it must Disengage (Part 8.5.4) or Hold. Engaged Units are also subject to restrictions on Ranged Attacks (Part 8.7.3).</description>
+    </rule>
+    <rule name="ENGAGEMENT RANGE" id="3ae3-ef54-3c04-ba04" hidden="false">
+      <description>The Engagement Range extends 1&quot; horizontally from any model&apos;s base. When two Enemy Ground models are Within each other&apos;s Engagement Range, they are Engaged (Part 7.2).
+
+Engagement Range is measured horizontally from a top-down perspective, ignoring vertical height (Part 4.1). It is referenced when resolving Move restrictions (Part 8.5.3), Disengage (Part 8.5.4), Charge (Part 8.6.2), the Fighting Rank (Part 8.8.1), and PLACE effects. Melee weapons list E as their Range, indicating they may only strike targets Within the Engagement Range.</description>
+    </rule>
+    <rule name="ENTRY EDGE" id="aeab-414e-d096-2fd2" hidden="false">
+      <description>The table edge assigned to a player by the Deployment Card. Units enter the battlefield from this edge when deploying from Reserves.</description>
+    </rule>
+    <rule name="FACTION TAGS" id="0855-f4c8-40d5-4df8" hidden="false">
+      <description>Faction Tags are keywords printed on Unit Cards, Tactical Cards, and Faction Cards that identify allegiance.
+- Race Tags: Terran, Zerg, Protoss.
+- Sub-Faction Tags: Specific broods or organisations, e.g., Kerrigan&apos;s Swarm, Raynor&apos;s Raiders.
+- Function: During Army Building, a player may include only Units and Tactical Cards whose Faction Tags all appear on the chosen Faction Card. If even one tag on the Unit or Tactical Card does not appear on the Faction Card, that card cannot be included. A Unit with fewer tags than the Faction Card is permitted- it only requires its own tags to be present (Part 9.1.2).</description>
+    </rule>
+    <rule name="FIGHTING RANK" id="e7cf-37e8-37ee-8390" hidden="false">
+      <description>A model is in the Fighting Rank if it is Within the Engagement Range (1&quot;) of an Enemy model. Models in the Fighting Rank may strike with their Combat Phase weapons. See Part 8.8.1, Step 2.</description>
+    </rule>
+    <rule name="FIRST PLAYER MARKER" id="c0a9-cde3-c55c-3c4f" hidden="false">
+      <description>A physical Token used to track which player has initiative. At the start of the game, the winner of the Roll-Off (Part 3.2) assigns the First Player Marker to either player for Round 1. The holder of the First Player Marker chooses which player activates first at the start of each Phase. The Marker changes hands in two ways: the first player to Pass during Phase 1 or Phase 2 takes the First Player Marker for the following Phase, and at the end of Phase 4 the Marker is awarded to the player with fewer Victory Points (Part 8.9.6). If Victory Points are tied, both players Roll-Off and the winner takes the Marker.</description>
+    </rule>
+    <rule name="FLYING" id="505a-f88a-5754-0c15" hidden="false">
+      <description>Flying Units trade board control (no Mission Markers, no melee) for mobility and immunity to terrain.
+- A Flying Unit ignores all terrain for movement purposes. The Leading Model moves point-to-point, measuring horizontally. Other models may pass through a Flying model’s base as if it were not there, and vice versa.
+- A Flying Unit is never Engaged. Ground models cannot Engage Flying models, and Flying models cannot Engage other Flying models. A Flying Unit must end its movement at least 1&quot; away from all Enemy Flying Units.
+- Flying model, ignore the Full Cover rule. Direct Cover and the Elevation Dead Zone rules still apply. Assume that Flying Units’ Effective Size is higher than the Effective Size of any terrain piece on the table.
+- A Flying Unit does not benefit from HIGH GROUND Cover (Part 7.1.3).
+- A Flying Unit cannot Control or Contest Mission Markers (overrides Parts 6.2 and 8.9.1).
+- A Flying Unit cannot Charge or be Charged.
+- A Flying Unit cannot participate in the Combat Phase (Part 8.8).
+- A Flying Unit ignores elevation. It does not use Access Points. For Cover and Line of Sight purposes, treat a Flying unit&apos;s Effective Size as higher than the Effective Size of any terrain piece on the table (Part 7.1.4). Terrain does not contribute to a Flying model&apos;s Effective Size.
+- A Flying Unit moving over Grass does not destroy the Grass terrain piece. If a Flying Unit ends on a Grass terrain piece, it is removed as normal.</description>
+    </rule>
+    <rule name="FRIENDLY" id="7433-9423-ff1a-007c" hidden="false">
+      <description>All Units, Tokens, and cards belonging to the Controlling Player are Friendly to one another. In team games, all teammates&apos; Units, Tokens, and cards are also Friendly. A Unit&apos;s own models are always Friendly to it. Friendly is the opposite of Enemy and is used throughout the rules to determine targeting restrictions, movement interactions, and ability eligibility.</description>
+    </rule>
+    <rule name="GRASS" id="ebcb-0e9d-63c9-8f5f" hidden="false">
+      <description>A terrain piece with a Size of 2 that follows special rules. Unlike other Size 2 terrain, Grass does not block movement but does block Line of Sight, following the standard Cover rules (Part 7.1.1).
+
+Grass is destroyed by the passage of war. If a Leading Model’s path of travel passes through or any model of a Unit ends on a Grass terrain piece during any movement action (Move, Deploy, Run, Charge, Disengage or Close Ranks), that Grass terrain piece is immediately removed from the game. It does not return during Cleanup &amp; Refresh and cannot be replaced by any means.
+
+A Flying Unit moving over Grass does not destroy the Grass terrain piece. Flying models pass above the terrain, not through it. If any model of a Flying Unit ends on a Grass terrain piece, it is removed as normal.</description>
+    </rule>
+    <rule name="GROUND LEVEL" id="d889-0033-f06c-d398" hidden="false">
+      <description>One of the elevation levels. Model is on the GROUND LEVEL when it is standing directly on the playmat.
+
+Models on GROUND LEVEL cannot Engage models on HIGH LEVEL, and vice versa.
+
+Models on GROUND LEVEL can Engage models on MID GROUND only if both models are adjacent to the same ACCESS POINT connecting their respective elevations.
+
+A model at GROUND LEVEL has an Effective Size equal to its own Size characteristic only.</description>
+    </rule>
+    <rule name="HIGH GROUND" id="9d11-f901-6a8a-852a" hidden="false">
+      <description>One of the elevation levels. Model is on the HIGH GROUND when standing on horizontal terrain of Size 3 or larger.
+
+Models on HIGH GROUND cannot Engage models on GROUND LEVEL, and vice versa.
+
+Models on HIGH GROUND can Engage models on MID GROUND only if both models are adjacent to the same ACCESS POINT connecting their respective elevations.
+
+A model on HIGH GROUND has an Effective Size equal to its own Size plus the terrain&apos;s Size.</description>
+    </rule>
+    <rule name="HITS X (Y)" id="1373-5707-12e0-acf8" hidden="false">
+      <description>The affected Unit suffers X automatic hits. Set X dice directly into the Armour Pool and proceed immediately to Armour Rolls (Part 8.7.4, Steps 3–4). Treat the Damage characteristic as Y. These hits do not generate Surge.</description>
+    </rule>
+    <rule name="LEADING MODEL" id="f7c5-ca88-5811-1b0f" hidden="false">
+      <description>The Leading Model is a temporary reference point used to execute a Unit&apos;s movement. Whenever a Unit performs a Move, Deploy, Run, Charge, Disengage, Close Ranks, or any action that instructs the Unit to nominate a Leading Model, the Controlling Player selects one model in the Unit.
+
+Move the Leading Model first, measuring its exact path. Then set the remaining models in valid Coherency around the Leading Model&apos;s new position (Part 4.4). The Leading Model nomination ends once the action resolves. The Leading Model determines the Unit&apos;s Gap Clearance category and interacts with terrain restrictions (Part 4.6).</description>
+    </rule>
+    <rule name="LINE OF SIGHT (LoS)" id="7027-a308-dd58-018e" hidden="false">
+      <description>Line of Sight determines what a model can see and, by extension, what it can target with attacks and abilities.
+
+All Line of Sight checks are resolved from a 2D top-down perspective, looking directly down at the battlefield from above. To determine if a model can see a target, trace an imaginary straight line from any part of the acting model&apos;s base to any part of the target model&apos;s base. Vertical height is never factored into the trace.
+
+If the trace does not pass through any Blocking Terrain (any terrain piece with an Effective Size of 1 or greater), the target is Visible. No further checks are required.
+
+If the trace passes through Blocking Terrain, the target is not automatically hidden. Apply the Cover rules (Part 7.1.1) to determine whether that terrain actually blocks the Line of Sight:
+- Full Cover: The terrain&apos;s Effective Size is equal to or greater than the Effective Size of both the attacker and the target. Line of Sight is blocked.
+- Direct Cover: The trace passes through a terrain piece, and either the attacker or the target is Within 1&quot; of that terrain, provided the terrain&apos;s Effective Size is equal to or greater than the Effective Size of the model that is Within 1&quot;. Line of Sight is blocked. Exception: If both the attacker and the target are Within 1&quot; of the same terrain piece and Within 3&quot; of each other, resolve Line of Sight normally.
+- Elevation Dead Zone: A model on HIGH GROUND (Size 3+) cannot see a model at GROUND LEVEL that is Within 1&quot; of the base of the same terrain piece, and vice versa. The same Close Quarters exception applies.
+Each terrain piece is assessed independently. Terrain pieces do not combine their Effective Size or proximity. If no single terrain piece meets the requirements for Full Cover or Direct Cover, Line of Sight is not blocked, regardless of how many terrain pieces the trace passes through.
+
+A terrain piece&apos;s footprint is defined by its physical base or outermost edges viewed from above. Gaps, windows, doorways, and open interiors within the footprint do block the Line of Sight unless players agree otherwise during Battlefield Setup (Part 7.1).
+
+Flying models ignore the Full Cover rule. Direct Cover and the Elevation Dead Zone still apply. Treat a Flying model&apos;s Effective Size as higher than the Effective Size of any terrain piece on the table (Part 7.1.4).
+
+Line of Sight is mutual: if Model A can see Model B, Model B can see Model A through the same trace.</description>
+    </rule>
+    <rule name="LONG RANGE (X)" id="d9d7-d261-5412-3a14" hidden="false">
+      <description>The maximum Range of this weapon increases to X&quot;.
+
+Measure each attacking model’s distance to the target individually:
+- Within normal profile Range: attack resolves normally.
+- Beyond profile Range but Within X&quot;: the model suffers a -1 Modifier to its Hit roll.
+If a Batch contains models at both Standard and Long Range, generate the total dice but roll the two groups separately to account for different Hit Target Numbers.</description>
+    </rule>
+    <rule name="MID GROUND" id="2cdf-56e3-3c00-edae" hidden="false">
+      <description>One of the elevation levels. Model is on the MID GROUND when standing on horizontal terrain of Size 1 or 2.
+
+Models on MID GROUND can Engage models on HIGH GROUND or GROUND LEVEL only if both models are adjacent to the same ACCESS POINT connecting their respective elevations.
+
+A model on MID GROUND has an Effective Size equal to its own Size plus the terrain&apos;s Size.</description>
+    </rule>
+    <rule name="MISSION MARKERS" id="df19-ca00-4f70-e302" hidden="false">
+      <description>Numbered Markers are set on the battlefield during Setup at the coordinates shown on the Deployment Card. Each Marker is 32mm in diameter and has two sides: Activated or Deactivated. Markers 1 &amp; 3 are Red, Markers 2 &amp; 4 are Blue, and Marker 5 is Neutral.
+
+Mission Markers are the primary scoring mechanism. At the end of each Round, players determine Control of each Marker by comparing the Total Current Supply Value of their eligible contesting Units (Part 8.9.1). A Unit may Contest a Mission Marker only if it is on the battlefield, In Coherency, and has at least one model Within 3&quot; with Line of Sight to the Marker on the same elevation. Flying Units and BURROWED Units cannot Contest or Control Mission Markers.
+
+Control is Sticky- once a player Controls a Marker, it remains under their control until the opponent reclaims it with a higher contesting Supply total. A tied result never transfers control.</description>
+    </rule>
+    <rule name="MODIFIER" id="37ad-3255-92fa-3b9d" hidden="false">
+      <description>A Modifier adjusts the Target Number of a roll. Apply all Modifiers before rolling (Part 3.4).
+- +X Modifier: Makes the roll easier by reducing the Target Number by X.
+- -X Modifier: Makes the roll harder by increasing the Target Number by X.
+Modifiers from different named sources are cumulative unless otherwise stated. A Target Number can never be modified below 2+ or above 6+. Modifiers adjust the Target Number, not the dice result. A natural roll of 6 always succeeds, and a natural roll of 1 always fails, regardless of Modifiers (Part 3.6).
+
+A Modifier is distinct from a Fixed Addition (Part 3.5), which generates a value rather than adjusting a Target Number.</description>
+    </rule>
+    <rule name="READY" id="63f1-5ee1-3677-4800" hidden="false">
+      <description>The default state of a Tactical Card or Faction Card. A Ready card is face-up, its abilities are available, and it may be Exhausted to pay resource costs or activate its Special Abilities. All Tactical Cards and Faction Cards begin each Round in the Ready state. Cards that have been Exhausted are returned to Ready during Cleanup &amp; Refresh (Part 8.9.5).</description>
+    </rule>
+    <rule name="RESERVES" id="62fe-1ba5-e5c6-a968" hidden="false">
+      <description>A holding area off the battlefield where Units remain until they are deployed. All Units begin the game in Reserves.
+
+While in Reserves, a Unit:
+- Cannot be targeted by attacks or abilities unless an ability explicitly states it affects Units in Reserves.
+- Cannot use Active Abilities, Passive Abilities, or Reaction Abilities unless the ability explicitly states otherwise.
+- Cannot Control or Contest Mission Markers.
+- Does not contribute its Current Supply Value to the player&apos;s Total Current Supply on the battlefield.
+- Retains all equipment, upgrades, and weapon selections assigned during Army Building.
+A Unit leaves Reserves when it is deployed to the battlefield via a Deploy action (Part 8.5.5). Some rules may return a Unit to Reserves during play- see Part 8.5.5 for how Damage, effects, and Supply are handled. In the final Round of the game, all Units still in Reserves that are not deployed are treated as Destroyed for scoring purposes (Part 8.10).</description>
+    </rule>
+    <rule name="SPECIAL ABILITY" id="f0b5-c155-e66c-1142" hidden="false">
+      <description>A Special Ability is any named ability printed on a Unit Card, Tactical Card, or Faction Card. Every Special Ability falls into one of three categories: Active Ability, Passive Ability, or Reaction Ability (Part 2.7).
+- Active Abilities require the Unit to be Activated and are triggered immediately before or after an action. Each named Active Ability may be used once per Round per Unit unless it has the REPEATABLE keyword.
+- Passive Abilities are always in effect as long as the Unit is on the battlefield.
+- Reaction Abilities fire in response to a specific trigger. Each player may resolve only one Reaction per Activation, and each named Reaction Ability may be used only once per Round per Unit.
+All three types are inactive while the Unit is in Reserves unless the ability explicitly states otherwise. A Unit cannot be affected by multiple instances of the same-named Special Ability simultaneously.</description>
+    </rule>
+    <rule name="SPILLOVER" id="85e8-8972-82d9-60d1" hidden="false">
+      <description>Additional hits generated by a Template Weapon that strike models outside the Primary target Unit. When a Blast Template (BT) or Flamer Template (FT) covers models belonging to Units other than the Primary target, those models are resolved as Spillover. Each affected Unit is resolved as a separate Batch. Spillover Batches do not apply Rate of Attack modifiers and do not generate Surge. Spillover may affect both Friendly and Enemy Units. See Part 8.7.6 for the full Template Weapon procedure.</description>
+    </rule>
+    <rule name="STATUS" id="3d52-06f6-e8b3-afff" hidden="false">
+      <description>A category of keyword representing a temporary or persistent operational mode, condition, or statistic modifier affecting a Unit (e.g. BURROWED, SIEGE MODE). Unless stated otherwise, Statuses aren’t removed during the Scoring and Cleanup Phase. They stay on the Unit until they are removed by other means.
+
+A Unit’s active Status is visually tracked using Status Markers set next to the Unit:
+- Modes: Use Plastic Markers to track operational shifts (e.g. SIEGE MODE, BURROWED). Those Status Markers have STAY IN PLAY.
+- Other Statuses: Use Markers to track other effects affecting the Unit. Positive effects are tracked with Buff Markers (Blue), and negative effects are tracked with Debuff Markers (Red). Those Status Markers have STAY IN PLAY.</description>
+    </rule>
+    <rule name="SUPPLY VALUE" id="6fe2-5b6d-cf01-fc9c" hidden="false">
+      <description>The Supply Value of a Unit is the value shown on the Unit Card&apos;s Supply Profile corresponding to the Unit&apos;s current model count. A Unit&apos;s starting Supply Value is determined during Army Building by the Composition Option selected (Part 9.1.6) and defines how many Army Slots the Unit occupies.
+
+Supply Value is a dynamic characteristic- as casualties reduce the model count into a lower bracket on the Supply Profile, the Supply Value decreases. Update immediately when a casualty moves the Unit into a lower bracket. Supply is used for Deployment, Mission Marker Control, Tactical Mass, and scoring.</description>
+    </rule>
+    <rule name="SUPPORTING RANK" id="c399-79da-ee03-f46a" hidden="false">
+      <description>A model is in the Supporting Rank if it is in Base-to-Base contact with a Friendly model from the same Unit that is in the Fighting Rank, but is not itself Within the Engagement Range of an Enemy model. Models in the Supporting Rank may strike with their Combat Phase weapons as though they were in the fight. See Part 8.8.1, Step 2.</description>
+    </rule>
+    <rule name="TACTICAL MASS" id="46ce-0702-a61a-a4e6" hidden="false">
+      <description>A Unit has Tactical Mass when its Current Supply Value exceeds the Combined Current Supply Value of all Enemy Units it is Engaged with. A Unit with Tactical Mass ignores the Disengage penalty (Part 8.5.4): it may Ranged Attack and Charge normally in the following Assault Phase after Disengaging.</description>
+    </rule>
+    <rule name="UNENGAGED" id="b9c3-8812-2586-b801" hidden="false">
+      <description>A Ground Unit is Unengaged when none of its models is Within 1&quot; of any Enemy Ground model, or when terrain restrictions (Part 7.2.1) prevent valid Engagement despite proximity. Flying Units are always Unengaged.
+
+An Unengaged Unit may perform a standard Move, Run, Ranged Attack, or Charge without restriction. Only Unengaged Units may be selected to perform a Move action (Part 8.5.2).</description>
+    </rule>
+    <rule name="VISIBLE" id="82b9-b433-7ac9-3b4d" hidden="false">
+      <description>A model is Visible to another model if a valid Line of Sight trace can be drawn between them (Part 7.1). If the trace does not pass through any Blocking Terrain, the target is Visible without further checks. If the trace passes through Blocking Terrain, apply the Cover rules (Part 7.1.1) - the target remains Visible unless Full Cover or Direct Cover blocks the Line of Sight.
+
+A model with the HIDDEN keyword is not Visible to any model more than 4&quot; away, regardless of Line of Sight.</description>
+    </rule>
+    <rule name="WHOLLY WITHIN" id="b069-7e79-f3e5-cd21" hidden="false">
+      <description>A model is Wholly Within a distance only if its entire base sits inside that range - no part of the base may extend beyond the edge. A Unit is Wholly Within a distance only if every model in the Unit satisfies this condition.
+
+Wholly Within is a stricter requirement than Within and is used for Coherency checks (Part 4.4), certain ability areas of effect, and Mission Marker eligibility. When a rule specifies Wholly Within, partial overlap is not sufficient.</description>
+    </rule>
+    <rule name="WITHIN" id="2b58-4272-7932-70ec" hidden="false">
+      <description>A model is Within a distance if any part of its base touches or crosses into that range. A Unit is Within a distance if at least one model in the Unit meets this condition.
+
+Within is a less restrictive requirement than Wholly Within. When a rule specifies Within without the word &quot;Wholly,&quot; partial overlap is sufficient.</description>
+    </rule>
+    <rule name="ZONE OF INFLUENCE" id="bafb-9a48-55e3-799a" hidden="false">
+      <description>A restricted area of the battlefield extending 6&quot; inward from a player’s Entry Edge, as defined by the Deployment Card. Where the Entry Edge does not run the full length of a table edge, the Zone of Influence is marked using Zone of Influence Markers set at the corners of the Entry Edge.
+
+Units arriving from Reserves cannot end their deployment Within the opponent’s Zone of Influence. This restriction applies to all forms of arrival - whether by standard deployment, transport, or SUMMON (Part 8.3.3).
+
+The Zone of Influence does not affect Units already on the battlefield. It does not restrict movement, block Line of Sight, or interact with any other rule once a Unit has completed its arrival.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry name="Deployment Maps" id="d444-6767-cbfc-bf56" defaultAmount="1" hidden="false" import="true" type="upgrade">

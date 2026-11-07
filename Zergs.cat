@@ -732,7 +732,9 @@
         </profile>
         <profile name="Omega Network" id="ddeb-ec94-526e-fe55" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge. If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge.
+
+If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -2144,7 +2146,13 @@
         </profile>
         <profile name="Broodmother" id="1060-a9d6-8c5d-e172" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round: Units of Size 1 gain a +1 Modifier to all IMPACT Rolls. All weapons of Size 2 Units gain CRITICAL HIT (1). Units of Size 3 or more gain TOUGH (1).</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round:
+
+Units of Size 1 gain a +1 Modifier to all IMPACT Rolls.
+
+All weapons of Size 2 Units gain CRITICAL HIT (1).
+
+Units of Size 3 or more gain TOUGH (1).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -2388,7 +2396,10 @@
                   <profiles>
                     <profile name="Plague" id="deba-28e9-0dba-5b3f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+. </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for:
+1 BM: each result of 5+.
+2 BM: each result of 4+.
+3 BM: each result of 3+.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (X BM)</characteristic>
                       </characteristics>
                     </profile>

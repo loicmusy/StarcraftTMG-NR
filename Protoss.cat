@@ -503,7 +503,7 @@
         </profile>
         <profile name="Psionic Transfer" id="9955-c653-4b3f-6ba4" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Shade token Wholly Within 12&quot; of any model in this Unit. At the End of the Round, the controlling player may set all models of this Unit in Coherency, treating the Shade token as the Leading Model. The Shade token has DISPLACEMENT.</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Shade token Wholly Within 12&quot; of any model in this Unit. At the End of the Round, the controlling player may set all models of this Unit In Coherency, treating the Shade token as the Leading Model. The Shade token has DISPLACEMENT.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
@@ -1759,7 +1759,7 @@
         </profile>
         <profile name="Shadow Strike" id="67e9-f089-f6da-635f" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">All Enemy Units Engaged with this Unit suffer HITS 4 (1)</characteristic>
+            <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">All Enemy Units Engaged with this Unit suffer HITS 4 (1).</characteristic>
             <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
@@ -1856,7 +1856,9 @@
         </profile>
         <profile name="Executor&apos;s Will" id="fa66-6445-7bef-44d7" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target two Enemy Units on the battlefield (Line of Sight is not required) and place a Faction Indicator next to each of them. During the next Assault Phase, if either of these Units ends its Activation while its Faction Indicator remains on the battlefield, you may Activate two Friendly Units consecutively. Remove both Faction Indicators after any Enemy Unit completes its Activation in the following Assault Phase.</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target two Enemy Units on the battlefield (Line of Sight is not required) and place a Faction Indicator next to each of them.
+During the next Assault Phase, if either of these Units ends its Activation while its Faction Indicator remains on the battlefield, you may Activate two Friendly Units consecutively.
+Remove both Faction Indicators after any Enemy Unit completes its Activation in the following Assault Phase.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
           </characteristics>
         </profile>
@@ -1961,7 +1963,10 @@
         </profile>
         <profile name="Psionic Gale" id="5834-1162-51d0-2a09" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 4+, that Unit suffers an effect depending on the current Phase: Movement Phase: NON-LETHAL DAMAGE (1). Assault Phase: 1 Damage. If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 4+, that Unit suffers an effect depending on the current Phase:
+Movement Phase: NON-LETHAL DAMAGE (1).
+Assault Phase: 1 Damage.
+If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 PE)</characteristic>
           </characteristics>
         </profile>
@@ -2038,7 +2043,9 @@
         </profile>
         <profile name="Our Minds as One" id="b536-6a30-5d27-4b18" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit&apos;s Current Supply Value is 2, it gains the following effects: The first Special Ability resolved by this Unit each Round has its PE cost reduced by 1 (to a minimum of 0). Apply a +1 Modifier to the dice rolled for its Psionic Storm Special Ability.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While this Unit&apos;s Current Supply Value is 2, it gains the following effects:
+The first Special Ability resolved by this Unit each Round has its PE cost reduced by 1 (to a minimum of 0).
+Apply a +1 Modifier to the dice rolled for its Psionic Storm Special Ability.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -2137,7 +2144,10 @@
               <profiles>
                 <profile name="Psionic Storm" id="19bc-793f-033c-3881" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                   <characteristics>
-                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 5+, that Unit suffers an effect depending on the current Phase: Movement Phase: NON-LETHAL DAMAGE (1). Assault Phase: 1 Damage. If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
+                    <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Psionic Storm token Within 10&quot; and Line of Sight of this Unit. This token is not removed if this Unit is Destroyed. At the End of each Phase, set a Psionic Storm Blast Template on the centre of this token. For each Unit that has at least one model whose base is partially covered by the template, roll 3 dice, plus 1 additional die for each model in that Unit whose base is partially covered. For each result of 5+, that Unit suffers an effect depending on the current Phase:
+Movement Phase: NON-LETHAL DAMAGE (1).
+Assault Phase: 1 Damage.
+If multiple effects trigger at the End of the Assault Phase, resolve them in the order specified in Part 8.9.4.</characteristic>
                     <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 PE)</characteristic>
                   </characteristics>
                 </profile>
