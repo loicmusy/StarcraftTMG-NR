@@ -142,6 +142,7 @@
             <modifier field="name" type="set" value="Corpser"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Roachling" id="74ad-d578-8aa3-760e" hidden="false" targetId="aeed-66ea-908f-35fd" type="profile"/>
         <infoLink name="Burrow" id="6322-34af-0b77-738a" hidden="false" targetId="4a96-a1ac-0461-aa14" type="profile"/>
         <infoLink name="SUMMON (Unit Name)" id="1f3c-b9a3-4370-791d" hidden="false" targetId="1a39-f874-fdf2-c983" type="rule"/>
         <infoLink name="HEAL (X)" id="e969-e08e-498a-5017" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
@@ -198,7 +199,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Corpser" id="4ac0-37c7-6455-bf2e" hidden="false" import="true" sortIndex="-1" type="upgrade">
+        <selectionEntry name="Corpser" id="4ac0-37c7-6455-bf2e" hidden="false" import="true" sortIndex="-1" type="model">
           <constraints>
             <constraint id="7b69-b961-9656-c967-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="7b69-b961-9656-c967-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
@@ -1074,7 +1075,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Roach" id="0674-8198-2994-bdeb" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Roach" id="0674-8198-2994-bdeb" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="69bf-1dbe-3641-31d3-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="69bf-1dbe-3641-31d3-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
@@ -1132,20 +1133,10 @@
         <categoryLink name="Biological" id="32c6-4d69-6c57-692b" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
       <infoLinks>
+        <infoLink name="Roachling" id="c140-a0cf-5e08-53cd" hidden="false" targetId="aeed-66ea-908f-35fd" type="profile"/>
         <infoLink name="Claws" id="f22b-5230-0475-1128" hidden="false" targetId="9991-19ca-327a-9240" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Roachling" id="aeed-66ea-908f-35fd" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
-          <characteristics>
-            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
-            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
-            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
-            <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
-            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-3: 0</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Underdeveloped Claws" id="a95d-fa8b-efe9-c91c" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot gain Burrowed Status.</characteristic>
@@ -1599,7 +1590,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry name="Vile" id="d433-d72e-dbe2-9733" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Vile" id="d433-d72e-dbe2-9733" hidden="false" import="true" type="model">
           <constraints>
             <constraint id="a791-366c-a6e3-5688-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="a791-366c-a6e3-5688-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
@@ -2530,6 +2521,17 @@
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
+    <profile name="Roachling" id="aeed-66ea-908f-35fd" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+      <characteristics>
+        <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+        <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+        <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+        <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+        <characteristic name="HP" typeId="e275-f946-72ee-4a48">1</characteristic>
+        <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+        <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-3: 0</characteristic>
+      </characteristics>
+    </profile>
     <profile name="Zerg Creep" id="ace7-328b-a155-9023" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
       <characteristics>
         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, select exactly one Creep Card and add it to their Army List, paying its listed cost (if any).</characteristic>
