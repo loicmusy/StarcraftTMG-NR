@@ -732,7 +732,9 @@
         </profile>
         <profile name="Omega Network" id="ddeb-ec94-526e-fe55" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge. If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge.
+
+If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -2144,7 +2146,13 @@
         </profile>
         <profile name="Broodmother" id="1060-a9d6-8c5d-e172" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round: Units of Size 1 gain a +1 Modifier to all IMPACT Rolls. All weapons of Size 2 Units gain CRITICAL HIT (1). Units of Size 3 or more gain TOUGH (1).</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round:
+
+Units of Size 1 gain a +1 Modifier to all IMPACT Rolls.
+
+All weapons of Size 2 Units gain CRITICAL HIT (1).
+
+Units of Size 3 or more gain TOUGH (1).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -2204,7 +2212,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Vileling (Zergling)" id="6798-bc4b-91a3-afd6" hidden="true" import="true" type="unit">
+    <selectionEntry name="Vilelings (Zergling)" id="6798-bc4b-91a3-afd6" hidden="true" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Core" id="9fe2-6985-16a7-5772" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Zagara&apos;s Swarm" id="9ce4-607e-df4e-b535" hidden="false" primary="false" targetId="bf0c-dea4-0e62-722f"/>
@@ -2291,6 +2299,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Vileling" id="8bb2-2578-8141-0b30" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="03eb-e010-0948-cf7b" automatic="true" field="selections" scope="parent" shared="true" type="min" value="18"/>
+            <constraint id="6237-9443-bf8f-4d7b" automatic="true" field="selections" scope="parent" shared="true" type="max" value="18"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Defiler" id="be84-6b50-90eb-1be2" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2388,7 +2404,10 @@
                   <profiles>
                     <profile name="Plague" id="deba-28e9-0dba-5b3f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+. </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for:
+1 BM: each result of 5+.
+2 BM: each result of 4+.
+3 BM: each result of 3+.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (X BM)</characteristic>
                       </characteristics>
                     </profile>
@@ -2421,8 +2440,7 @@
                         <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
                         <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
                         <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
-                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
-</characteristic>
+                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
                         <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
                         <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (1), SIDEARM</characteristic>
                       </characteristics>

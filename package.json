@@ -1,0 +1,11 @@
+{
+  "name": "starcraft-tmg-nr",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "update:preview": "node update-official.mjs",
+    "update:apply": "node update-official.mjs --apply"
+  }
+}

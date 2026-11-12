@@ -671,9 +671,12 @@
         <profile name="Orders" id="5081-268f-12c4-02ef" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">REPEATABLE. Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects:
-- 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 
-- 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 
-- 2 CP: Remove the Activation Marker from that Unit.</characteristic>
+
+1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2).
+
+1 CP: That Unit ignores the Disengage penalty for the remainder of the Round.
+
+2 CP: Remove the Activation Marker from that Unit.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (X CP)</characteristic>
           </characteristics>
         </profile>
@@ -1611,7 +1614,8 @@
                   <profiles>
                     <profile name="Mode Transformation" id="092c-2078-960c-08fb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status. While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status.
+While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
                       </characteristics>
                     </profile>
