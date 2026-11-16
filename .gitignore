@@ -23,13 +23,14 @@
 !/update-official.mjs
 !/package.json
 !/update-official.test.mjs
-
-# Project skills
+!/wave4-leak-data.mjs
+!/simulate-leak-import.mjs
+!/assets/
+!/assets/rule-leaks/
+!/assets/rule-leaks/**
 !/.agents/
 !/.agents/skills/
 !/.agents/skills/**
-
-# Archived official rulebook source
-!/assets/
 !/assets/rules/
 !/assets/rules/**
+!/leak-import.test.mjs

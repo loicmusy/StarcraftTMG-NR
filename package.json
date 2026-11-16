@@ -7,6 +7,8 @@
   "scripts": {
     "update:preview": "node update-official.mjs",
     "update:apply": "node update-official.mjs --apply",
-    "test": "node --test"
+    "test": "node --test",
+    "update:leaks:preview": "node simulate-leak-import.mjs",
+    "update:leaks:apply": "node simulate-leak-import.mjs --apply"
   }
 }

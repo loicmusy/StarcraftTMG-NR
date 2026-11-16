@@ -64,8 +64,7 @@ You can replay a saved snapshot with `--source-input=official-data.json`.
 The updater can generate missing units and plain-text glossary rules in existing
 catalogs. Review generated entries before publishing. Existing hand-authored IDs,
 weapon replacement logic, faction restrictions, and other New Recruit-specific
-behavior may require manual mapping. Catalog creation and faction and tactical
-effects are outside the automatic import.
+behavior may require manual mapping. Creating entirely new faction catalogs and complex faction restrictions still requires manual mapping.
 
 Rule text is converted to XML-safe plain text with preserved paragraph breaks.
 Explicit lists use one `- ` bullet per line, including choice lists that the
@@ -86,3 +85,29 @@ Mineral and gas costs of zero are written explicitly, including previously missi
 cost fields on matched units and tactical cards. New units and their upgrades also
 include explicit zero gas costs. New Recruit controls whether it displays zero
 values in its own views.
+
+## Core rulebook and local leak simulation
+
+The official update also imports the full `rules_sections` chapter tree into
+shared rules, retaining chapter/subsection titles. `Rules Reference` under
+Pre-Game opens the complete reference. Entries link to relevant glossary rules
+and weapon topics such as Flamer Template, Blast Template, Rate of Attack and
+Surge. Tables are converted to readable plain text. The source chapter snapshot
+is archived under `assets/rules/`.
+
+`npm run update:leaks:preview` and `npm run update:leaks:apply` simulate the
+unreleased cards in `wave4-leak-data.mjs` using the same importer. These commands
+merge fixtures into a separate snapshot; they do not modify the official app.
+Pass `--source-input=PATH` to reuse an official JSON snapshot and
+`--source-output=PATH` to retain the merged simulation source. Costs and some
+starting model counts are assumptions for local testing. Images and their source
+URLs, dimensions and checksums are in `assets/rule-leaks/`.
+
+Summoned units appear under Other once their parent unit or summoning upgrade is
+selected. Scarabs are enabled by Reaver and its respective paid upgrades; the
+Tal’darim Pylon is enabled by the Tal’darim faction card. Native Raven/Nova rules
+are preserved. New source-only faction restrictions still need manual mapping;
+the Stukov faction card has not been recovered from these images.
+
+Reusable project skills are in `.agents/skills/starcraft-official-rules/` and
+`.agents/skills/starcraft-leak-rules/`.
