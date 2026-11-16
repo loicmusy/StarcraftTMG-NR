@@ -671,8 +671,8 @@
         <profile name="Orders" id="5081-268f-12c4-02ef" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">REPEATABLE. Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects:
-- 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 
-- 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 
+- 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2).
+- 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round.
 - 2 CP: Remove the Activation Marker from that Unit.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (X CP)</characteristic>
           </characteristics>
@@ -1611,7 +1611,8 @@
                   <profiles>
                     <profile name="Mode Transformation" id="092c-2078-960c-08fb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status. While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status.
+While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
                         <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
                       </characteristics>
                     </profile>
@@ -1770,6 +1771,10 @@
       </profiles>
     </selectionEntry>
     <selectionEntry name="Auto-Turret" id="4f52-bda3-2467-4c01" hidden="true" import="true" type="model">
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+      </costs>
       <categoryLinks>
         <categoryLink name="Other" id="e5de-335f-3f5d-af6c" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
         <categoryLink name="Armoured" id="5941-2930-c945-768f" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
@@ -1829,6 +1834,10 @@
       </profiles>
     </selectionEntry>
     <selectionEntry name="Point Defense Drone" id="ff3f-4fb0-21cd-6565" hidden="true" import="true" type="model">
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+      </costs>
       <categoryLinks>
         <categoryLink name="Raynor&apos;s Raiders" id="91d7-8d48-ea1e-4188" hidden="false" primary="false" targetId="87df-f89f-67c4-21cf"/>
         <categoryLink name="Armoured" id="6ccc-4d2b-8afd-b919" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
@@ -1883,6 +1892,10 @@
       </profiles>
     </selectionEntry>
     <selectionEntry name="Holo Decoy" id="22fa-f773-07a0-9129" hidden="true" import="true" type="model">
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+      </costs>
       <categoryLinks>
         <categoryLink name="Other" id="58d6-bd8a-ee86-bf86" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
         <categoryLink name="Biological" id="6f6f-32d9-fc7c-f1a3" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
@@ -2294,6 +2307,10 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Sabotage Drone" id="0d3a-9c04-5e2f-7458" hidden="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+      </costs>
       <categoryLinks>
         <categoryLink name="Other" id="93d9-fc85-0bc9-4b00" hidden="false" primary="true" targetId="8a38-b874-adc2-a411"/>
         <categoryLink name="Armoured" id="4e56-6231-23ae-45ff" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
