@@ -23,3 +23,8 @@
 !/update-official.mjs
 !/package.json
 !/update-official.test.mjs
+
+# Project skills
+!/.agents/
+!/.agents/skills/
+!/.agents/skills/**

@@ -1,0 +1,4 @@
+interface:
+  display_name: "StarCraft: Card Leak Import"
+  short_description: "Archive card images and test-import unreleased rules"
+  default_prompt: "Use $starcraft-leak-rules to archive new card images and import their rules into New Recruit with test costs."

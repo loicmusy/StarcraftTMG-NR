@@ -1,0 +1,4 @@
+interface:
+  display_name: "StarCraft: Official Rules Import"
+  short_description: "Import official StarCraft rules into New Recruit"
+  default_prompt: "Use $starcraft-official-rules to fetch official StarCraft TMG data and update the local New Recruit files."
