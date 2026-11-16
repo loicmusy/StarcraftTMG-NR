@@ -2204,7 +2204,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Vileling (Zergling)" id="6798-bc4b-91a3-afd6" hidden="true" import="true" type="unit">
+    <selectionEntry name="Vilelings (Zergling)" id="6798-bc4b-91a3-afd6" hidden="true" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Core" id="9fe2-6985-16a7-5772" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Zagara&apos;s Swarm" id="9ce4-607e-df4e-b535" hidden="false" primary="false" targetId="bf0c-dea4-0e62-722f"/>
@@ -2291,6 +2291,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Vileling" id="8bb2-2578-8141-0b30" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="03eb-e010-0948-cf7b" automatic="true" field="selections" scope="parent" shared="true" type="min" value="18"/>
+            <constraint id="6237-9443-bf8f-4d7b" automatic="true" field="selections" scope="parent" shared="true" type="max" value="18"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Defiler" id="be84-6b50-90eb-1be2" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2421,8 +2429,7 @@
                         <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
                         <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
                         <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
-                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
-</characteristic>
+                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
                         <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
                         <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (1), SIDEARM</characteristic>
                       </characteristics>
