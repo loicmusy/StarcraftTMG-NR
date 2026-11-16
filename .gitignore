@@ -28,3 +28,8 @@
 !/.agents/
 !/.agents/skills/
 !/.agents/skills/**
+
+# Archived official rulebook source
+!/assets/
+!/assets/rules/
+!/assets/rules/**

@@ -64,6 +64,7 @@
     <categoryEntry name="Khalai" id="2586-d7c3-73d1-767f" hidden="false"/>
     <categoryEntry name="Nerazim" id="270e-fd7b-cf96-a10f" hidden="false"/>
     <categoryEntry name="Templar Caste" id="4145-00ad-e852-8e94" hidden="false"/>
+    <categoryEntry name="Armored" id="c66f-0737-5a3c-b085" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Char Plains" id="dmap-link-0005" hidden="false" import="true" targetId="9710-c30a-2bb5-708a" type="selectionEntry"/>
@@ -137,6 +138,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="FRIENDLY" id="6462-dcea-ff3d-a19f" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="RESERVES" id="bb40-569b-0350-5af4" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="WITHIN" id="5e65-e1a9-ee42-ed2b" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Khalai" id="41ab-8fa0-e055-c722" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -169,6 +175,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="ENEMY" id="f400-8575-5544-2875" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="cba4-b20b-dd63-ad67" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="GROUND LEVEL" id="2122-7b70-1f63-9c35" hidden="false" targetId="d889-0033-f06c-d398" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Forge" id="9031-163e-ba0e-53b1" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -199,6 +210,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="CRITICAL HIT (X)" id="93b7-d22b-3c0c-fcd0" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="TOUGH (X)" id="5d26-7c8a-699d-7609" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
+        <infoLink name="FRIENDLY" id="a23f-9968-8099-c7b7" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Gate Chronoboosted" id="9775-6b26-1f23-8cd0" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -220,6 +236,8 @@
       </costs>
       <infoLinks>
         <infoLink name="Quick Strikes" id="b305-a1b6-9b41-a5fd" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="9fbb-4a09-42f0-a3c6" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="PRECISION (X)" id="4004-d85b-10c9-a0b0" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Zealous Charge" id="fa7a-e308-916c-6ead" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
@@ -247,6 +265,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
+        <infoLink name="PRECISION (X)" id="9750-1b19-d232-d7dc" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Nexus" id="fca5-685d-13ce-6132" hidden="false" import="true" type="upgrade">
@@ -269,6 +288,9 @@
       </costs>
       <infoLinks>
         <infoLink name="Strategic Recall" id="d558-febf-9a01-3d10" hidden="false" targetId="e3e8-f973-a8d1-16ef" type="profile"/>
+        <infoLink name="INSTANT" id="f92f-d61d-b2c4-98f2" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="RESERVES" id="c640-a324-f5a2-4186" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="UNENGAGED" id="7547-a124-7081-a946" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Ancient Pride" id="5a63-1440-5842-2af3" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
@@ -311,6 +333,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="HIDDEN" id="d8a0-2e34-3e16-ca39" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="ENEMY" id="1186-fbd1-d5b1-fa20" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="21ce-e51a-9fcd-4d01" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="STATUS" id="6474-4a28-39a8-974d" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="WITHIN" id="137d-fedc-7e99-d9c5" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Overcharged Nexus" id="c46e-a559-df9e-2af5" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -332,6 +361,10 @@
       </costs>
       <infoLinks>
         <infoLink name="Strategic Recall" id="f74f-8940-46db-9816" hidden="false" targetId="e3e8-f973-a8d1-16ef" type="profile"/>
+        <infoLink name="ENEMY" id="16a1-2a6f-671b-bbd8" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENTRY EDGE" id="d0f3-52b8-116e-e274" hidden="false" targetId="aeab-414e-d096-2fd2" type="rule"/>
+        <infoLink name="RESERVES" id="1cdb-3378-8460-029d" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="UNENGAGED" id="104a-d357-4a11-135e" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Photon Overcharge" id="fb13-a53b-05fb-250f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
@@ -368,6 +401,10 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="DODGE (X)" id="fd0c-f6a9-fc7d-aaad" hidden="false" targetId="a478-fc7f-7832-e386" type="rule"/>
+        <infoLink name="FRIENDLY" id="5250-9b58-919d-366d" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Twilight Council" id="8305-145f-bdde-9c67" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -401,6 +438,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="BUFF [Characteristic] (X)" id="295f-eea7-44c5-47d2" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="HEAL (X)" id="73aa-5f94-2a72-042b" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
+        <infoLink name="PLACE (X)" id="1be7-9b7f-4a1d-ef7a" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="9d6c-d03d-2684-2160" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Warp Gate" id="86f1-c08a-acb6-ab9c" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -422,6 +465,11 @@
       </costs>
       <infoLinks>
         <infoLink name="Quick Strikes" id="a51c-fc6b-9638-266e" hidden="false" targetId="7995-a465-9333-17ea" type="profile"/>
+        <infoLink name="PRECISION (X)" id="2af6-bf9c-05e3-f7bb" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="b10d-ac07-fa4a-2d84" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="ENEMY" id="e89f-ffe8-53a6-5b01" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENTRY EDGE" id="9aed-94c4-d96e-8340" hidden="false" targetId="aeab-414e-d096-2fd2" type="rule"/>
+        <infoLink name="FRIENDLY" id="611f-e711-105b-a472" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Warp In" id="2705-6d37-8461-557d" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
@@ -464,6 +512,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="PLACE (X)" id="a7d9-5163-84b4-592a" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="0167-0bad-464f-ad5e" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="ENEMY" id="1a4d-5029-e96e-101f" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="RESERVES" id="e6f7-6e79-61c7-395f" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Adepts" id="e7ab-733c-ce24-a503" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -630,6 +684,20 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="BUFF [Characteristic] (X)" id="4501-60ce-0624-6aed" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="PRECISION (X)" id="42ea-de72-3f3f-dec0" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="DISPLACEMENT" id="8738-b354-40aa-784c" hidden="false" targetId="eb27-1500-88ca-d0f0" type="rule"/>
+        <infoLink name="ANTI-EVADE (X)" id="6f1b-843d-5cac-ef16" hidden="false" targetId="cfd0-ab4b-fc25-34be" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="efed-8998-d8d5-1075" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="ENEMY" id="4d31-960d-564f-d187" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="4b04-aec3-f60d-73a8" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="LEADING MODEL" id="7f87-79cd-cafc-ce3d" hidden="false" targetId="f7c5-ca88-5811-1b0f" type="rule"/>
+        <infoLink name="WHOLLY WITHIN" id="2f9e-b84a-be6c-fe4e" hidden="false" targetId="b069-7e79-f3e5-cd21" type="rule"/>
+        <infoLink name="WITHIN" id="3e6d-40a4-8e5a-3106" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="f96e-79c3-1d93-033c" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="26f7-1324-fb1c-260f" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Artanis" id="e218-f6b9-e94f-8ae9" hidden="false" import="true" type="model">
       <categoryLinks>
@@ -655,6 +723,16 @@
       </costs>
       <infoLinks>
         <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" targetId="c429-c517-b5d9-8e78" type="profile"/>
+        <infoLink name="PLACE (X)" id="e40b-13df-687b-2f7f" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="ENEMY" id="1df6-71db-dfbd-62e6" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENGAGED" id="0aa4-2740-94fe-0a37" hidden="false" targetId="fc19-8fda-8da9-a3bc" type="rule"/>
+        <infoLink name="FRIENDLY" id="a611-5137-7bc9-8655" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="MISSION MARKERS" id="7b94-62ec-af9c-da71" hidden="false" targetId="df19-ca00-4f70-e302" type="rule"/>
+        <infoLink name="RESERVES" id="230f-17ec-96d7-7beb" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="619d-141d-8a29-bb85" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="WITHIN" id="8c00-1d00-d542-3c96" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="b296-3880-6ed6-cde9" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="9be5-ca32-bcf0-36df" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Artanis" id="2126-3b5d-161f-b943" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -745,6 +823,9 @@
         <infoLink name="Psi Blades" id="2350-ab72-b5ae-35bb" hidden="false" targetId="76e4-fa8c-6eac-1990" type="profile"/>
         <infoLink name="Leg Enhancements" id="b7f8-6895-8646-ef24" hidden="false" targetId="d28b-b20c-980e-26ed" type="profile"/>
         <infoLink name="Charge" id="02de-ee95-3835-ae2b" hidden="false" targetId="c4c6-376a-082d-f63c" type="profile"/>
+        <infoLink name="TOUGH (X)" id="10df-e3fa-5541-04f3" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="a527-4096-4fb5-b7f6" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="1e86-a462-aa77-cf79" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
@@ -851,6 +932,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="CONTROLLING PLAYER" id="32fb-784f-51eb-bd1b" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="CURRENT SUPPLY VALUE" id="91ea-4dfa-d0f8-f7f5" hidden="false" targetId="d6ab-63fa-97ea-1a8e" type="rule"/>
+        <infoLink name="ENTRY EDGE" id="c69c-6bb5-ce51-f81d" hidden="false" targetId="aeab-414e-d096-2fd2" type="rule"/>
+        <infoLink name="FRIENDLY" id="720a-fba9-5728-7809" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="MISSION MARKERS" id="f58b-c246-b430-815e" hidden="false" targetId="df19-ca00-4f70-e302" type="rule"/>
+        <infoLink name="RESERVES" id="b6e5-ca38-407c-a11f" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="9da6-0a67-4c35-fa0b" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="SUPPLY VALUE" id="5897-1147-ccdb-a83f" hidden="false" targetId="6fe2-5b6d-cf01-fc9c" type="rule"/>
+        <infoLink name="WITHIN" id="29cc-6272-39ad-41f9" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Sentries" id="c2e7-d982-ac07-63c6" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -993,6 +1085,16 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="4bd1-cf92-8b30-07f2" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
+        <infoLink name="INSTANT" id="e49d-e8b9-b38a-3f3d" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="ENEMY" id="f098-8f48-015d-343a" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="768b-a89f-0248-9239" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="LINE OF SIGHT (LoS)" id="46d7-e84e-61b8-6fc2" hidden="false" targetId="7027-a308-dd58-018e" type="rule"/>
+        <infoLink name="WITHIN" id="0bba-87d8-4724-baf2" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="a107-79fc-76ba-8b8c" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="dd6a-8dc2-f7b5-0b8c" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Stalker" id="aab3-edc0-70f1-373e" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -1015,6 +1117,15 @@
       <infoLinks>
         <infoLink name="Squadron" id="8999-12ea-2489-79b6" hidden="false" targetId="fc8c-6bff-6d80-b316" type="profile"/>
         <infoLink name="Blink" id="1d8b-5214-b0c3-88ee" hidden="false" targetId="6ca7-5027-86f4-4e3a" type="profile"/>
+        <infoLink name="HIDDEN" id="d8b0-1f2a-aca3-e1e2" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="PLACE (X)" id="1ce3-4ea2-3487-abdb" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="INSTANT" id="b93b-c975-0dad-7f98" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="ENEMY" id="9929-3cb0-e91d-96ba" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENGAGEMENT RANGE" id="7280-d55e-828c-efa8" hidden="false" targetId="3ae3-ef54-3c04-ba04" type="rule"/>
+        <infoLink name="STATUS" id="cc81-0e89-82f4-775d" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="WITHIN" id="5bf4-dbc0-6c6d-cebc" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="9a7e-fc01-32f5-20ee" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="82f1-ab03-586a-f68f" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Stalker" id="5e42-cb2d-3136-61b0" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -1177,6 +1288,12 @@
         <infoLink name="Zealot" id="ecc6-929a-cc25-bd7b" hidden="false" targetId="cec2-87db-e412-505f" type="profile"/>
         <infoLink name="Psi Blades" id="57eb-eb4c-3a92-a759" hidden="false" targetId="76e4-fa8c-6eac-1990" type="profile"/>
         <infoLink name="Charge" id="0d60-0bbf-b6ae-6a38" hidden="false" targetId="c4c6-376a-082d-f63c" type="profile"/>
+        <infoLink name="PRECISION (X)" id="5e5a-f2fa-33fc-8f85" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="875c-ce6f-516a-9a8e" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="ENGAGED" id="cfba-a03e-865d-1c26" hidden="false" targetId="fc19-8fda-8da9-a3bc" type="rule"/>
+        <infoLink name="FRIENDLY" id="7ac7-f482-8138-a2ad" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="eeba-a36b-a5d1-17e4" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="f764-79c3-ca08-4d5b" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Devastating Charge" id="3e68-3c70-6c4e-098d" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
@@ -1333,6 +1450,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="HIDDEN" id="27b5-de6c-adbb-09d5" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="RESERVES" id="4b0d-c135-85c3-2512" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="STATUS" id="8947-5e70-a386-e77e" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="UNENGAGED" id="e33e-5d5a-02c9-c75d" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Nerazim Watchers (Adept)" id="a669-38a1-0cee-b0d3" hidden="true" import="true" type="unit">
       <categoryLinks>
@@ -1423,6 +1546,20 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="HIDDEN" id="4ce5-0d85-9da1-47d3" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="DISPLACEMENT" id="10c3-239a-d362-0f59" hidden="false" targetId="eb27-1500-88ca-d0f0" type="rule"/>
+        <infoLink name="ANTI-EVADE (X)" id="a1f1-e532-2b1b-0bb0" hidden="false" targetId="cfd0-ab4b-fc25-34be" type="rule"/>
+        <infoLink name="PINPOINT" id="efe2-5b2c-7ed4-3d45" hidden="false" targetId="f9ad-69a2-80e6-c3a5" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="45ea-1594-2087-34c2" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="ENEMY" id="e575-78d3-9a6c-97de" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="LEADING MODEL" id="e0ce-1f9a-0a22-9e03" hidden="false" targetId="f7c5-ca88-5811-1b0f" type="rule"/>
+        <infoLink name="STATUS" id="cd8a-e27a-ede4-25eb" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="WHOLLY WITHIN" id="c9df-ca8d-1e03-371b" hidden="false" targetId="b069-7e79-f3e5-cd21" type="rule"/>
+        <infoLink name="WITHIN" id="db09-0c69-cd3b-5efc" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="3296-e304-aa23-12de" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="88bc-dda8-4d65-e442" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Immortal" id="d12c-6290-a84f-f380" hidden="false" import="true" type="model">
       <categoryLinks>
@@ -1444,6 +1581,22 @@
       </costs>
       <infoLinks>
         <infoLink name="Indomitable" id="a35c-4006-99a7-837f" hidden="false" targetId="c6e7-5b8f-5d8f-0626" type="profile"/>
+        <infoLink name="LONG RANGE (X&quot;)" id="a62e-5a84-6ae1-7ebb" hidden="false" targetId="a7d8-c669-4f19-2b97" type="rule"/>
+        <infoLink name="SIDEARM" id="edd9-78dc-0bc5-3a3d" hidden="false" targetId="870d-b754-2961-8cb6" type="rule"/>
+        <infoLink name="PRECISION (X)" id="cf02-b9d6-c72a-76dd" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="CRITICAL HIT (X)" id="8a15-2291-27eb-43f8" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="TOUGH (X)" id="03dd-2afd-00af-9478" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
+        <infoLink name="SHIELDED" id="ca07-55f1-68f8-3bf9" hidden="false" targetId="137d-a280-957d-d27a" type="rule"/>
+        <infoLink name="CONCENTRATED FIRE" id="54aa-5463-bba0-4702" hidden="false" targetId="613f-4376-5945-9fb6" type="rule"/>
+        <infoLink name="CONCENTRATED FIRE (X)" id="a515-6d48-fbf6-4004" hidden="false" targetId="d460-c7d3-7957-896c" type="rule"/>
+        <infoLink name="ENEMY" id="8793-fbcd-90d9-9f6a" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENGAGED" id="5d7a-4a9b-4d25-4604" hidden="false" targetId="fc19-8fda-8da9-a3bc" type="rule"/>
+        <infoLink name="LONG RANGE (X)" id="40b6-5224-0a73-c770" hidden="false" targetId="d9d7-d261-5412-3a14" type="rule"/>
+        <infoLink name="STATUS" id="b2f9-bf7b-c174-abee" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="UNENGAGED" id="143a-4e8f-267c-d9c6" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
+        <infoLink name="WITHIN" id="d409-8bfe-f4e5-7fbd" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="7300-56a6-9208-6ee6" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="6533-8f30-b2c4-6eb4" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Immortal" id="deca-35fa-a5d8-fe1c" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -1690,6 +1843,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="TOUGH (X)" id="39ee-e16b-4c4c-1f12" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
+        <infoLink name="SHIELDED" id="435a-2e3c-79f8-e264" hidden="false" targetId="137d-a280-957d-d27a" type="rule"/>
+        <infoLink name="DODGE (X)" id="fdd3-829e-8273-16be" hidden="false" targetId="a478-fc7f-7832-e386" type="rule"/>
+        <infoLink name="FRIENDLY" id="61ab-dbcd-5460-894a" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="STATUS" id="ff5c-c609-daac-03da" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Zeratul" id="5acd-670a-e60e-75a3" hidden="false" import="true" type="model">
       <categoryLinks>
@@ -1780,6 +1940,21 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="REPEATABLE" id="7d3b-295f-cc0f-c60e" hidden="false" targetId="f895-258a-9487-f59a" type="rule"/>
+        <infoLink name="CRITICAL HIT (X)" id="36da-6f48-a479-3c50" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="HIDDEN" id="a281-633d-4db8-9249" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="PLACE (X)" id="4f35-4866-bb06-d4d1" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="f721-552e-b943-d5e7" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
+        <infoLink name="INSTANT" id="a0e2-c734-9f7b-9d18" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="ENEMY" id="66ac-16c4-aba0-f241" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENGAGED" id="a946-4241-a698-68d9" hidden="false" targetId="fc19-8fda-8da9-a3bc" type="rule"/>
+        <infoLink name="STATUS" id="450b-d1bc-5e1c-735e" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="UNENGAGED" id="dda8-67f2-a24d-8de4" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
+        <infoLink name="WITHIN" id="dd83-693a-c633-f600" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="bf57-ee7b-70f6-8e63" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="6847-98ce-bd9f-4dc5" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Nerazim" id="3fd8-47cc-7cf1-c106" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -1811,6 +1986,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="BUFF [Characteristic] (X)" id="2115-2748-6ec7-8e3c" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="CRITICAL HIT (X)" id="54c5-041f-c5b5-4073" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="HIDDEN" id="9a08-7d55-cdca-3b6c" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="FRIENDLY" id="c4d8-948a-1837-9d3e" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="STATUS" id="c505-6d95-de82-60f8" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Tassadar" id="6c5a-37a6-1a23-40dd" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -1909,6 +2091,19 @@ Remove both Faction Indicators after any Enemy Unit completes its Activation in 
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="PLACE (X)" id="fd06-2d02-3fe5-70e8" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="INSTANT" id="6b23-5373-eff6-14ba" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="ENEMY" id="4b78-0126-40d0-112a" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="df8d-cb08-e3d1-1eb9" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="LINE OF SIGHT (LoS)" id="30ec-10d2-b092-0905" hidden="false" targetId="7027-a308-dd58-018e" type="rule"/>
+        <infoLink name="MISSION MARKERS" id="b838-a1d9-19d6-250b" hidden="false" targetId="df19-ca00-4f70-e302" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="0cf3-a5f9-3da6-2c67" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="WHOLLY WITHIN" id="0e94-c2c2-1121-fb81" hidden="false" targetId="b069-7e79-f3e5-cd21" type="rule"/>
+        <infoLink name="WITHIN" id="cbf6-c08a-61c3-6a75" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="588f-5f79-faec-e81f" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="8ba1-e30b-37b0-fb03" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Twilight Templar (High Templar)" id="821c-1b11-1aa8-5c21" hidden="true" import="true" type="unit">
       <categoryLinks>
@@ -2013,6 +2208,22 @@ If multiple effects trigger at the End of the Assault Phase, resolve them in the
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="1990-03c3-b013-ce93" hidden="false" targetId="0ecb-de24-de57-9c58" type="rule"/>
+        <infoLink name="PLACE (X)" id="8b53-d73f-f15f-46bb" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="INSTANT" id="5705-f4b5-57cf-5842" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="CURRENT SUPPLY VALUE" id="b0af-ae9d-e768-8584" hidden="false" targetId="d6ab-63fa-97ea-1a8e" type="rule"/>
+        <infoLink name="ENEMY" id="568f-0e34-f2a5-769f" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="d991-2087-669e-8536" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="LINE OF SIGHT (LoS)" id="2e96-fa7a-a72a-d2be" hidden="false" targetId="7027-a308-dd58-018e" type="rule"/>
+        <infoLink name="READY" id="6392-e6c8-ba07-ce4f" hidden="false" targetId="63f1-5ee1-3677-4800" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="2852-447e-35ac-ac01" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="SUPPLY VALUE" id="30fb-0b5f-227f-08ff" hidden="false" targetId="6fe2-5b6d-cf01-fc9c" type="rule"/>
+        <infoLink name="WITHIN" id="44e6-0698-1ed0-ae53" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Blast Template (BT)" id="ccff-fe2e-b529-9301" hidden="false" targetId="ed44-9dec-4c50-bb4f" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="f0b7-3355-07ff-7878" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="6307-1912-0287-10c8" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="High Templar" id="cb58-2b5c-32f6-46db" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2184,6 +2395,21 @@ If multiple effects trigger at the End of the Assault Phase, resolve them in the
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="1ea6-b730-a492-30c4" hidden="false" targetId="0ecb-de24-de57-9c58" type="rule"/>
+        <infoLink name="INSTANT" id="e5c5-591d-13d6-3bb3" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="CURRENT SUPPLY VALUE" id="0829-b72b-735a-37cd" hidden="false" targetId="d6ab-63fa-97ea-1a8e" type="rule"/>
+        <infoLink name="ENEMY" id="c21f-47be-675c-db9b" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="FRIENDLY" id="1b19-94a0-5bc3-8ba1" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="LINE OF SIGHT (LoS)" id="9310-5368-71c1-030f" hidden="false" targetId="7027-a308-dd58-018e" type="rule"/>
+        <infoLink name="MODIFIER" id="c240-6935-4da6-da82" hidden="false" targetId="37ad-3255-92fa-3b9d" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="c165-062c-2d5a-0976" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="SUPPLY VALUE" id="f393-0a18-d1f0-b509" hidden="false" targetId="6fe2-5b6d-cf01-fc9c" type="rule"/>
+        <infoLink name="WITHIN" id="37c4-45b9-7f29-3d51" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="Blast Template (BT)" id="1aba-87f9-9208-b124" hidden="false" targetId="ed44-9dec-4c50-bb4f" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="98fa-496f-73e4-103a" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="b65e-842b-4577-15d5" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Templar Archives" id="67c7-5c04-72f3-c2cb" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -2211,6 +2437,10 @@ If multiple effects trigger at the End of the Assault Phase, resolve them in the
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="FRIENDLY" id="1e02-2fae-8fcc-12e2" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="0a54-6f3e-dfe2-f6f3" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Templar Caste" id="e5c5-4e77-5031-3173" hidden="false" import="true" type="upgrade">
       <categoryLinks>
@@ -2242,6 +2472,286 @@ If multiple effects trigger at the End of the Assault Phase, resolve them in the
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="f4f5-f8fb-33b3-f271" hidden="false" targetId="0ecb-de24-de57-9c58" type="rule"/>
+        <infoLink name="FRIENDLY" id="a3e4-743e-91ff-9821" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="READY" id="34b4-8599-ba5d-7447" hidden="false" targetId="63f1-5ee1-3677-4800" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rules Reference" id="a756-8fb0-eb65-805a" hidden="false" import="true" type="upgrade">
+      <categoryLinks><categoryLink name="Pre-Game" id="d8b1-7420-218f-230e" primary="true" targetId="9b82-d933-7075-8237"/></categoryLinks>
+      <infoLinks>
+        <infoLink name="IMPACT (X) Y" id="caf2-8980-ef7b-975a" hidden="false" targetId="7805-5c0f-7d68-90c8" type="rule"/>
+        <infoLink name="LONG RANGE (X&quot;)" id="3b6f-8db3-36ab-3d96" hidden="false" targetId="a7d8-c669-4f19-2b97" type="rule"/>
+        <infoLink name="SIDEARM" id="38c7-e736-6c08-a022" hidden="false" targetId="870d-b754-2961-8cb6" type="rule"/>
+        <infoLink name="INDIRECT FIRE" id="638e-76c4-e112-956c" hidden="false" targetId="a19f-0594-dd63-2656" type="rule"/>
+        <infoLink name="SPECIALIST" id="56c0-a5ab-6dfe-31e1" hidden="false" targetId="1974-2d46-8d07-3b29" type="rule"/>
+        <infoLink name="REPEATABLE" id="6570-af23-fb0b-8fea" hidden="false" targetId="f895-258a-9487-f59a" type="rule"/>
+        <infoLink name="BULKY" id="0870-7faa-a902-c798" hidden="false" targetId="f460-74cd-768c-a9e4" type="rule"/>
+        <infoLink name="PIERCE [TAG] X" id="8254-a46c-f043-3a55" hidden="false" targetId="8a5b-c6c7-6abf-6879" type="rule"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="e124-2079-1464-2f1f" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="PRECISION (X)" id="af79-e687-d3ee-03d1" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="NON-LETHAL DAMAGE (X)" id="b577-a5b4-2af6-d986" hidden="false" targetId="0ecb-de24-de57-9c58" type="rule"/>
+        <infoLink name="CRITICAL HIT (X)" id="5dff-a7a3-7c3d-3229" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="ON CREEP" id="fa1a-5d18-dc57-7a73" hidden="false" targetId="b8db-d01a-89fd-efd3" type="rule"/>
+        <infoLink name="HIDDEN" id="81f0-a42d-dfba-870b" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="LOCKED IN (X)" id="ffbf-1b9a-4f2e-d779" hidden="false" targetId="7cfe-f96a-bbcb-8220" type="rule"/>
+        <infoLink name="HEAL (X)" id="d634-5fdc-30f6-3203" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
+        <infoLink name="PLACE (X)" id="2f26-8d13-a3bf-9511" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
+        <infoLink name="DISPLACEMENT" id="b061-267a-c165-6f55" hidden="false" targetId="eb27-1500-88ca-d0f0" type="rule"/>
+        <infoLink name="TOUGH (X)" id="c5cc-92dd-8a5a-5a52" hidden="false" targetId="9928-edb1-53e5-438f" type="rule"/>
+        <infoLink name="SUMMON (Unit Name)" id="4e69-a857-8b13-b0d1" hidden="false" targetId="1a39-f874-fdf2-c983" type="rule"/>
+        <infoLink name="RESPAWN (X)" id="3c76-4f89-da5a-4f12" hidden="false" targetId="d273-74d1-fff7-7002" type="rule"/>
+        <infoLink name="DEBUFF [Characteristic] (X)" id="b3cf-e695-8faf-7275" hidden="false" targetId="e9c5-7999-24b7-4858" type="rule"/>
+        <infoLink name="IMPASSABLE TERRAIN" id="e81a-37c6-dac0-e042" hidden="false" targetId="0c68-af78-c6ca-9cf8" type="rule"/>
+        <infoLink name="INSTANT" id="6001-8760-9a7f-5b21" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="ANTI-EVADE (X)" id="1852-eb60-6491-ddc0" hidden="false" targetId="cfd0-ab4b-fc25-34be" type="rule"/>
+        <infoLink name="PINPOINT" id="c09c-ee38-b479-6e6c" hidden="false" targetId="f9ad-69a2-80e6-c3a5" type="rule"/>
+        <infoLink name="STAY IN PLAY" id="3817-7b42-3074-e56d" hidden="false" targetId="3a1b-37a2-e426-abca" type="rule"/>
+        <infoLink name="BURST FIRE Y” (X)" id="e836-4bff-97bb-e736" hidden="false" targetId="3ec2-22f8-fa75-469b" type="rule"/>
+        <infoLink name="SIEGE MODE" id="5a63-b8aa-78fa-9a3e" hidden="false" targetId="ba45-b6a8-33d0-f628" type="rule"/>
+        <infoLink name="MORPH (Name)" id="b1ad-13a8-a747-78ec" hidden="false" targetId="fbcd-73d9-3967-1dd3" type="rule"/>
+        <infoLink name="SHIELDED" id="2f40-47a4-f7ae-806a" hidden="false" targetId="137d-a280-957d-d27a" type="rule"/>
+        <infoLink name="STATIONARY" id="4069-e1af-b1fb-8aca" hidden="false" targetId="d9e4-a69c-36e9-00cd" type="rule"/>
+        <infoLink name="CONCENTRATED FIRE" id="085b-b8ba-a8c4-5df7" hidden="false" targetId="613f-4376-5945-9fb6" type="rule"/>
+        <infoLink name="ACTIVE PLAYER" id="8e1a-a7b4-2c25-c2ef" hidden="false" targetId="1026-f3b3-aaf1-d54f" type="rule"/>
+        <infoLink name="ARMY SLOT" id="774e-8460-316b-93d7" hidden="false" targetId="3837-6a72-d31f-dbfc" type="rule"/>
+        <infoLink name="AVAILABLE SUPPLY" id="95e0-7c94-7845-9fe1" hidden="false" targetId="6313-2477-8763-29d8" type="rule"/>
+        <infoLink name="BLOCKING TERRAIN" id="750b-0438-2538-f955" hidden="false" targetId="3506-f9c7-50c9-c042" type="rule"/>
+        <infoLink name="BURROWED" id="6a1a-78d9-9218-21fb" hidden="false" targetId="084d-5e28-3191-10f2" type="rule"/>
+        <infoLink name="COMBAT TAGS" id="72c8-18da-c970-8eb4" hidden="false" targetId="728f-57e3-9078-eb8a" type="rule"/>
+        <infoLink name="CONCENTRATED FIRE (X)" id="5975-27d0-8b58-3100" hidden="false" targetId="d460-c7d3-7957-896c" type="rule"/>
+        <infoLink name="CONTROLLING PLAYER" id="b13f-3268-1949-5df5" hidden="false" targetId="714a-7a23-fb56-646d" type="rule"/>
+        <infoLink name="CURRENT SUPPLY VALUE" id="e7f2-3502-dc62-13fb" hidden="false" targetId="d6ab-63fa-97ea-1a8e" type="rule"/>
+        <infoLink name="DODGE (X)" id="2bf8-a2a9-6e8d-1d65" hidden="false" targetId="a478-fc7f-7832-e386" type="rule"/>
+        <infoLink name="EFFECTIVE SIZE" id="bb50-862f-3b65-11f0" hidden="false" targetId="ae3e-c47e-c43a-4d07" type="rule"/>
+        <infoLink name="ELEVATION LEVEL" id="e409-07e4-0388-70c8" hidden="false" targetId="2d7a-59b1-0e8b-1692" type="rule"/>
+        <infoLink name="ENEMY" id="4b93-56de-ff64-d739" hidden="false" targetId="c078-d8f7-1e6b-89ab" type="rule"/>
+        <infoLink name="ENGAGED" id="7706-04f8-62c0-d9fd" hidden="false" targetId="fc19-8fda-8da9-a3bc" type="rule"/>
+        <infoLink name="ENGAGEMENT RANGE" id="bfc3-c59d-b78c-eae8" hidden="false" targetId="3ae3-ef54-3c04-ba04" type="rule"/>
+        <infoLink name="ENTRY EDGE" id="9331-ce3d-28d2-88a5" hidden="false" targetId="aeab-414e-d096-2fd2" type="rule"/>
+        <infoLink name="FACTION TAGS" id="44a8-409e-7c45-3e3d" hidden="false" targetId="0855-f4c8-40d5-4df8" type="rule"/>
+        <infoLink name="FIGHTING RANK" id="3e58-f4b7-ce89-bab9" hidden="false" targetId="e7cf-37e8-37ee-8390" type="rule"/>
+        <infoLink name="FIRST PLAYER MARKER" id="ce1b-7741-7594-94cb" hidden="false" targetId="c0a9-cde3-c55c-3c4f" type="rule"/>
+        <infoLink name="FLYING" id="bf0c-8988-4137-af51" hidden="false" targetId="505a-f88a-5754-0c15" type="rule"/>
+        <infoLink name="FRIENDLY" id="f04b-aa60-80ab-5565" hidden="false" targetId="7433-9423-ff1a-007c" type="rule"/>
+        <infoLink name="GRASS" id="c2ab-0e54-319c-1b0a" hidden="false" targetId="ebcb-0e9d-63c9-8f5f" type="rule"/>
+        <infoLink name="GROUND LEVEL" id="c550-e304-f76b-4386" hidden="false" targetId="d889-0033-f06c-d398" type="rule"/>
+        <infoLink name="HIGH GROUND" id="cc1a-c3c1-e297-4158" hidden="false" targetId="9d11-f901-6a8a-852a" type="rule"/>
+        <infoLink name="HITS X (Y)" id="97c3-9939-c139-d351" hidden="false" targetId="1373-5707-12e0-acf8" type="rule"/>
+        <infoLink name="LEADING MODEL" id="67d6-5f77-232e-e366" hidden="false" targetId="f7c5-ca88-5811-1b0f" type="rule"/>
+        <infoLink name="LINE OF SIGHT (LoS)" id="05b8-c1cf-d187-3010" hidden="false" targetId="7027-a308-dd58-018e" type="rule"/>
+        <infoLink name="LONG RANGE (X)" id="2a20-6bd2-2098-9df0" hidden="false" targetId="d9d7-d261-5412-3a14" type="rule"/>
+        <infoLink name="MID GROUND" id="b106-e75a-f54b-db5b" hidden="false" targetId="2cdf-56e3-3c00-edae" type="rule"/>
+        <infoLink name="MISSION MARKERS" id="657c-2f9a-4010-0465" hidden="false" targetId="df19-ca00-4f70-e302" type="rule"/>
+        <infoLink name="MODIFIER" id="8fa8-528f-adf9-f075" hidden="false" targetId="37ad-3255-92fa-3b9d" type="rule"/>
+        <infoLink name="READY" id="af0c-8429-d8cb-be24" hidden="false" targetId="63f1-5ee1-3677-4800" type="rule"/>
+        <infoLink name="RESERVES" id="5e6c-5ede-cd21-97cc" hidden="false" targetId="62fe-1ba5-e5c6-a968" type="rule"/>
+        <infoLink name="SPECIAL ABILITY" id="8d7f-535a-2dc8-2187" hidden="false" targetId="f0b5-c155-e66c-1142" type="rule"/>
+        <infoLink name="SPILLOVER" id="27b0-9d9b-2e4c-c869" hidden="false" targetId="85e8-8972-82d9-60d1" type="rule"/>
+        <infoLink name="STATUS" id="4350-c3c3-ddcb-f2c3" hidden="false" targetId="3d52-06f6-e8b3-afff" type="rule"/>
+        <infoLink name="SUPPLY VALUE" id="73eb-8e1f-840f-fda3" hidden="false" targetId="6fe2-5b6d-cf01-fc9c" type="rule"/>
+        <infoLink name="SUPPORTING RANK" id="5561-9a4f-11c7-6750" hidden="false" targetId="c399-79da-ee03-f46a" type="rule"/>
+        <infoLink name="TACTICAL MASS" id="3f0a-87dc-935c-caf7" hidden="false" targetId="46ce-0702-a61a-a4e6" type="rule"/>
+        <infoLink name="UNENGAGED" id="4699-88ba-0aea-1397" hidden="false" targetId="b9c3-8812-2586-b801" type="rule"/>
+        <infoLink name="VISIBLE" id="80c6-4358-61f2-a138" hidden="false" targetId="82b9-b433-7ac9-3b4d" type="rule"/>
+        <infoLink name="WHOLLY WITHIN" id="88f7-2338-b738-b8e6" hidden="false" targetId="b069-7e79-f3e5-cd21" type="rule"/>
+        <infoLink name="WITHIN" id="639a-f245-cd0c-dd38" hidden="false" targetId="2b58-4272-7932-70ec" type="rule"/>
+        <infoLink name="ZONE OF INFLUENCE" id="f7af-9e66-442b-e78c" hidden="false" targetId="bafb-9a48-55e3-799a" type="rule"/>
+        <infoLink name="THE NATURE OF THE GAME" id="84d6-8969-e95b-66ff" hidden="false" targetId="15e9-6f88-0aec-8afe" type="rule"/>
+        <infoLink name="THE NATURE OF THE GAME — Introduction" id="1b8e-ae3a-e603-fc3c" hidden="false" targetId="915b-cb41-c1fc-8fa6" type="rule"/>
+        <infoLink name="WORKED EXAMPLE: STARTING ROUNDS" id="fe2e-e430-9dc2-963a" hidden="false" targetId="93a6-eec1-c2c6-e2b4" type="rule"/>
+        <infoLink name="WORKED EXAMPLE: STARTING ROUNDS — Introduction" id="95fb-0cb1-178b-69d3" hidden="false" targetId="aa09-0270-b900-f5c9" type="rule"/>
+        <infoLink name="PART 2: CORE CONCEPTS" id="bd47-b6b4-d297-1248" hidden="false" targetId="a8d7-7400-3812-d16c" type="rule"/>
+        <infoLink name="PART 2: CORE CONCEPTS — Introduction" id="bb9c-91d5-4e65-5b05" hidden="false" targetId="c0f3-dbed-93a3-a19d" type="rule"/>
+        <infoLink name="2.1 Models" id="34c7-41d4-7ac5-1130" hidden="false" targetId="1988-dc97-7625-189c" type="rule"/>
+        <infoLink name="2.2 Units" id="22b4-2109-189a-df66" hidden="false" targetId="9b18-4244-a68a-b559" type="rule"/>
+        <infoLink name="2.3 Bases" id="eb13-a888-960b-ea3b" hidden="false" targetId="c93c-b432-b494-c7fd" type="rule"/>
+        <infoLink name="2.4 Tags" id="9e83-ae8f-f13b-9803" hidden="false" targetId="e5f9-7093-2432-7488" type="rule"/>
+        <infoLink name="2.4.1 Faction Tags" id="b09a-9ea4-ca51-067d" hidden="false" targetId="3a58-60b0-89a6-5bcd" type="rule"/>
+        <infoLink name="2.4.2 Combat Tags" id="c8af-bf3e-edf5-3afc" hidden="false" targetId="52d2-6170-2253-3ec5" type="rule"/>
+        <infoLink name="2.5 Player Roles" id="345f-7a72-b60f-7876" hidden="false" targetId="a458-30c8-8010-a038" type="rule"/>
+        <infoLink name="2.6 Keywords and Rule Priority" id="9142-9f28-cbd1-4b59" hidden="false" targetId="e58d-eec6-a48a-6d0b" type="rule"/>
+        <infoLink name="2.6.1 Keywords" id="5cad-5f68-848e-a709" hidden="false" targetId="c84f-50e4-13fb-0f70" type="rule"/>
+        <infoLink name="2.6.2 The Priority" id="e9c0-76a6-9d3d-a534" hidden="false" targetId="6d6d-4bdf-4333-e406" type="rule"/>
+        <infoLink name="2.7 Ability Types" id="5d0a-f766-21a3-704a" hidden="false" targetId="1f47-b24e-92cc-11da" type="rule"/>
+        <infoLink name="2.7.1 Active Abilities" id="4633-dfe7-a781-a2e0" hidden="false" targetId="5e14-c55b-87d0-df68" type="rule"/>
+        <infoLink name="2.7.2 Passive Abilities" id="dad1-a2f5-cf70-b03b" hidden="false" targetId="4a36-8cac-74d9-c907" type="rule"/>
+        <infoLink name="2.7.3 Reaction Abilities" id="5a6d-0c83-bb3c-eb84" hidden="false" targetId="f2b9-a97f-b54c-7bdb" type="rule"/>
+        <infoLink name="PART 3: DICE AND ROLLING" id="daad-2832-a122-a050" hidden="false" targetId="df31-7330-c017-9022" type="rule"/>
+        <infoLink name="PART 3: DICE AND ROLLING — Introduction" id="7f42-2bd5-61af-90e1" hidden="false" targetId="721c-2aff-52f0-1599" type="rule"/>
+        <infoLink name="3.1 Dice" id="c8f0-79fc-b0ae-9028" hidden="false" targetId="b7b4-9f78-98da-aa07" type="rule"/>
+        <infoLink name="3.2 Roll-Offs" id="67f0-8615-6587-0e39" hidden="false" targetId="f2a8-9620-eb22-6231" type="rule"/>
+        <infoLink name="3.3 Re-Rolls" id="0707-e56c-4c97-4adf" hidden="false" targetId="a2f1-fb67-91e6-e36c" type="rule"/>
+        <infoLink name="3.4 Modifiers" id="c6cf-5f8d-7ea5-e648" hidden="false" targetId="85b6-3ac8-67b4-bdf0" type="rule"/>
+        <infoLink name="3.5 Fixed Additions" id="82a6-470c-bb0c-81a5" hidden="false" targetId="30fa-8e19-9176-2602" type="rule"/>
+        <infoLink name="3.6 Automatic Results" id="03f2-f964-71ef-ef01" hidden="false" targetId="fb61-d493-62b5-af23" type="rule"/>
+        <infoLink name="3.7 Tests" id="c7e7-dae1-6823-e279" hidden="false" targetId="1786-290e-5ed6-9948" type="rule"/>
+        <infoLink name="3.8 Cocked Dice" id="e883-45b8-d2e6-8a36" hidden="false" targetId="f870-9c75-3c06-f235" type="rule"/>
+        <infoLink name="PART 4: MEASURING AND MOVEMENT" id="5112-4de0-3d3a-16f2" hidden="false" targetId="7e48-5fe4-cab1-a0b1" type="rule"/>
+        <infoLink name="PART 4: MEASURING AND MOVEMENT — Introduction" id="3ac0-29f9-87c4-0638" hidden="false" targetId="da2d-7f78-83e0-de04" type="rule"/>
+        <infoLink name="4.1 Measuring Distances" id="51ef-2281-819f-7cb7" hidden="false" targetId="7241-3591-f790-ea97" type="rule"/>
+        <infoLink name="4.2 Within vs. Wholly Within" id="4cad-4bd8-1aaf-4db8" hidden="false" targetId="10a4-cfa1-2a3d-6a61" type="rule"/>
+        <infoLink name="4.3 The Leading Model" id="1cc9-7d07-4c3e-496e" hidden="false" targetId="8e4e-0282-fbdc-460d" type="rule"/>
+        <infoLink name="4.4 Unit Coherency" id="ede7-2a1e-2831-b0ea" hidden="false" targetId="4706-474c-8b45-9937" type="rule"/>
+        <infoLink name="COHERENCY LINK" id="ab93-c297-46e3-245a" hidden="false" targetId="a56a-ecf2-b805-c934" type="rule"/>
+        <infoLink name="FLYING UNITS AND COHERANCY LINKS" id="1d1a-c79c-0e3d-ae87" hidden="false" targetId="2491-919d-a4a4-2c03" type="rule"/>
+        <infoLink name="OUT OF COHERENCY" id="d050-2038-888c-adfd" hidden="false" targetId="a974-c3d6-3b9c-830d" type="rule"/>
+        <infoLink name="4.5 Directly Towards &amp; Directly Away" id="1294-b1b7-2819-77f8" hidden="false" targetId="17ac-a784-ce31-86e0" type="rule"/>
+        <infoLink name="4.6 Gap Clearance and Model Size" id="0a4f-fa76-bb92-b417" hidden="false" targetId="352e-7d3d-a6a9-164b" type="rule"/>
+        <infoLink name="PART 5: CARDS AND CHARACTERISTICS" id="f76b-a72f-8433-1fde" hidden="false" targetId="ab48-224b-7aff-71d1" type="rule"/>
+        <infoLink name="PART 5: CARDS AND CHARACTERISTICS — Introduction" id="3963-0949-e715-643c" hidden="false" targetId="e09f-984d-7c31-a391" type="rule"/>
+        <infoLink name="5.1 Unit Cards" id="25e0-c690-791a-fea7" hidden="false" targetId="3e06-8e0b-8492-828a" type="rule"/>
+        <infoLink name="5.2 Special Rules and Upgrades" id="e9bb-4755-cf69-de0a" hidden="false" targetId="5039-7d4a-de05-0126" type="rule"/>
+        <infoLink name="5.3 Tactical Cards" id="312a-5ffb-da32-ecff" hidden="false" targetId="3552-aa60-d4cc-d280" type="rule"/>
+        <infoLink name="5.4 Faction Cards" id="c7c9-8f39-4794-8732" hidden="false" targetId="c861-6b9c-ca81-d0c6" type="rule"/>
+        <infoLink name="5.5 Mission Cards" id="0a06-6480-44ae-acea" hidden="false" targetId="0f43-6271-8f29-b725" type="rule"/>
+        <infoLink name="5.6 Deployment Cards" id="3cf3-d272-3f59-4dcf" hidden="false" targetId="8df0-5c7e-6f69-ab46" type="rule"/>
+        <infoLink name="PART 6: THE SUPPLY SYSTEM" id="dd3c-ee6b-224c-e167" hidden="false" targetId="fd47-8cf4-6878-8069" type="rule"/>
+        <infoLink name="PART 6: THE SUPPLY SYSTEM — Introduction" id="a1eb-9c6b-b581-698c" hidden="false" targetId="967b-82ae-dd59-5e7d" type="rule"/>
+        <infoLink name="6.1 The Supply Profile" id="b15b-77d0-31b4-3fba" hidden="false" targetId="7286-b637-03f5-82e5" type="rule"/>
+        <infoLink name="6.2 How Supply Is Used" id="8294-a4fe-90c0-b867" hidden="false" targetId="9385-0598-aa00-30d9" type="rule"/>
+        <infoLink name="DEPLOYMENT" id="cb1f-96bd-0483-011c" hidden="false" targetId="116d-b441-9e37-068c" type="rule"/>
+        <infoLink name="TACTICAL MASS" id="72b6-bf50-ee68-ee85" hidden="false" targetId="a4a0-78dd-a8ab-c77c" type="rule"/>
+        <infoLink name="UNIT STARTING SUPPLY" id="0346-3715-2c46-2f42" hidden="false" targetId="5629-951e-6bf1-0d82" type="rule"/>
+        <infoLink name="PART 7: THE BATTLEFIELD" id="0837-b26c-1d14-d0cd" hidden="false" targetId="de05-b692-e4d4-61e7" type="rule"/>
+        <infoLink name="PART 7: THE BATTLEFIELD — Introduction" id="8baa-0e81-2ee4-be62" hidden="false" targetId="1590-1b5f-0d5b-d349" type="rule"/>
+        <infoLink name="7.1 Line of Sight" id="93b9-2bff-7150-4489" hidden="false" targetId="d25c-ca9d-29e5-0b1a" type="rule"/>
+        <infoLink name="7.1.1 Cover" id="9f9a-c4b3-7331-9749" hidden="false" targetId="15ba-9418-4093-f5fc" type="rule"/>
+        <infoLink name="7.1.2 Verticality and Effective Size" id="3adf-64db-fba4-91fe" hidden="false" targetId="99f4-aa05-33de-b9fc" type="rule"/>
+        <infoLink name="7.1.3 High Ground Cover" id="086e-778c-31b8-0287" hidden="false" targetId="ba74-8907-612d-7db3" type="rule"/>
+        <infoLink name="7.1.4 Flying Units and Cover" id="ed05-bb71-b678-bba6" hidden="false" targetId="cf52-f2d0-d649-01e4" type="rule"/>
+        <infoLink name="LINE OF SIGHT - CORE RULES" id="59c5-5ea1-5606-9af2" hidden="false" targetId="1e6c-44ec-2506-ba9c" type="rule"/>
+        <infoLink name="COVER - FULL DECISION TABLE" id="116d-95db-c2aa-128f" hidden="false" targetId="82ae-c1c7-efbd-1e07" type="rule"/>
+        <infoLink name="BLOCKING TERRAIN &amp; ELEVATION - QUICK REFERENCE" id="dd52-811e-0e78-2522" hidden="false" targetId="3f09-427c-3401-7f43" type="rule"/>
+        <infoLink name="7.2 Engagement and Engagement Range" id="d6e2-4f20-5541-638f" hidden="false" targetId="941d-ebc4-5380-8cf5" type="rule"/>
+        <infoLink name="7.2.1 Engagement Restrictions" id="da0c-6e1e-504a-abc7" hidden="false" targetId="bccc-060c-d36c-f60f" type="rule"/>
+        <infoLink name="7.3 Markers and Tokens" id="7430-a409-e6fd-1f8d" hidden="false" targetId="36ed-a485-ebb9-36af" type="rule"/>
+        <infoLink name="7.3.1 Tokens" id="d62b-b40f-1919-4551" hidden="false" targetId="aea6-d36b-dcf1-62fc" type="rule"/>
+        <infoLink name="7.3.2 Markers" id="3108-28f5-f62d-4720" hidden="false" targetId="e212-766c-bcc4-ba95" type="rule"/>
+        <infoLink name="7.4 Destroyed Units" id="76b2-5c89-4884-ba86" hidden="false" targetId="f234-96dc-e815-4491" type="rule"/>
+        <infoLink name="PART 8: THE GAME SEQUENCE" id="956a-c667-9757-bdda" hidden="false" targetId="0ebf-ef73-fe7e-4184" type="rule"/>
+        <infoLink name="PART 8: THE GAME SEQUENCE — Introduction" id="c4fa-c14d-e17b-6f9e" hidden="false" targetId="02a6-25ae-2df7-ff47" type="rule"/>
+        <infoLink name="8.1 Rounds and Phases" id="f77f-a134-9285-ddb1" hidden="false" targetId="1cce-ea39-32b0-cba8" type="rule"/>
+        <infoLink name="8.2 The Activation System" id="6f25-d93b-3cff-1c6b" hidden="false" targetId="1685-f32c-e217-c4a3" type="rule"/>
+        <infoLink name="8.2.1 Passing and Initiative" id="9c97-b566-47c0-ac24" hidden="false" targetId="549a-dd12-f1de-6660" type="rule"/>
+        <infoLink name="8.2.2 Determining the First Player" id="c445-81af-3f78-aa10" hidden="false" targetId="e9b9-dcf6-1c94-923e" type="rule"/>
+        <infoLink name="8.3 Deployment and Reserves" id="d3a3-77f7-0298-ffa1" hidden="false" targetId="350e-910d-8720-d1c3" type="rule"/>
+        <infoLink name="8.3.1 The Supply Pool" id="1a2d-7c54-70e5-347d" hidden="false" targetId="1c68-0ad8-d6dc-1792" type="rule"/>
+        <infoLink name="8.3.2 Available Supply" id="05f1-6321-7e54-8008" hidden="false" targetId="bf95-6513-9136-eacb" type="rule"/>
+        <infoLink name="8.3.3 Deployment Restrictions" id="6a65-7cf4-5a4b-f1bd" hidden="false" targetId="0b1e-5812-058e-d371" type="rule"/>
+        <infoLink name="8.4 PHASE 1: THE MOVEMENT PHASE" id="b4a4-77b5-534e-8776" hidden="false" targetId="eb4a-4a8d-c499-f339" type="rule"/>
+        <infoLink name="8.4.1 Activations" id="ede7-4e35-77ef-1240" hidden="false" targetId="357b-9729-6628-f65e" type="rule"/>
+        <infoLink name="8.4.2 Passing" id="7f30-4c8f-a3d5-0fc9" hidden="false" targetId="0733-c32d-b091-8e5f" type="rule"/>
+        <infoLink name="8.5 Movement Phase Actions" id="0e4e-15ef-90a1-6ca3" hidden="false" targetId="d3aa-6be8-c02d-c2a9" type="rule"/>
+        <infoLink name="8.5.1 Hold" id="99a5-783f-1a46-2c1e" hidden="false" targetId="b2fd-b99b-103e-5c4e" type="rule"/>
+        <infoLink name="8.5.2 Move" id="69d5-f4e5-bef0-aa00" hidden="false" targetId="f032-b6e3-4082-fb01" type="rule"/>
+        <infoLink name="8.5.3 Resolving a Move" id="893e-eb54-a415-27cc" hidden="false" targetId="eeb9-20de-8950-c0cf" type="rule"/>
+        <infoLink name="8.5.4 Disengage" id="716c-cec9-8950-c1a5" hidden="false" targetId="fe9f-3e6b-5da6-9cb4" type="rule"/>
+        <infoLink name="8.5.5 Deploy" id="5953-7804-2bbd-3dfd" hidden="false" targetId="af87-72d6-a1a7-abd1" type="rule"/>
+        <infoLink name="8.6 PHASE 2: THE ASSAULT PHASE" id="e0e4-ba73-0c38-f185" hidden="false" targetId="22d1-3dbd-070f-6393" type="rule"/>
+        <infoLink name="8.6.1 Activations" id="3776-7895-92cf-c4a2" hidden="false" targetId="818d-0e84-b558-d70b" type="rule"/>
+        <infoLink name="8.6.2 Passing" id="9839-a2ce-bb9e-e4b2" hidden="false" targetId="3ef9-6ff4-bbee-646e" type="rule"/>
+        <infoLink name="8.7 Assault Phase Actions" id="2464-c600-5293-ee69" hidden="false" targetId="f564-410a-daa8-a0fb" type="rule"/>
+        <infoLink name="8.7.1 Run" id="bf89-0754-815c-d5e2" hidden="false" targetId="75ba-894c-d127-e1b9" type="rule"/>
+        <infoLink name="8.7.2 Hold" id="afa7-67f5-fe46-793d" hidden="false" targetId="3142-e4aa-658c-5e6c" type="rule"/>
+        <infoLink name="8.7.3 Ranged Attack" id="d216-58a6-11c0-d5ee" hidden="false" targetId="80c2-e1e0-f8d9-9233" type="rule"/>
+        <infoLink name="8.7.4 Ranged Attack Resolution" id="1ccc-e592-6d29-bbec" hidden="false" targetId="1c6c-6ce6-7272-3a41" type="rule"/>
+        <infoLink name="8.7.5 Removing Models from Engaged Units" id="c2ca-68bd-2130-8888" hidden="false" targetId="e6ff-ebb6-2675-bef4" type="rule"/>
+        <infoLink name="8.7.6 Template Weapons" id="ae2b-fc8b-cc1e-291e" hidden="false" targetId="bb24-4a2a-5a86-0c32" type="rule"/>
+        <infoLink name="8.7.7 Charge" id="6b26-d784-06d5-04ff" hidden="false" targetId="72c5-1a50-cf40-0ff9" type="rule"/>
+        <infoLink name="8.8 PHASE 3: THE COMBAT PHASE" id="5e7b-bd36-a3a7-a498" hidden="false" targetId="e021-6436-7617-9dfb" type="rule"/>
+        <infoLink name="8.8.1 The Close Combat Attack" id="92a9-7c58-d0bb-859c" hidden="false" targetId="9c61-6f3c-e937-b791" type="rule"/>
+        <infoLink name="8.9 PHASE 4: THE SCORING &amp; CLEANUP PHASE" id="2a84-9716-dc40-6ed1" hidden="false" targetId="a2dd-c7c4-1b6e-6fcb" type="rule"/>
+        <infoLink name="8.9.1 Determine Mission Marker Control" id="335a-1797-0518-433b" hidden="false" targetId="b369-330a-5b08-02ab" type="rule"/>
+        <infoLink name="MISSION MARKER - CALCULATING CONTROL" id="a264-719a-41aa-6439" hidden="false" targetId="d114-6b18-d69c-1507" type="rule"/>
+        <infoLink name="MISSION MARKER - CONTESTING ELIGIBILITY" id="7e22-d72b-91f8-0924" hidden="false" targetId="a63e-5927-8763-e1b5" type="rule"/>
+        <infoLink name="8.9.2 Score Victory Points" id="5d33-56ae-0cd7-f5f7" hidden="false" targetId="9501-230f-5e45-95e0" type="rule"/>
+        <infoLink name="8.9.3 End of Game Check" id="6b8a-ee86-2af6-501a" hidden="false" targetId="8966-455f-7405-d188" type="rule"/>
+        <infoLink name="8.9.4 Resolve End of the Round Effects" id="d73e-7f38-8b72-30cd" hidden="false" targetId="71cd-c933-e8b3-ed00" type="rule"/>
+        <infoLink name="8.9.5 Cleanup &amp; Refresh" id="83c6-1c09-0c76-b81c" hidden="false" targetId="64da-20ec-325a-5b0e" type="rule"/>
+        <infoLink name="8.9.6 Determine Initiative" id="953f-babe-02dd-2228" hidden="false" targetId="beea-968a-50a9-c84c" type="rule"/>
+        <infoLink name="8.10 The Final Score" id="e3fb-abd9-bb08-cbc1" hidden="false" targetId="6175-14cd-8284-fe95" type="rule"/>
+        <infoLink name="PART 9: PREPARING FOR BATTLE" id="cfd2-0c33-fa7d-e268" hidden="false" targetId="8900-97ed-fb56-9764" type="rule"/>
+        <infoLink name="PART 9: PREPARING FOR BATTLE — Introduction" id="c342-5e5e-66e8-4506" hidden="false" targetId="04d9-dcbc-c217-4d73" type="rule"/>
+        <infoLink name="9.1 Army Building" id="2c57-e538-7dec-3272" hidden="false" targetId="4099-806c-0f7b-fe92" type="rule"/>
+        <infoLink name="9.1.1 Engagement Scale" id="fce4-8c4c-25bf-1f4e" hidden="false" targetId="b81d-f73c-e60f-a2b2" type="rule"/>
+        <infoLink name="9.1.2 Selecting Race and Faction" id="0062-841c-9a80-6c15" hidden="false" targetId="a155-98f5-0138-af01" type="rule"/>
+        <infoLink name="9.1.3 Minerals" id="1d44-8aae-b0bc-8d07" hidden="false" targetId="e317-d609-fdcb-c38a" type="rule"/>
+        <infoLink name="9.1.4 Vespene Gas" id="aa15-3561-3b97-3bad" hidden="false" targetId="df46-ba1c-b225-b098" type="rule"/>
+        <infoLink name="9.1.5 Tactical Cards and Army Slots" id="b9ae-d39c-9b78-f91f" hidden="false" targetId="28b7-1af5-2525-9048" type="rule"/>
+        <infoLink name="9.1.6 Mustering Units" id="19f2-03b0-9d17-4f11" hidden="false" targetId="eb8f-b985-72da-46e7" type="rule"/>
+        <infoLink name="9.1.7 Purchasing Upgrades" id="78bb-e34a-9a6f-8375" hidden="false" targetId="70f2-c668-7b1a-dc48" type="rule"/>
+        <infoLink name="9.1.8 Team Games" id="0bfe-5d56-1035-bdeb" hidden="false" targetId="4b46-b4d9-578e-ecc3" type="rule"/>
+        <infoLink name="9.1.9 Summoned Units" id="5fae-2cef-8a24-360e" hidden="false" targetId="6165-ba26-74db-279e" type="rule"/>
+        <infoLink name="9.1.10 Army Roster Visibility" id="4f43-b644-cb5e-9776" hidden="false" targetId="cf71-43d7-864a-86b8" type="rule"/>
+        <infoLink name="9.1.11 Representation and Disclosure" id="e004-4568-02c4-906c" hidden="false" targetId="c2ff-012d-cec3-71b7" type="rule"/>
+        <infoLink name="9.2 Mission Selection and the Draft" id="ce3b-c2aa-eac6-0c1c" hidden="false" targetId="ffaf-4a14-f29f-9630" type="rule"/>
+        <infoLink name="9.2.1 Mission and Deployment Card Details" id="e42d-a39b-20a7-8d79" hidden="false" targetId="c98c-0063-64dd-91f8" type="rule"/>
+        <infoLink name="9.3 Battlefield Setup" id="0415-1b74-3e84-086d" hidden="false" targetId="9a24-c656-1d6a-434c" type="rule"/>
+        <infoLink name="PART 10: ADVANCED RULES" id="a62b-f137-15c9-9226" hidden="false" targetId="37a0-a8a0-fdf9-2a1e" type="rule"/>
+        <infoLink name="PART 10: ADVANCED RULES — Introduction" id="00e0-b279-e0b1-5f26" hidden="false" targetId="2d19-b4c4-0f21-81fa" type="rule"/>
+        <infoLink name="10.1 Special Abilities" id="a462-e2ad-2ffd-cb39" hidden="false" targetId="7f72-9f22-2d8c-de2b" type="rule"/>
+        <infoLink name="10.2 Active Abilities (Full Rules)" id="fe05-b1ba-8634-52d4" hidden="false" targetId="a701-b2c2-1a75-ff12" type="rule"/>
+        <infoLink name="10.3 Passive Abilities (Full Rules)" id="5916-9ef2-e322-689f" hidden="false" targetId="e340-6eee-46b0-c67b" type="rule"/>
+        <infoLink name="10.4 Reaction Abilities (Full Rules)" id="c47e-16fb-a727-40ca" hidden="false" targetId="c0b8-59e7-e64a-a273" type="rule"/>
+        <infoLink name="Summary Table" id="d660-981b-d17c-6121" hidden="false" targetId="28c3-372d-b140-743d" type="rule"/>
+        <infoLink name="10.5 Tactical Cards &amp; Faction Cards" id="a3e7-3bfe-936d-28af" hidden="false" targetId="940c-6a54-2023-4c5c" type="rule"/>
+        <infoLink name="10.5.1 Resources and Costs" id="be0f-1a74-9f57-86d3" hidden="false" targetId="6fec-9fea-4702-a118" type="rule"/>
+        <infoLink name="10.5.2 Managing Card States" id="ac2a-e2a0-64cd-2aab" hidden="false" targetId="048d-4095-105b-0f6a" type="rule"/>
+        <infoLink name="PART 12: QUICK REFERENCE" id="c720-eb69-b275-092a" hidden="false" targetId="f773-92d2-55fb-bf31" type="rule"/>
+        <infoLink name="PART 12: QUICK REFERENCE — Introduction" id="302b-02ae-afac-b8c4" hidden="false" targetId="5176-1481-6c43-a970" type="rule"/>
+        <infoLink name="12.1 Pre-Game Protocol" id="d7f3-e816-b609-9925" hidden="false" targetId="ae4d-f5e1-f898-d564" type="rule"/>
+        <infoLink name="12.2 Round Sequence" id="6582-8385-2b46-cceb" hidden="false" targetId="47fe-f02c-9f04-a42f" type="rule"/>
+        <infoLink name="12.3 Phase 1: Movement" id="9a5a-31b7-cc7b-d7c2" hidden="false" targetId="f796-e16e-30f2-4669" type="rule"/>
+        <infoLink name="12.4 Phase 2: Assault" id="eeda-9cd5-fe9a-3257" hidden="false" targetId="2f60-a1c7-c72d-5bb7" type="rule"/>
+        <infoLink name="12.5 Phase 3: Combat" id="de8f-927b-c52a-059e" hidden="false" targetId="6db8-6b67-2207-6f20" type="rule"/>
+        <infoLink name="12.6 Phase 4: Scoring &amp; Cleanup" id="6939-d2e3-9012-6b47" hidden="false" targetId="05c8-e923-3be8-9cbb" type="rule"/>
+        <infoLink name="12.7 Casualty Removal" id="7af9-f104-9475-eb22" hidden="false" targetId="c399-7efa-c32f-efd9" type="rule"/>
+        <infoLink name="12.8 Template Weapons" id="a5f2-0ee2-0fa9-5e66" hidden="false" targetId="bf5a-518f-1d40-d4bc" type="rule"/>
+        <infoLink name="12.9 Dispute Resolution" id="3e86-8349-9c26-1a4b" hidden="false" targetId="8da3-98e1-9a6f-3c95" type="rule"/>
+        <infoLink name="12.10 Units and upgrade points." id="221a-c3ba-cae0-c17a" hidden="false" targetId="12ce-8dfe-60d5-8c34" type="rule"/>
+        <infoLink name="Terran" id="7d29-2e50-3bb9-c51d" hidden="false" targetId="5cb0-fb26-41ae-8cb7" type="rule"/>
+        <infoLink name="Marine" id="c3cd-eb9c-5b70-5fd9" hidden="false" targetId="3f25-ee2d-feae-70c3" type="rule"/>
+        <infoLink name="Raynor’s Raider (Marine)" id="9cca-18ac-5596-8af1" hidden="false" targetId="9097-98ed-7054-2330" type="rule"/>
+        <infoLink name="Marauder" id="42ae-b596-2cb8-2b06" hidden="false" targetId="0099-9fe5-f275-0b38" type="rule"/>
+        <infoLink name="Medic" id="bf8f-2bc4-3ece-7c19" hidden="false" targetId="7940-0c68-f195-e188" type="rule"/>
+        <infoLink name="Goliath" id="8a58-c263-2825-8b9a" hidden="false" targetId="2bda-ef88-f076-ae4b" type="rule"/>
+        <infoLink name="Jim Raynor" id="cac0-f7ef-cb5d-07e2" hidden="false" targetId="0fcf-5629-a16b-6c95" type="rule"/>
+        <infoLink name="Zerg" id="4190-c858-f4fc-11f3" hidden="false" targetId="5585-8334-c3dc-26c1" type="rule"/>
+        <infoLink name="Zergling" id="eb6a-b9a4-d58c-1513" hidden="false" targetId="6066-e157-5bd6-273b" type="rule"/>
+        <infoLink name="Raptor (Zergling)" id="9897-8bac-3d93-d501" hidden="false" targetId="dba3-3df9-bbe9-c4cb" type="rule"/>
+        <infoLink name="Kerrigan Swarm Raptor (Zergling)" id="4297-c4e6-adb7-4337" hidden="false" targetId="7a1b-03a8-a846-9fa6" type="rule"/>
+        <infoLink name="Swarmling (Zergling)" id="6a86-4173-6bd1-ceec" hidden="false" targetId="3521-0a5c-2b72-ee92" type="rule"/>
+        <infoLink name="Roach" id="548a-5784-8d81-9d71" hidden="false" targetId="c60a-a0ab-cc15-a9cb" type="rule"/>
+        <infoLink name="Vile (Roach)" id="d72b-d05a-1687-dcad" hidden="false" targetId="89d7-9f3b-3b71-8497" type="rule"/>
+        <infoLink name="Corpser (Roach)" id="d09a-e00b-9cfb-3769" hidden="false" targetId="7d54-b15f-41a3-09a5" type="rule"/>
+        <infoLink name="Hydralisk" id="20e3-337e-62e0-e275" hidden="false" targetId="e3f5-7dcc-1bc5-0090" type="rule"/>
+        <infoLink name="Queen" id="2038-3ef6-89fb-3129" hidden="false" targetId="e513-573a-c440-1664" type="rule"/>
+        <infoLink name="Kerrigan" id="6864-364b-ec78-8ac4" hidden="false" targetId="a8d5-5d24-1c12-c398" type="rule"/>
+        <infoLink name="Protoss" id="a5a4-3e00-f3a8-e039" hidden="false" targetId="b72c-8b3a-488a-2ea9" type="rule"/>
+        <infoLink name="Zealot" id="1107-4246-a40c-fd13" hidden="false" targetId="1141-e995-5356-1f9c" type="rule"/>
+        <infoLink name="Praetor Guard (Zealot  )" id="aeb5-296d-abad-4b94" hidden="false" targetId="6d95-d399-eff1-1e6b" type="rule"/>
+        <infoLink name="Adept" id="66b5-bd4e-3e0c-436f" hidden="false" targetId="2990-083f-ab2a-ef1c" type="rule"/>
+        <infoLink name="Sentry" id="0651-957f-931b-67a9" hidden="false" targetId="3ee0-8488-eb12-d90b" type="rule"/>
+        <infoLink name="Stalker" id="0bcd-182b-2ecb-ce49" hidden="false" targetId="fe91-0278-bb0b-e600" type="rule"/>
+        <infoLink name="Artanis" id="c416-0255-e589-98cd" hidden="false" targetId="3260-ad60-9756-40f7" type="rule"/>
+        <infoLink name="12.11 Tactical Card points." id="95b9-1f2d-3baa-7053" hidden="false" targetId="d20d-ac47-be5c-6b11" type="rule"/>
+        <infoLink name="TERRAN" id="6ff5-fc1e-6c2e-187f" hidden="false" targetId="1732-3875-94a3-79b6" type="rule"/>
+        <infoLink name="Zerg" id="7f5c-1688-c817-7d61" hidden="false" targetId="5f67-4d58-e4c8-f56f" type="rule"/>
+        <infoLink name="Protoss" id="46a9-65ba-ac09-4c77" hidden="false" targetId="a803-953e-0726-703e" type="rule"/>
+        <infoLink name="12.12 Example armies" id="6023-4902-02c0-b93a" hidden="false" targetId="f79b-a235-5787-10bf" type="rule"/>
+        <infoLink name="TERRAN STARTER" id="fa55-2f7f-e549-6db3" hidden="false" targetId="f585-8192-d326-7abf" type="rule"/>
+        <infoLink name="TERRAN FOUNDERS EDITION STARTER" id="8c5c-8e6c-c44a-1fb6" hidden="false" targetId="c36c-f41c-cf29-d264" type="rule"/>
+        <infoLink name="ZERG STARTER" id="5030-c824-7eff-27e1" hidden="false" targetId="3dd8-61d5-07d8-c8dd" type="rule"/>
+        <infoLink name="ZERG FOUNDERS EDITION STARTER" id="9dd2-5584-b45b-562a" hidden="false" targetId="8318-aea4-6193-c43b" type="rule"/>
+        <infoLink name="PROTOSS STARTER" id="c015-d2ae-5fcb-163b" hidden="false" targetId="becd-cc91-1d6e-bb3e" type="rule"/>
+        <infoLink name="PROTOSS FOUNDERS EDITION STARTER" id="13b7-46ac-00ed-bed4" hidden="false" targetId="2267-3ef9-bd45-67cc" type="rule"/>
+        <infoLink name="Flamer Template (FT)" id="b94d-f65e-89d1-3f47" hidden="false" targetId="0c8f-81a4-5406-b56a" type="rule"/>
+        <infoLink name="Blast Template (BT)" id="6902-92f9-1b46-a34e" hidden="false" targetId="ed44-9dec-4c50-bb4f" type="rule"/>
+        <infoLink name="Rate of Attack (RoA)" id="0221-4e16-26af-86d9" hidden="false" targetId="e663-98f1-5e36-b7ce" type="rule"/>
+        <infoLink name="Surge Dice and Surge Results" id="703f-cc9b-b4d7-4bb5" hidden="false" targetId="1ad4-ec76-4457-d19f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
