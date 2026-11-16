@@ -703,7 +703,8 @@
         <categoryLink name="Biological" id="4308-fa2b-2441-f710" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
       <constraints>
-        <constraint id="e955-f1c0-d6d1-795d" field="selections" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="e955-f1c0-d6d1-795d" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+        <constraint id="1600-0500-60e0-2ceb" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
       </constraints>
       <infoLinks>
         <infoLink name="Structure" id="7fb9-c9f4-9782-5ad1" hidden="false" targetId="d3a4-0dbc-a379-e0fa" type="profile"/>
@@ -712,6 +713,11 @@
       </infoLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="1600-0500-60e0-2ceb" type="set" value="1">
           <conditions>
             <condition childId="062f-f5a3-8d83-3ceb" childName="Kerrigan&apos;s Swarm" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
           </conditions>
@@ -1125,17 +1131,33 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Roachling" id="dab9-dc56-5a49-a23c" hidden="false" import="true" type="model">
+    <selectionEntry name="Roachlings" id="dab9-dc56-5a49-a23c" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Other" id="d116-a564-26ce-d2aa" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Light" id="c0f9-4a10-f524-a3b7" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Ground" id="6a6c-6b6d-a0e1-d832" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Biological" id="32c6-4d69-6c57-692b" primary="false" targetId="8b0f-c3cd-9487-5030"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="9d93-40ed-a08f-3c05" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
+        <constraint id="b2a1-f350-4541-9a50" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
       <infoLinks>
         <infoLink name="Roachling" id="c140-a0cf-5e08-53cd" hidden="false" targetId="aeed-66ea-908f-35fd" type="profile"/>
         <infoLink name="Claws" id="f22b-5230-0475-1128" hidden="false" targetId="9991-19ca-327a-9240" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="9d93-40ed-a08f-3c05" type="set" value="1">
+          <conditions>
+            <condition childId="444a-8557-cdae-3146" childName="Corpsers (Roach)" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="444a-8557-cdae-3146" childName="Corpsers (Roach)" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Underdeveloped Claws" id="a95d-fa8b-efe9-c91c" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
@@ -1144,6 +1166,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Roachling" id="453f-fbe0-6a8d-d082" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="dc89-0963-d890-5ef5" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="c1c2-81c8-1731-81c8" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Swarmlings" id="74a4-9ff6-ac5b-b654" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2396,7 +2426,7 @@
                   <profiles>
                     <profile name="Plague" id="deba-28e9-0dba-5b3f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+. </characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (X BM)</characteristic>
                       </characteristics>
                     </profile>
