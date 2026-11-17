@@ -2454,11 +2454,134 @@
       <profiles>
         <profile name="Crystalline Alloy" id="3211-bc01-2b4f-9c28" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains DODGE (2) for this roll. </characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Use before a Friendly Mechanical Unit makes an Armour Roll. That Unit gains DODGE (2) for this roll.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry name="Firebats" id="73e8-2911-6fab-e9c3" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Core" id="0677-d6bf-222e-998b" hidden="false" primary="true" targetId="3874-6187-bb5c-3ad3"/>
+        <categoryLink name="Armoured" id="2a59-e400-388f-22a3" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Biological" id="3867-8c12-7f4e-4f31" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Ground" id="2608-3eab-8745-9ff4" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Stimpack" id="2c1e-af83-1b6e-92a3" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <comment>Firebat</comment>
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit suffers NON-LETHAL DAMAGE (2). This Unit gains BUFF Speed (3). Additionally, its Perdition Flamethrower, and all Close Combat Weapons gain PRECISION (3).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Firebats" id="f60b-d5cd-da47-e40d" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-2: 0 | 3-4: 1 | 5-6: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Perdition Flamethrower" id="380b-b5c0-111c-75f5" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), INSTANT</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire it Up" id="4a91-e063-b431-4d34" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit makes a Ranged Attack with its Perdition Flamethrower, you may choose 1 model in this Unit to attack using a Flamer Template (FT) instead of rolling its regular Rate of Attack (RoA). If this Unit&apos;s Current Supply Value is 2, you may choose up to 2 models to attack using Flamer Templates instead.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flame Strike" id="be99-e4a8-a16d-241e" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Light</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Firebat" id="5b68-4cbe-90e1-c725" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="6423-6245-eba2-4514" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="7cfd-906a-bf64-2101" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
+          </constraints>
+          <modifiers>
+            <modifier field="6423-6245-eba2-4514" type="set" value="6">
+              <conditions>
+                <condition childId="6891-53e2-6763-7cdb" childName="Reinforce" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="7cfd-906a-bf64-2101" type="set" value="6">
+              <conditions>
+                <condition childId="6891-53e2-6763-7cdb" childName="Reinforce" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry name="Reinforce" id="6891-53e2-6763-7cdb" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="3903-4eed-3291-77ae" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="dc6a-c6da-17f4-91f3" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="41ae-1a4e-a3ca-6a12" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry name="Incinerator Gauntlets" id="cf49-1a8c-8b0b-247f" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="f644-d904-7d5a-29bb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Incinerator Gauntlets" id="25eb-2acb-3425-cf9e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Fire Wall token Within 4&quot; in an unoccupied space. If a Unit&apos;s Leading Model&apos;s path of travel passes through this token, or if any model in a Unit ends either a Move, Deploy, Run, Charge, Disengage, or Close Ranks action, or is Set Within 1&quot; of this token, remove the Fire Wall token from the battlefield before executing that move. If you do, that Unit suffers HITS 5 (1). If that Unit performed a Charge action, it cannot resolve the IMPACT effect.</characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combat Phase" id="2e52-eea6-9117-89e7" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Need a Light?" id="1946-4da7-240e-004e" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="6877-2382-9180-35bc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Need a Light?" id="aa66-ff56-44ff-4899" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="b94b-6a13-1240-6b8b">When this Unit makes a Close Combat Attack with its Flame Strike, you may choose 1 model in this Unit to attack using a Flame Template (FT) instead of rolling its regular Rate of Attack (RoA).</characteristic>
+                        <characteristic name="Cost" typeId="6f0c-b621-2f03-fe52">Passive</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
