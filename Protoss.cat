@@ -2405,6 +2405,7 @@
       </costs>
       <infoLinks>
         <infoLink name="BUFF [Characteristic] (X)" id="c4fd-d00b-6535-846e" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+        <infoLink name="PLACE (X)" id="fea6-bbf8-5b21-796e" hidden="false" targetId="1a3d-86d9-8aa7-68ab" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
@@ -2441,6 +2442,515 @@
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When the Current Supply Value of another Friendly Unit Within 12&quot; of this Unit is reduced, this Unit, if Unengaged, may perform a Move action Directly Towards that Friendly Unit.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blink" id="713b-c769-3b90-75a8" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Resolve the PLACE (6) effect. Models set by this effect cannot be set up Within the Engagement Range of any Enemy Unit.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Particle Disruptors" id="6067-da7a-4481-13f3" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">4</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">2</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+          </characteristics>
+        </profile>
+        <profile name="Stomp" id="548c-ce07-ada7-3656" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Alarak" id="17d8-aef2-947f-ed04" hidden="false" import="true" type="upgrade">
+      <comment>Best Boi</comment>
+      <categoryLinks>
+        <categoryLink name="Biological" id="c505-002a-a5bb-92d1" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Psionic" id="9f62-2d34-1406-d870" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="2d43-ab4e-2134-389a" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Hero" id="076e-3634-65b2-63d0" hidden="false" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Unique" id="5170-4e0b-55b6-3bec" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="6677-7404-00ae-2d21" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="INSTANT" id="7dd8-1025-a97d-17c3" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+        <infoLink name="BUFF [Characteristic] (X)" id="ed3b-384a-f838-27a8" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Alarak" id="7081-150c-ac96-1a96" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">5+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sacrifice" id="937b-64f5-33bd-d56b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit receives Damage, target another Friendly Biological Unit Within 8&quot;. The targeted Unit suffers 2 Damage, and the Damage received by this Unit is reduced by 2 (when Empowered, reduced by 3).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commander" id="599f-ac45-b9ed-5ae1" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit&apos;s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Highlord of the Tal&apos;darim" id="ddaf-94b8-4063-c598" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Calculate the total lost Supply of all Friendly Units (a Unit&apos;s lost Supply is its initial Supply Value minus its Current Supply Value). While this total is:
+° 2 or more: When this Units resolves IMPACT, it generates 3 additional IMPACT dice.
+° 4 or more: This Unit&apos;s weapon gain INSTANT.
+° 6 or more: This Unit&apos;s abilities are Empowered.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wrath of the Highlord" id="f988-bea7-15de-b1a4" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Target another Friendly Biological Unit Within 8&quot;. The targeted Unit suffers 2 Damage, and this Unit performs a 4&quot; Run Action (when Empowered, perform a 6&quot; Run Action).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Empower Me" id="f590-665a-ef83-f569" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Target another Friendly Biological Unit Within 8&quot;. The targeted Unit suffers 2 Damage, and this Unit&apos;s Bane Blades get BUFF RoA (4) (when Empowered, BUFF RoA (6)).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Destruction Wave" id="add0-07c7-5fe0-2e03" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Target another Friendly Biological Unit Within 8&quot;. The targeted Unit suffers 2 Damage. Then target an Enemy Unit Within 8&quot; of this Unit. The targeted Enemy Unit suffers HITS 4 (1) (when Empowered, HITS 6 (1)).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (0 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="d67d-a10b-b8b5-8804" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (6) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bane Blades" id="6c2b-2367-fa2d-ba53" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">6</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3+1</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Reaver" id="a5d8-674b-6eb6-09fe" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Elite" id="4990-c00e-9283-91df" hidden="false" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Armoured" id="b444-facd-b5a8-54c8" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name=" Mechanical" id="57bc-9a58-9d36-f241" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Ground" id="2231-049e-c2f2-5a24" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="SUMMON (Unit Name)" id="d2ac-22f1-ab76-9625" hidden="false" targetId="1a39-f874-fdf2-c983" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Reaver" id="40a1-1828-ef8e-6277" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">6</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">6</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"/>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">4</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Large" id="625a-a4cd-ceef-d9f2" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit&apos;s Leading Model moves, it cannot pass through physical gaps smaller than 3&quot; wide, regardless of its size. If the Leading Model&apos;s path of travel passes through, or any model in this Unit ends its movement on a Size 0 or Size 1 Impassible Terrain piece (excluding Tokens), during any movement action, that terrain piece is immediately removed from the game.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Limited Artificial Intelligence" id="33e4-084a-c66c-6e37" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If this Unit is a parent to any SUMMONED Unit, it cannot SUMMON another one.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Microfactory" id="17f7-6520-9739-98eb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">This Unit&apos;s Scarab Special Ability can be use this Round even if it was already used.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (2 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scarab" id="ba04-7426-6088-4b42" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Resolve the SUMMON (Scarab) effect. Then, the Scarab may immediately perform a Move Action.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Siege Triangulation" id="cb0b-396f-5bfc-c322" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Move a Scarab, Solarite Scarab or Phasing Scarab created by this Unit up to 5&quot;.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable" id="d863-2d14-197f-f6f9" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both case, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crawl Over" id="fb25-dbb9-4ad5-6461" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c617-1aed-c4df-8606" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="8ba8-2625-74cd-cca1" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Solarite Scarab" id="ac17-2bc0-a538-436e" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="d5b6-e28a-555d-f534" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Solarite Scarab" id="2134-7ef2-6e93-6540" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Resolve the SUMMON (Solarite Scarab) effect. Then, the Solarite Scarab may immediately perform a Move action.</characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 PE)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Shuttle" id="84e0-9729-47cd-8fec" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="01cb-6630-7543-56b0" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Shuttle" id="989a-e905-f78e-70f8" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. This ability can be used while this Unit is in Reserves. Set a Faction Token Indication anywhere on the battlefield more than 10&quot; away from any Enemy model. At the End of the Round, the controlling player may Deploy this Unit base-to-base contact with This Faction Indicator. This Unit&apos;s Activation ends.</characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 PE)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Phasing Scarab" id="70d5-37d6-1eea-89b3" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="d040-1213-4553-44d2" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Phasing Scarab" id="9af8-0c9e-9734-78e6" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Once per Game. Resolve the SUMMON (Phasing Scarab) effect. Then, the Phasing Scarab may immediately perform a Move action.</characteristic>
+                        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 PE)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Phasing Scarab" id="801b-8152-d071-47b1" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Other" id="6cfd-4d0f-9268-8d39" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Psionic" id="5b26-e02f-cd25-77c2" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="7ae9-9735-dae1-e17d" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="eace-e39f-364d-6951-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="eace-e39f-364d-6951-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="CRITICAL HIT (X)" id="d887-08a9-3cbd-43da" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="PIERCE [TAG] X" id="cf37-b1bf-e378-aa74" hidden="false" targetId="8a5b-c6c7-6abf-6879" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="70d5-37d6-1eea-89b3" childName="Phasing Scarab" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Phasing Scarab" id="0482-5082-9760-7fe1" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">1</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">3+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Timed Life" id="9b9f-42d9-65d6-0d9e" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Remove this Unit at the End of the Round.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nimble" id="50c8-e916-cd52-ea3f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This unit is always eligible to use Evade Rolls against Attacks or Special Abilities.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Proximity Detonation" id="7a4c-116c-1d32-19c5" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Ground Unit ends its Activation within 2&quot; of this Unit. This Unit immediately performs a Close Combat Attack against that Enemy Unit. Immediately after this Close Combat Attack is resolved, remove this Unit from the Battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Explosive Charge" id="c44a-b142-08eb-3bf2" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, it performs a Close Combat Attack against one of the targets of that Charge. Immediately after this Close Combat Attack is resolved, remove this Unit from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Phase Blast" id="8a7e-15a0-0c5e-b226" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">6</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (2), PIERCE Armoured (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Scarab" id="00fe-624f-5e29-bdb1" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Other" id="839c-c0f7-49ca-f45d" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Psionic" id="b2d3-1a15-7816-076a" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="c3e0-c0ba-efbc-6425" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="681d-e24d-c6de-4e00-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="681d-e24d-c6de-4e00-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="CRITICAL HIT (X)" id="1d59-ceed-c74c-039d" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="a5d8-674b-6eb6-09fe" childName="Reaver" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Scarab" id="7772-01a7-022a-53a4" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">1</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">3+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Timed Life" id="d235-7b35-6dc3-a997" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Remove this Unit at the End of the Round.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nimble" id="19b9-062b-325c-6c27" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This unit is always eligible to use Evade Rolls against Attacks or Special Abilities.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Proximity Detonation" id="0822-9cc6-6aa8-ef5c" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Ground Unit ends its Activation within 2&quot; of this Unit. This Unit immediately performs a Close Combat Attack against that Enemy Unit. Immediately after this Close Combat Attack is resolved, remove this Unit from the Battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Explosive Charge" id="a445-dd1e-4b95-fb13" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, it performs a Close Combat Attack against one of the targets of that Charge. Immediately after this Close Combat Attack is resolved, remove this Unit from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scarab Detonation" id="6b3e-edcc-c72f-7efd" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">12</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">
+</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
+</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Solarite Scarab" id="f4d1-e6dd-9470-c622" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Other" id="49be-876c-81cb-8688" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Psionic" id="70b3-6500-beb5-7fc5" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
+        <categoryLink name="Ground" id="9514-b86f-2009-54f2" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="ce8e-004b-9d49-8975-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="ce8e-004b-9d49-8975-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="CRITICAL HIT (X)" id="9031-a3f4-84c8-9676" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+        <infoLink name="INSTANT" id="e042-977e-b890-2d26" hidden="false" targetId="a6a8-9065-8680-ddbd" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac17-2bc0-a538-436e" childName="Solarite Scarab" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Solarite Scarab" id="9fbd-2770-eaff-9be0" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">1</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">5</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">6+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">3+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Timed Life" id="edbf-31a0-8079-23fa" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Remove this Unit at the End of the Round.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nimble" id="6cf8-21eb-a473-7d8f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This unit is always eligible to use Evade Rolls against Attacks or Special Abilities.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Proximity Detonation" id="9619-0fae-5e43-59df" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Ground Unit ends its Activation within 2&quot; of this Unit. This Unit immediately performs a Close Combat Attack against that Enemy Unit. Immediately after this Close Combat Attack is resolved, remove this Unit from the Battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Explosive Charge" id="2b70-6a24-fd5a-fd16" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, it performs a Close Combat Attack against one of the targets of that Charge. Immediately after this Close Combat Attack is resolved, remove this Unit from the battlefield.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Solarite Blast" id="5065-020b-5cba-91f0" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">5</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">
+</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
+</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (2), INSTANT</characteristic>
           </characteristics>
         </profile>
       </profiles>
