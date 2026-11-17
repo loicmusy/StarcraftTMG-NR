@@ -1349,17 +1349,12 @@
       </costs>
       <infoLinks>
         <infoLink name="HIDDEN" id="37bf-39d4-8b3e-5ca4" hidden="false" targetId="4bf6-1de9-71aa-02a4" type="rule"/>
+        <infoLink name="Scanner Sweep" id="b29d-3d32-d317-578a" hidden="false" targetId="16b5-88bb-8bfd-f258" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="ComSat Station" id="5845-e43b-3538-295b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
             <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one table edge that is not a player’s Entry Edge. Until the End of the Round, Enemy Units cannot Deploy from that edge.</characteristic>
-            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Scanner Sweep" id="90bb-e4f5-29a0-b0f3" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
-          <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN Status.</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
           </characteristics>
         </profile>
@@ -2693,6 +2688,12 @@
       <characteristics>
         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Remove this Unit at the End of the Round.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scanner Sweep" id="16b5-88bb-8bfd-f258" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose HIDDEN Status.</characteristic>
+        <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

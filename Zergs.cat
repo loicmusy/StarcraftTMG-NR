@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue name="Zerg" id="9853-7f07-916b-d7d3" battleScribeVersion="2.03" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Terran" id="a7a9-d2ec-54c5-94ed" targetId="d5ca-ef26-b879-bdc1" type="catalogue"/>
+  </catalogueLinks>
   <categoryEntries>
     <categoryEntry name="Core" id="485c-e8a3-ec4d-88a3" hidden="false">
       <modifiers>
@@ -70,6 +73,7 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Zagara&apos;s Swarm" id="bf0c-dea4-0e62-722f" hidden="false"/>
+    <categoryEntry name="Stukov&apos;s Forces" id="19de-2b6b-c584-7f84" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Deployment Maps" id="c04e-ce0f-fa74-f3dc" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
@@ -2556,6 +2560,170 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry name="Stukov&apos;s Forces" id="ac40-ac91-83e8-9452" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Faction" id="56bb-ebc0-d192-b8b5" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
+        <categoryLink name="Stukov&apos;s Forces" id="156c-c069-3da7-e162" hidden="false" primary="false" targetId="19de-2b6b-c584-7f84"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Ashes of the UED" id="57da-3799-7c3c-4031" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, you may include Units with the Terran Faction Tag and both Ground and Mechanical Combat Tags in your army. Those Units gain the Infested Combat Tag. Treat any CP cost for those Units&apos; Special Abilities as BM. These Unit cannot gain the BURROWED Status.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infestation" id="34c3-368c-3052-c39a" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, select exactly one Virus Card and add it to their Army List, paying its listed cost (if any).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hostile Incubation" id="b380-0616-f238-bdf7" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If there is no Friendly Infested Missile Turret on the battlefield, set a Friendly Infested Missile Turret on the battlefield, set a Friendly Infested Missile Turret Unit anywhere on the GROUND LEVEL on the battlefield more than 10&quot; away from any Enemy model. This Round, the Infested Missile Turret is not eligible to use its Special Abilities (excluding Structure).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Virus" id="cb3a-c48f-fbb2-2f02" hidden="false">
+          <constraints>
+            <constraint id="3769-22c2-9deb-f3d8-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="3769-22c2-9deb-f3d8-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Weighted Pustule" id="1844-a396-1973-731f" hidden="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink name="Stukov&apos;s Creep" id="8607-cccb-b56b-cd46" hidden="false" targetId="a56d-bf0c-b035-afed" type="profile"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Fetid Touch" id="aa99-2cbf-04d2-bec6" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, it cannot resolve the PLACE and set effects and cannot be returned to Reserves.</characteristic>
+                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Healing Pathogen" id="2266-bcf9-9be8-bdc1" hidden="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink name="Stukov&apos;s Creep" id="a2fd-e80e-b592-10cb" hidden="false" targetId="a56d-bf0c-b035-afed" type="profile"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Universal Carrier" id="2e46-32fd-33c1-b7f6" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, immediately after its supply is reduced or it is destroyed, target any Friendly Biological Unit Within 12&quot;. This Friendly Unit resolves the HEAL (2) effect.</characteristic>
+                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Hungering Infestation" id="2d77-591e-f411-0d03" hidden="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink name="Stukov&apos;s Creep" id="503e-a886-647f-7965" hidden="false" targetId="a56d-bf0c-b035-afed" type="profile"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Hungering Infestation" id="dce5-4a8c-9e4f-76f2" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, it is not eligible to use or be targeted by any Enemy Reaction Special Ability, except Restoration.</characteristic>
+                    <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Infested Command Center" id="78f5-12f6-138c-6189" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="b7cf-f7c8-5fd2-3450" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Scanner Sweep" id="b2d8-ff1c-3771-22ca" hidden="false" targetId="16b5-88bb-8bfd-f258" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Parasitic Bio-Toxins" id="f617-accb-d44e-e71e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Immediately after a Friendly Infested Unit ends their action Within 8&quot; of an Enemy Unit. That Enemy Unit gains the INFESTATION Status, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Infested Barracks" id="0bd5-68f8-7260-e0f9" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="2511-745c-263d-2521" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="For the Swarm!" id="62ad-eb76-4803-88d3" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Ground Unit performs a 2&quot; Move action. This does not count towards its action limit.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hive" id="3ef7-bf03-e707-bc82" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="c170-11c1-f319-8121" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Creep Spread" id="85df-e389-149a-b0c9" hidden="false" targetId="8cca-b3c0-8237-ab91" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Brutal Instinct" id="68ef-2f3a-74c8-175b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Immediately after an Enemy Unit ends its Activation Within 12&quot; of a Friendly Grounded Unit. That Friendly Unit gains or loses the BURROWED Status.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Roachling" id="aeed-66ea-908f-35fd" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -2701,6 +2869,12 @@
       <characteristics>
         <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit becomes Activated, if it has the Burrowed Status, resolve the HEAL (2) effect.</characteristic>
         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stukov&apos;s Creep" id="a56d-bf0c-b035-afed" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield. Creep Tumor have STAY IN PLAY and DISPLACEMENT.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
