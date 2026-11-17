@@ -10,6 +10,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -25,6 +26,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -46,6 +48,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -61,6 +64,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -76,6 +80,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -91,6 +96,7 @@
                 <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
                 <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
