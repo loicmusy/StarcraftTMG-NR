@@ -2742,68 +2742,59 @@
                     <infoLink name="Plagued Munitions" id="5c0b-e74a-9933-b18e" hidden="false" targetId="14ce-76e3-8408-6a19" type="profile"/>
                   </infoLinks>
                 </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Specialist Weapon" id="8125-a48c-96d9-a435" hidden="false">
+                <selectionEntry name="Infested Missile Launcher - Scourgeshot" id="5512-5cf9-622a-93f5" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="3bd8-5333-7f14-b536" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="9c76-2f7f-b9b9-43eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry name="Infested Missile Launcher - Scourgeshot" id="5512-5cf9-622a-93f5" hidden="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint id="9c76-2f7f-b9b9-43eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier field="hidden" type="set" value="true">
-                          <conditions>
-                            <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <profiles>
-                        <profile name="Infested Missile Launcher - Scourgeshot" id="4353-5366-6fa5-f473" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
-                          <characteristics>
-                            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
-                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
-                            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
-                            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
-                            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
-                            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
-                            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
-                            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2), SPECIALIST</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry name="Infested Missile Launcher - Acid Blast" id="81b8-cd99-5eb6-efa3" hidden="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint id="1ed3-9882-2890-35b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier field="hidden" type="set" value="true">
-                          <conditions>
-                            <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <profiles>
-                        <profile name="Infested Missile Launcher - Acid Blast" id="bffb-3f36-c388-8755" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
-                          <characteristics>
-                            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">6&quot;</characteristic>
-                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
-                            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
-                            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
-                            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
-                            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
-                            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
-                            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CRITICAL HIT (1), LONG RANGE (12&quot;), PIERCE Armoured (2), SPECIALIST</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Infested Missile Launcher - Scourgeshot" id="4353-5366-6fa5-f473" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                      <characteristics>
+                        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
+                        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+                        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+                        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2), SPECIALIST</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Infested Missile Launcher - Acid Blast" id="81b8-cd99-5eb6-efa3" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="1ed3-9882-2890-35b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Infested Missile Launcher - Acid Blast" id="bffb-3f36-c388-8755" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                      <characteristics>
+                        <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">6&quot;</characteristic>
+                        <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                        <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                        <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+                        <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+                        <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CRITICAL HIT (1), LONG RANGE (12&quot;), PIERCE Armoured (2), SPECIALIST</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Combat Phase" id="91bd-65fc-8da3-5fb6" hidden="false">
               <selectionEntries>
