@@ -246,7 +246,7 @@ Attacks made with each SIDEARM must be resolved in separate Batches. Because the
       <description>A Unit may include only one model equipped with this weapon. Multiple upgrades configuring more than one instance of this weapon are not permitted (Part 9.1.7).</description>
     </rule>
     <rule name="REPEATABLE" id="f895-258a-9487-f59a" hidden="false">
-      <description>Select another Friendly Biological Unit Within 8&quot;, spend CP and apply one of the following effects: 1 CP: That Unit’s first used weapon gains the CRITICAL HIT (2). 1 CP: That Unit ignores the Disengage penalty for the remainder of the Round. 2 CP: Remove the Activation Marker from that Unit.</description>
+      <description>This ability is exempt from the Once Per Round limit (Part 2.7.1). It may be used multiple times per Round and per Activation, provided all Costs and trigger conditions are met each time.</description>
     </rule>
     <rule name="BULKY" id="f460-74cd-768c-a9e4" hidden="false">
       <description>This weapon cannot be used to make a Ranged Attack while the Unit is currently Engaged (Part 8.7.3).</description>
