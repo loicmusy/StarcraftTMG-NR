@@ -2263,6 +2263,17 @@
         <categoryLink name="Faction" id="78c3-8906-f56e-86c2" hidden="false" primary="true" targetId="5eca-d421-1fdc-a95f"/>
         <categoryLink name="Tal&apos;darim" id="15fb-4f29-ab80-188a" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="4"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <infoLinks>
         <infoLink name="PRECISION (X)" id="3dbb-7aa1-e1a0-cc96" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
         <infoLink name="CRITICAL HIT (X)" id="cfa2-1f8a-6e48-1f1a" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
@@ -2336,11 +2347,9 @@
         <profile name="Tal&apos;darim Pylon" id="fd57-d319-e2c9-5e69" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a">2</characteristic>
-            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">
-</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"/>
             <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
-            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">
-</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"/>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
             <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
@@ -2872,10 +2881,8 @@
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
             <characteristic name="RoA" typeId="af32-03e6-6c32-3580">12</characteristic>
             <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
-            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">
-</characteristic>
-            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
-</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
             <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (2)</characteristic>
           </characteristics>
@@ -2945,10 +2952,8 @@
             <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
             <characteristic name="RoA" typeId="af32-03e6-6c32-3580">5</characteristic>
             <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
-            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">
-</characteristic>
-            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">
-</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
             <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
             <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1">CRITICAL HIT (2), INSTANT</characteristic>
           </characteristics>
