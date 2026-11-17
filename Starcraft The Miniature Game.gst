@@ -10,6 +10,78 @@
     <categoryEntry name="Flying" id="46e8-c643-c323-b4c1" hidden="false"/>
     <categoryEntry name="Psionic" id="b915-b8d0-e25e-d12c" hidden="false"/>
     <categoryEntry name="Pre-Game" id="9b82-d933-7075-8237" hidden="false"/>
+    <categoryEntry name="Core" id="485c-e8a3-ec4d-88a3" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Creep" id="33f8-3892-abc6-952c" hidden="false">
+      <constraints>
+        <constraint id="ab4b-f124-037b-7407" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Elite" id="1239-f2f6-df3a-784b" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Faction" id="7786-b4c1-7de3-915c" hidden="false">
+      <constraints>
+        <constraint id="161a-d3bb-0f5b-ecb9-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="161a-d3bb-0f5b-ecb9-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Hero" id="1ae2-afdf-6b77-0afe" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Other" id="576e-0d70-bca0-9668" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Support" id="4b2e-4afe-1949-a29b" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Tactical" id="6042-132c-4895-cde4" hidden="false">
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <costTypes>
     <costType name=" Minerals" id="5bcf-897a-a5c9-d0e8" defaultCostLimit="2000"/>
@@ -64,6 +136,43 @@
       </modifiers>
     </costType>
   </costTypes>
+  <forceEntries>
+    <forceEntry name="Army" id="9607-b651-4fa0-e01c" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Pre-Game" id="ccb0-4885-41f2-66fd" hidden="false" targetId="9b82-d933-7075-8237"/>
+        <categoryLink name="Faction" id="09dd-47ba-91c6-a5d9" hidden="false" targetId="7786-b4c1-7de3-915c"/>
+        <categoryLink name="Creep" id="7250-0862-0adc-72fe" hidden="false" targetId="33f8-3892-abc6-952c"/>
+        <categoryLink name="Tactical" id="7f70-f2b6-02ef-722e" hidden="false" targetId="6042-132c-4895-cde4"/>
+        <categoryLink name="Core" id="587a-9104-151c-acbc" hidden="false" targetId="485c-e8a3-ec4d-88a3"/>
+        <categoryLink name="Elite" id="3118-f961-70e0-6de2" hidden="false" targetId="1239-f2f6-df3a-784b"/>
+        <categoryLink name="Support" id="35c3-c4fc-c2ec-8e9e" hidden="false" targetId="4b2e-4afe-1949-a29b"/>
+        <categoryLink name="Hero" id="9c61-419c-1a27-6ec5" hidden="false" targetId="1ae2-afdf-6b77-0afe"/>
+        <categoryLink name="Other" id="175a-e798-a4d7-d46f" hidden="false" targetId="576e-0d70-bca0-9668"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier field="error" type="add" value="Not enough Core Supply.">
+          <conditions>
+            <condition childId="any" field="472f-46af-8e02-bfbf" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="error" type="add" value="Not enough Elite Supply.">
+          <conditions>
+            <condition childId="any" field="f5f9-3591-0f2d-0a53" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="error" type="add" value="Not enough Support Supply.">
+          <conditions>
+            <condition childId="any" field="31a6-c1f1-3d47-fa76" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="error" type="add" value="Not enough Hero Supply.">
+          <conditions>
+            <condition childId="any" field="7e61-585f-b715-85e0" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
   <profileTypes>
     <profileType name="Unit" id="18be-d8b9-8024-4925" hidden="false" kind="model" sortIndex="1">
       <characteristicTypes>

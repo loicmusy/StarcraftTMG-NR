@@ -1,107 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue name="Protoss" id="a993-a28e-5c72-5b0a" battleScribeVersion="2.03" gameSystemId="sys-ce49-e853-2fea-6af1" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry name="Core" id="3057-36a6-b4b3-cddb" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Elite" id="6089-3431-846d-7bb8" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry name="Faction" id="5eca-d421-1fdc-a95f" hidden="false">
       <constraints>
         <constraint id="ffb1-77fd-1f91-5b1b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
         <constraint id="ffb1-77fd-1f91-5b1b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
-    </categoryEntry>
-    <categoryEntry name="Hero" id="bd6f-bae8-7dee-67be" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Other" id="5788-d936-b639-6407" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Support" id="b8a5-0602-9633-c738" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Tactical" id="acb5-b55f-9492-5149" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </categoryEntry>
     <categoryEntry name="Khalai" id="2586-d7c3-73d1-767f" hidden="false"/>
     <categoryEntry name="Nerazim" id="270e-fd7b-cf96-a10f" hidden="false"/>
@@ -113,46 +17,10 @@
     <entryLink name="Deployment Maps" id="0950-da2b-d79a-88fe" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
     <entryLink name="Mission Card" id="4d05-baf0-5014-387b" hidden="false" import="true" targetId="64dc-91cd-0746-c7d3" type="selectionEntry"/>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Army" id="953a-9292-780a-cf11" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Pre-Game" id="8273-2d03-9642-24bd" hidden="false" targetId="9b82-d933-7075-8237"/>
-        <categoryLink name="Faction" id="4c69-41f5-5e7c-b6b2" hidden="false" targetId="5eca-d421-1fdc-a95f"/>
-        <categoryLink name="Tactical" id="6f60-bd85-a647-e9f7" hidden="false" targetId="acb5-b55f-9492-5149"/>
-        <categoryLink name="Core" id="faf6-c124-185f-c6f5" hidden="false" targetId="3057-36a6-b4b3-cddb"/>
-        <categoryLink name="Elite" id="52dd-38fe-bfb1-7740" hidden="false" targetId="6089-3431-846d-7bb8"/>
-        <categoryLink name="Support" id="5d55-cd58-736d-dc5c" hidden="false" targetId="b8a5-0602-9633-c738"/>
-        <categoryLink name="Hero" id="1ee7-53d7-29b9-4ba3" hidden="false" targetId="bd6f-bae8-7dee-67be"/>
-        <categoryLink name="Other" id="7455-de9b-51ee-a349" hidden="false" targetId="5788-d936-b639-6407"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier field="error" type="add" value="Not enough Core Supply.">
-          <conditions>
-            <condition childId="any" field="472f-46af-8e02-bfbf" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Elite Supply.">
-          <conditions>
-            <condition childId="any" childName="any" field="f5f9-3591-0f2d-0a53" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Support Supply.">
-          <conditions>
-            <condition childId="any" childName="any" field="31a6-c1f1-3d47-fa76" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Hero Supply.">
-          <conditions>
-            <condition childId="any" childName="any" field="7e61-585f-b715-85e0" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
   <selectionEntries>
     <selectionEntry name="Daelaam" id="7d43-eac6-9edf-84f4" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Faction" id="10fe-38fe-c149-aa7e" primary="true" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Faction" id="ab51-0322-d6ba-8b0c" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -183,7 +51,7 @@
     </selectionEntry>
     <selectionEntry name="Khalai" id="41ab-8fa0-e055-c722" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Faction" id="84a1-453e-8a28-2833" primary="true" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Faction" id="4062-5a8f-ce8f-3251" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -215,7 +83,7 @@
     </selectionEntry>
     <selectionEntry name="Forge" id="9031-163e-ba0e-53b1" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="25a0-99e3-cd47-24e2" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="25a0-99e3-cd47-24e2" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -245,7 +113,7 @@
     </selectionEntry>
     <selectionEntry name="Gate Chronoboosted" id="9775-6b26-1f23-8cd0" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="2f38-b805-74be-3e28" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="2f38-b805-74be-3e28" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="afa9-c282-74ad-5234" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -275,7 +143,7 @@
     </selectionEntry>
     <selectionEntry name="Gateway" id="a14b-449a-ab4d-31bd" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="b607-1f5f-939a-f6bd" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="b607-1f5f-939a-f6bd" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -294,7 +162,7 @@
     </selectionEntry>
     <selectionEntry name="Nexus" id="fca5-685d-13ce-6132" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="197c-ea64-5e9f-8b5c" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="197c-ea64-5e9f-8b5c" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="19de-077e-e4ab-8c0c" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -324,7 +192,7 @@
     </selectionEntry>
     <selectionEntry name="Observer" id="8ef0-1923-a76b-682a" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="c39e-8488-5eed-611f" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="c39e-8488-5eed-611f" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="2520-f1a0-0277-8a44" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -357,7 +225,7 @@
     </selectionEntry>
     <selectionEntry name="Overcharged Nexus" id="c46e-a559-df9e-2af5" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="569a-5ec5-bdb9-1f3c" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="569a-5ec5-bdb9-1f3c" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="1392-166e-9e69-4981" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -387,7 +255,7 @@
     </selectionEntry>
     <selectionEntry name="Power Field" id="9a2a-ad36-4f4a-7bbf" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="87af-9722-8535-de06" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="87af-9722-8535-de06" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="cdcd-371a-75a7-f729" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -414,7 +282,7 @@
     </selectionEntry>
     <selectionEntry name="Twilight Council" id="8305-145f-bdde-9c67" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="0bfa-4c90-8dca-0116" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="0bfa-4c90-8dca-0116" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="4bf4-aceb-e4fc-7e61" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -447,7 +315,7 @@
     </selectionEntry>
     <selectionEntry name="Warp Gate" id="86f1-c08a-acb6-ab9c" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="625c-47d0-a001-6950" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="625c-47d0-a001-6950" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="6fbe-3a38-6194-1c07" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -477,7 +345,7 @@
     </selectionEntry>
     <selectionEntry name="Warp Prism" id="adaa-58e7-37fc-bec8" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="5d4c-127b-7404-a9e7" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="5d4c-127b-7404-a9e7" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="ff3b-9e13-7eb7-66c5" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -510,7 +378,7 @@
     </selectionEntry>
     <selectionEntry name="Adepts" id="e7ab-733c-ce24-a503" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Core" id="8138-a4e2-7408-77a7" primary="true" targetId="3057-36a6-b4b3-cddb"/>
+        <categoryLink name="Core" id="8138-a4e2-7408-77a7" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Ground" id="ebe8-9bea-f8f1-dce0" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Light" id="90c4-5857-b286-7427" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Biological" id="274f-a24e-85f8-2628" primary="false" targetId="8b0f-c3cd-9487-5030"/>
@@ -676,7 +544,7 @@
     </selectionEntry>
     <selectionEntry name="Artanis" id="e218-f6b9-e94f-8ae9" hidden="false" import="true" type="model">
       <categoryLinks>
-        <categoryLink name="Hero" id="c8c8-a8a5-8058-84d2" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Hero" id="c8c8-a8a5-8058-84d2" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
         <categoryLink name="Biological" id="4fd8-ac59-27f3-26f0" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Ground" id="4ea2-173e-221e-122b" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Psionic" id="8562-47ed-b570-4562" primary="false" targetId="b915-b8d0-e25e-d12c"/>
@@ -768,7 +636,7 @@
         <categoryLink name="Ground" id="7220-5d06-2ecb-c906" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Biological" id="f794-8794-7860-c849" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Unique" id="ff09-1eea-a6cd-a070" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
-        <categoryLink name="Elite" id="a7e9-294e-db9d-3eb9" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Elite" id="a7e9-294e-db9d-3eb9" primary="true" targetId="1239-f2f6-df3a-784b"/>
       </categoryLinks>
       <constraints>
         <constraint id="b12c-c5c7-136d-2f57" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -844,7 +712,7 @@
     </selectionEntry>
     <selectionEntry name="Pylon" id="b174-1572-feda-5f15" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Other" id="ab09-3621-a57f-ac54" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Other" id="ab09-3621-a57f-ac54" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Armoured" id="2913-ffec-a79f-4fa0" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name="Ground" id="3371-b8ef-dd64-92d0" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Khalai" id="0070-f58f-42b0-1647" primary="false" targetId="2586-d7c3-73d1-767f"/>
@@ -893,7 +761,7 @@
     </selectionEntry>
     <selectionEntry name="Sentries" id="c2e7-d982-ac07-63c6" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Support" id="e749-d3f7-f09d-aa62" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Support" id="e749-d3f7-f09d-aa62" primary="true" targetId="4b2e-4afe-1949-a29b"/>
         <categoryLink name="Light" id="aa36-9051-0376-8e88" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name=" Mechanical" id="c674-139b-977b-4afb" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="adfe-2997-fb99-920b" primary="false" targetId="b947-4784-f388-d6a2"/>
@@ -1035,7 +903,7 @@
     </selectionEntry>
     <selectionEntry name="Stalker" id="aab3-edc0-70f1-373e" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Elite" id="7191-a71e-43d7-d9a2" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Elite" id="7191-a71e-43d7-d9a2" primary="true" targetId="1239-f2f6-df3a-784b"/>
         <categoryLink name="Armoured" id="8447-52ed-6963-26b2" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name="Ground" id="0d91-a7cd-da7e-7a68" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name=" Mechanical" id="c188-831b-e6c5-38f8" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
@@ -1199,7 +1067,7 @@
         <categoryLink name="Light" id="87ba-4bb7-6e03-46f4" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Ground" id="3f60-0985-eb44-caa9" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Biological" id="a81c-31e5-1fa6-b6c1" primary="false" targetId="8b0f-c3cd-9487-5030"/>
-        <categoryLink name="Core" id="af51-4ed2-d4ed-9c97" primary="true" targetId="3057-36a6-b4b3-cddb"/>
+        <categoryLink name="Core" id="af51-4ed2-d4ed-9c97" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
@@ -1337,7 +1205,7 @@
     </selectionEntry>
     <selectionEntry name="Void Seeker" id="2bec-c579-e76b-5ce2" hidden="true" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="55a3-94bc-c694-db20" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="55a3-94bc-c694-db20" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
         <categoryLink name="Nerazim" id="18ab-d1c5-179b-8d7f" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
       </categoryLinks>
       <costs>
@@ -1375,11 +1243,11 @@
     </selectionEntry>
     <selectionEntry name="Nerazim Watchers (Adept)" id="a669-38a1-0cee-b0d3" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Core" id="685a-9774-9344-5a7d" hidden="false" primary="true" targetId="3057-36a6-b4b3-cddb"/>
         <categoryLink name="Biological" id="9653-45f1-bb4a-9199" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Ground" id="1ed1-c2ba-7a7a-cb26" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Light" id="b86b-eeda-4189-21c5" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Nerazim" id="a594-5393-d344-40b0" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
+        <categoryLink name="Core" id="41a0-ba95-2d0e-52f5" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="210"/>
@@ -1465,7 +1333,7 @@
     </selectionEntry>
     <selectionEntry name="Immortal" id="d12c-6290-a84f-f380" hidden="false" import="true" type="model">
       <categoryLinks>
-        <categoryLink name="Elite" id="bf3f-42af-c021-79ae" hidden="false" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Elite" id="bf3f-42af-c021-79ae" hidden="false" primary="true" targetId="1239-f2f6-df3a-784b"/>
         <categoryLink name="Armoured" id="779d-02a2-5c97-8fa6" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name=" Mechanical" id="50a2-d9e5-e2ba-f211" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="bf15-dbbc-8a25-9ed6" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
@@ -1708,7 +1576,7 @@
     </selectionEntry>
     <selectionEntry name="Robotics Facility" id="a828-bb31-f566-b4a8" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="7134-d567-e6d9-d4b4" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="7134-d567-e6d9-d4b4" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -1732,7 +1600,7 @@
     </selectionEntry>
     <selectionEntry name="Zeratul" id="5acd-670a-e60e-75a3" hidden="false" import="true" type="model">
       <categoryLinks>
-        <categoryLink name="Hero" id="5be2-ef74-6d26-1547" hidden="false" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Hero" id="5be2-ef74-6d26-1547" hidden="false" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
         <categoryLink name="Biological" id="835f-a241-fd68-89d7" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Psionic" id="ee92-aaec-94be-48b4" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="6ee3-ec47-7184-5838" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
@@ -1822,8 +1690,8 @@
     </selectionEntry>
     <selectionEntry name="Nerazim" id="3fd8-47cc-7cf1-c106" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Faction" id="ad69-9c7e-ea0e-69c7" hidden="false" primary="true" targetId="5eca-d421-1fdc-a95f"/>
-        <categoryLink name="Nerazim" id="280d-2967-40ad-f170" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
+        <categoryLink name="Faction" id="0aea-6c91-d6c0-6413" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
+        <categoryLink name="Nerazim" id="68b2-179e-142a-4d17" hidden="false" primary="false" targetId="270e-fd7b-cf96-a10f"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -1853,7 +1721,7 @@
     </selectionEntry>
     <selectionEntry name="Tassadar" id="6c5a-37a6-1a23-40dd" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Hero" id="652c-a9b6-ef58-0283" hidden="false" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Hero" id="652c-a9b6-ef58-0283" hidden="false" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
         <categoryLink name="Unique" id="2deb-148a-f8d6-f09b" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
         <categoryLink name="Biological" id="41c4-9046-b010-f026" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Psionic" id="9fef-b6e4-5f6f-ee90" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
@@ -1949,7 +1817,7 @@
     </selectionEntry>
     <selectionEntry name="Twilight Templar (High Templar)" id="821c-1b11-1aa8-5c21" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Support" id="3d8c-02d8-1bb4-f8b7" hidden="false" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Support" id="3d8c-02d8-1bb4-f8b7" hidden="false" primary="true" targetId="4b2e-4afe-1949-a29b"/>
         <categoryLink name="Templar Caste" id="8079-edb8-5751-680e" hidden="false" primary="false" targetId="4145-00ad-e852-8e94"/>
         <categoryLink name="Biological" id="c9eb-4f57-ecf2-c557" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Light" id="fb04-7844-4129-a8cc" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
@@ -2042,7 +1910,7 @@
     </selectionEntry>
     <selectionEntry name="High Templar" id="cb58-2b5c-32f6-46db" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Support" id="f5b0-ced6-dc7f-403c" hidden="false" primary="true" targetId="b8a5-0602-9633-c738"/>
+        <categoryLink name="Support" id="f5b0-ced6-dc7f-403c" hidden="false" primary="true" targetId="4b2e-4afe-1949-a29b"/>
         <categoryLink name="Biological" id="fc54-74eb-c54c-a7e3" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Light" id="d9bf-3a32-64a6-dcdc" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Psionic" id="fed7-2819-89e9-00c1" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
@@ -2208,7 +2076,7 @@
     </selectionEntry>
     <selectionEntry name="Templar Archives" id="67c7-5c04-72f3-c2cb" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="209c-8115-4400-6915" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="209c-8115-4400-6915" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <constraints>
         <constraint id="099a-eedc-cc3b-bcfe" field="selections" scope="parent" shared="true" type="max" value="1"/>
@@ -2235,8 +2103,8 @@
     </selectionEntry>
     <selectionEntry name="Templar Caste" id="e5c5-4e77-5031-3173" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Faction" id="7fc2-f23e-e870-a4c8" hidden="false" primary="false" targetId="5eca-d421-1fdc-a95f"/>
-        <categoryLink name="Templar Caste" id="365e-f6be-af53-3e78" hidden="false" primary="true" targetId="4145-00ad-e852-8e94"/>
+        <categoryLink name="Templar Caste" id="365e-f6be-af53-3e78" hidden="false" primary="false" targetId="4145-00ad-e852-8e94"/>
+        <categoryLink name="Faction" id="dae5-8997-87a1-d76b" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -2266,8 +2134,8 @@
     </selectionEntry>
     <selectionEntry name="Tal&apos;darim" id="ac40-1c7e-e935-f2dc" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Faction" id="78c3-8906-f56e-86c2" hidden="false" primary="true" targetId="5eca-d421-1fdc-a95f"/>
         <categoryLink name="Tal&apos;darim" id="15fb-4f29-ab80-188a" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
+        <categoryLink name="Faction" id="b757-89eb-a866-f440" hidden="false" primary="true" targetId="7786-b4c1-7de3-915c"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -2303,7 +2171,7 @@
     </selectionEntry>
     <selectionEntry name="Robotics Support Bay" id="420c-e8cb-cb57-2ea5" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Tactical" id="68dc-a446-d8d0-c030" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+        <categoryLink name="Tactical" id="68dc-a446-d8d0-c030" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -2330,7 +2198,7 @@
     </selectionEntry>
     <selectionEntry name="Tal&apos;darim Pylon" id="328f-3640-12ef-9a3f" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Other" id="f051-114f-e2aa-62f4" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Other" id="f051-114f-e2aa-62f4" hidden="false" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Armoured" id="038a-f7f4-5304-9c85" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name="Ground" id="6a83-e624-2a9c-15c0" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
         <categoryLink name="Tal&apos;darim" id="edca-15d7-28f1-7061" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
@@ -2401,7 +2269,7 @@
     </selectionEntry>
     <selectionEntry name="Slayer (Stalker)" id="25d0-6ac4-f586-cf77" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Elite" id="b501-e488-3eed-9eb2" hidden="false" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Elite" id="b501-e488-3eed-9eb2" hidden="false" primary="true" targetId="1239-f2f6-df3a-784b"/>
         <categoryLink name="Armoured" id="563a-1e53-23c7-99f8" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name=" Mechanical" id="5069-ccef-95ae-903d" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="369e-1467-da4b-7914" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
@@ -2497,7 +2365,7 @@
         <categoryLink name="Biological" id="c505-002a-a5bb-92d1" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
         <categoryLink name="Psionic" id="9f62-2d34-1406-d870" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="2d43-ab4e-2134-389a" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
-        <categoryLink name="Hero" id="076e-3634-65b2-63d0" hidden="false" primary="true" targetId="bd6f-bae8-7dee-67be"/>
+        <categoryLink name="Hero" id="076e-3634-65b2-63d0" hidden="false" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
         <categoryLink name="Unique" id="5170-4e0b-55b6-3bec" hidden="false" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
       </categoryLinks>
       <constraints>
@@ -2591,7 +2459,7 @@
     </selectionEntry>
     <selectionEntry name="Reaver" id="a5d8-674b-6eb6-09fe" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Elite" id="4990-c00e-9283-91df" hidden="false" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Elite" id="4990-c00e-9283-91df" hidden="false" primary="true" targetId="1239-f2f6-df3a-784b"/>
         <categoryLink name="Armoured" id="b444-facd-b5a8-54c8" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
         <categoryLink name=" Mechanical" id="57bc-9a58-9d36-f241" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
         <categoryLink name="Ground" id="2231-049e-c2f2-5a24" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
@@ -2756,7 +2624,7 @@
     </selectionEntry>
     <selectionEntry name="Phasing Scarab" id="801b-8152-d071-47b1" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Other" id="6cfd-4d0f-9268-8d39" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Other" id="6cfd-4d0f-9268-8d39" hidden="false" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Psionic" id="5b26-e02f-cd25-77c2" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="7ae9-9735-dae1-e17d" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
@@ -2827,7 +2695,7 @@
     </selectionEntry>
     <selectionEntry name="Scarab" id="00fe-624f-5e29-bdb1" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Other" id="839c-c0f7-49ca-f45d" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Other" id="839c-c0f7-49ca-f45d" hidden="false" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Psionic" id="b2d3-1a15-7816-076a" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="c3e0-c0ba-efbc-6425" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
@@ -2897,7 +2765,7 @@
     </selectionEntry>
     <selectionEntry name="Solarite Scarab" id="f4d1-e6dd-9470-c622" hidden="true" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Other" id="49be-876c-81cb-8688" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Other" id="49be-876c-81cb-8688" hidden="false" primary="true" targetId="576e-0d70-bca0-9668"/>
         <categoryLink name="Psionic" id="70b3-6500-beb5-7fc5" hidden="false" primary="false" targetId="b915-b8d0-e25e-d12c"/>
         <categoryLink name="Ground" id="9514-b86f-2009-54f2" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>

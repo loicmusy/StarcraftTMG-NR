@@ -4,123 +4,45 @@
     <catalogueLink name="Terran" id="a7a9-d2ec-54c5-94ed" targetId="d5ca-ef26-b879-bdc1" type="catalogue"/>
   </catalogueLinks>
   <categoryEntries>
-    <categoryEntry name="Core" id="485c-e8a3-ec4d-88a3" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Elite" id="1239-f2f6-df3a-784b" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Faction" id="7786-b4c1-7de3-915c" hidden="false"/>
-    <categoryEntry name="Hero" id="1ae2-afdf-6b77-0afe" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Support" id="4b2e-4afe-1949-a29b" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Tactical" id="6042-132c-4895-cde4" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry name="Kerrigan&apos;s Swarm" id="f1c3-0af6-78ba-727a" hidden="false"/>
-    <categoryEntry name="Other" id="576e-0d70-bca0-9668" hidden="false">
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry name="Creep" id="33f8-3892-abc6-952c" hidden="false">
-      <constraints>
-        <constraint id="ab4b-f124-037b-7407" field="selections" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <modifiers>
-        <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry name="Zagara&apos;s Swarm" id="bf0c-dea4-0e62-722f" hidden="false"/>
     <categoryEntry name="Stukov&apos;s Forces" id="19de-2b6b-c584-7f84" hidden="false"/>
+    <categoryEntry name="Infested" id="5ac6-2b07-e877-f330" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Deployment Maps" id="c04e-ce0f-fa74-f3dc" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
     <entryLink name="Mission Card" id="3bdd-15d4-fb05-7354" hidden="false" import="true" targetId="64dc-91cd-0746-c7d3" type="selectionEntry"/>
+    <entryLink name="Goliath" id="0552-0960-ccbf-7ac2" hidden="true" import="true" targetId="1e12-b6cc-ee8a-6971" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Stukov&apos;s Forces</comment>
+          <modifiers>
+            <modifier field="category" type="add" value="5ac6-2b07-e877-f330"/>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink name="Siege Tank" id="22ff-143d-eb75-ffe2" hidden="true" import="true" targetId="7622-438c-d207-eb53" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Stukov&apos;s Forces</comment>
+          <modifiers>
+            <modifier field="category" type="add" value="5ac6-2b07-e877-f330"/>
+            <modifier field="hidden" type="set" value="false">
+              <conditions>
+                <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Army" id="9607-b651-4fa0-e01c" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Pre-Game" id="ccb0-4885-41f2-66fd" hidden="false" targetId="9b82-d933-7075-8237"/>
-        <categoryLink name="Faction" id="09dd-47ba-91c6-a5d9" hidden="false" targetId="7786-b4c1-7de3-915c">
-          <constraints>
-            <constraint id="161a-d3bb-0f5b-ecb9-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="161a-d3bb-0f5b-ecb9-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Creep" id="7250-0862-0adc-72fe" hidden="false" targetId="33f8-3892-abc6-952c"/>
-        <categoryLink name="Tactical" id="7f70-f2b6-02ef-722e" hidden="false" targetId="6042-132c-4895-cde4"/>
-        <categoryLink name="Core" id="587a-9104-151c-acbc" hidden="false" targetId="485c-e8a3-ec4d-88a3"/>
-        <categoryLink name="Elite" id="3118-f961-70e0-6de2" hidden="false" targetId="1239-f2f6-df3a-784b"/>
-        <categoryLink name="Support" id="35c3-c4fc-c2ec-8e9e" hidden="false" targetId="4b2e-4afe-1949-a29b"/>
-        <categoryLink name="Hero" id="9c61-419c-1a27-6ec5" hidden="false" targetId="1ae2-afdf-6b77-0afe"/>
-        <categoryLink name="Other" id="175a-e798-a4d7-d46f" hidden="false" targetId="576e-0d70-bca0-9668"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier field="error" type="add" value="Not enough Core Supply.">
-          <conditions>
-            <condition childId="any" field="472f-46af-8e02-bfbf" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Elite Supply.">
-          <conditions>
-            <condition childId="any" field="f5f9-3591-0f2d-0a53" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Support Supply.">
-          <conditions>
-            <condition childId="any" field="31a6-c1f1-3d47-fa76" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-        <modifier field="error" type="add" value="Not enough Hero Supply.">
-          <conditions>
-            <condition childId="any" field="7e61-585f-b715-85e0" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="0"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
   <selectionEntries>
     <selectionEntry name="Corpsers (Roach)" id="444a-8557-cdae-3146" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2568,10 +2490,10 @@
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="4"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
-        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
@@ -2724,6 +2646,273 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry name="Infested Marines" id="e353-5b15-ae24-3764" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Core" id="2f30-09df-5cbe-126b" hidden="false" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
+        <categoryLink name="Biological" id="ad9d-a84a-7e7f-82f7" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="db16-b47d-91d4-ea26" hidden="false" primary="false" targetId="5ac6-2b07-e877-f330"/>
+        <categoryLink name="Light" id="f2c4-b2be-bb17-da15" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="9fc2-7faf-fb5d-bc46" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Live for the Swarm!" id="cf22-dcc2-5997-c476" hidden="false" targetId="aa77-c332-cac7-e79d" type="profile"/>
+        <infoLink name="Detonation" id="864c-9c12-bbc5-fdb2" hidden="false" targetId="2668-70e7-7ade-3bef" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Infested Marines" id="e083-1abf-4f05-e9d2" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3/6</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-3: 1 | 4-6: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="3a18-5cac-50e1-8b53" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="c66f-070d-7c32-c8de" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">1</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Infested C-14 Rifle" id="cfd1-3d51-d5c0-196c" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <comment>Marine</comment>
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="self" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Marine" id="7049-20df-75c4-9103" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="6ec3-87e7-c086-e320-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="6"/>
+            <constraint id="6ec3-87e7-c086-e320-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="6"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="741b-a4ee-5922-d46b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Movement Phase" id="ff81-72c5-79a1-2df6" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink name="Burrow Ambush" id="ae03-eb06-e788-c7df" hidden="false" import="true" targetId="95a5-7e95-ec19-e358" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Phase" id="eaae-ae72-3189-e202" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Plagued Munitions" id="df46-ed54-d08e-0dc4" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="38d0-d696-595e-69d1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Plagued Munitions" id="5c0b-e74a-9933-b18e" hidden="false" targetId="14ce-76e3-8408-6a19" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Specialist Weapon" id="8125-a48c-96d9-a435" hidden="false">
+                  <constraints>
+                    <constraint id="3bd8-5333-7f14-b536" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry name="Infested Missile Launcher - Scourgeshot" id="5512-5cf9-622a-93f5" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="9c76-2f7f-b9b9-43eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Infested Missile Launcher - Scourgeshot" id="4353-5366-6fa5-f473" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                          <characteristics>
+                            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12</characteristic>
+                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+                            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+                            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2), SPECIALIST</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry name="Infested Missile Launcher - Acid Blast" id="81b8-cd99-5eb6-efa3" hidden="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint id="1ed3-9882-2890-35b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="a8fa-bb93-658b-ec88" childName="Wild Mutation" field="selections" scope="unit" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Infested Missile Launcher - Acid Blast" id="bffb-3f36-c388-8755" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+                          <characteristics>
+                            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">6&quot;</characteristic>
+                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+                            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+                            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CRITICAL HIT (1), LONG RANGE (12&quot;), PIERCE Armoured (2), SPECIALIST</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combat Phase" id="91bd-65fc-8da3-5fb6" hidden="false">
+              <selectionEntries>
+                <selectionEntry name="Wild Mutation" id="a8fa-bb93-658b-ec88" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="8756-4290-ad54-fe4c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Wild Mutation" id="1816-9d4f-aeb7-8558" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+                      <characteristics>
+                        <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+                        <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+                        <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+                        <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+                        <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Armoured</characteristic>
+                        <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3+1</characteristic>
+                        <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+                        <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Infested Troopers (Infested Marine)" id="12cc-a5d4-9ba2-3f70" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Biological" id="668c-70dc-7b99-d199" hidden="false" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="0a68-7d4b-b1af-ba49" hidden="false" primary="false" targetId="5ac6-2b07-e877-f330"/>
+        <categoryLink name="Light" id="2dea-c8c5-26fd-e69e" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="f15e-c05a-0ec7-be8a" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Elite" id="9fab-b7c5-fb3f-39d1" hidden="false" primary="true" targetId="1239-f2f6-df3a-784b"/>
+        <categoryLink name="Stukov&apos;s Forces" id="e087-a6a5-4d92-4627" hidden="false" primary="false" targetId="19de-2b6b-c584-7f84"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Live for the Swarm!" id="6a24-9442-e1cc-be09" hidden="false" targetId="aa77-c332-cac7-e79d" type="profile"/>
+        <infoLink name="Detonation" id="f70f-6b2c-426c-bac4" hidden="false" targetId="2668-70e7-7ade-3bef" type="profile"/>
+        <infoLink name="Burrow Ambush" id="6ab1-5b14-e734-2117" hidden="false" targetId="6a03-719a-49fe-1fd4" type="profile"/>
+        <infoLink name="Plagued Munitions" id="e217-3c06-4ac8-884d" hidden="false" targetId="14ce-76e3-8408-6a19" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Infested Troopers" id="59ea-6ca0-cedb-13cb" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3/6</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-1: 0 | 2-3: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="157a-b6a3-4f2f-1041" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infested C-14 Rifle" id="a18c-b72f-7d07-3025" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <comment>Trooper</comment>
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spread Infestation" id="2bbf-3411-464a-c273" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target an Enemy Unit Within 8&quot;. The targeted Unit gains the INFESTATION Status. For the purpose of resolving Special Abilities, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bayonet" id="2b30-f9cf-5763-eb10" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"/>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"/>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Trooper" id="5fcc-8747-eed9-a262" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="3a68-7de3-8c7e-0624-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="3a68-7de3-8c7e-0624-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Roachling" id="aeed-66ea-908f-35fd" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
@@ -2875,6 +3064,24 @@
       <characteristics>
         <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield. Creep Tumor have STAY IN PLAY and DISPLACEMENT.</characteristic>
         <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Live for the Swarm!" id="aa77-c332-cac7-e79d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit attacks an Enemy Unit with the INFESTATION Status or a Unit Within 6&quot; of any Source of Creep or Creep Tumor, its Infested C-14 Rifle and all Close Combat Attacks gain PRECISION (2).</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Detonation" id="2668-70e7-7ade-3bef" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Immediately before any models in this Unit are Destroyed, Enemy Units Within 2&quot; suffers Hits 1 (1) for each model in this Unit that will be Destroyed.</characteristic>
+        <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plagued Munitions" id="14ce-76e3-8408-6a19" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+      <characteristics>
+        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after an attack with the Infested C-14 Rifle, if the attacked Unit suffered Damage, it also suffers NON-LETHAL Damage (1).</characteristic>
+        <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
