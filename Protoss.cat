@@ -4,66 +4,103 @@
     <categoryEntry name="Core" id="3057-36a6-b4b3-cddb" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Elite" id="6089-3431-846d-7bb8" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Faction" id="5eca-d421-1fdc-a95f" hidden="false">
       <constraints>
-        <constraint id="0cd7-4358-7949-e37c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="0cd7-4358-7949-e37c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="ffb1-77fd-1f91-5b1b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="ffb1-77fd-1f91-5b1b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
     </categoryEntry>
     <categoryEntry name="Hero" id="bd6f-bae8-7dee-67be" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Other" id="5788-d936-b639-6407" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Support" id="b8a5-0602-9633-c738" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Tactical" id="acb5-b55f-9492-5149" hidden="false">
       <modifiers>
         <modifier field="hidden" type="set" value="true">
-          <conditions>
-            <condition childId="5eca-d421-1fdc-a95f" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="7d43-eac6-9edf-84f4" childName="Daelaam" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="41ab-8fa0-e055-c722" childName="Khalai" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+                <condition childId="3fd8-47cc-7cf1-c106" childName="Nerazim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Khalai" id="2586-d7c3-73d1-767f" hidden="false"/>
     <categoryEntry name="Nerazim" id="270e-fd7b-cf96-a10f" hidden="false"/>
     <categoryEntry name="Templar Caste" id="4145-00ad-e852-8e94" hidden="false"/>
+    <categoryEntry name="Tal&apos;darim" id="b9be-91cd-490a-bbe7" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Char Plains" id="dmap-link-0005" hidden="false" import="true" targetId="9710-c30a-2bb5-708a" type="selectionEntry"/>
@@ -1069,7 +1106,7 @@
             <modifier arg="1" field="name" join="" scope="unit" type="append" value="s"/>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Stalker" id="f8b4-e37c-19da-a050" hidden="false" import="true" type="model">
+        <selectionEntry name="Stalker" id="f8b4-e37c-19da-a050" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="1c26-3f1d-ef12-1a3b-min" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="1c26-3f1d-ef12-1a3b-max" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -1944,7 +1981,7 @@
             <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
             <characteristic name="HP" typeId="e275-f946-72ee-4a48">3</characteristic>
             <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
-            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2: 1</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Bound by the Khala" id="c675-1678-6232-e57f" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
@@ -1996,14 +2033,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry name="Twilight Templar" id="72f4-e382-51d1-b10f" hidden="false" import="true" type="model">
-          <constraints>
-            <constraint id="c324-5d14-b6f1-72b5-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="2"/>
-            <constraint id="c324-5d14-b6f1-72b5-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="2"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="High Templar" id="cb58-2b5c-32f6-46db" hidden="false" import="true" type="unit">
       <categoryLinks>
@@ -2079,7 +2108,7 @@
             <constraint id="6701-39d8-54c4-aad7" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
-            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="70"/>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
             <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
             <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
             <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -2090,7 +2119,7 @@
             <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry name="High Templar" id="1259-0318-9205-4761" hidden="false" import="true" type="model">
+        <selectionEntry name="High Templar" id="1259-0318-9205-4761" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint id="1192-625c-f21b-d9c0-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="1192-625c-f21b-d9c0-max" automatic="true" field="selections" scope="parent" shared="true" type="max" value="2"/>
@@ -2200,8 +2229,8 @@
     </selectionEntry>
     <selectionEntry name="Templar Caste" id="e5c5-4e77-5031-3173" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink name="Templar Caste" id="365e-f6be-af53-3e78" hidden="false" primary="false" targetId="4145-00ad-e852-8e94"/>
-        <categoryLink name="Faction" id="d331-b8f0-a29d-81cf" hidden="false" primary="true" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Faction" id="7fc2-f23e-e870-a4c8" hidden="false" primary="false" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Templar Caste" id="365e-f6be-af53-3e78" hidden="false" primary="true" targetId="4145-00ad-e852-8e94"/>
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -2225,6 +2254,193 @@
           <characteristics>
             <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Instead of performing an action, select one other Friendly Biological Unit that has already been Activated this Phase. That Unit immediately performs one action available in the current Phase, then suffers NON-LETHAL DAMAGE (3).</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Tal&apos;darim" id="ac40-1c7e-e935-f2dc" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Faction" id="78c3-8906-f56e-86c2" hidden="false" primary="true" targetId="5eca-d421-1fdc-a95f"/>
+        <categoryLink name="Tal&apos;darim" id="15fb-4f29-ab80-188a" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="PRECISION (X)" id="3dbb-7aa1-e1a0-cc96" hidden="false" targetId="d05b-cebb-50d1-ad49" type="rule"/>
+        <infoLink name="CRITICAL HIT (X)" id="cfa2-1f8a-6e48-1f1a" hidden="false" targetId="3f61-d287-410a-0484" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Chain of Ascension" id="feb6-8da1-4ffa-dcf0" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Calculate the total lost Supply of all Friendly Units. While this total is:
+° 4 or more: All your Units&apos; first used weapons gain PRECISION (1)
+° 6 or more: All your Units&apos; first used weapons gain CRITICAL HIT (1)</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Proxy Pylon" id="e607-b0d3-8169-07fd" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If there is no Friendly Tal&apos;darim Pylon on the battlefield, set a Friendly Tal&apos;darim Pylon Unit anywhere on the GROUND LEVEL of the battlefield more than 10&quot; away from any Enemy model. This Round, the Tal&apos;darim Pylon is not eligible to use its Special Abilities (excluding Structure).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Robotics Support Bay" id="420c-e8cb-cb57-2ea5" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Tactical" id="68dc-a446-d8d0-c030" hidden="false" primary="true" targetId="acb5-b55f-9492-5149"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="HEAL (X)" id="a325-ff68-efb5-3562" hidden="false" targetId="9499-b51b-c280-c0bf" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Master of Robotics" id="5104-1feb-35ff-b53b" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Mechanical Unit resolves the HEAL (2) effect.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Tal&apos;darim Pylon" id="328f-3640-12ef-9a3f" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Other" id="f051-114f-e2aa-62f4" hidden="false" primary="true" targetId="5788-d936-b639-6407"/>
+        <categoryLink name="Armoured" id="038a-f7f4-5304-9c85" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Ground" id="6a83-e624-2a9c-15c0" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Tal&apos;darim" id="edca-15d7-28f1-7061" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="7570-739b-66cd-c782" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="PIERCE [TAG] X" id="b803-7d0c-ac85-c34b" hidden="false" targetId="8a5b-c6c7-6abf-6879" type="rule"/>
+        <infoLink name="PINPOINT" id="b2fa-bc0b-d957-c6db" hidden="false" targetId="f9ad-69a2-80e6-c3a5" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Tal&apos;darim Pylon" id="fd57-d319-e2c9-5e69" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">2</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">
+</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">
+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bloodshard Monument" id="f1e0-5c24-7edb-e198" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When the Current Supply of a Unit Within 8&quot; is reduced. Return one non-Unique Exhausted Tactical Card to the Ready state.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warp Conduit" id="d29d-30fd-f174-88c9" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, the controlling player may deploy a Ground Unit  from the Reserves using this Pylon base as the Entry Edge. This Unit&apos;s Activation ends.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Structure" id="8849-317a-7248-2c22" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overwatch" id="46ad-884e-fd4e-298d" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Unit ends its Activation Within 8&quot;. This Unit immediately performs a Ranged Attack against that Enemy Unit.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 PE)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overcharged Pylon" id="d70f-6101-a3f3-028e" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"/>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"/>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2), PINPOINT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Slayer (Stalker)" id="25d0-6ac4-f586-cf77" hidden="true" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Elite" id="b501-e488-3eed-9eb2" hidden="false" primary="true" targetId="6089-3431-846d-7bb8"/>
+        <categoryLink name="Armoured" id="563a-1e53-23c7-99f8" hidden="false" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name=" Mechanical" id="5069-ccef-95ae-903d" hidden="false" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Ground" id="369e-1467-da4b-7914" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Tal&apos;darim" id="3822-3a9b-93f3-2e69" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="BUFF [Characteristic] (X)" id="c4fd-d00b-6535-846e" hidden="false" targetId="db39-98a1-2d62-0e5c" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac40-1c7e-e935-f2dc" childName="Tal&apos;darim" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Slayer (Stalker)" id="ceec-1e23-5b52-e537" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a">3</characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/8</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">6</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1 | 2: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Squadron" id="c05b-e7df-c9c4-4894" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit&apos;s Horizontal Coherency is 4&quot;.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bloodshard Blink" id="781c-ff79-356c-b576" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Immediately before this Unit resolves any PLACE effect, you may target one Enemy Unit. This Unit&apos;s weapons gain BUFF ROA (1) against the target Unit, but his Unit must perform PLACE Directly Towards the chosen Unit.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Slayer (Stalker)" id="7709-103c-0c1e-d32e" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When the Current Supply Value of another Friendly Unit Within 12&quot; of this Unit is reduced, this Unit, if Unengaged, may perform a Move action Directly Towards that Friendly Unit.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 PE)</characteristic>
           </characteristics>
         </profile>
       </profiles>
