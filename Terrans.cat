@@ -2549,8 +2549,7 @@
               <selectionEntries>
                 <selectionEntry name="Incinerator Gauntlets" id="cf49-1a8c-8b0b-247f" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="f644-d904-7d5a-29bb-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                    <constraint id="f644-d904-7d5a-29bb-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="f644-d904-7d5a-29bb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
                     <profile name="Incinerator Gauntlets" id="25eb-2acb-3425-cf9e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
@@ -2567,8 +2566,7 @@
               <selectionEntries>
                 <selectionEntry name="Need a Light?" id="1946-4da7-240e-004e" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="6877-2382-9180-35bc-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                    <constraint id="6877-2382-9180-35bc-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="6877-2382-9180-35bc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
                     <profile name="Need a Light?" id="aa66-ff56-44ff-4899" hidden="false" typeId="f61d-0471-085d-248c" typeName="Rules (Combat Phase)">
