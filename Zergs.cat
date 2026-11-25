@@ -2572,11 +2572,14 @@
       <categoryLinks>
         <categoryLink name="Tactical" id="b7cf-f7c8-5fd2-3450" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="af8e-a358-d370-d666" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="30"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
@@ -2601,8 +2604,8 @@
       </categoryLinks>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
@@ -2623,11 +2626,14 @@
       <categoryLinks>
         <categoryLink name="Tactical" id="c170-11c1-f319-8121" hidden="false" primary="true" targetId="6042-132c-4895-cde4"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="71b8-81dd-d528-3824" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
-        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
@@ -2654,6 +2660,17 @@
         <categoryLink name="Light" id="f2c4-b2be-bb17-da15" hidden="false" primary="false" targetId="8312-ca6b-fa38-deef"/>
         <categoryLink name="Ground" id="9fc2-7faf-fb5d-bc46" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="-2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <infoLinks>
         <infoLink name="Live for the Swarm!" id="cf22-dcc2-5997-c476" hidden="false" targetId="aa77-c332-cac7-e79d" type="profile"/>
         <infoLink name="Detonation" id="864c-9c12-bbc5-fdb2" hidden="false" targetId="2668-70e7-7ade-3bef" type="profile"/>
@@ -2832,6 +2849,17 @@
         <categoryLink name="Elite" id="9fab-b7c5-fb3f-39d1" hidden="false" primary="true" targetId="1239-f2f6-df3a-784b"/>
         <categoryLink name="Stukov&apos;s Forces" id="e087-a6a5-4d92-4627" hidden="false" primary="false" targetId="19de-2b6b-c584-7f84"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="210"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
       <infoLinks>
         <infoLink name="Live for the Swarm!" id="6a24-9442-e1cc-be09" hidden="false" targetId="aa77-c332-cac7-e79d" type="profile"/>
         <infoLink name="Detonation" id="f70f-6b2c-426c-bac4" hidden="false" targetId="2668-70e7-7ade-3bef" type="profile"/>
@@ -2912,7 +2940,7 @@
         <categoryLink name="Ground" id="4622-8b3b-954e-e214" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
