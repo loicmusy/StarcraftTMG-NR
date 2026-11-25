@@ -67,9 +67,23 @@
             <condition childId="7786-b4c1-7de3-915c" childName="Faction" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
           </conditions>
         </modifier>
+        <modifier field="hidden" type="set" value="true"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="ab4b-f124-037b-7407" type="set" value="0"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Zagara&apos;s Swarm" id="bf0c-dea4-0e62-722f" hidden="false"/>
+    <categoryEntry name="Infested" id="d9ce-9e03-8abf-28db" hidden="false"/>
+    <categoryEntry name="Virus" id="f3d6-17ce-3e44-7e7a" hidden="true">
+      <constraints>
+        <constraint id="9f49-61be-806b-76a1" field="selections" scope="parent" shared="true" type="min" value="0"/>
+        <constraint id="f119-4975-7d47-afe1" field="selections" scope="parent" shared="true" type="max" value="0"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="9f49-61be-806b-76a1" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="f119-4975-7d47-afe1" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Deployment Maps" id="c04e-ce0f-fa74-f3dc" hidden="false" import="true" targetId="d444-6767-cbfc-bf56" type="selectionEntry"/>
@@ -86,6 +100,7 @@
           </constraints>
         </categoryLink>
         <categoryLink name="Creep" id="7250-0862-0adc-72fe" hidden="false" targetId="33f8-3892-abc6-952c"/>
+        <categoryLink name="Virus" id="9738-5b7e-20bd-b48c" hidden="false" targetId="f3d6-17ce-3e44-7e7a"/>
         <categoryLink name="Tactical" id="7f70-f2b6-02ef-722e" hidden="false" targetId="6042-132c-4895-cde4"/>
         <categoryLink name="Core" id="587a-9104-151c-acbc" hidden="false" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Elite" id="3118-f961-70e0-6de2" hidden="false" targetId="1239-f2f6-df3a-784b"/>
@@ -738,7 +753,9 @@
         </profile>
         <profile name="Omega Network" id="ddeb-ec94-526e-fe55" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge. If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">The base of the Omega Worm counts as an Entry Edge. Each Round, Friendly Units with a combined Supply cost of 2 or less may be Deployed via this Entry Edge.
+
+If a Friendly Leading model finishes a Move, Disengage, or Run action in base-to-base contact with the Omega Worm, the controlling player may remove that Unit from the battlefield and return it to Reserves.</characteristic>
             <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
@@ -2174,7 +2191,10 @@
         </profile>
         <profile name="Broodmother" id="1060-a9d6-8c5d-e172" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
           <characteristics>
-            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round: Units of Size 1 gain a +1 Modifier to all IMPACT Rolls. All weapons of Size 2 Units gain CRITICAL HIT (1). Units of Size 3 or more gain TOUGH (1).</characteristic>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Apply one of the following effects to all Friendly units (Line of Sight is not required). You cannot apply the effect chosen in the previous Game Round:
+- Units of Size 1 gain a +1 Modifier to all IMPACT Rolls.
+- All weapons of Size 2 Units gain CRITICAL HIT (1).
+- Units of Size 3 or more gain TOUGH (1).</characteristic>
             <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
           </characteristics>
         </profile>
@@ -2426,7 +2446,10 @@
                   <profiles>
                     <profile name="Plague" id="deba-28e9-0dba-5b3f" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
                       <characteristics>
-                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for: 1 BM: each result of 5+. 2 BM: each result of 4+. 3 BM: each result of 3+.</characteristic>
+                        <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">You may spend 1 to 3 BM to activate this ability. Set a Plague Blast Template Wholly Within 10&quot; and Line of Sight of this Unit. For each Unit that has at least one model whose base is partially covered by the template, roll 2 dice, plus 1 additional die for each model in that Unit whose base is partially covered. That Unit loses its HIDDEN Status, and, depending on the BM spent, it suffers NON-LETHAL DAMAGE (1) for:
+- 1 BM: each result of 5+.
+- 2 BM: each result of 4+.
+- 3 BM: each result of 3+.</characteristic>
                         <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (X BM)</characteristic>
                       </characteristics>
                     </profile>
@@ -2552,6 +2575,1002 @@
             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2), PINPOINT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Infested Goliath" id="e17e-a486-d989-1277" hidden="true" import="true" type="unit">
+      <comment>Generated by update-official: infested_goliath</comment>
+      <constraints><constraint id="d125-d7e2-bbfb-e40e" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="d125-d7e2-bbfb-e40e" type="set" value="-1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Elite" id="dec3-322a-6c42-80d4" primary="true" targetId="1239-f2f6-df3a-784b"/>
+        <categoryLink name="Armoured" id="00d1-2e3f-1d47-735f" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Mechanical" id="ff55-d4a5-aa48-5b73" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Infested" id="aeed-b573-ee4e-a356" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Ground" id="96ae-7635-232b-3517" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="180"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+      </costs>
+      <profiles>
+        <profile name="Infested Goliath" id="bc42-7f9d-6d1c-2a53" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"></characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">10</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Target Lock" id="a2c6-48ff-f8a9-8991" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Select one Enemy Unit Within 12&quot;. Whenever a Friendly Goliath Unit targets that enemy with an Autocannon, that weapon gains Surge Type: Light, Armoured, and S Dice: D3+1.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable" id="4566-2ae8-c39c-2423" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Autocannon" id="dd6b-0525-885b-feec" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">9</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"></characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d"></characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">LONG RANGE (18&quot;)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Underbelly Machine Gun" id="2a0e-ba6f-fa7a-47b7" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PINPOINT, SIDEARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hellfire Missiles" id="edbf-3a93-737c-2191" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">16&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Flying</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1), SIDEARM</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"><conditions><condition childId="0c6c-bbbb-7f4d-0905" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+            <modifier field="hidden" type="set" value="true"><conditions><condition childId="1cb6-516d-86b9-19d7" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+        </profile>
+        <profile name="Devastating Charge" id="869a-4835-a056-cc82" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stomp" id="96e1-10b0-93f7-b8fc" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">4</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"></characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"></characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Goliath" id="dca1-be69-3b2e-ad18" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="98e3-8a1d-76a3-dd05" automatic="true" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="b9f5-c3bf-7ffe-6046" automatic="true" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry name="Ares-Class Targeting System" id="4ee0-bf0a-2152-08f2" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="eba2-cc0c-ef9d-0660" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Ares-Class Targeting System" id="f656-c660-c01a-27c3" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit’s Autocannon and Underbelly Machine Gun weapons gain PRECISION (1).</characteristic>
+                <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Scatter Missiles" id="0c6c-bbbb-7f4d-0905" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="62de-e5c1-c5e9-2e0c" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="30"/>
+          </costs>
+          <modifiers>
+            <modifier field="62de-e5c1-c5e9-2e0c" type="set" value="0"><conditions><condition childId="1cb6-516d-86b9-19d7" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Scatter Missiles" id="39c7-7119-57e0-11c8" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+              <characteristics>
+                <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
+                <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+                <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
+                <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
+                <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+                <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+                <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LOCKED IN (6), LONG RANGE (24&quot;), SIDEARM</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Haywire Missiles" id="1cb6-516d-86b9-19d7" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="903b-b3ca-bcb2-0785" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier field="903b-b3ca-bcb2-0785" type="set" value="0"><conditions><condition childId="0c6c-bbbb-7f4d-0905" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Haywire Missiles" id="26d6-8978-718d-d851" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+              <characteristics>
+                <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+                <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+                <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+                <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+                <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (3), SIDEARM</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Infested Marine" id="7f32-9b03-f167-7e26" hidden="false" import="true" type="unit">
+      <comment>Generated by update-official: infested_marine</comment>
+      <categoryLinks>
+        <categoryLink name="Core" id="f410-d41c-1a03-47b8" primary="true" targetId="485c-e8a3-ec4d-88a3"/>
+        <categoryLink name="Biological" id="4ae4-b82e-8e4a-b527" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="1b49-5a15-08d0-556a" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Light" id="3285-0c57-61b9-8153" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="e53c-72a4-c27d-9dde" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="-2"/>
+      </costs>
+      <profiles>
+        <profile name="Infested Marine" id="9821-134a-50b3-a52a" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3/6</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">2</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1-3: 1 | 4-6: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Live for the Swarm!" id="bc90-55a8-3e46-7aef" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit attacks an Enemy Unit with the INFESTATION Status or a Unit Within 6&quot; of any Source of Creep or Creep Tumor, its Infested C-14 Rifle and all Close Combat Attacks gain PRECISION (2).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detonation" id="2e0b-abbd-c3b6-8859" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Immediately before any models in this Unit are Destroyed, Enemy Units Within 2&quot; suffer HITS 1 (1) for each model in this Unit that will be Destroyed.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infested C-14 Rifle" id="4983-3485-9b44-386a" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2)</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"><conditions><condition childId="7d3f-d7fb-77f1-b7b3" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+        </profile>
+        <profile name="Devastating Charge" id="b426-408b-0782-4aa0" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike" id="0b77-dd5d-497f-4df2" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">1</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">4+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"></characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"></characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Marine" id="2dd9-2793-a9a2-3082" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="6b24-7bb1-d47f-6c3e" automatic="true" field="selections" scope="parent" shared="true" type="min" value="6"/>
+            <constraint id="4b08-a3c6-8137-c881" automatic="true" field="selections" scope="parent" shared="true" type="max" value="6"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry name="Burrow Ambush" id="1ae0-7334-b7c4-6e54" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="60d1-62f2-e620-1fd8" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Burrow Ambush" id="f72e-77ab-2c26-2dac" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
+                <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Plagued Munitions" id="db23-212c-a2fc-2ae5" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="0bef-49dd-423f-7f7e" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Plagued Munitions" id="7c17-a02f-b7d8-3601" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after an attack with the Infested C-14 Rifle, if the attacked Unit suffered Damage, it also suffers NON-LETHAL Damage (1).</characteristic>
+                <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Infested Missile Launcher - Acid Blast" id="67ce-7e4b-ee14-3db8" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="e43f-9089-cd82-1bc9" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier field="e43f-9089-cd82-1bc9" type="set" value="0"><conditions><condition childId="f3b0-de45-d02f-8016" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+            <modifier field="e43f-9089-cd82-1bc9" type="set" value="0"><conditions><condition childId="7d3f-d7fb-77f1-b7b3" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Infested Missile Launcher - Acid Blast" id="a09e-09e6-ac2c-dcf6" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+              <characteristics>
+                <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">6&quot;</characteristic>
+                <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"></characteristic>
+                <characteristic name="S.Die" typeId="3779-8372-ef25-255d"></characteristic>
+                <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">CRITICAL HIT (1), LONG RANGE (12&quot;), PIERCE Armoured (2), SPECIALIST</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Infested Missile Launcher - Scourgeshot" id="f3b0-de45-d02f-8016" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="1a8f-b59e-df5d-503b" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier field="1a8f-b59e-df5d-503b" type="set" value="0"><conditions><condition childId="67ce-7e4b-ee14-3db8" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+            <modifier field="1a8f-b59e-df5d-503b" type="set" value="0"><conditions><condition childId="7d3f-d7fb-77f1-b7b3" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Infested Missile Launcher - Scourgeshot" id="3e05-41f4-6c49-80d2" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+              <characteristics>
+                <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+                <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+                <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+                <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+                <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a"></characteristic>
+                <characteristic name="S.Die" typeId="3779-8372-ef25-255d"></characteristic>
+                <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+                <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2), SPECIALIST</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Wild Mutation" id="7d3f-d7fb-77f1-b7b3" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="97e6-9368-77e5-793f" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+          </costs>
+          <modifiers>
+            <modifier field="97e6-9368-77e5-793f" type="set" value="0"><conditions><condition childId="67ce-7e4b-ee14-3db8" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+            <modifier field="97e6-9368-77e5-793f" type="set" value="0"><conditions><condition childId="f3b0-de45-d02f-8016" field="selections" scope="unit" type="atLeast" value="1"/></conditions></modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Wild Mutation" id="2675-07d3-f175-1cf7" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+              <characteristics>
+                <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+                <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+                <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+                <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+                <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Armoured</characteristic>
+                <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3+1</characteristic>
+                <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+                <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Infested Missile Turret" id="12ec-d408-b12d-ecc1" hidden="true" import="true" type="unit">
+      <comment>Generated by update-official: infested_missile_turret</comment>
+      <constraints><constraint id="1e57-9639-fa11-f0b0" automatic="true" field="selections" scope="roster" shared="true" type="min" value="0"/><constraint id="3933-e412-d43e-9ddc" field="selections" scope="roster" shared="true" type="max" value="1"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="1e57-9639-fa11-f0b0" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Other" id="d090-a6d7-654a-2ba5" primary="true" targetId="576e-0d70-bca0-9668"/>
+        <categoryLink name="Armoured" id="0831-0d35-7e45-755d" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Biological" id="9279-6e59-90b9-60e6" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="0c10-1b25-3f0d-e56b" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Ground" id="c78b-0da3-df26-8852" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infested Missile Turret" id="7125-9114-427c-168b" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9"></characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"></characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">8</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">3</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detection" id="d5df-50a7-a766-5da2" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While Enemy Units are Within 8&quot; of this Unit, they lose the HIDDEN Status.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Source of Creep" id="4cda-992f-c35c-2eb8" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">A Friendly or Enemy Ground Zerg Unit Within 6&quot; of this Unit, counts as being ON CREEP.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infestation" id="a27e-cdd6-91f3-8ba4" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When the Supply of an Enemy Unit with the INFESTATION Status is reduced to 0, or when that Unit is Destroyed, you can apply the INFESTATION Status to another Enemy Unit Within 8&quot; of that Unit. For the purposes of resolving Special Abilities, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (0 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Structure" id="808a-3ba7-94c9-162b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">This Unit cannot be Activated in any Phase and cannot perform actions. Additionally, its Current Supply Value is treated as 0, and it can never Control or Contest Mission Markers, ignoring the standard Zero Supply Exception. This Unit cannot be a target of an ability, unless stated otherwise.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Firefly Missiles" id="94ea-95ed-c6af-81af" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">14&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Flying</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">8</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light. Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">ANTI-EVADE (1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ocular Overwatch" id="d03b-d609-2041-007e" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When an Enemy Flying Unit ends its Activation Within 14&quot;. This Unit immediately performs a Ranged Attack against that Enemy Unit.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 BM)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Missile Turret" id="0820-a568-c58b-76dd" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="20c8-9df6-e45d-3398" automatic="true" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="861f-58e5-2e79-c1e5" automatic="true" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Infested Siege Tank" id="54eb-5816-b3ea-e727" hidden="true" import="true" type="unit">
+      <comment>Generated by update-official: infested_siege_tank</comment>
+      <constraints><constraint id="c060-f890-311d-5335" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="c060-f890-311d-5335" type="set" value="-1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Elite" id="040d-6f98-690b-a736" primary="true" targetId="1239-f2f6-df3a-784b"/>
+        <categoryLink name="Armoured" id="47e7-e7a8-7d45-93af" primary="false" targetId="03d5-bf1b-74fa-ae6a"/>
+        <categoryLink name="Mechanical" id="8678-3ba9-d325-8b5c" primary="false" targetId="e9d0-aa9f-8c5e-a2c3"/>
+        <categoryLink name="Infested" id="adf6-b320-a588-dd91" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Ground" id="f3ef-fa14-049f-06ea" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="220"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+      </costs>
+      <profiles>
+        <profile name="Infested Siege Tank" id="3d32-1596-c142-79af" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">5+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec"></characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">14</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Large" id="be76-fc95-a902-32f8" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit&apos;s Leading Model moves, it cannot pass through physical gaps smaller than 3&quot; wide, regardless of its size. If the Leading Model&apos;s path of travel passes through, or any model in this Unit ends its movement on a Size 0 or Size 1 Impassible Terrain piece (excluding Tokens) during any movement action, that terrain piece is immediately removed from the game.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Plating" id="438f-4cab-f12d-f90d" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit resolves an Armour Roll, it gains TOUGH (1), provided it does not currently have the SIEGE MODE Status.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Twin Cannon" id="32d9-20a3-a10e-f9cd" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">8</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D6</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shock Cannon" id="b39f-13a8-4dc4-7c27" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">BT+4</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">4+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">BT</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">SIEGE MODE Status</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable" id="1266-cc88-f378-bdb2" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While Engaged, this Unit may target and be targeted by Unengaged Enemy Units. In both cases, the defending Unit gains an Evade Roll against those attacks.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Point Blank" id="5a18-6004-7697-8abd" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">While this Unit has the SIEGE MODE Status, it cannot target Enemy Units it is Engaged with.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aftershock Rounds" id="4c5d-a692-6337-f8f5" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">When this Unit has the SIEGE MODE Status, its Damage characteristic is treated as equal to the Size characteristic of the current target Unit (to a minimum of 1).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="0dc9-17db-ec54-6448" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (4) 3+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rolling Over" id="f2b3-9f9f-8344-4106" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">2+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"></characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"></characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Siege Tank" id="0a7f-1dff-9a02-bd76" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="fbc6-652f-0aa3-f139" automatic="true" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="8101-ab65-b46f-13b4" automatic="true" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry name="Mode Transformation" id="6758-ecb6-98df-be3a" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="fba9-fcce-1d9e-2dd9" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Mode Transformation" id="3f38-84fc-5454-e9d4" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Unit gains or loses the SIEGE MODE Status.
+While this Unit has the SIEGE MODE Status, its Size characteristic is treated as if it was 3.</characteristic>
+                <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 CP)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Coordinated Strike" id="d9ce-e0e5-89cb-1a89" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="f233-8e8b-9199-0094" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Coordinated Strike" id="7e50-079b-8179-e9d2" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target a Friendly Non-Engaged Unit on the battlefield (Line of Sight is not required). When this Unit resolves a Ranged Attack using the Shock Cannon weapon profile this Round, it may choose to ignore the weapon&apos;s standard Range characteristic. If it does, it may target an Enemy Unit that is Within 8&quot; of, and Visible to, a model of the selected Friendly Unit, treating that model as the acting model.</characteristic>
+                <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (0 CP)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Shaped Blast" id="5232-4963-cc95-0c0a" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="28ec-9eb9-6307-199a" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Shaped Blast" id="a1e6-91a6-cff6-40df" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains PINPOINT and LOCKED IN (4).</characteristic>
+                <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Smart Shells" id="a1d9-fff9-eb4c-a6e6" hidden="false" import="true" type="upgrade">
+          <constraints><constraint id="5c8f-a031-0842-16fa" field="selections" scope="parent" shared="true" type="max" value="1"/></constraints>
+          <costs>
+            <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Smart Shells" id="51e8-1f0c-7e16-2a52" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+              <characteristics>
+                <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Once per Game. When this Unit declares a Ranged Attack action. If this Unit has SIEGE MODE Status, its weapon gains INDIRECT FIRE and LONG RANGE (24).</characteristic>
+                <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (0 CP)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Infested Trooper" id="5837-95b5-8545-4698" hidden="false" import="true" type="unit">
+      <comment>Generated by update-official: infested_trooper</comment>
+      <categoryLinks>
+        <categoryLink name="Elite" id="640e-7213-705b-f653" primary="true" targetId="1239-f2f6-df3a-784b"/>
+        <categoryLink name="Biological" id="79cd-61dd-df6c-186f" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="f3c8-17d3-212a-6170" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Light" id="072b-9fc5-d8ac-e4b8" primary="false" targetId="8312-ca6b-fa38-deef"/>
+        <categoryLink name="Ground" id="0ba4-7fab-71ab-2cc1" primary="false" targetId="b947-4784-f388-d6a2"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="210"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+      </costs>
+      <profiles>
+        <profile name="Infested Trooper" id="2974-abb2-97d2-9511" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">3/6</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">4</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 0 | 2-3: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Live for the Swarm!" id="304d-c1b1-f110-f210" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">When this Unit attacks an Enemy Unit with the INFESTATION Status or a Unit Within 6&quot; of any Source of Creep or Creep Tumor, its Infested C-14 Rifle and all Close Combat Attacks gain PRECISION (2).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Detonation" id="3607-1dff-0795-c113" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Immediately before any models in this Unit are Destroyed, Enemy Units Within 2&quot; suffer HITS 1 (2) for each model in this Unit that will be Destroyed.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spread Infestation" id="dcc6-fa59-9f1b-100c" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Target an Enemy Unit Within 8&quot;. The targeted Unit gains the INFESTATION Status. For the purposes of resolving Special Abilities, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Burrow Ambush" id="4c44-c792-e0fd-58ca" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">When this Unit is nominated to deploy from the Reserves, it may resolve the PLACE (18) effect from the controlling player&apos;s Entry Edge. No model may be set Within 10&quot; of any Enemy model. This Unit&apos;s Activation ends.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plagued Munitions" id="f28e-d4a1-0b13-bb70" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after an attack with the Infested C-14 Rifle, if the attacked Unit suffered Damage, it also suffers NON-LETHAL Damage (1).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infested C-14 Rifle" id="df7b-02a8-5af3-f083" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 6&quot; (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="b5e4-6c34-ed72-71fe" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (2) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bayonet" id="2913-e8b7-a858-ccfc" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">2</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">5+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357"></characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217"></characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">1</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infested Trooper" id="facb-c7cf-1c96-e5fb" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="cdc2-f615-27a9-1cbc" automatic="true" field="selections" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="6070-6582-31df-c28a" automatic="true" field="selections" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Stukov" id="5587-6e63-2f18-b51b" hidden="false" import="true" type="unit">
+      <comment>Generated by update-official: stukov</comment>
+      <constraints><constraint id="6e1d-c6c3-3562-b916" field="selections" scope="roster" includeChildSelections="true" shared="true" type="max" value="1"/></constraints>
+      <categoryLinks>
+        <categoryLink name="Hero" id="3a92-961a-c692-cc91" primary="true" targetId="1ae2-afdf-6b77-0afe"/>
+        <categoryLink name="Biological" id="4c3b-69c4-b9bf-9351" primary="false" targetId="8b0f-c3cd-9487-5030"/>
+        <categoryLink name="Infested" id="e946-db19-04c4-aa76" primary="false" targetId="d9ce-9e03-8abf-28db"/>
+        <categoryLink name="Ground" id="2aef-6410-6f8d-fc74" primary="false" targetId="b947-4784-f388-d6a2"/>
+        <categoryLink name="Unique" id="d8dc-fd2e-2fe9-f2ad" primary="false" targetId="5adb-d04b-d3a5-9c7b"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+      </costs>
+      <profiles>
+        <profile name="Stukov" id="452f-738e-d8fd-4c81" hidden="false" typeId="18be-d8b9-8024-4925" typeName="Unit">
+          <characteristics>
+            <characteristic name="Shd" typeId="4301-e83c-7226-741a"></characteristic>
+            <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">7</characteristic>
+            <characteristic name="Arm" typeId="08b0-2471-8408-9222">4+</characteristic>
+            <characteristic name="Eva" typeId="bc5e-a9b9-f09d-8dec">6+</characteristic>
+            <characteristic name="HP" typeId="e275-f946-72ee-4a48">10</characteristic>
+            <characteristic name="Size" typeId="357b-9a74-5a55-800e">2</characteristic>
+            <characteristic name="Supply" typeId="4fa8-90ab-7d11-c8e3">1: 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commander" id="1743-ee4e-0bd4-14d0" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat this Unit’s Supply characteristic as increased by 1 for Controlling and Contesting Mission Markers, completing objectives, and resolving Disengage checks.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plague Warden" id="1985-5584-60d5-6198" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Treat the Supply characteristic of any Enemy Unit that has the INFESTATION Status and is Within 6&quot; as reduced by 1 (to a minimum of 0) for Controlling and Contesting Mission Markers, and completing objectives.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spread Infestation" id="9681-8548-30de-75bb" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target an Enemy Unit Within 8&quot;. The targeted Unit gains the INFESTATION Status. For the purposes of resolving Special Abilities, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Admiral of the Infested" id="fe40-c539-2563-495e" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Target an Enemy Unit Within 8&quot; that has the INFESTATION Status. That Unit counts as Activated in this Phase (set an Activation Marker next to it) and remove the INFESTATION Status from that Unit. You may target any Non-Unique Infested Friendly Unit that is Within 8&quot; of the previously targeted Enemy Unit. Remove the Activation Marker from that targeted Friendly Unit.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bio-Kill Switch" id="f187-5780-cf83-7d5c" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Each Enemy Unit with the INFESTATION Status on the Battlefield suffers Damage (2). Immediately after this Special Ability is resolved, Remove the INFESTATION Status from Units that suffered Damage.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Active (0 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Corrosive Blast" id="9022-ae35-444b-0f95" hidden="false" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">8&quot;</characteristic>
+            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
+            <characteristic name="RoA" typeId="6594-a81b-03da-75a1">3</characteristic>
+            <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
+            <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light, Armoured</characteristic>
+            <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+            <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
+            <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"></characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Corrode Armor" id="1b8e-dc60-ddb2-c667" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit resolves a Ranged Attack against an Enemy Unit, the targeted Unit suffers the DEBUFF Armour (1).</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Reaction (1 BM)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Devastating Charge" id="c7a2-10e5-fc04-6b69" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="97a6-bd65-3d58-17e9">Immediately after this Unit completes a successful Charge, resolve the IMPACT (6) 4+ effect.</characteristic>
+            <characteristic name="Cost" typeId="06d2-1c49-1cfc-44f5">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infested Arm" id="be62-05c3-686d-6655" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
+          <characteristics>
+            <characteristic name="Rng" typeId="f6d9-ff21-6fe9-b821">E</characteristic>
+            <characteristic name="Tgt" typeId="0bf8-6c63-e593-8417">Ground</characteristic>
+            <characteristic name="RoA" typeId="af32-03e6-6c32-3580">3</characteristic>
+            <characteristic name="Hit" typeId="61d4-8e80-254a-ab52">3+</characteristic>
+            <characteristic name="Surge" typeId="d7e0-90d3-308e-c357">Armoured</characteristic>
+            <characteristic name="S.Die" typeId="52f3-3434-e741-a217">D3</characteristic>
+            <characteristic name="Dmg" typeId="5665-56ad-b90d-ffc7">2</characteristic>
+            <characteristic name="Keyword" typeId="9b72-90e3-8130-46b1"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Stukov" id="290b-8c48-c54c-9f43" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="2063-a730-5f43-c51d" automatic="true" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="5291-6c6d-8ca5-cd6c" automatic="true" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Healing Pathogen" id="274a-4a6f-c4bd-4727" hidden="true" import="true" type="upgrade">
+      <comment>Generated card by update-official: healing_pathogen</comment>
+      <categoryLinks><categoryLink name="Virus" id="abf3-1f4b-c935-78b9" primary="true" targetId="f3d6-17ce-3e44-7e7a"/></categoryLinks>
+      <constraints><constraint id="af2d-d940-cdaf-68ec" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="af2d-d940-cdaf-68ec" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <costs>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Universal Carrier" id="f690-da51-3355-a4ba" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, immediately after its supply is reduced or it is destroyed, target any Friendly Biological Unit Within 12&quot;. This Friendly Unit resolves the HEAL (2) effect.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stukov&apos;s Creep" id="3914-1447-8bb4-1634" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield. Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hive" id="613d-9dda-b84a-5ec3" hidden="false" import="true" type="upgrade">
+      <comment>Generated card by update-official: hive</comment>
+      <categoryLinks><categoryLink name="Tactical" id="695d-e620-9f5a-c4e5" primary="true" targetId="6042-132c-4895-cde4"/></categoryLinks>
+      <constraints><constraint id="f08c-e68e-8617-1eaa" field="selections" scope="roster" includeChildSelections="true" shared="true" type="max" value="1"/></constraints>
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Brutal Instinct" id="5aa4-4eaf-36c5-8860" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Immediately after an Enemy Unit ends its Activation Within 12&quot; of a Friendly, Ground Unit. That Friendly Unit gains or loses the BURROWED Status.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Reaction</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Creep Spread" id="81ec-2fef-83bd-bb82" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Creep Tumor token on the battlefield Within 6&quot; (Line of Sight is not required) of either a Friendly Entry Edge or an existing Friendly Creep Tumor token.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hungering Infestation" id="574a-2f6e-369e-5f6b" hidden="true" import="true" type="upgrade">
+      <comment>Generated card by update-official: hungering_infestation</comment>
+      <categoryLinks><categoryLink name="Virus" id="1b43-6a47-54cc-e3e5" primary="true" targetId="f3d6-17ce-3e44-7e7a"/></categoryLinks>
+      <constraints><constraint id="9e02-ba36-3369-6c8e" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="9e02-ba36-3369-6c8e" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="10"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Growing Infestation" id="d61f-1a7f-8975-78dd" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, it is not eligible to use or to be targeted by any Enemy Reaction Special Ability, except Restoration.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stukov&apos;s Creep" id="9991-351c-e1f9-7694" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield. Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Infested Barracks" id="3ed8-1bcf-61a0-49f4" hidden="false" import="true" type="upgrade">
+      <comment>Generated card by update-official: infested_barracks</comment>
+      <categoryLinks><categoryLink name="Tactical" id="d166-e6d3-7427-04c0" primary="true" targetId="6042-132c-4895-cde4"/></categoryLinks>
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="For the Swarm!" id="5276-0334-03c9-fa2d" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">The active Biological Ground Unit performs a 2&quot; Move action. This does not count towards its action limit.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Infested Command Center" id="4703-73f5-cb31-92b7" hidden="true" import="true" type="upgrade">
+      <comment>Generated card by update-official: infested_command_center</comment>
+      <categoryLinks><categoryLink name="Tactical" id="dddb-866f-8131-9a8b" primary="true" targetId="6042-132c-4895-cde4"/></categoryLinks>
+      <constraints><constraint id="d225-7c84-8b03-94a5" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="d225-7c84-8b03-94a5" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="30"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Parasitic Bio-Toxins" id="2807-18f0-cc6f-2a71" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Immediately after a Friendly Infested Unit ends their action Within 8&quot; of an Enemy Unit. That Enemy Unit gains the INFESTATION Status, this effect is treated as a DEBUFF.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Reaction</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scanner Sweep" id="9b18-adb1-a3f5-d0a8" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">Set a Faction Indicator anywhere on the battlefield. While Enemy Units are Within 6&quot; of this Faction Indicator, they lose the HIDDEN Status.</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Stukov&apos;s Forces" id="4761-5547-c033-274e" hidden="false" import="true" type="upgrade">
+      <comment>Generated card by update-official: stukov_s_forces</comment>
+      <categoryLinks><categoryLink name="Faction" id="2cb2-1eef-64d2-514f" primary="true" targetId="7786-b4c1-7de3-915c"/></categoryLinks>
+      <constraints><constraint id="1357-f27f-8528-f6df" field="selections" scope="roster" includeChildSelections="true" shared="true" type="max" value="1"/></constraints>
+      <costs>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="4"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Ashes of the UED" id="0afd-66cb-1781-b812" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, you may include Units with the Terran Faction Tag and both Ground and Mechanical Combat Tags in your army. Those Units gain the Infested Combat Tag. Treat any CP cost for those Units&apos; Special Abilities as BM. These Units cannot gain the BURROWED Status.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infestation" id="8c63-35c9-a582-c5d3" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">During Army Building, select exactly one Virus Card and add it to your Army List, paying its listed cost (if any).</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hostile Incubation" id="8f65-ab7a-8ad0-cb0d" hidden="false" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="1c06-5502-fb5a-616e">If there is no Friendly Infested Missile Turret on the battlefield, set a Friendly Infested Missile Turret Unit anywhere on the GROUND LEVEL of the battlefield more than 10&quot; away from any Enemy model. This Round, the Missile Turret is not eligible to use its Special Abilities (excluding Structure).</characteristic>
+            <characteristic name="Cost" typeId="e11e-d579-0142-8de4">Active</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Weighted Pustule" id="5349-9569-dda1-848a" hidden="true" import="true" type="upgrade">
+      <comment>Generated card by update-official: weighted_pustule</comment>
+      <categoryLinks><categoryLink name="Virus" id="aa85-69a0-6739-95c0" primary="true" targetId="f3d6-17ce-3e44-7e7a"/></categoryLinks>
+      <constraints><constraint id="aa75-16ed-fa51-a2ec" field="selections" scope="parent" shared="true" type="max" value="0"/></constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+        <modifier field="aa75-16ed-fa51-a2ec" type="set" value="1"><conditions><condition childId="4761-5547-c033-274e" field="selections" scope="roster" includeChildForces="true" includeChildSelections="true" shared="true" type="atLeast" value="1"/></conditions></modifier>
+      </modifiers>
+      <costs>
+        <cost name="Gas" typeId="1719-6214-392e-e53f" value="5"/>
+        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Fetid Touch" id="9779-4aa0-f514-8ec6" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">While an Enemy Unit has the INFESTATION Status, it cannot resolve the PLACE and set effects and cannot be returned to Reserves.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stukov&apos;s Creep" id="462d-7e5c-b251-8c02" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">If an Enemy Unit ends a Move, Deploy, Run, Charge or Disengage action Within 1&quot; of a Friendly Creep Tumor token, remove that token from the battlefield. Creep Tumor tokens have STAY IN PLAY and DISPLACEMENT.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Passive</characteristic>
           </characteristics>
         </profile>
       </profiles>
