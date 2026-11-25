@@ -2276,10 +2276,10 @@
         <categoryLink name="Tal&apos;darim" id="3822-3a9b-93f3-2e69" hidden="false" primary="false" targetId="b9be-91cd-490a-bbe7"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="180"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
         <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
@@ -2358,6 +2358,42 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Reinforce" id="75b0-7118-32e2-6b33" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="d639-7b87-d7b2-1765" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="100"/>
+            <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+            <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+            <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-1"/>
+            <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+            <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+            <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+            <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+            <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry name="Slayer" id="2f7b-e667-8329-af8b" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="de7f-3137-16dc-3a6f-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="de7f-3137-16dc-3a6f-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <modifiers>
+            <modifier field="de7f-3137-16dc-3a6f-min" type="set" value="2">
+              <conditions>
+                <condition childId="75b0-7118-32e2-6b33" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="de7f-3137-16dc-3a6f-max" type="set" value="2">
+              <conditions>
+                <condition childId="75b0-7118-32e2-6b33" childName="Reinforce" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Alarak" id="17d8-aef2-947f-ed04" hidden="false" import="true" type="upgrade">
       <comment>Best Boi</comment>
@@ -2372,7 +2408,7 @@
         <constraint id="6677-7404-00ae-2d21" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="260"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -2465,7 +2501,7 @@
         <categoryLink name="Ground" id="2231-049e-c2f2-5a24" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
       <costs>
-        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="200"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
         <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="-2"/>
@@ -2549,7 +2585,7 @@
                     <constraint id="d5b6-e28a-555d-f534" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -2573,7 +2609,7 @@
                     <constraint id="01cb-6630-7543-56b0" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -2597,7 +2633,7 @@
                     <constraint id="d040-1213-4553-44d2" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
