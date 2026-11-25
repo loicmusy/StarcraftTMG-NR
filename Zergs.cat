@@ -2755,6 +2755,17 @@
                   <constraints>
                     <constraint id="38d0-d696-595e-69d1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="10"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <infoLinks>
                     <infoLink name="Plagued Munitions" id="5c0b-e74a-9933-b18e" hidden="false" targetId="14ce-76e3-8408-6a19" type="profile"/>
                   </infoLinks>
@@ -2763,6 +2774,17 @@
                   <constraints>
                     <constraint id="9c76-2f7f-b9b9-43eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -2789,6 +2811,17 @@
                   <constraints>
                     <constraint id="1ed3-9882-2890-35b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="20"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <modifiers>
                     <modifier field="hidden" type="set" value="true">
                       <conditions>
@@ -2819,6 +2852,17 @@
                   <constraints>
                     <constraint id="8756-4290-ad54-fe4c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
+                    <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                    <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                    <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                    <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                    <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                    <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                    <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+                  </costs>
                   <profiles>
                     <profile name="Wild Mutation" id="1816-9d4f-aeb7-8558" hidden="false" typeId="7b96-11fe-e87a-e61c" typeName="Combat Weapon">
                       <characteristics>
@@ -3030,7 +3074,7 @@
                     <constraint id="9871-1df9-b70c-55ae" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
@@ -3058,7 +3102,7 @@
                     <constraint id="5cf3-8ad4-25bb-8e41" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="1"/>
+                    <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
                     <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
                     <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
                     <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
