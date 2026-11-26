@@ -2526,6 +2526,17 @@
           </constraints>
           <selectionEntries>
             <selectionEntry name="Weighted Pustule" id="1844-a396-1973-731f" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="5"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
               <infoLinks>
                 <infoLink name="Stukov&apos;s Creep" id="8607-cccb-b56b-cd46" hidden="false" targetId="a56d-bf0c-b035-afed" type="profile"/>
               </infoLinks>
@@ -2552,6 +2563,17 @@
               </profiles>
             </selectionEntry>
             <selectionEntry name="Hungering Infestation" id="2d77-591e-f411-0d03" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+                <cost name="  Gas" typeId="1719-6214-392e-e53f" value="10"/>
+                <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+                <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+                <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
+                <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+                <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+                <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+                <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+              </costs>
               <infoLinks>
                 <infoLink name="Stukov&apos;s Creep" id="503e-a886-647f-7965" hidden="false" targetId="a56d-bf0c-b035-afed" type="profile"/>
               </infoLinks>
