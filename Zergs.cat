@@ -1187,6 +1187,13 @@
         <infoLink name="Creep Removal" id="2be6-651f-0fdc-c716" hidden="false" targetId="dc56-7a7c-492a-7eb9" type="profile"/>
         <infoLink name="Living Glob of Tissue" id="914d-46f7-dcd5-9bd3" hidden="false" targetId="0e98-3f8d-2fc8-74f9" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Speed on Creep" id="d6ca-4a3a-8eed-8cab" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
@@ -1212,6 +1219,13 @@
         <infoLink name="Creep Removal" id="27c8-6614-3e51-f267" hidden="false" targetId="dc56-7a7c-492a-7eb9" type="profile"/>
         <infoLink name="Living Glob of Tissue" id="62ac-4073-93b7-9e5c" hidden="false" targetId="0e98-3f8d-2fc8-74f9" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Malevolent Matriarch" id="24e6-af43-3ea2-db09" hidden="false" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)">
           <characteristics>
@@ -2025,6 +2039,13 @@
         <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
         <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Reactive Tissue" id="e5e6-1bcc-0099-088b" hidden="false" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)">
           <characteristics>
@@ -3158,7 +3179,7 @@
         <categoryLink name="Ground" id="3e93-674e-7cf1-d307" hidden="false" primary="false" targetId="b947-4784-f388-d6a2"/>
       </categoryLinks>
       <constraints>
-        <constraint id="1f20-c777-fd4a-fd84-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="1f20-c777-fd4a-fd84-min" automatic="true" field="selections" scope="parent" shared="true" type="min" value="0"/>
         <constraint id="1f20-c777-fd4a-fd84-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <infoLinks>
@@ -3166,6 +3187,11 @@
       </infoLinks>
       <modifiers>
         <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="1f20-c777-fd4a-fd84-min" type="set" value="1">
           <conditions>
             <condition childId="ac40-ac91-83e8-9452" childName="Stukov&apos;s Forces" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
           </conditions>
